@@ -1,9 +1,270 @@
+################################
+# ОСНОВНЫЕ НАСТРОЙКИ
+################################
+
 baseURL = "https://norveg88.github.io/paradrutow/"
-languageCode = "pl"
 title = "Para Drutów"
 theme = "PaperMod"
+defaultContentLanguage = "pl"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+
+################################
+# ОБЩИЕ ПАРАМЕТРЫ ТЕМЫ
+################################
 
 [params]
   defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableSpecial1stPost = true
+  comments = false
+  customCSS = ["css/home.css", "css/videos.css"]
+
+################################
+# ЯЗЫКИ
+################################
+
+[languages]
+
+  ################################
+  # POLSKI
+  ################################
+  [languages.pl]
+    languageName = "PL"
+    languageCode = "pl"
+    weight = 1
+
+    [languages.pl.menu]
+      [[languages.pl.menu.main]]
+        name = "Strona główna"
+        url = "/"
+        weight = 1
+
+      [[languages.pl.menu.main]]
+        name = "Wideo"
+        url = "/videos/"
+        weight = 2
+
+      [[languages.pl.menu.main]]
+        name = "Aplikacje"
+        url = "/apps/"
+        weight = 3
+
+      [[languages.pl.menu.main]]
+        name = "Książki"
+        url = "/books/"
+        weight = 4
+
+      [[languages.pl.menu.main]]
+        name = "Wzory"
+        url = "/patterns/"
+        weight = 5
+
+      [[languages.pl.menu.main]]
+        name = "Kontakt"
+        url = "/contact/"
+        weight = 6
+
+
+  ################################
+  # ENGLISH
+  ################################
+  [languages.en]
+    languageName = "EN"
+    languageCode = "en"
+    weight = 2
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+
+      [[languages.en.menu.main]]
+        name = "Videos"
+        url = "/videos/"
+        weight = 2
+
+      [[languages.en.menu.main]]
+        name = "Apps"
+        url = "/apps/"
+        weight = 3
+
+      [[languages.en.menu.main]]
+        name = "Books"
+        url = "/books/"
+        weight = 4
+
+      [[languages.en.menu.main]]
+        name = "Patterns"
+        url = "/patterns/"
+        weight = 5
+
+      [[languages.en.menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 6
+
+
+  ################################
+  # УКРАЇНСЬКА
+  ################################
+  [languages.uk]
+    languageName = "UA"
+    languageCode = "uk"
+    weight = 3
+
+    [languages.uk.menu]
+      [[languages.uk.menu.main]]
+        name = "Головна"
+        url = "/"
+        weight = 1
+
+      [[languages.uk.menu.main]]
+        name = "Відео"
+        url = "/videos/"
+        weight = 2
+
+      [[languages.uk.menu.main]]
+        name = "Додатки"
+        url = "/apps/"
+        weight = 3
+
+      [[languages.uk.menu.main]]
+        name = "Книги"
+        url = "/books/"
+        weight = 4
+
+      [[languages.uk.menu.main]]
+        name = "Візерунки"
+        url = "/patterns/"
+        weight = 5
+
+      [[languages.uk.menu.main]]
+        name = "Зворотний звʼязок"
+        url = "/contact/"
+        weight = 6
+
+
+  ################################
+  # РУССКИЙ
+  ################################
+  [languages.ru]
+    languageName = "RU"
+    languageCode = "ru"
+    weight = 4
+
+    [languages.ru.menu]
+      [[languages.ru.menu.main]]
+        name = "Главная"
+        url = "/"
+        weight = 1
+
+      [[languages.ru.menu.main]]
+        name = "Видео"
+        url = "/videos/"
+        weight = 2
+
+      [[languages.ru.menu.main]]
+        name = "Приложения"
+        url = "/apps/"
+        weight = 3
+
+      [[languages.ru.menu.main]]
+        name = "Книги"
+        url = "/books/"
+        weight = 4
+
+      [[languages.ru.menu.main]]
+        name = "Узоры"
+        url = "/patterns/"
+        weight = 5
+
+      [[languages.ru.menu.main]]
+        name = "Обратная связь"
+        url = "/contact/"
+        weight = 6
+
+
+  ################################
+  # DEUTSCH
+  ################################
+  [languages.de]
+    languageName = "DE"
+    languageCode = "de"
+    weight = 5
+
+    [languages.de.menu]
+      [[languages.de.menu.main]]
+        name = "Startseite"
+        url = "/"
+        weight = 1
+
+      [[languages.de.menu.main]]
+        name = "Videos"
+        url = "/videos/"
+        weight = 2
+
+      [[languages.de.menu.main]]
+        name = "Apps"
+        url = "/apps/"
+        weight = 3
+
+      [[languages.de.menu.main]]
+        name = "Bücher"
+        url = "/books/"
+        weight = 4
+
+      [[languages.de.menu.main]]
+        name = "Muster"
+        url = "/patterns/"
+        weight = 5
+
+      [[languages.de.menu.main]]
+        name = "Kontakt"
+        url = "/contact/"
+        weight = 6
+
+
+  ################################
+  # FRANÇAIS
+  ################################
+  [languages.fr]
+    languageName = "FR"
+    languageCode = "fr"
+    weight = 6
+
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        name = "Accueil"
+        url = "/"
+        weight = 1
+
+      [[languages.fr.menu.main]]
+        name = "Vidéos"
+        url = "/videos/"
+        weight = 2
+
+      [[languages.fr.menu.main]]
+        name = "Applications"
+        url = "/apps/"
+        weight = 3
+
+      [[languages.fr.menu.main]]
+        name = "Livres"
+        url = "/books/"
+        weight = 4
+
+      [[languages.fr.menu.main]]
+        name = "Motifs"
+        url = "/patterns/"
+        weight = 5
+
+      [[languages.fr.menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 6

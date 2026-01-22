@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<div class="video-grid">
+  {{ range .Pages }}
+    <div class="video-card">
+      <a href="{{ .RelPermalink }}">
+        <img
+          src="https://img.youtube.com/vi/{{ .Params.youtube }}/hqdefault.jpg"
+          alt="{{ .Title }}"
+        />
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.description }}</p>
+      </a>
+    </div>
+  {{ end }}
+</div>
+{{ end }}
