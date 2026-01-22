@@ -22,7 +22,14 @@ enableRobotsTXT = true
   ShowCodeCopyButtons = true
   disableSpecial1stPost = true
   comments = false
-  customCSS = ["css/home.css", "css/videos.css"]
+
+[params.assets]
+  css = [
+    "css/home.css",
+    "css/videos.css",
+    "css/steampunk.css"
+  ]
+
 
 ################################
 # ЯЗЫКИ
