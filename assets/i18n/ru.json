@@ -1,0 +1,37 @@
+{
+  "menu_home": "Главная",
+  "menu_video": "Видео",
+  "menu_apps": "Приложения",
+  "menu_books": "Книги",
+  "menu_patterns": "Узоры",
+  "menu_contact": "Обратная связь",
+
+  "title_home": "Главная",
+  "title_video": "Видео",
+  "title_apps": "Приложения",
+  "title_books": "Книги",
+  "title_patterns": "Узоры",
+  "title_contact": "Обратная связь",
+
+  "home_title": "Добро пожаловать в мир стимпанка",
+  "home_intro": "Этот сайт создан в стиле стимпанк и содержит видео, книги, приложения и узоры.",
+
+  "video_title": "Видео",
+  "video_desc": "Здесь вы можете смотреть видео с YouTube.",
+
+  "apps_title": "Приложения",
+  "apps_desc": "Подборка полезных программ и инструментов.",
+
+  "books_title": "Книги",
+  "books_desc": "Коллекция книг и материалов.",
+
+  "patterns_title": "Узоры",
+  "patterns_desc": "Узоры, схемы и декоративные элементы.",
+
+  "contact_title": "Обратная связь",
+  "contact_desc": "Напишите нам, если у вас есть вопросы.",
+
+  "contact_name": "Имя",
+  "contact_message": "Сообщение",
+  "contact_send": "Отправить"
+}

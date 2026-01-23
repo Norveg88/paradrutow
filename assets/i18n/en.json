@@ -1,0 +1,37 @@
+{
+  "menu_home": "Home",
+  "menu_video": "Videos",
+  "menu_apps": "Apps",
+  "menu_books": "Books",
+  "menu_patterns": "Patterns",
+  "menu_contact": "Contact",
+
+  "title_home": "Home",
+  "title_video": "Videos",
+  "title_apps": "Apps",
+  "title_books": "Books",
+  "title_patterns": "Patterns",
+  "title_contact": "Contact",
+
+  "home_title": "Welcome to the Steampunk World",
+  "home_intro": "This website is designed in a steampunk style and contains videos, books, apps and patterns.",
+
+  "video_title": "Videos",
+  "video_desc": "Here you can watch YouTube videos.",
+
+  "apps_title": "Apps",
+  "apps_desc": "A collection of useful tools and applications.",
+
+  "books_title": "Books",
+  "books_desc": "A collection of books and materials.",
+
+  "patterns_title": "Patterns",
+  "patterns_desc": "Patterns, schemes and decorative elements.",
+
+  "contact_title": "Contact",
+  "contact_desc": "Write to us if you have any questions.",
+
+  "contact_name": "Name",
+  "contact_message": "Message",
+  "contact_send": "Send"
+}

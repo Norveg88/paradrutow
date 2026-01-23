@@ -1,0 +1,37 @@
+{
+  "menu_home": "Startseite",
+  "menu_video": "Videos",
+  "menu_apps": "Apps",
+  "menu_books": "Bücher",
+  "menu_patterns": "Muster",
+  "menu_contact": "Kontakt",
+
+  "title_home": "Startseite",
+  "title_video": "Videos",
+  "title_apps": "Apps",
+  "title_books": "Bücher",
+  "title_patterns": "Muster",
+  "title_contact": "Kontakt",
+
+  "home_title": "Willkommen in der Steampunk-Welt",
+  "home_intro": "Diese Website ist im Steampunk-Stil gestaltet und enthält Videos, Bücher, Apps und Muster.",
+
+  "video_title": "Videos",
+  "video_desc": "Hier kannst du YouTube-Videos ansehen.",
+
+  "apps_title": "Apps",
+  "apps_desc": "Eine Sammlung nützlicher Werkzeuge und Anwendungen.",
+
+  "books_title": "Bücher",
+  "books_desc": "Eine Sammlung von Büchern und Materialien.",
+
+  "patterns_title": "Muster",
+  "patterns_desc": "Muster, Pläne und dekorative Elemente.",
+
+  "contact_title": "Kontakt",
+  "contact_desc": "Schreib uns, wenn du Fragen hast.",
+
+  "contact_name": "Name",
+  "contact_message": "Nachricht",
+  "contact_send": "Senden"
+}

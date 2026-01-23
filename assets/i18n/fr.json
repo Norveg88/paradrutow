@@ -1,0 +1,37 @@
+{
+  "menu_home": "Accueil",
+  "menu_video": "Vidéos",
+  "menu_apps": "Applications",
+  "menu_books": "Livres",
+  "menu_patterns": "Motifs",
+  "menu_contact": "Contact",
+
+  "title_home": "Accueil",
+  "title_video": "Vidéos",
+  "title_apps": "Applications",
+  "title_books": "Livres",
+  "title_patterns": "Motifs",
+  "title_contact": "Contact",
+
+  "home_title": "Bienvenue dans le monde steampunk",
+  "home_intro": "Ce site est conçu dans un style steampunk et contient des vidéos, des livres, des applications et des motifs.",
+
+  "video_title": "Vidéos",
+  "video_desc": "Ici, vous pouvez regarder des vidéos YouTube.",
+
+  "apps_title": "Applications",
+  "apps_desc": "Une collection d'outils et d'applications utiles.",
+
+  "books_title": "Livres",
+  "books_desc": "Une collection de livres et de matériaux.",
+
+  "patterns_title": "Motifs",
+  "patterns_desc": "Motifs, schémas et éléments décoratifs.",
+
+  "contact_title": "Contact",
+  "contact_desc": "Écrivez-nous si vous avez des questions.",
+
+  "contact_name": "Nom",
+  "contact_message": "Message",
+  "contact_send": "Envoyer"
+}

@@ -1,0 +1,37 @@
+{
+  "menu_home": "Strona główna",
+  "menu_video": "Wideo",
+  "menu_apps": "Aplikacje",
+  "menu_books": "Książki",
+  "menu_patterns": "Wzory",
+  "menu_contact": "Kontakt",
+
+  "title_home": "Strona główna",
+  "title_video": "Wideo",
+  "title_apps": "Aplikacje",
+  "title_books": "Książki",
+  "title_patterns": "Wzory",
+  "title_contact": "Kontakt",
+
+  "home_title": "Witamy w świecie steampunku",
+  "home_intro": "Ta strona została stworzona w stylu steampunk i zawiera wideo, książki, aplikacje i wzory.",
+
+  "video_title": "Wideo",
+  "video_desc": "Tutaj możesz oglądać filmy z YouTube.",
+
+  "apps_title": "Aplikacje",
+  "apps_desc": "Zbiór przydatnych narzędzi i aplikacji.",
+
+  "books_title": "Książki",
+  "books_desc": "Kolekcja książek i materiałów.",
+
+  "patterns_title": "Wzory",
+  "patterns_desc": "Wzory, schematy i elementy dekoracyjne.",
+
+  "contact_title": "Kontakt",
+  "contact_desc": "Napisz do nas, jeśli masz pytania.",
+
+  "contact_name": "Imię",
+  "contact_message": "Wiadomość",
+  "contact_send": "Wyślij"
+}

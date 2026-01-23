@@ -1,0 +1,37 @@
+{
+  "menu_home": "Головна",
+  "menu_video": "Відео",
+  "menu_apps": "Додатки",
+  "menu_books": "Книги",
+  "menu_patterns": "Візерунки",
+  "menu_contact": "Зворотний зв'язок",
+
+  "title_home": "Головна",
+  "title_video": "Відео",
+  "title_apps": "Додатки",
+  "title_books": "Книги",
+  "title_patterns": "Візерунки",
+  "title_contact": "Зворотний зв'язок",
+
+  "home_title": "Ласкаво просимо у світ стимпанку",
+  "home_intro": "Цей сайт створено в стилі стимпанк і містить відео, книги, додатки та візерунки.",
+
+  "video_title": "Відео",
+  "video_desc": "Тут ви можете дивитися відео з YouTube.",
+
+  "apps_title": "Додатки",
+  "apps_desc": "Добірка корисних інструментів та програм.",
+
+  "books_title": "Книги",
+  "books_desc": "Колекція книг та матеріалів.",
+
+  "patterns_title": "Візерунки",
+  "patterns_desc": "Візерунки, схеми та декоративні елементи.",
+
+  "contact_title": "Зворотний зв'язок",
+  "contact_desc": "Напишіть нам, якщо у вас є питання.",
+
+  "contact_name": "Ім'я",
+  "contact_message": "Повідомлення",
+  "contact_send": "Надіслати"
+}
