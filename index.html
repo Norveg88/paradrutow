@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/lang.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительный стиль для иконки приложения */
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            margin-right: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border: 1px solid var(--accent-copper);
+        }
+        .app-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -59,11 +75,17 @@
                 <li>rozwijać swoje umiejętności świadomie i bez frustracji</li>
             </ul>
             <br>
-            <a href="video.html" class="button-link" style="color: var(--accent-gold); text-decoration: none; border-bottom: 1px solid var(--accent-copper);">Przejdź do wideo &rarr;</a>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://www.youtube.com/@ParaDrutow" target="_blank" class="button-link" style="color: #ff0000; font-weight: bold; text-decoration: none; border: 1px solid #ff0000; padding: 5px 10px; border-radius: 4px;">Subskrybuj kanał &rarr;</a>
+                <a href="video.html" class="button-link" style="color: var(--accent-gold); text-decoration: none; padding: 5px 0;">Przejdź do wideo na stronie &rarr;</a>
+            </div>
         </div>
 
         <div class="card glass-card">
-            <h2>🤖 StitchAI — aplikacja</h2>
+            <div class="app-header">
+                <img src="assets/img/icon.png" alt="StitchAI Icon" class="app-icon">
+                <h2>🤖 StitchAI — aplikacja</h2>
+            </div>
             <p><strong>StitchAI</strong> to rozwijane przez nas narzędzie edukacyjne, stworzone z myślą o osobach pracujących ze schematami dziewiarskimi. Aplikacja pomaga analizować wzory, wyjaśniać symbole oraz lepiej rozumieć instrukcje, które często bywają niejednoznaczne lub zapisane w skrótowej formie.</p>
             <p>Celem StitchAI nie jest zastąpienie wiedzy dziewiarskiej, lecz jej uporządkowanie i wsparcie procesu nauki — tak, aby praca ze schematami była spokojniejsza, bardziej intuicyjna i po prostu przyjemniejsza.</p>
             <br>
