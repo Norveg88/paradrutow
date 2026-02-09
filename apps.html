@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title_apps">Приложения</title>
+    <title>StitchAI - Aplikacja</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/lang.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Специфичные стили для этой страницы */
+        .app-hero {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(20, 20, 20, 0.4);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(5px);
+        }
+
+        .app-hero-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.2);
+            border: 2px solid var(--accent-copper);
+        }
+
+        .app-hero h1 {
+            font-size: 4rem; /* Очень крупный заголовок */
+            margin: 0;
+            padding: 0;
+            border: none;
+            line-height: 1;
+            text-shadow: 0 0 15px rgba(197, 160, 89, 0.3);
+        }
+
+        .feature-image-wrapper {
+            width: 100%;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+        }
+
+        .feature-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .text-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        
+        /* Адаптив для мобильных */
+        @media (max-width: 768px) {
+            .app-hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .app-hero h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <div class="background-effects">
         <div class="steam-overlay"></div>
     </div>
@@ -16,20 +82,20 @@
 <header>
     <nav class="nav glass-panel">
         <div class="nav-links">
-            <a href="index.html" data-i18n="menu_home">Главная</a>
-            <a href="video.html" data-i18n="menu_video">Видео</a>
-            <a href="apps.html" class="active-link" data-i18n="menu_apps">Приложения</a>
-            <a href="books.html" data-i18n="menu_books">Книги</a>
-            <a href="patterns.html" data-i18n="menu_patterns">Узоры</a>
-            <a href="contact.html" data-i18n="menu_contact">Контакты</a>
+            <a href="index.html" data-i18n="menu_home">Główna</a>
+            <a href="video.html" data-i18n="menu_video">Wideo</a>
+            <a href="apps.html" class="active-link" data-i18n="menu_apps">Aplikacje</a>
+            <a href="books.html" data-i18n="menu_books">Książki</a>
+            <a href="patterns.html" data-i18n="menu_patterns">Wzory</a>
+            <a href="contact.html" data-i18n="menu_contact">Kontakt</a>
         </div>
         
         <div class="nav-controls">
-            <a href="privacy.html" data-i18n="menu_privacy">Политика</a>
+            <a href="privacy.html" data-i18n="menu_privacy">Polityka</a>
             <div class="lang-switcher">
-                <button data-lang="ru">RU</button>
-                <button data-lang="en">EN</button>
                 <button data-lang="pl">PL</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="ru">RU</button>
                 <button data-lang="ua">UA</button>
                 <button data-lang="de">DE</button>
                 <button data-lang="fr">FR</button>
@@ -40,18 +106,39 @@
 
 <main>
     <div class="content-wrapper">
-        <h1 data-i18n="apps_title">Приложения</h1>
-        <p class="subtitle" data-i18n="apps_desc">Подборка полезных программ и инструментов.</p>
-
-        <div class="card glass-card">
-            <h2>⚙️ StitchAI</h2>
-            <p>Умный помощник для вязания и рукоделия.</p>
+        
+        <div class="app-hero">
+            <img src="assets/img/icon.png" alt="StitchAI Logo" class="app-hero-icon">
+            <h1>StitchAI</h1>
         </div>
+
+        <div class="feature-image-wrapper">
+            <img src="assets/img/feature.jpg" alt="StitchAI App Feature">
+        </div>
+
+        <div class="card glass-card text-content">
+            <p>Aplikacja została stworzona z myślą o osobach, które chcą lepiej rozumieć schematy dziewiarskie i pracować z nimi w sposób bardziej świadomy, spokojny i uporządkowany. Jej celem jest wsparcie procesu nauki poprzez analizę wzorów, wyjaśnianie symboli oraz tłumaczenie skrótowych zapisów, które często stanowią barierę dla użytkowników na różnych poziomach zaawansowania.</p>
+            
+            <p>W świecie dziewiarstwa schematy są uniwersalnym językiem, jednak ich interpretacja bywa trudna — szczególnie wtedy, gdy pochodzą z różnych źródeł, kultur lub publikacji technicznych. Aplikacja odpowiada na tę potrzebę, oferując narzędzie edukacyjne, które pomaga zrozumieć logikę wzorów, a nie tylko ich końcowy efekt.</p>
+            
+            <p>Rozwiązanie skierowane jest zarówno do osób początkujących, które dopiero uczą się czytać schematy i symbole, jak i do bardziej zaawansowanych użytkowników, którzy chcą analizować wzory szybciej, dokładniej i z większą pewnością. Aplikacja wspiera proces nauki krok po kroku, bez presji i bez konieczności sięgania po wiele zewnętrznych źródeł.</p>
+            
+            <p>Szczególny nacisk położono na przejrzystość informacji oraz jasny sposób prezentowania objaśnień. Zamiast skomplikowanych opisów użytkownik otrzymuje logiczne, czytelne wyjaśnienia, które pomagają zrozumieć sens danego symbolu lub fragmentu schematu w praktycznym kontekście dziewiarskim.</p>
+            
+            <p>Aplikacja nie zastępuje tradycyjnej wiedzy ani doświadczenia, lecz stanowi ich uzupełnienie. Jej zadaniem jest uporządkowanie informacji i wsparcie użytkownika w podejmowaniu świadomych decyzji podczas pracy z wzorami. Dzięki temu dziewiarstwo staje się bardziej dostępne, mniej frustrujące i po prostu przyjemniejsza.</p>
+            
+            <p>Projekt rozwijany jest w duchu nowoczesnej edukacji — z szacunkiem do rzemiosła, ale także z otwartością na technologie wspierające proces uczenia się. Aplikacja może być wykorzystywana jako pomoc naukowa, narzędzie referencyjne lub wsparcie podczas codziennej pracy z projektami dziewiarskimi.</p>
+            
+            <p>Dodatkowym celem aplikacji jest budowanie zaufania do schematów i wzorów poprzez lepsze zrozumienie ich struktury. Użytkownik nie tylko wykonuje kolejne kroki, ale uczy się, dlaczego dany element wygląda właśnie w ten sposób i jak wpływa na całość projektu.</p>
+            
+            <p>Aplikacja rozwija się stopniowo, z myślą o rozszerzaniu funkcjonalności, dodawaniu nowych typów schematów oraz wspieraniu kolejnych etapów nauki dziewiarstwa. Jest to narzędzie tworzone z myślą o długofalowym wsparciu użytkowników, a nie jednorazowym rozwiązaniu.</p>
+        </div>
+
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 ParaDrutow | <a href="privacy.html" data-i18n="footer_privacy">Политика конфиденциальности</a></p>
+    <p>&copy; 2026 ParaDrutow | <a href="privacy.html" data-i18n="footer_privacy">Polityka prywatności</a></p>
 </footer>
 
 </body>
