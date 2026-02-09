@@ -2,49 +2,58 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title_home">Главная</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/lang.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="https://i.imgur.com/0mQ7p8W.png" class="gear left">
-    <img src="https://i.imgur.com/0mQ7p8W.png" class="gear right">
-    <div class="steam"></div>
-<header>
-    <nav class="nav">
-        <button id="theme-toggle">☀️/🌙</button>
-        <a href="index.html" data-i18n="menu_home">Главная</a>
-        <a href="video.html" data-i18n="menu_video">Видео</a>
-        <a href="apps.html" data-i18n="menu_apps">Приложения</a>
-        <a href="books.html" data-i18n="menu_books">Книги</a>
-        <a href="patterns.html" data-i18n="menu_patterns">Узоры</a>
-        <a href="contact.html" data-i18n="menu_contact">Обратная связь</a>
+    <div class="background-effects">
+        <div class="steam-overlay"></div>
+    </div>
 
-        <div class="lang-switcher">
-            <button data-lang="ru">RU</button>
-            <button data-lang="en">EN</button>
-            <button data-lang="pl">PL</button>
-            <button data-lang="ua">UA</button>
-            <button data-lang="de">DE</button>
-            <button data-lang="fr">FR</button>
+<header>
+    <nav class="nav glass-panel">
+        <div class="nav-links">
+            <a href="index.html" class="active-link" data-i18n="menu_home">Главная</a>
+            <a href="video.html" data-i18n="menu_video">Видео</a>
+            <a href="apps.html" data-i18n="menu_apps">Приложения</a>
+            <a href="books.html" data-i18n="menu_books">Книги</a>
+            <a href="patterns.html" data-i18n="menu_patterns">Узоры</a>
+            <a href="contact.html" data-i18n="menu_contact">Контакты</a>
+        </div>
+        
+        <div class="nav-controls">
+            <a href="privacy.html" data-i18n="menu_privacy">Политика</a>
+            <div class="lang-switcher">
+                <button data-lang="ru">RU</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="pl">PL</button>
+                <button data-lang="ua">UA</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="fr">FR</button>
+            </div>
         </div>
     </nav>
 </header>
 
 <main>
-    <h1 data-i18n="home_title">Добро пожаловать в мир стимпанка</h1>
-    <p data-i18n="home_intro">
-        Этот сайт создан в стиле стимпанк и содержит видео, книги, приложения и узоры.
-    </p>
+    <div class="content-wrapper">
+        <h1 data-i18n="home_title">Добро пожаловать в мир стимпанка</h1>
+        <p class="subtitle" data-i18n="home_intro">
+            Этот сайт создан в стиле стимпанк и содержит видео, книги, приложения и узоры.
+        </p>
 
-    <div class="card">
-        <h2>⚙️ Steampunk Atmosphere</h2>
-        <p>Латунь, шестерёнки, механика и викторианская эстетика.</p>
+        <div class="card glass-card">
+            <h2>⚙️ Steampunk Atmosphere</h2>
+            <p>Латунь, шестерёнки, механика и викторианская эстетика.</p>
+        </div>
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 ParaDrutow</p>
+    <p>&copy; 2026 ParaDrutow | <a href="privacy.html" data-i18n="footer_privacy">Политика конфиденциальности</a></p>
 </footer>
 
 </body>

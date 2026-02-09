@@ -2,55 +2,65 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title_contact">Обратная связь</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/lang.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="https://i.imgur.com/0mQ7p8W.png" class="gear left">
-    <img src="https://i.imgur.com/0mQ7p8W.png" class="gear right">
-    <div class="steam"></div>
-<header>
-    <nav class="nav">
-        <a href="index.html" data-i18n="menu_home">Главная</a>
-        <a href="video.html" data-i18n="menu_video">Видео</a>
-        <a href="apps.html" data-i18n="menu_apps">Приложения</a>
-        <a href="books.html" data-i18n="menu_books">Книги</a>
-        <a href="patterns.html" data-i18n="menu_patterns">Узоры</a>
-        <a href="contact.html" data-i18n="menu_contact">Обратная связь</a>
+    <div class="background-effects">
+        <div class="steam-overlay"></div>
+    </div>
 
-        <div class="lang-switcher">
-            <button data-lang="ru">RU</button>
-            <button data-lang="en">EN</button>
-            <button data-lang="pl">PL</button>
-            <button data-lang="ua">UA</button>
-            <button data-lang="de">DE</button>
-            <button data-lang="fr">FR</button>
+<header>
+    <nav class="nav glass-panel">
+        <div class="nav-links">
+            <a href="index.html" data-i18n="menu_home">Главная</a>
+            <a href="video.html" data-i18n="menu_video">Видео</a>
+            <a href="apps.html" data-i18n="menu_apps">Приложения</a>
+            <a href="books.html" data-i18n="menu_books">Книги</a>
+            <a href="patterns.html" data-i18n="menu_patterns">Узоры</a>
+            <a href="contact.html" class="active-link" data-i18n="menu_contact">Контакты</a>
+        </div>
+        
+        <div class="nav-controls">
+            <a href="privacy.html" data-i18n="menu_privacy">Политика</a>
+            <div class="lang-switcher">
+                <button data-lang="ru">RU</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="pl">PL</button>
+                <button data-lang="ua">UA</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="fr">FR</button>
+            </div>
         </div>
     </nav>
 </header>
 
 <main>
-    <h1 data-i18n="contact_title">Обратная связь</h1>
-    <p data-i18n="contact_desc">Напишите нам, если у вас есть вопросы.</p>
+    <div class="content-wrapper">
+        <h1 data-i18n="contact_title">Обратная связь</h1>
+        <p class="subtitle" data-i18n="contact_desc">Напишите нам, если у вас есть вопросы.</p>
 
-    <form>
-        <label>
-            <span data-i18n="contact_name">Имя</span>
-            <input type="text">
-        </label>
+        <form class="card glass-card">
+            <label>
+                <span data-i18n="contact_name">Имя</span>
+                <input type="text">
+            </label>
 
-        <label>
-            <span data-i18n="contact_message">Сообщение</span>
-            <textarea></textarea>
-        </label>
+            <label>
+                <span data-i18n="contact_message">Сообщение</span>
+                <textarea rows="5"></textarea>
+            </label>
 
-        <button type="submit" data-i18n="contact_send">Отправить</button>
-    </form>
+            <button type="submit" data-i18n="contact_send">Отправить</button>
+        </form>
+    </div>
 </main>
 
 <footer>
-    <p>&copy; 2026 ParaDrutow</p>
+    <p>&copy; 2026 ParaDrutow | <a href="privacy.html" data-i18n="footer_privacy">Политика конфиденциальности</a></p>
 </footer>
 
 </body>
