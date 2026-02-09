@@ -1,4 +1,4 @@
-const defaultLang = localStorage.getItem("lang") || "ru";
+﻿const defaultLang = localStorage.getItem("lang") || "ru";
 
 function loadLang(lang) {
     fetch(`assets/i18n/${lang}.json`)
