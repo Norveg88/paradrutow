@@ -9,8 +9,21 @@ const fs   = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
+// Читаем API ключ из .env файла (не публикуется на GitHub)
+function loadEnv() {
+  const envPath = path.join(__dirname, '..', '.env');
+  if (fs.existsSync(envPath)) {
+    const lines = fs.readFileSync(envPath, 'utf-8').split('\n');
+    for (const line of lines) {
+      const [key, ...val] = line.split('=');
+      if (key && val.length) process.env[key.trim()] = val.join('=').trim();
+    }
+  }
+}
+loadEnv();
+
 const CONFIG = {
-  API_KEY:             'AIzaSyACTYAJxjirsuNmt5ZB1dRm0_81O_UlyK4',
+  API_KEY:             process.env.YOUTUBE_API_KEY || '',
   CHANNEL_ID:          '@ParaDrutow',
   MAX_RESULTS:         0,           // 0 = все видео
   MERGE_WITH_EXISTING: true,

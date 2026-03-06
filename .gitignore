@@ -4,6 +4,9 @@ node_modules/
 # Корневой скрипт с API ключом — только локально, не публиковать
 /fetch-videos.js
 
+# Переменные окружения с секретами
+.env
+
 # Hugo мусор
 hugo.toml
 _hugo_build.lock
