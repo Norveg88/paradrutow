@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_shorts">Shorts - Para Drutów</title>
+    <link rel="stylesheet" href="/paradrutow/assets/css/style.css">
+    <script defer src="/paradrutow/assets/js/lang.js"></script>
+    <script defer src="/paradrutow/assets/js/ui.js"></script>
+    <script defer src="/paradrutow/assets/js/shorts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background-effects">
+    <div class="steam-overlay"></div>
+</div>
+
+<header>
+    <nav class="nav glass-panel">
+        <a href="/paradrutow/index.html" class="nav-brand">Para Drutów</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/paradrutow/index.html" data-i18n="menu_home">Strona główna</a>
+            <a href="/paradrutow/video.html" data-i18n="menu_video">Wideo</a>
+            <a href="/paradrutow/shorts.html" class="active-link" data-i18n="menu_shorts">Shorts</a>
+            <a href="/paradrutow/apps.html" data-i18n="menu_apps">Aplikacje</a>
+            <a href="/paradrutow/books.html" data-i18n="menu_books">Książki</a>
+            <a href="/paradrutow/patterns.html" data-i18n="menu_patterns">Wzory</a>
+            <a href="/paradrutow/contact.html" data-i18n="menu_contact">Kontakt</a>
+        </div>
+        
+        <div class="nav-controls">
+            <a href="/paradrutow/privacy.html" data-i18n="menu_privacy">Polityka prywatności</a>
+            <div class="lang-switcher">
+                <button data-lang="pl">PL</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="ru">RU</button>
+                <button data-lang="ua">UA</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-wrapper">
+
+        <h1 data-i18n="shorts_title">Shorts</h1>
+        <p class="subtitle" data-i18n="shorts_desc">Krótkie filmiki z praktycznymi trikami i poradami.</p>
+
+        <div id="shorts-loader" class="videos-loader">
+            <div class="spinner"></div>
+            <p>Ładowanie shorts...</p>
+        </div>
+
+        <div id="shorts-container" class="shorts-grid"></div>
+
+        <div id="shorts-error" class="videos-error" style="display: none;">
+            <p>⚠️ Nie udało się załadować shorts. Spróbuj odświeżyć stronę.</p>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 ParaDrutow | <a href="/paradrutow/privacy.html" data-i18n="footer_privacy">Polityka prywatności</a></p>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">&#8679;</button>
+
+</body>
+</html>

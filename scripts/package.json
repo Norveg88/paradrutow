@@ -1,0 +1,10 @@
+{
+  "name": "paradrutow-video-fetcher",
+  "version": "1.0.0",
+  "description": "YouTube video fetcher for Para Drutów",
+  "scripts": {
+    "fetch": "node fetch-videos.js"
+  },
+  "author": "Para Drutów",
+  "license": "MIT"
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://norveg88.github.io/paradrutow/sitemap.xml

@@ -1,0 +1,15 @@
+# Зависимости Node.js
+node_modules/
+
+# Скрипт с API ключом — только локально, не публиковать
+fetch-videos.js
+
+# Hugo мусор
+hugo.toml
+_hugo_build.lock
+_gitmodules
+create-content.ps1
+
+# Системные файлы
+.DS_Store
+Thumbs.db

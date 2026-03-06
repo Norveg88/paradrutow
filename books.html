@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_books">Książki - Para Drutów</title>
+    <link rel="stylesheet" href="/paradrutow/assets/css/style.css">
+    <script defer src="/paradrutow/assets/js/lang.js"></script>
+    <script defer src="/paradrutow/assets/js/ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .book-card {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 2rem;
+            background: rgba(40,40,40,0.45);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .book-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .book-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(197,160,89,0.12);
+        }
+        .book-cover {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+            border: 1px solid var(--glass-border);
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+        .book-body h2 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            margin: 0 0 0.8rem;
+            font-size: 1.25rem;
+            line-height: 1.3;
+        }
+        .book-body p {
+            color: #bbb;
+            font-size: 0.93rem;
+            line-height: 1.7;
+            margin: 0 0 0.7rem;
+        }
+        .book-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 1rem 0;
+        }
+        .book-tag {
+            font-size: 0.78rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            border: 1px solid var(--accent-copper);
+            color: var(--accent-copper);
+            font-family: var(--font-header);
+            letter-spacing: 0.5px;
+        }
+        .book-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0.8rem 0 1.2rem;
+        }
+        .book-checklist li {
+            color: #ccc;
+            font-size: 0.9rem;
+            padding: 3px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .book-checklist li::before {
+            content: '✔';
+            color: var(--accent-copper);
+            font-size: 0.8rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        @media (max-width: 600px) {
+            .book-card {
+                grid-template-columns: 1fr;
+            }
+            .book-cover {
+                max-width: 180px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="background-effects"><div class="steam-overlay"></div></div>
+
+<header>
+    <nav class="nav glass-panel">
+        <a href="/paradrutow/index.html" class="nav-brand">Para Drutów</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/paradrutow/index.html" data-i18n="menu_home">Strona główna</a>
+            <a href="/paradrutow/video.html" data-i18n="menu_video">Wideo</a>
+            <a href="/paradrutow/shorts.html" data-i18n="menu_shorts">Shorts</a>
+            <a href="/paradrutow/apps.html" data-i18n="menu_apps">Aplikacje</a>
+            <a href="/paradrutow/books.html" class="active-link" data-i18n="menu_books">Książki</a>
+            <a href="/paradrutow/patterns.html" data-i18n="menu_patterns">Wzory</a>
+            <a href="/paradrutow/contact.html" data-i18n="menu_contact">Kontakt</a>
+        </div>
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <button data-lang="pl">PL</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="ru">RU</button>
+                <button data-lang="ua">UA</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-wrapper">
+        <h1 data-i18n="books_title">Książki</h1>
+        <p class="subtitle" data-i18n="books_desc">Autorskie publikacje o dziewiarstwie — rzetelna wiedza na każdy poziom.</p>
+
+        <!-- Книга 1 -->
+        <div class="book-card card glass-card">
+            <img src="/paradrutow/assets/img/book1.jpg" alt="Odkryj swoje twórcze moce" class="book-cover">
+            <div class="book-body">
+                <h2>Odkryj swoje twórcze moce</h2>
+                <p>Kreatywne wzory na drutach i schematy do nich — inspirująca książka dla każdego, kto chce rozwijać swoją kreatywność poprzez sztukę dziewiarstwa.</p>
+                <p>Zawiera różnorodne wzory z szczegółowymi schematami, które pozwalają zarówno początkującym, jak i doświadczonym rękodzielnikom tworzyć unikalne projekty odzwierciedlające ich osobowość.</p>
+                <div class="book-meta">
+                    <span class="book-tag">Amazon</span>
+                    <span class="book-tag">Początkujący–Zaawansowany</span>
+                    <span class="book-tag">Wzory & Schematy</span>
+                </div>
+                <a href="https://www.amazon.pl/dp/B0F2YFSSGJ" target="_blank" class="btn-youtube">Kup na Amazon →</a>
+            </div>
+        </div>
+
+        <!-- Книга 2 -->
+        <div class="book-card card glass-card">
+            <img src="/paradrutow/assets/img/book2.jpg" alt="Prosto z drutów" class="book-cover">
+            <div class="book-body">
+                <h2>Prosto z drutów</h2>
+                <p>Niezbędny przewodnik dla każdego pasjonata robienia na drutach. Autorka dzieli się wieloletnim doświadczeniem i miłością do włóczek, prezentując szeroki wachlarz wzorów — od prostych po skomplikowane.</p>
+                <p>Szczegółowe instrukcje krok po kroku, inspirujące fotografie wzorów oraz praktyczne wskazówki dla każdego poziomu zaawansowania.</p>
+                <div class="book-meta">
+                    <span class="book-tag">Amazon</span>
+                    <span class="book-tag">Wszystkie poziomy</span>
+                    <span class="book-tag">Swetry & Dodatki</span>
+                </div>
+                <a href="https://www.amazon.pl/dp/B0FT8L3HNT" target="_blank" class="btn-youtube">Kup na Amazon →</a>
+            </div>
+        </div>
+
+        <!-- Книга 3 — PDF -->
+        <div class="book-card card glass-card">
+            <img src="/paradrutow/assets/img/book3.jpg" alt="Idealna krawędź na drutach" class="book-cover">
+            <div class="book-body">
+                <h2>Idealna krawędź na drutach</h2>
+                <p>7 sprawdzonych sposobów, aby ścieg gładki się nie zawijał. Czy zdarzyło Ci się, że piękna robótka zaczyna się zawijać na krawędziach? To bardzo częsty problem — i nie oznacza, że robisz coś źle.</p>
+                <ul class="book-checklist">
+                    <li>Wyjaśnienie dlaczego krawędzie się zawijają</li>
+                    <li>7 skutecznych metod stabilizacji (ścieg francuski, i-cord, folded hem i inne)</li>
+                    <li>Czytelne zdjęcia i przykłady krok po kroku</li>
+                    <li>Wskazówki, kiedy użyć danej metody</li>
+                </ul>
+                <div class="book-meta">
+                    <span class="book-tag">📄 PDF · 20 stron</span>
+                    <span class="book-tag">🧶 Początkujący–Średni</span>
+                    <span class="book-tag">Pobierz od razu</span>
+                </div>
+                <a href="https://payhip.com/b/8dVjH" target="_blank" class="btn-youtube">Kup poradnik PDF →</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 ParaDrutow | <a href="/paradrutow/privacy.html" data-i18n="footer_privacy">Polityka prywatności</a></p>
+</footer>
+<button id="back-to-top" aria-label="Back to top">&#8679;</button>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_contact">Kontakt - Para Drutów</title>
+    <link rel="stylesheet" href="/paradrutow/assets/css/style.css">
+    <script defer src="/paradrutow/assets/js/lang.js"></script>
+    <script defer src="/paradrutow/assets/js/ui.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        @media (max-width: 700px) {
+            .contact-layout { grid-template-columns: 1fr; }
+        }
+
+        .contact-info {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .contact-info h2 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+        }
+        .contact-link-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.9rem 0;
+            border-bottom: 1px solid rgba(197,160,89,0.1);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-link-item:last-child { border-bottom: none; }
+        .contact-link-item:hover .cli-label { color: var(--accent-gold); }
+        .cli-icon {
+            width: 40px; height: 40px;
+            background: rgba(197,160,89,0.1);
+            border: 1px solid rgba(197,160,89,0.25);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .cli-label {
+            font-family: var(--font-header);
+            font-size: 0.85rem;
+            color: var(--accent-copper);
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+        .cli-value {
+            font-size: 0.82rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .contact-form-wrap {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-form-wrap::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: linear-gradient(to bottom, var(--accent-gold), var(--accent-copper));
+        }
+        .contact-form-wrap h2 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="background-effects"><div class="steam-overlay"></div></div>
+
+<header>
+    <nav class="nav glass-panel">
+        <a href="/paradrutow/index.html" class="nav-brand">Para Drutów</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/paradrutow/index.html" data-i18n="menu_home">Strona główna</a>
+            <a href="/paradrutow/video.html" data-i18n="menu_video">Wideo</a>
+            <a href="/paradrutow/shorts.html" data-i18n="menu_shorts">Shorts</a>
+            <a href="/paradrutow/apps.html" data-i18n="menu_apps">Aplikacje</a>
+            <a href="/paradrutow/books.html" data-i18n="menu_books">Książki</a>
+            <a href="/paradrutow/patterns.html" data-i18n="menu_patterns">Wzory</a>
+            <a href="/paradrutow/contact.html" class="active-link" data-i18n="menu_contact">Kontakt</a>
+        </div>
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <button data-lang="pl">PL</button>
+                <button data-lang="en">EN</button>
+                <button data-lang="ru">RU</button>
+                <button data-lang="ua">UA</button>
+                <button data-lang="de">DE</button>
+                <button data-lang="fr">FR</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-wrapper">
+        <h1 data-i18n="contact_title">Kontakt</h1>
+        <p class="subtitle" data-i18n="contact_desc">Napisz do nas — odpowiemy na każde pytanie.</p>
+
+        <div class="contact-layout">
+
+            <!-- Контактная инфо -->
+            <div class="contact-info card">
+                <h2>✦ Znajdź nas</h2>
+                <a href="https://www.youtube.com/@ParaDrutow" target="_blank" class="contact-link-item">
+                    <div class="cli-icon">▶</div>
+                    <div>
+                        <div class="cli-label">YouTube</div>
+                        <div class="cli-value">@ParaDrutow</div>
+                    </div>
+                </a>
+                <div class="contact-link-item">
+                    <div class="cli-icon">✉</div>
+                    <div>
+                        <div class="cli-label">E-mail</div>
+                        <div class="cli-value">przez formularz obok</div>
+                    </div>
+                </div>
+                <div class="contact-link-item">
+                    <div class="cli-icon">🧶</div>
+                    <div>
+                        <div class="cli-label">Para Drutów</div>
+                        <div class="cli-value">Dziewiarstwo & Edukacja</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Форма -->
+            <div class="contact-form-wrap card">
+                <h2 data-i18n="contact_title">Napisz do nas</h2>
+                <form id="contact-form" action="https://formspree.io/f/meeleyzl" method="POST">
+                    <label>
+                        <span data-i18n="contact_name">Imię</span>
+                        <input type="text" name="name" required autocomplete="name">
+                    </label>
+                    <label>
+                        <span>E-mail</span>
+                        <input type="email" name="email" required autocomplete="email">
+                    </label>
+                    <label>
+                        <span data-i18n="contact_message">Wiadomość</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" data-i18n="contact_send">Wyślij</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 ParaDrutow | <a href="/paradrutow/privacy.html" data-i18n="footer_privacy">Polityka prywatności</a></p>
+</footer>
+<button id="back-to-top" aria-label="Back to top">&#8679;</button>
+</body>
+</html>
