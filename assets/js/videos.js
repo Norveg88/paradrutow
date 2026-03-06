@@ -67,6 +67,7 @@ function createVideoCard(video, index) {
 
     /* клик — плеер */
     preview.addEventListener('click', () => {
+        card.classList.add('playing');
         iframe.src = `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&modestbranding=1`;
         preview.style.display = 'none';
         iframe.style.display = 'block';
