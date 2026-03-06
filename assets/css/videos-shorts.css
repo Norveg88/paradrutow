@@ -96,25 +96,32 @@
     #videos-container { grid-template-columns:1fr; }
 }
 
-/* SHORTS GRID */
-.shorts-grid {
+/* SHORTS GRID — стиль как у видео, карточки 9:16 */
+#shorts-container {
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(180px,1fr));
-    gap:1.2rem; margin-top:1rem;
+    grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+    gap:2rem;
 }
 .short-card {
-    border-radius:14px; overflow:hidden;
-    background:rgba(40,40,40,0.5);
+    background:rgba(40,40,40,0.45);
     border:1px solid var(--glass-border);
+    border-radius:16px; overflow:hidden;
     backdrop-filter:blur(8px);
+    position:relative;
     display:flex; flex-direction:column;
-    transition:transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    transition:transform 0.3s, box-shadow 0.3s;
+    cursor:pointer;
+}
+.short-card::before {
+    content:''; position:absolute;
+    top:0; left:0; right:0; height:3px; z-index:2;
+    background:linear-gradient(to right, var(--accent-gold), var(--accent-copper));
 }
 .short-card:hover {
-    transform:translateY(-5px);
-    box-shadow:0 14px 36px rgba(197,160,89,0.2);
-    border-color:rgba(197,160,89,0.45);
+    transform:translateY(-4px);
+    box-shadow:0 16px 40px rgba(197,160,89,0.12);
 }
+/* медиа 9:16 */
 .sc-media {
     position:relative; width:100%;
     aspect-ratio:9/16; background:#000;
@@ -122,28 +129,29 @@
 }
 .sc-preview {
     position:absolute; inset:0;
-    cursor:pointer; z-index:2;
+    cursor:pointer; z-index:1;
 }
 .sc-preview img {
     width:100%; height:100%;
     object-fit:cover; display:block;
-    transition:transform 0.4s;
+    transition:transform 0.4s ease;
 }
-.short-card:hover .sc-preview img { transform:scale(1.05); }
+.short-card:hover .sc-preview img { transform:scale(1.04); }
 .sc-play {
     position:absolute; top:50%; left:50%;
     transform:translate(-50%,-50%);
-    width:52px; height:52px;
+    width:54px; height:54px;
     background:rgba(0,0,0,0.6);
-    border:2px solid rgba(197,160,89,0.7);
+    border:2px solid rgba(197,160,89,0.8);
     border-radius:50%;
     display:flex; align-items:center; justify-content:center;
-    font-size:1.1rem; color:var(--accent-gold);
+    font-size:1.2rem; color:var(--accent-gold);
     pointer-events:none; transition:all 0.3s;
 }
 .short-card:hover .sc-play {
     background:rgba(197,160,89,0.9); color:#000;
     transform:translate(-50%,-50%) scale(1.15);
+    border-color:var(--accent-gold);
 }
 .sc-duration {
     position:absolute; bottom:7px; right:7px;
@@ -155,18 +163,19 @@
 .sc-iframe {
     position:absolute; inset:0;
     width:100%; height:100%;
-    border:none; display:none; z-index:3;
+    border:none; display:none; z-index:2;
 }
+/* название — cinzel, по центру, с переносом */
+.sc-body { padding:1rem 1.2rem 1.2rem; }
 .sc-title {
-    padding:0.65rem 0.85rem 0.75rem;
-    font-size:0.85rem; line-height:1.4;
-    color:var(--text-color); font-weight:600; margin:0;
-    display:-webkit-box; -webkit-line-clamp:2;
-    -webkit-box-orient:vertical; overflow:hidden;
+    font-family:var(--font-header);
+    color:var(--accent-gold);
+    font-size:1rem; margin:0;
+    line-height:1.5; text-align:center;
+    word-break:break-word;
+    overflow-wrap:break-word;
+    hyphens:auto;
 }
 @media (max-width:480px) {
-    .shorts-grid { grid-template-columns:repeat(2,1fr); gap:0.8rem; }
-}
-@media (min-width:1100px) {
-    .shorts-grid { grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); }
+    #shorts-container { grid-template-columns:repeat(2,1fr); gap:1rem; }
 }
