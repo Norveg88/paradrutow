@@ -1,8 +1,8 @@
 # Зависимости Node.js
 node_modules/
 
-# Скрипт с API ключом — только локально, не публиковать
-fetch-videos.js
+# Корневой скрипт с API ключом — только локально, не публиковать
+/fetch-videos.js
 
 # Hugo мусор
 hugo.toml
