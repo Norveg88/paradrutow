@@ -1,5 +1,5 @@
-/* shorts.js — карточки в стиле видео, плеер внутри */
-const SHORTS_JSON_URL = '/paradrutow/assets/data/shorts.json';
+﻿/* shorts.js — карточки в стиле видео, плеер внутри */
+const SHORTS_JSON_URL = '/assets/data/shorts.json';
 
 async function loadShorts() {
     const container = document.getElementById('shorts-container');

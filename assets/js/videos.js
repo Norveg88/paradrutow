@@ -1,5 +1,5 @@
-/* videos.js — карточки в стиле книг, плеер внутри карточки */
-const VIDEOS_JSON_URL = '/paradrutow/assets/data/videos.json';
+﻿/* videos.js — карточки в стиле книг, плеер внутри карточки */
+const VIDEOS_JSON_URL = '/assets/data/videos.json';
 
 async function loadVideos() {
     const container = document.getElementById('videos-container');

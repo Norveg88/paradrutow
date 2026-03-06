@@ -1,8 +1,8 @@
-const defaultLang = localStorage.getItem("lang") || "pl";
+﻿const defaultLang = localStorage.getItem("lang") || "pl";
 
 async function loadLang(lang) {
     try {
-        const res = await fetch(`/paradrutow/assets/i18n/${lang}.json`);
+        const res = await fetch(`/assets/i18n/${lang}.json`);
         if (!res.ok) throw new Error("Not found");
         const data = await res.json();
         document.querySelectorAll("[data-i18n]").forEach(el => {
