@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /public/
+Disallow: /scripts/
+Disallow: /archetypes/
+Disallow: /layouts/
+
+Sitemap: https://paradrutow.com/sitemap.xml
