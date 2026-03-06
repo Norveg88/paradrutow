@@ -1,258 +1,172 @@
-/* =====================================================
-   VIDEOS & SHORTS PAGES
-   ===================================================== */
-
-/* ── Loader & Error ── */
+/* VIDEOS & SHORTS */
 .videos-loader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 4rem 0;
-    opacity: 0.7;
+    display:flex; flex-direction:column; align-items:center;
+    gap:1rem; padding:4rem 0; opacity:0.7;
 }
 .spinner {
-    width: 50px; height: 50px;
-    border: 3px solid rgba(197,160,89,0.2);
-    border-top-color: var(--accent-gold);
-    border-radius: 50%;
-    animation: vsspin 0.8s linear infinite;
+    width:50px; height:50px;
+    border:3px solid rgba(197,160,89,0.2);
+    border-top-color:var(--accent-gold);
+    border-radius:50%;
+    animation:vsspin 0.8s linear infinite;
 }
-@keyframes vsspin { to { transform: rotate(360deg); } }
+@keyframes vsspin { to { transform:rotate(360deg); } }
 .videos-error {
-    text-align: center; padding: 3rem 1rem;
-    color: #f08080;
-    background: rgba(220,80,80,0.1);
-    border: 1px solid rgba(220,80,80,0.3);
-    border-radius: 12px; margin: 2rem auto;
+    text-align:center; padding:3rem 1rem; color:#f08080;
+    background:rgba(220,80,80,0.1); border:1px solid rgba(220,80,80,0.3);
+    border-radius:12px; margin:2rem auto;
 }
 
-/* ══════════════════════════════════════════════════════
-   VIDEO CARDS — стиль книг, превью 16:9, название снизу
-   ══════════════════════════════════════════════════════ */
-
+/* VIDEO CARDS — сетка, стиль книг */
 #videos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
+    gap:2rem;
 }
-
 .video-card {
-    background: rgba(40,40,40,0.45);
-    border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    overflow: hidden;
-    backdrop-filter: blur(8px);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    background:rgba(40,40,40,0.45);
+    border:1px solid var(--glass-border);
+    border-radius:16px;
+    overflow:hidden;
+    backdrop-filter:blur(8px);
+    position:relative;
+    display:flex; flex-direction:column;
+    transition:transform 0.3s, box-shadow 0.3s;
+    cursor:pointer;
 }
-/* Золотая полоска сверху — как у книжных карточек */
 .video-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
-    z-index: 2;
+    content:''; position:absolute;
+    top:0; left:0; right:0; height:3px; z-index:2;
+    background:linear-gradient(to right, var(--accent-gold), var(--accent-copper));
 }
 .video-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 40px rgba(197,160,89,0.12);
+    transform:translateY(-4px);
+    box-shadow:0 16px 40px rgba(197,160,89,0.12);
 }
 
-/* ── Медиа 16:9 ── */
+/* медиа 16:9 */
 .vc-media {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #000;
-    overflow: hidden;
-    flex-shrink: 0;
+    position:relative; width:100%;
+    aspect-ratio:16/9; background:#000;
+    overflow:hidden; flex-shrink:0;
 }
-
-/* Превью */
 .vc-preview {
-    position: absolute;
-    inset: 0;
-    cursor: pointer;
-    z-index: 1;
+    position:absolute; inset:0;
+    cursor:pointer; z-index:1;
 }
 .vc-preview img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
+    width:100%; height:100%;
+    object-fit:cover; display:block;
+    transition:transform 0.4s ease;
 }
-.video-card:hover .vc-preview img { transform: scale(1.04); }
-
+.video-card:hover .vc-preview img { transform:scale(1.04); }
 .vc-play {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 54px; height: 54px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(197,160,89,0.8);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.2rem;
-    color: var(--accent-gold);
-    pointer-events: none;
-    transition: all 0.3s;
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width:54px; height:54px;
+    background:rgba(0,0,0,0.6);
+    border:2px solid rgba(197,160,89,0.8);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.2rem; color:var(--accent-gold);
+    pointer-events:none; transition:all 0.3s;
 }
 .video-card:hover .vc-play {
-    background: rgba(197,160,89,0.9);
-    color: #000;
-    transform: translate(-50%, -50%) scale(1.15);
-    border-color: var(--accent-gold);
+    background:rgba(197,160,89,0.9); color:#000;
+    transform:translate(-50%,-50%) scale(1.15);
+    border-color:var(--accent-gold);
 }
-
-/* iframe — заменяет превью */
 .vc-iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%; height: 100%;
-    border: none;
-    display: none;
-    z-index: 2;
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    border:none; display:none; z-index:2;
 }
-
-/* ── Название снизу по центру ── */
-.vc-body {
-    padding: 1rem 1.2rem 1.2rem;
-}
+/* название — cinzel, по центру, с переносом */
+.vc-body { padding:1rem 1.2rem 1.2rem; }
 .vc-title {
-    font-family: var(--font-header);
-    color: var(--accent-gold);
-    font-size: 1rem;
-    margin: 0;
-    line-height: 1.5;
-    text-align: center;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    font-family:var(--font-header);
+    color:var(--accent-gold);
+    font-size:1rem; margin:0;
+    line-height:1.5; text-align:center;
+    word-break:break-word;
+    overflow-wrap:break-word;
+    hyphens:auto;
+}
+@media (max-width:640px) {
+    #videos-container { grid-template-columns:1fr; }
 }
 
-@media (max-width: 640px) {
-    #videos-container { grid-template-columns: 1fr; }
-}
-
-
-
-/* ══════════════════════════════════════════════════════
-   SHORTS GRID
-   ══════════════════════════════════════════════════════ */
-
+/* SHORTS GRID */
 .shorts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1.2rem;
-    margin-top: 1rem;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(180px,1fr));
+    gap:1.2rem; margin-top:1rem;
 }
-
 .short-card {
-    border-radius: 14px;
-    overflow: hidden;
-    background: rgba(40,40,40,0.5);
-    border: 1px solid var(--glass-border);
-    backdrop-filter: blur(8px);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    border-radius:14px; overflow:hidden;
+    background:rgba(40,40,40,0.5);
+    border:1px solid var(--glass-border);
+    backdrop-filter:blur(8px);
+    display:flex; flex-direction:column;
+    transition:transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 .short-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 36px rgba(197,160,89,0.2);
-    border-color: rgba(197,160,89,0.45);
+    transform:translateY(-5px);
+    box-shadow:0 14px 36px rgba(197,160,89,0.2);
+    border-color:rgba(197,160,89,0.45);
 }
-
-/* Медиа 9:16 */
 .sc-media {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 9 / 16;
-    background: #000;
-    overflow: hidden;
-    flex-shrink: 0;
+    position:relative; width:100%;
+    aspect-ratio:9/16; background:#000;
+    overflow:hidden; flex-shrink:0;
 }
-
-/* Превью — абсолютно поверх */
 .sc-preview {
-    position: absolute;
-    inset: 0;
-    cursor: pointer;
-    z-index: 2;
+    position:absolute; inset:0;
+    cursor:pointer; z-index:2;
 }
 .sc-preview img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s;
+    width:100%; height:100%;
+    object-fit:cover; display:block;
+    transition:transform 0.4s;
 }
-.short-card:hover .sc-preview img { transform: scale(1.05); }
-
+.short-card:hover .sc-preview img { transform:scale(1.05); }
 .sc-play {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 52px; height: 52px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(197,160,89,0.7);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.1rem;
-    color: var(--accent-gold);
-    pointer-events: none;
-    transition: all 0.3s;
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width:52px; height:52px;
+    background:rgba(0,0,0,0.6);
+    border:2px solid rgba(197,160,89,0.7);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.1rem; color:var(--accent-gold);
+    pointer-events:none; transition:all 0.3s;
 }
 .short-card:hover .sc-play {
-    background: rgba(197,160,89,0.9);
-    color: #000;
-    transform: translate(-50%,-50%) scale(1.15);
+    background:rgba(197,160,89,0.9); color:#000;
+    transform:translate(-50%,-50%) scale(1.15);
 }
-
 .sc-duration {
-    position: absolute;
-    bottom: 7px; right: 7px;
-    background: rgba(0,0,0,0.78);
-    color: #fff;
-    font-size: 0.7rem;
-    font-family: var(--font-header);
-    padding: 2px 6px;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-    pointer-events: none;
+    position:absolute; bottom:7px; right:7px;
+    background:rgba(0,0,0,0.78); color:#fff;
+    font-size:0.7rem; font-family:var(--font-header);
+    padding:2px 6px; border-radius:4px;
+    letter-spacing:0.5px; pointer-events:none;
 }
-
-/* iframe — абсолютно, скрыт пока не кликнуть */
 .sc-iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%; height: 100%;
-    border: none;
-    display: none;
-    z-index: 3;
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    border:none; display:none; z-index:3;
 }
-
-/* Заголовок */
 .sc-title {
-    padding: 0.65rem 0.85rem 0.75rem;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    color: var(--text-color);
-    font-weight: 600;
-    margin: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    padding:0.65rem 0.85rem 0.75rem;
+    font-size:0.85rem; line-height:1.4;
+    color:var(--text-color); font-weight:600; margin:0;
+    display:-webkit-box; -webkit-line-clamp:2;
+    -webkit-box-orient:vertical; overflow:hidden;
 }
-
-@media (max-width: 480px) {
-    .shorts-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+@media (max-width:480px) {
+    .shorts-grid { grid-template-columns:repeat(2,1fr); gap:0.8rem; }
 }
-@media (min-width: 1100px) {
-    .shorts-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+@media (min-width:1100px) {
+    .shorts-grid { grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); }
 }
