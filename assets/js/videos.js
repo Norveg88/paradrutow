@@ -38,14 +38,19 @@ function createVideoCard(video, index) {
     const img = document.createElement('img');
     img.src = video.thumbnail;
     img.alt = video.title;
-    img.onerror = () => {
+    function showFallback() {
         img.style.display = 'none';
-        preview.style.background = 'linear-gradient(135deg,#1a1a1a,#2a2a2a)';
-        const icon = document.createElement('div');
-        icon.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#c5a059;font-size:2.5rem;opacity:0.5;';
-        icon.textContent = '▶';
-        preview.appendChild(icon);
-    };
+        if (!preview.querySelector('.vc-fallback')) {
+            preview.style.background = 'linear-gradient(135deg,#1a1a1a,#2a2a2a)';
+            const icon = document.createElement('div');
+            icon.className = 'vc-fallback';
+            icon.style.cssText = 'position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#c5a059;font-size:2.5rem;opacity:0.5;';
+            icon.textContent = '▶';
+            preview.appendChild(icon);
+        }
+    }
+    img.onerror = showFallback;
+    img.onload = () => { if (img.naturalWidth <= 120) showFallback(); };
     img.loading = 'lazy';
     preview.appendChild(img);
 
