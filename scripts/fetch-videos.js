@@ -109,7 +109,7 @@ async function fetchChannelVideos() {
     for (const video of allVideos) {
       const secs = durations.get(video.id) ?? 999;
       video.duration = secs; // сохранить длительность в JSON
-      if (secs <= 60) {
+      if (secs <= 90) {
         // Обновить URL на формат /shorts/ для шортсов
         video.url = `https://www.youtube.com/shorts/${video.id}`;
         shorts.push(video);
