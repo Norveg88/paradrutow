@@ -89,6 +89,130 @@
             margin-bottom: 0.5rem;
             opacity: 0.4;
         }
+
+        /* Карточка узора — стиль как у книг */
+        .pattern-card {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            background: rgba(40,40,40,0.45);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .pattern-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .pattern-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(197,160,89,0.12);
+        }
+        .pattern-cover {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+            border: 1px solid var(--glass-border);
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+        .pattern-body h2 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            margin: 0 0 0.8rem;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+        .pattern-body p {
+            color: #bbb;
+            font-size: 0.93rem;
+            line-height: 1.7;
+            margin: 0 0 0.7rem;
+        }
+        .pattern-divider {
+            color: var(--accent-copper);
+            text-align: center;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin: 0.8rem 0;
+            opacity: 0.7;
+        }
+        .pattern-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem 1rem;
+            margin: 0.8rem 0 1rem;
+        }
+        .pattern-details span {
+            color: #ccc;
+            font-size: 0.88rem;
+        }
+        .pattern-details span::before {
+            content: '◽ ';
+            color: var(--accent-copper);
+        }
+        .pattern-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 1rem;
+        }
+        .pattern-checklist li {
+            color: #ccc;
+            font-size: 0.88rem;
+            padding: 2px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .pattern-checklist li::before {
+            content: '↳';
+            color: var(--accent-copper);
+            flex-shrink: 0;
+        }
+        .pattern-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 1rem 0;
+        }
+        .pattern-tag {
+            font-size: 0.78rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            border: 1px solid var(--accent-copper);
+            color: var(--accent-copper);
+            font-family: var(--font-header);
+            letter-spacing: 0.5px;
+        }
+        .pattern-notice {
+            color: #888;
+            font-size: 0.82rem;
+            line-height: 1.6;
+            margin: 0.8rem 0 0;
+            border-top: 1px solid rgba(197,160,89,0.15);
+            padding-top: 0.8rem;
+        }
+        @media (max-width: 600px) {
+            .pattern-card {
+                grid-template-columns: 1fr;
+            }
+            .pattern-cover {
+                max-width: 200px;
+                margin: 0 auto;
+                display: block;
+            }
+            .pattern-details {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0TEX42D1S"></script>
@@ -135,10 +259,54 @@
         <h1 data-i18n="patterns_title">Wzory</h1>
         <p class="subtitle" data-i18n="patterns_desc">Schematy i wzorniki do Twoich projektów dziewiarskich.</p>
 
+        <!-- Wzór 1 — Lace Leaf -->
+        <div class="pattern-card card">
+            <img src="/assets/img/pattern/1 cover.png" alt="Lace Leaf Stitch Pattern" class="pattern-cover">
+            <div class="pattern-body">
+                <h2>Lace Leaf Stitch Pattern — Delikatne liście | Wzór ażurowy PDF</h2>
+                <p>🌿 Wzór ażurowy inspirowany motywem delikatnych liści. Elegancki, lekki i uniwersalny — idealnie sprawdzi się w swetrach, czapkach, chustach i wszędzie tam, gdzie chcesz dodać odrobinę ażurowej finezji.</p>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;">Co zawiera PDF:</strong></p>
+                <ul class="pattern-checklist">
+                    <li>Schemat wzoru (czytelna siatka z symbolami)</li>
+                    <li>Legenda symboli (PL + EN)</li>
+                    <li>Instrukcja czytania schematu</li>
+                    <li>Opis, uwagi i wskazówki</li>
+                    <li>Zalecenia dotyczące przędzy i drutów</li>
+                    <li>3 strony, profesjonalnie złożone</li>
+                </ul>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;">Szczegóły wzoru:</strong></p>
+                <div class="pattern-details">
+                    <span>Raport: 21 oczek × 12 rzędów</span>
+                    <span>Poziom: średnio zaawansowany</span>
+                    <span>Druty: 3,5 – 4,5 mm</span>
+                    <span>Przędza: DK / sport weight</span>
+                    <span>Zastosowanie: swetry, czapki, chusty, kardigany</span>
+                </div>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;">Wskazówki:</strong></p>
+                <p style="color:#bbb;font-size:0.88rem;">→ Wzór najlepiej wygląda na jasnej, gładkiej przędzy<br>→ Blokowanie (blocking) jest kluczowe — w pełni rozwinie ażur<br>→ Liczba oczek powinna być wielokrotnością 21</p>
+
+                <div class="pattern-meta">
+                    <span class="pattern-tag">📄 PDF · 3 strony</span>
+                    <span class="pattern-tag">Ażurowy</span>
+                    <span class="pattern-tag">Średnio zaawansowany</span>
+                    <span class="pattern-tag">Pobierz od razu</span>
+                </div>
+                <a href="https://payhip.com/b/BrVF1" target="_blank" class="btn-youtube">Kup wzór PDF →</a>
+
+                <p class="pattern-notice">⚠️ To jest wzór dziewiarski w formacie PDF — nie gotowy produkt. &nbsp;📩 Plik do pobrania natychmiast po zakupie. &nbsp;🚫 Wyłącznie do użytku osobistego. Zabrania się kopiowania i odsprzedaży.</p>
+            </div>
+        </div>
+
         <div class="coming-soon-wrap card">
             <span class="cs-icon">🌀</span>
             <h2 class="cs-title">Wkrótce dostępne</h2>
-            <p class="cs-text">Pracujemy nad kolekcją wzorów i schematów do pobrania. Będą tu dostępne wzorniki, schematy oczek i gotowe projekty — bezpłatnie i do pobrania.</p>
+            <p class="cs-text">Pracujemy nad kolekcją wzorów i schematów do pobrania. Będą tu dostępne wzorniki, schematy oczek i gotowe projekty.</p>
             <a href="/contact.html" class="btn-youtube">Powiadom mnie →</a>
         </div>
 
