@@ -168,13 +168,13 @@
                         <div class="cli-value">@ParaDrutow</div>
                     </div>
                 </a>
-                <div class="contact-link-item">
+                <a href="mailto:kontakt@paradrutow.com" class="contact-link-item">
                     <div class="cli-icon">✉</div>
                     <div>
                         <div class="cli-label">E-mail</div>
-                        <div class="cli-value">przez formularz obok</div>
+                        <div class="cli-value">kontakt@paradrutow.com</div>
                     </div>
-                </div>
+                </a>
                 <div class="contact-link-item">
                     <div class="cli-icon">🧶</div>
                     <div>
@@ -188,6 +188,8 @@
             <div class="contact-form-wrap card">
                 <h2 data-i18n="contact_title">Napisz do nas</h2>
                 <form id="contact-form" action="https://formspree.io/f/meeleyzl" method="POST">
+                    <input type="hidden" name="_replyto" value="kontakt@paradrutow.com">
+                    <input type="hidden" name="_subject" value="Wiadomość z paradrutow.com">
                     <label>
                         <span data-i18n="contact_name">Imię</span>
                         <input type="text" name="name" required autocomplete="name">
