@@ -86,5 +86,17 @@
   "contact_message": "Wiadomość",
   "contact_send": "Wyślij",
 
-  "footer_privacy": "Polityka prywatności"
+  "footer_privacy": "Polityka prywatności",
+
+  "faq_title": "Często zadawane pytania",
+  "faq_q1": "Jak dostanę książkę lub wzór po zakupie?",
+  "faq_a1": "To zależy od wybranej wersji. Przy zakupie na <strong>Amazon</strong> otrzymasz książkę drukowaną — czas i miejsce odbioru zależą od wybranej metody dostawy. Przy zakupie <strong>PDF</strong> plik jest dostępny natychmiast po zakupie — link do pobrania otrzymasz e-mailem.",
+  "faq_q2": "Czy mogę wydrukować zakupiony PDF?",
+  "faq_a2": "Tak, pliki PDF są przeznaczone do druku osobistego. Możesz drukować dowolną liczbę kopii dla własnego użytku.",
+  "faq_q3": "Czy książki są dostępne w języku polskim?",
+  "faq_a3": "Tak, wszystkie książki i wzory Para Drutów są w języku polskim.",
+  "faq_q4": "Jaka jest różnica między wersją Amazon a PDF?",
+  "faq_a4": "Wersja Amazon to książka drukowana wysyłana pocztą. Wersja PDF to plik cyfrowy do pobrania i druku w domu — dostępny natychmiast po zakupie, bez kosztów wysyłki.",
+  "faq_q5": "Czy wzory nadają się dla początkujących?",
+  "faq_a5": "Każda publikacja ma oznaczony poziom trudności. Część projektów jest dla początkujących, inne dla średnio zaawansowanych — sprawdź opis każdej książki."
 }
