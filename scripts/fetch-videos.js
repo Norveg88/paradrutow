@@ -39,6 +39,7 @@ const CONFIG = {
 // PT1M30S → 90,  PT45S → 45,  PT10M → 600
 // ─────────────────────────────────────────────────────
 function parseDuration(iso) {
+  if (!iso || typeof iso !== 'string') return 999;
   const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
   if (!m) return 999;
   const h = parseInt(m[1] || 0);
@@ -61,7 +62,7 @@ async function fetchDurations(videoIds) {
     const data = await res.json();
     if (data.error) throw new Error(data.error.message);
     for (const item of (data.items || [])) {
-      result.set(item.id, parseDuration(item.contentDetails.duration));
+      result.set(item.id, parseDuration(item.contentDetails?.duration));
     }
     process.stdout.write(`  Durations fetched: ${result.size}/${videoIds.length}...\r`);
   }
@@ -108,6 +109,8 @@ async function fetchChannelVideos() {
 
     for (const video of allVideos) {
       const secs = durations.get(video.id) ?? 999;
+      // Пропускаем видео без длительности (приватные/удалённые — API не вернул duration)
+      if (!durations.has(video.id)) continue;
       video.duration = secs; // сохранить длительность в JSON
       if (secs <= 90) {
         // Обновить URL на формат /shorts/ для шортсов
