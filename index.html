@@ -39,7 +39,7 @@
     <style>
         .hero {
             text-align: center;
-            padding: 3rem 1rem 2rem;
+            padding: 1.5rem 1rem 1rem;
             position: relative;
         }
         .hero-eyebrow {
@@ -65,7 +65,7 @@
             font-size: 1.1rem;
             color: #aaa;
             max-width: 520px;
-            margin: 0 auto 2.5rem;
+            margin: 0 auto 1.6rem;
             line-height: 1.7;
         }
         .hero-divider {
@@ -73,7 +73,7 @@
             align-items: center;
             gap: 1rem;
             justify-content: center;
-            margin-bottom: 3rem;
+            margin-bottom: 1.6rem;
         }
         .hero-divider::before,
         .hero-divider::after {
@@ -90,6 +90,26 @@
             color: var(--accent-gold);
             font-size: 1.2rem;
         }
+
+        /* Заголовки с SVG-иконкой */
+        .head-with-icon {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        .head-icon {
+            width: 26px;
+            height: 26px;
+            flex-shrink: 0;
+            display: block;
+        }
+        .head-icon svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .head-icon--yt { color: #ff4444; }
+        .head-icon--gold { color: var(--accent-gold); filter: drop-shadow(0 0 6px rgba(197,160,89,0.25)); }
 
         /* Сетка секций */
         .sections-grid {
@@ -430,8 +450,17 @@
             background: rgba(197,160,89,0.09);
             margin-bottom: 0;
         }
+        @media (max-width: 640px) {
+            main { margin: 1rem auto; }
+            .hero { padding: 0.5rem 1rem 0.4rem; }
+            .hero-eyebrow { font-size: 0.66rem; letter-spacing: 3px; margin-bottom: 0.5rem; }
+            .hero h1 { font-size: clamp(2.1rem, 10vw, 3rem); margin-bottom: 0.5rem; }
+            .hero-sub { font-size: 0.96rem; margin: 0 auto 0.9rem; line-height: 1.55; }
+            .hero-divider { margin-bottom: 1rem; }
+        }
         @media (max-width: 600px) {
-            .song-card { padding: 2rem 1.2rem; }
+            .song-card { padding: 1.8rem 1.2rem; }
+            .song-title { margin-bottom: 1.6rem; }
             .song-verse, .song-bridge p { font-size: 1.1rem; line-height: 1.9; }
             .song-chorus p { font-size: 1.14rem; line-height: 1.9; }
             .song-chorus { padding: 1.2rem 0.8rem; }
@@ -560,7 +589,7 @@
         <!-- YouTube -->
         <div class="yt-card card">
             <div class="yt-card-text">
-                <h2 data-i18n="home_youtube_title">🎥 Kanał YouTube Para drutów</h2>
+                <h2 class="head-with-icon"><span class="head-icon head-icon--yt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.2" y="6" width="13.2" height="12" rx="2.6"/><path d="M15.4 10.4l6.4-3.3v9.8l-6.4-3.3z"/><circle cx="6.6" cy="10.2" r="1.1"/></svg></span><span data-i18n="home_youtube_title">Kanał YouTube Para drutów</span></h2>
                 <p data-i18n="home_youtube_desc">Na naszym kanale pokazujemy dziewiarstwo bez pośpiechu i skrótów — tłumaczymy schematy, analizujemy symbole i dzielimy się technikami, które pomagają uniknąć błędów i zyskać pewność w pracy z drutami.</p>
                 <div class="btn-group">
                     <a href="https://www.youtube.com/@ParaDrutow" target="_blank" class="btn-youtube" data-i18n="home_youtube_subscribe">Subskrybuj kanał →</a>
@@ -608,7 +637,7 @@
 
         <!-- Почему Para Drutów -->
         <div class="why-card card">
-            <h2 data-i18n="home_why_title">🧶 Dlaczego Para drutów?</h2>
+            <h2 class="head-with-icon"><span class="head-icon head-icon--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></span><span data-i18n="home_why_title">Dlaczego Para drutów?</span></h2>
             <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Bo wierzymy, że dziewiarstwo to coś więcej niż hobby. To umiejętność, którą można rozwijać świadomie, spokojnie i z satysfakcją.</p>
             <div class="why-list">
                 <div class="why-item" data-i18n="home_why_li1">edukacja bez presji</div>
