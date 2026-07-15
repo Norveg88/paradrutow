@@ -34,7 +34,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/icon.png","description":"Dziewiarstwo krok po kroku — wzory, schematy, filmy YouTube i aplikacja StitchAI","sameAs":["https://www.youtube.com/@ParaDrutow"]}</script>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script defer src="/assets/js/lang.js"></script>
-    <script defer src="/assets/js/ui.js"></script>
+    <script defer src="/assets/js/ui.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         .hero {
@@ -287,6 +287,133 @@
             font-size: 1rem;
             line-height: 1.6;
         }
+
+        /* Песня Para Drutów */
+        .song-card {
+            background: rgba(40,40,40,0.45);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+        .song-card.visible { opacity: 1; transform: translateY(0); }
+        .song-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .song-card::after {
+            content: '🧶';
+            position: absolute;
+            bottom: -25px;
+            right: -12px;
+            font-size: 8rem;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+        .song-eyebrow {
+            font-family: var(--font-header);
+            font-size: 0.72rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--accent-copper);
+            margin: 0 0 0.8rem;
+        }
+        .song-title {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin: 0 0 2.5rem;
+            border: none;
+        }
+        .song-verse {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 2.1;
+            margin: 0 auto 2rem;
+            max-width: 440px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        .song-chorus {
+            position: relative;
+            z-index: 1;
+            max-width: 440px;
+            margin: 0 auto 2rem;
+            padding: 1.5rem;
+            background: rgba(197,160,89,0.05);
+            border-top: 1px solid rgba(197,160,89,0.2);
+            border-bottom: 1px solid rgba(197,160,89,0.2);
+            border-radius: 8px;
+        }
+        .song-chorus p {
+            color: var(--accent-gold);
+            font-size: 1.02rem;
+            line-height: 2.1;
+            margin: 0;
+            font-style: italic;
+        }
+        .song-label {
+            display: block;
+            font-family: var(--font-header);
+            font-size: 0.68rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent-copper);
+            margin-bottom: 0.9rem;
+            opacity: 0.85;
+        }
+        .song-bridge p {
+            color: #d8c9a8;
+            font-size: 1rem;
+            line-height: 2.1;
+            margin: 0;
+            font-style: italic;
+        }
+        .song-ornament {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            max-width: 300px;
+            position: relative;
+            z-index: 1;
+        }
+        .song-ornament::before,
+        .song-ornament::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(197,160,89,0.4));
+        }
+        .song-ornament::after {
+            background: linear-gradient(to left, transparent, rgba(197,160,89,0.4));
+        }
+        .song-ornament span {
+            color: var(--accent-copper);
+            font-size: 0.9rem;
+        }
+        .song-final {
+            border-color: rgba(197,160,89,0.5);
+            background: rgba(197,160,89,0.09);
+            margin-bottom: 0;
+        }
+        @media (max-width: 600px) {
+            .song-card { padding: 2rem 1.2rem; }
+            .song-verse, .song-chorus p, .song-bridge p { font-size: 0.95rem; line-height: 1.95; }
+            .song-chorus { padding: 1.2rem 0.8rem; }
+        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0TEX42D1S"></script>
@@ -397,6 +524,76 @@
                 <div class="why-item" data-i18n="home_why_li3">nowoczesne narzędzia wspierające tradycyjne rzemiosło</div>
             </div>
             <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką,<br>a dziewiarstwo staje się prawdziwą przyjemnością.</p>
+        </div>
+
+        <!-- Piosenka Para Drutów -->
+        <div class="song-card card">
+            <p class="song-eyebrow">♪ Nasza piosenka</p>
+            <h2 class="song-title">Para Drutów — serce z włóczki</h2>
+
+            <p class="song-verse">
+                Kłębek wełny cicho czeka,<br>
+                druty śpiewają od rana.<br>
+                Każde oczko ma historię,<br>
+                która nigdy nie jest sama.<br>
+                Kubek kawy, ciepły fotel,<br>
+                Daisy obok słodko śpi.<br>
+                Tutaj każda nowa nitka<br>
+                piękny świat potrafi śnić.
+            </p>
+
+            <div class="song-chorus">
+                <span class="song-label">Refren</span>
+                <p>
+                    Para Drutów – serce z włóczki,<br>
+                    tu marzenia mają rytm.<br>
+                    Jedna nitka, dwa druty,<br>
+                    i powstaje mały cud.<br>
+                    Razem tworzymy z uśmiechem,<br>
+                    każdy projekt daje moc.<br>
+                    Para Drutów – tu zostaniesz,<br>
+                    bo dziewiarstwo łączy wciąż.
+                </p>
+            </div>
+
+            <div class="song-ornament"><span>✦</span></div>
+
+            <p class="song-verse">
+                Szalik, sweter, ciepłe skarpki,<br>
+                każdy ścieg ma własny sens.<br>
+                Nie ma rzeczy niemożliwych,<br>
+                gdy w dłoniach druty trzymasz też.<br>
+                Każdy błąd to nowa lekcja,<br>
+                każdy rząd przybliża cel.<br>
+                A z uśmiechem i cierpliwością<br>
+                stworzysz coś pięknego, wiesz.
+            </p>
+
+            <div class="song-chorus song-bridge">
+                <span class="song-label">Bridge</span>
+                <p>
+                    Niech ta nitka biegnie dalej,<br>
+                    przez tysiące wspólnych chwil.<br>
+                    Każde oczko jest wspomnieniem,<br>
+                    które zostanie z nami dziś.
+                </p>
+            </div>
+
+            <div class="song-ornament"><span>✦</span></div>
+
+            <div class="song-chorus song-final">
+                <span class="song-label">Ostatni refren</span>
+                <p>
+                    Para Drutów – nasza pasja,<br>
+                    która nigdy nie zna granic.<br>
+                    Bierz do ręki swoje druty,<br>
+                    zacznij tworzyć właśnie dziś.<br>
+                    Bo z miłości do dziewiarstwa<br>
+                    rodzi się najpiękniejszy świat.<br>
+                    Para Drutów – witaj w domu,<br>
+                    gdzie każda nitka ma swój blask.
+                </p>
+            </div>
         </div>
 
     </div>

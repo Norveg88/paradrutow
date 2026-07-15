@@ -18,7 +18,7 @@ function initFadeIn() {
         rootMargin: "0px 0px -40px 0px"
     });
 
-    document.querySelectorAll(".card.glass-card, .app-hero, .feature-image-wrapper").forEach((el, i) => {
+    document.querySelectorAll(".card.glass-card, .app-hero, .feature-image-wrapper, .yt-card, .section-tile, .why-card, .song-card").forEach((el, i) => {
         el.style.transitionDelay = `${i * 60}ms`; // каскадная задержка
         observer.observe(el);
     });
