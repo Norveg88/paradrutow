@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <script defer src="/assets/js/lang.js"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
     <style>
         .hero {
             text-align: center;
@@ -129,9 +129,22 @@
             background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
         }
         .tile-icon {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
             display: block;
+            width: 36px;
+            height: 36px;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+            transition: color 0.3s, transform 0.3s;
+        }
+        .tile-icon svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            filter: drop-shadow(0 0 6px rgba(197,160,89,0.25));
+        }
+        .section-tile:hover .tile-icon {
+            color: var(--accent-copper);
+            transform: translateY(-2px) scale(1.06);
         }
         .tile-title {
             font-family: var(--font-header);
@@ -329,37 +342,44 @@
             margin: 0 0 0.8rem;
         }
         .song-title {
-            font-family: var(--font-header);
+            font-family: 'Dancing Script', cursive;
             color: var(--accent-gold);
-            font-size: 1.5rem;
+            font-size: clamp(2rem, 4.5vw, 2.8rem);
+            font-weight: 600;
             margin: 0 0 2.5rem;
             border: none;
+            line-height: 1.2;
+            text-shadow: 0 2px 14px rgba(197,160,89,0.25);
         }
         .song-verse {
-            color: #ccc;
-            font-size: 1rem;
-            line-height: 2.1;
+            font-family: 'Cormorant Garamond', serif;
+            color: #d5d0c5;
+            font-size: 1.22rem;
+            line-height: 2;
             margin: 0 auto 2rem;
-            max-width: 440px;
+            max-width: 460px;
             font-style: italic;
+            font-weight: 400;
             position: relative;
             z-index: 1;
         }
         .song-chorus {
             position: relative;
             z-index: 1;
-            max-width: 440px;
+            max-width: 460px;
             margin: 0 auto 2rem;
-            padding: 1.5rem;
+            padding: 1.6rem 1.5rem;
             background: rgba(197,160,89,0.05);
             border-top: 1px solid rgba(197,160,89,0.2);
             border-bottom: 1px solid rgba(197,160,89,0.2);
             border-radius: 8px;
         }
         .song-chorus p {
+            font-family: 'Cormorant Garamond', serif;
             color: var(--accent-gold);
-            font-size: 1.02rem;
-            line-height: 2.1;
+            font-size: 1.28rem;
+            font-weight: 500;
+            line-height: 2;
             margin: 0;
             font-style: italic;
         }
@@ -374,9 +394,10 @@
             opacity: 0.85;
         }
         .song-bridge p {
-            color: #d8c9a8;
-            font-size: 1rem;
-            line-height: 2.1;
+            font-family: 'Cormorant Garamond', serif;
+            color: #dcc9a0;
+            font-size: 1.24rem;
+            line-height: 2;
             margin: 0;
             font-style: italic;
         }
@@ -411,7 +432,8 @@
         }
         @media (max-width: 600px) {
             .song-card { padding: 2rem 1.2rem; }
-            .song-verse, .song-chorus p, .song-bridge p { font-size: 0.95rem; line-height: 1.95; }
+            .song-verse, .song-bridge p { font-size: 1.1rem; line-height: 1.9; }
+            .song-chorus p { font-size: 1.14rem; line-height: 1.9; }
             .song-chorus { padding: 1.2rem 0.8rem; }
         }
     </style>
@@ -463,67 +485,6 @@
             <h1 data-i18n="home_title">Para Drutów</h1>
             <p class="hero-sub" data-i18n="home_subtitle">Dziewiarstwo, które inspiruje. Wiedza, która prowadzi krok po kroku.</p>
             <div class="hero-divider"><span>✦</span></div>
-        </div>
-
-        <!-- YouTube -->
-        <div class="yt-card card">
-            <div class="yt-card-text">
-                <h2 data-i18n="home_youtube_title">🎥 Kanał YouTube Para drutów</h2>
-                <p data-i18n="home_youtube_desc">Na naszym kanale pokazujemy dziewiarstwo bez pośpiechu i skrótów — tłumaczymy schematy, analizujemy symbole i dzielimy się technikami, które pomagają uniknąć błędów i zyskać pewność w pracy z drutami.</p>
-                <div class="btn-group">
-                    <a href="https://www.youtube.com/@ParaDrutow" target="_blank" class="btn-youtube" data-i18n="home_youtube_subscribe">Subskrybuj kanał →</a>
-                    <a href="/video.html" class="btn-text" data-i18n="home_youtube_watch">Zobacz wideo →</a>
-                </div>
-            </div>
-            <div class="yt-badge">
-                <a href="https://www.youtube.com/@ParaDrutow" target="_blank">
-                    <div class="yt-play">▶</div>
-                </a>
-                <span class="yt-label">YouTube</span>
-            </div>
-        </div>
-
-        <!-- Плитки секций -->
-        <div class="sections-grid">
-            <div class="section-tile card">
-                <span class="tile-icon">📱</span>
-                <h3 class="tile-title" data-i18n="home_app_title">StitchAI — aplikacja</h3>
-                <p class="tile-text" data-i18n="home_app_desc">Narzędzie edukacyjne do pracy ze schematami dziewiarskimi. Analizuje wzory, wyjaśnia symbole i wspiera naukę krok po kroku.</p>
-                <a href="/apps.html" class="tile-link" data-i18n="home_app_link">Zobacz aplikację →</a>
-            </div>
-
-            <div class="section-tile card">
-                <span class="tile-icon">📚</span>
-                <h3 class="tile-title" data-i18n="home_books_title">Książki Para drutów</h3>
-                <p class="tile-text" data-i18n="home_books_desc">Autorskie książki o dziewiarstwie — czytanie schematów, znaczenie symboli, konstrukcja wzorów. Rzetelna wiedza, do której można wracać.</p>
-                <a href="/books.html" class="tile-link" data-i18n="home_books_link">Zobacz książki →</a>
-            </div>
-
-            <div class="section-tile card">
-                <span class="tile-icon">🎬</span>
-                <h3 class="tile-title">Shorts</h3>
-                <p class="tile-text">Krótkie filmiki z praktycznymi trikami i poradami dziewiarskimi — szybko, konkretnie i na temat.</p>
-                <a href="/shorts.html" class="tile-link">Zobacz Shorts →</a>
-            </div>
-
-            <div class="section-tile card">
-                <span class="tile-icon">🌀</span>
-                <h3 class="tile-title" data-i18n="menu_patterns">Wzory</h3>
-                <p class="tile-text">Wzory, schematy i wzorniki do pobrania i wykorzystania w Twoich projektach dziewiarskich.</p>
-                <a href="/patterns.html" class="tile-link">Przejdź do wzorów →</a>
-            </div>
-        </div>
-
-        <!-- Почему Para Drutów -->
-        <div class="why-card card">
-            <h2 data-i18n="home_why_title">🧶 Dlaczego Para drutów?</h2>
-            <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Bo wierzymy, że dziewiarstwo to coś więcej niż hobby. To umiejętność, którą można rozwijać świadomie, spokojnie i z satysfakcją.</p>
-            <div class="why-list">
-                <div class="why-item" data-i18n="home_why_li1">edukacja bez presji</div>
-                <div class="why-item" data-i18n="home_why_li2">wiedza oparta na doświadczeniu</div>
-                <div class="why-item" data-i18n="home_why_li3">nowoczesne narzędzia wspierające tradycyjne rzemiosło</div>
-            </div>
-            <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką,<br>a dziewiarstwo staje się prawdziwą przyjemnością.</p>
         </div>
 
         <!-- Piosenka Para Drutów -->
@@ -594,6 +555,67 @@
                     gdzie każda nitka ma swój blask.
                 </p>
             </div>
+        </div>
+
+        <!-- YouTube -->
+        <div class="yt-card card">
+            <div class="yt-card-text">
+                <h2 data-i18n="home_youtube_title">🎥 Kanał YouTube Para drutów</h2>
+                <p data-i18n="home_youtube_desc">Na naszym kanale pokazujemy dziewiarstwo bez pośpiechu i skrótów — tłumaczymy schematy, analizujemy symbole i dzielimy się technikami, które pomagają uniknąć błędów i zyskać pewność w pracy z drutami.</p>
+                <div class="btn-group">
+                    <a href="https://www.youtube.com/@ParaDrutow" target="_blank" class="btn-youtube" data-i18n="home_youtube_subscribe">Subskrybuj kanał →</a>
+                    <a href="/video.html" class="btn-text" data-i18n="home_youtube_watch">Zobacz wideo →</a>
+                </div>
+            </div>
+            <div class="yt-badge">
+                <a href="https://www.youtube.com/@ParaDrutow" target="_blank">
+                    <div class="yt-play">▶</div>
+                </a>
+                <span class="yt-label">YouTube</span>
+            </div>
+        </div>
+
+        <!-- Плитки секций -->
+        <div class="sections-grid">
+            <div class="section-tile card">
+                <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.6h3"/><path d="M12 6.2l.85 2.05L14.9 9.1l-2.05.85L12 12l-.85-2.05L9.1 9.1l2.05-.85z"/><path d="M15.8 12.6l.45 1.1 1.1.45-1.1.45-.45 1.1-.45-1.1-1.1-.45 1.1-.45z"/></svg></span>
+                <h3 class="tile-title" data-i18n="home_app_title">StitchAI — aplikacja</h3>
+                <p class="tile-text" data-i18n="home_app_desc">Narzędzie edukacyjne do pracy ze schematami dziewiarskimi. Analizuje wzory, wyjaśnia symbole i wspiera naukę krok po kroku.</p>
+                <a href="/apps.html" class="tile-link" data-i18n="home_app_link">Zobacz aplikację →</a>
+            </div>
+
+            <div class="section-tile card">
+                <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.6C10.2 5.1 7.9 4.4 5.2 4.4H3v14.2h2.4c2.6 0 4.9.7 6.6 2.1 1.7-1.4 4-2.1 6.6-2.1H21V4.4h-2.2c-2.7 0-5 .7-6.8 2.2z"/><path d="M12 6.6v14.1"/><path d="M6 8.6h3M6 11.6h3M15 8.6h3M15 11.6h3"/></svg></span>
+                <h3 class="tile-title" data-i18n="home_books_title">Książki Para drutów</h3>
+                <p class="tile-text" data-i18n="home_books_desc">Autorskie książki o dziewiarstwie — czytanie schematów, znaczenie symboli, konstrukcja wzorów. Rzetelna wiedza, do której można wracać.</p>
+                <a href="/books.html" class="tile-link" data-i18n="home_books_link">Zobacz książki →</a>
+            </div>
+
+            <div class="section-tile card">
+                <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.2" width="11" height="19.6" rx="3.4"/><path d="M10.6 8.9l4.4 3.1-4.4 3.1z"/></svg></span>
+                <h3 class="tile-title">Shorts</h3>
+                <p class="tile-text">Krótkie filmiki z praktycznymi trikami i poradami dziewiarskimi — szybko, konkretnie i na temat.</p>
+                <a href="/shorts.html" class="tile-link">Zobacz Shorts →</a>
+            </div>
+
+            <div class="section-tile card">
+                <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2.2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/><path d="M5.1 11.1l1.8 1.8M6.9 11.1l-1.8 1.8"/><path d="M11.1 5.1l1.8 1.8M12.9 5.1l-1.8 1.8"/><path d="M17.1 17.1l1.8 1.8M18.9 17.1l-1.8 1.8"/></svg></span>
+                <h3 class="tile-title" data-i18n="menu_patterns">Wzory</h3>
+                <p class="tile-text">Wzory, schematy i wzorniki do pobrania i wykorzystania w Twoich projektach dziewiarskich.</p>
+                <a href="/patterns.html" class="tile-link">Przejdź do wzorów →</a>
+            </div>
+        </div>
+
+        <!-- Почему Para Drutów -->
+        <div class="why-card card">
+            <h2 data-i18n="home_why_title">🧶 Dlaczego Para drutów?</h2>
+            <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Bo wierzymy, że dziewiarstwo to coś więcej niż hobby. To umiejętność, którą można rozwijać świadomie, spokojnie i z satysfakcją.</p>
+            <div class="why-list">
+                <div class="why-item" data-i18n="home_why_li1">edukacja bez presji</div>
+                <div class="why-item" data-i18n="home_why_li2">wiedza oparta na doświadczeniu</div>
+                <div class="why-item" data-i18n="home_why_li3">nowoczesne narzędzia wspierające tradycyjne rzemiosło</div>
+            </div>
+            <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką,<br>a dziewiarstwo staje się prawdziwą przyjemnością.</p>
         </div>
 
     </div>
