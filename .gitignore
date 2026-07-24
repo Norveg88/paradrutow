@@ -7,6 +7,9 @@ node_modules/
 # Переменные окружения с секретами
 .env
 
+# Локальные бэкапы страниц — не публиковать (дубли вредят SEO)
+/privacy1.html
+
 # Hugo мусор
 hugo.toml
 _hugo_build.lock
