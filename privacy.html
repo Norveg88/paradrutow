@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="/assets/img/site.png">
     <link rel="apple-touch-icon" href="/assets/img/site.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polityka prywatności - StitchAI | Para Drutów</title>
+    <title>Polityka prywatności - StitchAI i WzorAI | Para Drutów</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script defer src="/assets/js/lang.js"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
@@ -56,11 +56,12 @@
 <main>
     <div class="content-wrapper">
         <h1>Polityka prywatności</h1>
-        <p class="subtitle">Zasady przetwarzania danych w aplikacji mobilnej StitchAI.</p>
+        <p class="subtitle">Zasady przetwarzania danych w aplikacjach mobilnych StitchAI oraz WzorAI.</p>
 
         <div class="card glass-card">
-            <p><strong>Ostatnia aktualizacja:</strong> 3 maja 2026 r.</p>
-            <p>Niniejsza Polityka Prywatności opisuje zasady przetwarzania danych użytkowników aplikacji mobilnej <strong>StitchAI</strong> (dalej: „Aplikacja"). Polityka jest zgodna z Rozporządzeniem (UE) 2016/679 (RODO).</p>
+            <p><strong>Ostatnia aktualizacja:</strong> 24 lipca 2026 r.</p>
+            <p>Niniejsza Polityka Prywatności opisuje zasady przetwarzania danych użytkowników aplikacji mobilnych <strong>StitchAI</strong> oraz <strong>WzorAI</strong> (dalej łącznie: „Aplikacje", a każda z osobna: „Aplikacja"). Polityka jest zgodna z Rozporządzeniem (UE) 2016/679 (RODO).</p>
+            <p>Jeżeli dane postanowienie dotyczy tylko jednej z Aplikacji, jest to wyraźnie zaznaczone.</p>
         </div>
 
         <div class="card glass-card">
@@ -71,50 +72,57 @@
 
         <div class="card glass-card">
             <h2>2. Charakter przetwarzanych danych</h2>
-            <p>Aplikacja <strong>nie wymaga rejestracji</strong> ani podawania danych osobowych takich jak imię, nazwisko, adres e-mail, numer telefonu czy adres zamieszkania. Aplikacja <strong>nie korzysta z logowania</strong> i nie tworzy konta użytkownika powiązanego z osobą fizyczną.</p>
-            <p>Wszystkie dane przetwarzane przez Aplikację mają charakter <strong>pseudonimowy</strong> lub <strong>techniczny</strong> i są niezbędne do prawidłowego działania funkcji aplikacji.</p>
+            <p>Aplikacje <strong>nie wymagają rejestracji</strong> ani podawania danych osobowych takich jak imię, nazwisko, adres e-mail, numer telefonu czy adres zamieszkania. Aplikacje <strong>nie tworzą konta użytkownika powiązanego z osobą fizyczną</strong>.</p>
+            <p>Wszystkie dane przetwarzane przez Aplikacje mają charakter <strong>pseudonimowy</strong> lub <strong>techniczny</strong> i są niezbędne do prawidłowego działania funkcji aplikacji.</p>
         </div>
 
         <div class="card glass-card">
             <h2>3. Zakres zbieranych danych</h2>
 
-            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.1. Pseudonimowy identyfikator urządzenia (visitorId)</h3>
-            <p>Aplikacja generuje losowy identyfikator urządzenia, który jest zapisywany lokalnie na urządzeniu użytkownika oraz na serwerach Administratora. Identyfikator ten:</p>
+            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.1. Pseudonimowy identyfikator urządzenia</h3>
+            <p>Każda Aplikacja generuje losowy identyfikator, który jest zapisywany lokalnie na urządzeniu użytkownika oraz na serwerach Administratora:</p>
+            <ul>
+                <li>w aplikacji <strong>StitchAI</strong> — identyfikator urządzenia (visitorId),</li>
+                <li>w aplikacji <strong>WzorAI</strong> — anonimowy identyfikator uwierzytelniania (UID) generowany przez usługę Firebase Authentication (logowanie anonimowe, bez podawania jakichkolwiek danych osobowych).</li>
+            </ul>
+            <p>Identyfikator ten:</p>
             <ul>
                 <li>nie zawiera danych umożliwiających bezpośrednią identyfikację użytkownika,</li>
-                <li>służy wyłącznie do powiązania urządzenia z licznikami użycia oraz statusem subskrypcji,</li>
-                <li>zgodnie z RODO traktowany jest jako pseudonim, a nie dane osobowe sensu stricto.</li>
+                <li>służy wyłącznie do powiązania urządzenia z licznikami użycia, saldem zakupionych generacji oraz statusem zakupów,</li>
+                <li>zgodnie z RODO traktowany jest jako pseudonim, a nie dane osobowe sensu stricto,</li>
+                <li>jest widoczny dla użytkownika w Aplikacji (w WzorAI: sekcja „O aplikacji").</li>
             </ul>
 
             <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.2. Dane dotyczące korzystania z Aplikacji</h3>
             <ul>
-                <li>liczba wykonanych analiz w bieżącym miesiącu,</li>
-                <li>łączna liczba wykonanych analiz,</li>
-                <li>aktywny plan subskrypcji (free / starter / standard / premium),</li>
-                <li>data ostatniej aktywności,</li>
-                <li>data aktywacji konta.</li>
+                <li><strong>StitchAI:</strong> liczba wykonanych analiz w bieżącym miesiącu, łączna liczba analiz, aktywny plan subskrypcji (free / starter / standard / premium), data ostatniej aktywności, data aktywacji konta.</li>
+                <li><strong>WzorAI:</strong> saldo dostępnych generacji (liczba pozostałych wzorów do wygenerowania), data ostatniej aktywności.</li>
             </ul>
 
-            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.3. Dane dotyczące subskrypcji</h3>
-            <p>W przypadku zakupu subskrypcji w sklepie Google Play przetwarzane są:</p>
+            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.3. Dane dotyczące zakupów</h3>
+            <p>W przypadku zakupu w sklepie Google Play (subskrypcji w StitchAI lub pakietu generacji w WzorAI) przetwarzane są:</p>
             <ul>
                 <li>token zakupu (purchaseToken) wygenerowany przez Google Play,</li>
                 <li>identyfikator zakupionego produktu,</li>
-                <li>data wygaśnięcia subskrypcji,</li>
-                <li>status subskrypcji (aktywna, anulowana, wygasła, w okresie karencji itp.).</li>
+                <li>status zakupu (a w przypadku subskrypcji także data wygaśnięcia i status: aktywna, anulowana, wygasła, w okresie karencji itp.).</li>
             </ul>
             <p><strong>Administrator nie ma dostępu do danych płatniczych użytkownika</strong> (numerów kart, kont bankowych itp.) — te są przetwarzane wyłącznie przez Google Play.</p>
 
-            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.4. Treści przesyłane do analizy</h3>
-            <p>Użytkownik dobrowolnie przesyła do Aplikacji <strong>zdjęcia schematów dziewiarskich</strong> w celu ich analizy przez sztuczną inteligencję. Zdjęcia te są:</p>
+            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.4. Treści przesyłane do przetwarzania przez AI</h3>
+            <p><strong>StitchAI:</strong> użytkownik dobrowolnie przesyła <strong>zdjęcia schematów dziewiarskich</strong> w celu ich analizy przez sztuczną inteligencję.</p>
+            <p><strong>WzorAI:</strong> użytkownik dobrowolnie wpisuje <strong>tekstowy opis wzoru dziewiarskiego</strong>, na podstawie którego sztuczna inteligencja generuje schemat.</p>
+            <p>Treści te (zdjęcia lub opisy) są:</p>
             <ul>
                 <li>przekazywane do serwerów Administratora,</li>
                 <li>następnie kierowane do zewnętrznego dostawcy AI (zob. pkt 5),</li>
-                <li><strong>nie są trwale przechowywane</strong> w bazie danych Administratora po zakończeniu analizy.</li>
+                <li><strong>nie są trwale przechowywane</strong> w bazie danych Administratora po zakończeniu analizy lub generacji.</li>
             </ul>
 
-            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.5. Dane techniczne</h3>
-            <p>Aplikacja może automatycznie zbierać anonimowe dane techniczne, w tym: typ i model urządzenia, wersja systemu operacyjnego, informacje o błędach aplikacji (crash logs). Dane te są wykorzystywane wyłącznie w celu poprawy stabilności i jakości Aplikacji.</p>
+            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.5. Wygenerowane schematy i historia (WzorAI)</h3>
+            <p>Wygenerowane schematy oraz historia generacji w aplikacji WzorAI są przechowywane <strong>wyłącznie lokalnie na urządzeniu użytkownika</strong>. Administrator nie przechowuje wygenerowanych schematów na swoich serwerach. Usunięcie aplikacji lub wyczyszczenie historii w aplikacji trwale usuwa te dane.</p>
+
+            <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">3.6. Dane techniczne</h3>
+            <p>Aplikacje mogą automatycznie zbierać anonimowe dane techniczne, w tym: typ i model urządzenia, wersja systemu operacyjnego, informacje o błędach aplikacji (crash logs). Dane te są wykorzystywane wyłącznie w celu poprawy stabilności i jakości Aplikacji.</p>
         </div>
 
         <div class="card glass-card">
@@ -128,11 +136,11 @@
                 </thead>
                 <tbody>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
-                        <td style="padding:8px;color:#ccc;">Świadczenie usług Aplikacji (analiza schematów, liczniki, plan subskrypcji)</td>
+                        <td style="padding:8px;color:#ccc;">Świadczenie usług Aplikacji (analiza schematów, generowanie wzorów, liczniki, saldo generacji)</td>
                         <td style="padding:8px;color:#aaa;">art. 6 ust. 1 lit. b RODO — wykonanie umowy</td>
                     </tr>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
-                        <td style="padding:8px;color:#ccc;">Realizacja subskrypcji i obsługa płatności</td>
+                        <td style="padding:8px;color:#ccc;">Realizacja zakupów (subskrypcji i pakietów generacji) oraz obsługa płatności</td>
                         <td style="padding:8px;color:#aaa;">art. 6 ust. 1 lit. b RODO — wykonanie umowy</td>
                     </tr>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
@@ -153,14 +161,15 @@
             <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">5.1. Google LLC / Google Ireland Limited</h3>
             <ul>
                 <li><strong>Firebase Cloud Functions</strong> (region: us-central1, USA) — backend Aplikacji</li>
-                <li><strong>Cloud Firestore</strong> (USA) — baza danych pseudonimowych identyfikatorów i statusów subskrypcji</li>
+                <li><strong>Cloud Firestore</strong> (USA) — baza danych pseudonimowych identyfikatorów, liczników oraz statusów zakupów</li>
+                <li><strong>Firebase Authentication</strong> (USA) — anonimowe uwierzytelnianie (WzorAI)</li>
                 <li><strong>Google Cloud Pub/Sub</strong> (USA) — odbiór powiadomień Real-Time Developer Notifications od Google Play</li>
-                <li><strong>Google Play Billing</strong> — przetwarzanie zakupów i subskrypcji</li>
+                <li><strong>Google Play Billing</strong> — przetwarzanie zakupów</li>
             </ul>
             <p style="color:#888;font-size:0.88rem;">Polityka prywatności Google: <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--accent-gold);">policies.google.com/privacy</a></p>
 
             <h3 style="color:var(--accent-copper);font-family:var(--font-header);font-size:1rem;margin:1.2rem 0 0.5rem;">5.2. Anthropic, PBC</h3>
-            <p>Treści zdjęć schematów dziewiarskich wraz z metadanymi technicznymi przekazywane są do <strong>Anthropic, PBC</strong> (USA) w celu analizy przez model językowy Claude.</p>
+            <p>Treści przekazywane do przetwarzania przez AI — zdjęcia schematów (StitchAI) oraz tekstowe opisy wzorów (WzorAI) — wraz z metadanymi technicznymi przekazywane są do <strong>Anthropic, PBC</strong> (USA) w celu przetworzenia przez model językowy Claude.</p>
             <p style="color:#888;font-size:0.88rem;">Polityka prywatności Anthropic: <a href="https://www.anthropic.com/legal/privacy" target="_blank" style="color:var(--accent-gold);">anthropic.com/legal/privacy</a></p>
         </div>
 
@@ -184,11 +193,11 @@
                 </thead>
                 <tbody>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
-                        <td style="padding:8px;color:#ccc;">Dane konta (visitorId, plan, liczniki)</td>
+                        <td style="padding:8px;color:#ccc;">Dane konta (identyfikator, plan/saldo, liczniki)</td>
                         <td style="padding:8px;color:#aaa;">Do momentu żądania usunięcia przez użytkownika</td>
                     </tr>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
-                        <td style="padding:8px;color:#ccc;">Tokeny zakupu i status subskrypcji</td>
+                        <td style="padding:8px;color:#ccc;">Tokeny zakupu i statusy zakupów</td>
                         <td style="padding:8px;color:#aaa;">Bezterminowo, w celach księgowych i obsługi reklamacji</td>
                     </tr>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
@@ -196,8 +205,12 @@
                         <td style="padding:8px;color:#aaa;">30 dni (automatyczne usuwanie)</td>
                     </tr>
                     <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
-                        <td style="padding:8px;color:#ccc;">Zdjęcia przesłane do analizy</td>
-                        <td style="padding:8px;color:#aaa;">Nie są przechowywane po zakończeniu analizy</td>
+                        <td style="padding:8px;color:#ccc;">Zdjęcia i opisy przesłane do przetwarzania przez AI</td>
+                        <td style="padding:8px;color:#aaa;">Nie są przechowywane po zakończeniu przetwarzania</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(197,160,89,0.1);">
+                        <td style="padding:8px;color:#ccc;">Wygenerowane schematy i historia (WzorAI)</td>
+                        <td style="padding:8px;color:#aaa;">Wyłącznie lokalnie na urządzeniu użytkownika</td>
                     </tr>
                     <tr>
                         <td style="padding:8px;color:#ccc;">Logi techniczne i diagnostyczne</td>
@@ -219,12 +232,12 @@
                 <li><strong>prawo do sprzeciwu</strong> wobec przetwarzania (art. 21 RODO),</li>
                 <li><strong>prawo do wniesienia skargi</strong> do Prezesa Urzędu Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa.</li>
             </ul>
-            <p>W celu realizacji powyższych praw należy skontaktować się z Administratorem pod adresem e-mail podanym w pkt 1. W przypadku żądania usunięcia danych prosimy o podanie identyfikatora urządzenia (visitorId), który jest dostępny w ustawieniach Aplikacji.</p>
+            <p>W celu realizacji powyższych praw należy skontaktować się z Administratorem pod adresem e-mail podanym w pkt 1. W przypadku żądania usunięcia danych prosimy o podanie identyfikatora: w StitchAI — identyfikatora urządzenia (visitorId) z ustawień Aplikacji; w WzorAI — identyfikatora (ID) widocznego w sekcji „O aplikacji".</p>
         </div>
 
         <div class="card glass-card">
             <h2>9. Pliki cookies</h2>
-            <p>Aplikacja <strong>nie wykorzystuje</strong> plików cookies ani podobnych technologii śledzących w rozumieniu prawa telekomunikacyjnego.</p>
+            <p>Aplikacje <strong>nie wykorzystują</strong> plików cookies ani podobnych technologii śledzących w rozumieniu prawa telekomunikacyjnego.</p>
         </div>
 
         <div class="card glass-card">
@@ -233,26 +246,26 @@
             <ul>
                 <li>szyfrowanie połączeń TLS/HTTPS dla całej komunikacji z serwerem,</li>
                 <li>przechowywanie kluczy dostępowych w usłudze Google Cloud Secret Manager,</li>
-                <li>ograniczenie dostępu do bazy danych wyłącznie dla zautoryzowanych usług backendowych,</li>
+                <li>ograniczenie dostępu do bazy danych wyłącznie dla zautoryzowanych usług backendowych (reguły bezpieczeństwa Firestore),</li>
                 <li>automatyczną walidację zakupów u Google Play w celu wykrywania oszustw.</li>
             </ul>
         </div>
 
         <div class="card glass-card">
             <h2>11. Dane dzieci</h2>
-            <p>Aplikacja nie jest skierowana do osób poniżej 13 roku życia i Administrator świadomie nie zbiera danych takich osób. Jeżeli użytkownik jest osobą małoletnią, korzystanie z Aplikacji powinno odbywać się za zgodą i pod nadzorem opiekuna prawnego.</p>
+            <p>Aplikacje nie są skierowane do osób poniżej 13 roku życia i Administrator świadomie nie zbiera danych takich osób. Jeżeli użytkownik jest osobą małoletnią, korzystanie z Aplikacji powinno odbywać się za zgodą i pod nadzorem opiekuna prawnego.</p>
         </div>
 
         <div class="card glass-card">
             <h2>12. Zmiany Polityki Prywatności</h2>
-            <p>Polityka Prywatności może być aktualizowana w przypadku zmian funkcjonalności Aplikacji lub przepisów prawa. Aktualna wersja jest zawsze dostępna pod adresem <a href="https://paradrutow.com/privacy.html" style="color:var(--accent-gold);">paradrutow.com/privacy.html</a>. O istotnych zmianach użytkownicy zostaną poinformowani w Aplikacji lub na stronie internetowej.</p>
+            <p>Polityka Prywatności może być aktualizowana w przypadku zmian funkcjonalności Aplikacji lub przepisów prawa. Aktualna wersja jest zawsze dostępna pod adresem <a href="https://paradrutow.com/privacy.html" style="color:var(--accent-gold);">paradrutow.com/privacy.html</a>. O istotnych zmianach użytkownicy zostaną poinformowani w Aplikacjach lub na stronie internetowej.</p>
         </div>
 
         <div class="card glass-card">
             <h2>13. Kontakt</h2>
             <p>W sprawach dotyczących polityki prywatności i przetwarzania danych osobowych prosimy o kontakt:</p>
             <p>📧 <a href="mailto:kontakt@paradrutow.com" style="color:var(--accent-gold);text-decoration:none;">kontakt@paradrutow.com</a></p>
-            <p style="color:#666;font-size:0.85rem;margin-top:1.5rem;border-top:1px solid rgba(197,160,89,0.15);padding-top:1rem;">Niniejsza polityka dotyczy wyłącznie aplikacji mobilnej StitchAI. Inne usługi i strony oferowane przez Para Drutów mogą posiadać odrębne polityki prywatności.</p>
+            <p style="color:#666;font-size:0.85rem;margin-top:1.5rem;border-top:1px solid rgba(197,160,89,0.15);padding-top:1rem;">Niniejsza polityka dotyczy aplikacji mobilnych StitchAI oraz WzorAI. Inne usługi i strony oferowane przez Para Drutów mogą posiadać odrębne polityki prywatności.</p>
         </div>
 
     </div>
