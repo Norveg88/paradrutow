@@ -5,25 +5,62 @@
     <link rel="icon" type="image/png" href="/assets/img/site.png">
     <link rel="apple-touch-icon" href="/assets/img/site.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StitchAI - Para Drutów</title>
-    <meta name="description" content="StitchAI — aplikacja edukacyjna do schematów dziewiarskich. Analizuje wzory, wyjaśnia symbole i uczy czytania schematów krok po kroku. Dla każdego poziomu.">
-    <meta name="keywords" content="StitchAI, aplikacja dziewiarstwo, czytanie schematów, symbole dziewiarskie, nauka wzorów, knitting app, knitting pattern reader, приложение вязание, додаток в'язання">
+    <title>WzorAI i StitchAI - Aplikacje dziewiarskie | Para Drutów</title>
+    <meta name="description" content="WzorAI — opisz wzór własnymi słowami i otrzymaj gotowy schemat dziewiarski. StitchAI — analiza schematów i wyjaśnianie symboli. Aplikacje od Para Drutów.">
+    <meta name="keywords" content="WzorAI, StitchAI, generator wzorów dziewiarskich, aplikacja dziewiarstwo, schematy na drutach, czytanie schematów, knitting pattern generator, knitting app, генератор узоров, приложение вязание, додаток в'язання">
     <meta name="author" content="Para Drutów">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://paradrutow.com/apps.html">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://paradrutow.com/apps.html">
-    <meta property="og:title" content="StitchAI — Aplikacja do schematów dziewiarskich">
-    <meta property="og:description" content="Analizuj wzory, ucz się symboli i czytaj schematy krok po kroku z pomocą StitchAI.">
-    <meta property="og:image" content="https://paradrutow.com/assets/img/StitchAI.png">
+    <meta property="og:title" content="WzorAI i StitchAI — Aplikacje dziewiarskie Para Drutów">
+    <meta property="og:description" content="Opisz wzór własnymi słowami — otrzymasz gotowy schemat. Dwie aplikacje dla osób, które dziergają na drutach.">
+    <meta property="og:image" content="https://paradrutow.com/assets/img/WzorAIpl.png">
     <meta property="og:site_name" content="Para Drutów">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="StitchAI — Aplikacja do schematów dziewiarskich">
-    <meta name="twitter:description" content="Analizuj wzory i czytaj schematy dziewiarskie krok po kroku.">
-    <meta name="twitter:image" content="https://paradrutow.com/assets/img/StitchAI.png">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"StitchAI","applicationCategory":"EducationApplication","operatingSystem":"Android","description":"Aplikacja edukacyjna do schematów dziewiarskich — analiza wzorów i wyjaśnianie symboli","author":{"@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com"},"offers":{"@type":"Offer","price":"0"}}</script>
+    <meta name="twitter:title" content="WzorAI i StitchAI — Aplikacje dziewiarskie Para Drutów">
+    <meta name="twitter:description" content="Opisz wzór własnymi słowami — otrzymasz gotowy schemat dziewiarski.">
+    <meta name="twitter:image" content="https://paradrutow.com/assets/img/WzorAIpl.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Aplikacje dziewiarskie Para Drutów",
+      "itemListElement": [
+        {
+          "@type": "ListItem", "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "WzorAI",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "Android",
+            "description": "Generator wzorów dziewiarskich — opisz wzór własnymi słowami, a aplikacja zbuduje raport, sprawdzi liczbę oczek i narysuje przejrzysty schemat. PDF, licznik rzędów i trzy kalkulatory.",
+            "image": "https://paradrutow.com/assets/img/WzorAIpl.png",
+            "url": "https://paradrutow.com/apps.html",
+            "inLanguage": ["pl","en","de","fr","ru","uk"],
+            "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"},
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "PLN", "description": "Osiem gotowych przykładów za darmo, pakiety wzorów bez abonamentu"}
+          }
+        },
+        {
+          "@type": "ListItem", "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "StitchAI",
+            "applicationCategory": "EducationApplication",
+            "operatingSystem": "Android",
+            "description": "Aplikacja edukacyjna do schematów dziewiarskich — analiza wzorów i wyjaśnianie symboli.",
+            "image": "https://paradrutow.com/assets/img/StitchAI.png",
+            "url": "https://paradrutow.com/apps.html",
+            "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"},
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "PLN"}
+          }
+        }
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script defer src="/assets/js/lang.js"></script>
+    <script defer src="/assets/js/lang.js?v=2"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
@@ -143,9 +180,139 @@
         }
         .app-description p:last-child { margin: 0; }
 
+        /* ——— Блоки WzorAI ——— */
+        .app-section-title {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1.25rem;
+            margin: 2.5rem 0 1.2rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .app-lead {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.9;
+            max-width: 780px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+        .app-claim {
+            font-family: var(--font-header);
+            color: var(--accent-copper);
+            font-size: 1.05rem;
+            text-align: center;
+            margin: 0 0 1.8rem;
+            letter-spacing: 0.5px;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .step-item {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(6px);
+            position: relative;
+            overflow: hidden;
+        }
+        .step-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 2px;
+            background: linear-gradient(to right, var(--accent-gold), transparent);
+        }
+        .step-item h3 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1rem;
+            margin: 0 0 0.5rem;
+        }
+        .step-item p {
+            color: #aaa;
+            font-size: 0.89rem;
+            line-height: 1.65;
+            margin: 0;
+        }
+        .app-details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .app-details-list li {
+            color: #ccc;
+            font-size: 0.93rem;
+            line-height: 1.75;
+            padding: 0.7rem 0 0.7rem 1.5rem;
+            border-bottom: 1px solid rgba(197,160,89,0.12);
+            position: relative;
+        }
+        .app-details-list li:last-child { border-bottom: none; }
+        .app-details-list li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: var(--accent-copper);
+            font-size: 0.7rem;
+            top: 0.95rem;
+        }
+        .app-note {
+            background: rgba(197,160,89,0.06);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 0 12px 12px 0;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .app-note h3 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1rem;
+            margin: 0 0 0.6rem;
+        }
+        .app-note p {
+            color: #bbb;
+            font-size: 0.92rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .app-divider {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            justify-content: center;
+            margin: 3.5rem 0 2.5rem;
+        }
+        .app-divider::before,
+        .app-divider::after {
+            content: '';
+            flex: 1;
+            max-width: 220px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(197,160,89,0.45));
+        }
+        .app-divider::after {
+            background: linear-gradient(to left, transparent, rgba(197,160,89,0.45));
+        }
+        .app-divider span {
+            color: var(--accent-copper);
+            font-family: var(--font-header);
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
         @media (max-width: 600px) {
             .app-hero { flex-direction: column; text-align: center; padding: 1.5rem; }
             .app-hero-text h1 { font-size: 2.2rem; }
+            .app-section-title { font-size: 1.1rem; margin: 2rem 0 1rem; }
+            .app-lead { font-size: 0.94rem; line-height: 1.8; }
+            .app-note { padding: 1.2rem 1.3rem; }
         }
     </style>
     <!-- Google Analytics -->
@@ -191,6 +358,103 @@
 <main>
     <div class="content-wrapper">
 
+        <!-- ————— WzorAI ————— -->
+        <div class="app-hero">
+            <div class="app-hero-text">
+                <h1>WzorAI</h1>
+                <p data-i18n="wzorai_tagline">Twój asystent w tworzeniu wzorów dziewiarskich</p>
+            </div>
+        </div>
+
+        <p class="app-claim" data-i18n="wzorai_hero_sub">Opisz wzór własnymi słowami — otrzymasz gotowy schemat</p>
+
+        <div class="feature-image-wrapper">
+            <img src="/assets/img/WzorAIpl.png" data-i18n-img="/assets/img/WzorAI{lang}.png" alt="WzorAI">
+        </div>
+
+        <p class="app-lead" data-i18n="wzorai_intro">Każda dziewiarka zna to uczucie: widzisz tkaninę dokładnie tak, jak ma wyglądać — jak otwiera się ażur, gdzie krzyżuje się warkocz — ale takiego wzoru nie ma w żadnej książce ani na żadnym forum.</p>
+
+        <h2 class="app-section-title" data-i18n="wzorai_how_title">Jak to działa</h2>
+        <div class="steps-grid">
+            <div class="step-item card">
+                <h3 data-i18n="wzorai_how1_t">1. Opisujesz</h3>
+                <p data-i18n="wzorai_how1_d">Zwykłym językiem, tak jak powiedziałabyś koleżance.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="wzorai_how2_t">2. WzorAI liczy i rysuje</h3>
+                <p data-i18n="wzorai_how2_d">Buduje raport i sprawdza go rząd po rzędzie.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="wzorai_how3_t">3. Dziergasz</h3>
+                <p data-i18n="wzorai_how3_d">Schemat na telefonie albo wydrukowany PDF obok drutów.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="wzorai_feat_title">Co dostajesz</h2>
+        <div class="features-grid">
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="wzorai_f1_t">Schemat, który się zgadza</h3>
+                <p data-i18n="wzorai_f1_d">Każdy wzór przechodzi automatyczną kontrolę matematyczną.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="wzorai_f2_t">Podgląd dzianiny</h3>
+                <p data-i18n="wzorai_f2_d">Wzór powtórzony dziewięć razy — dopiero tu widać motyw.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">◷</span>
+                <h3 data-i18n="wzorai_f3_t">Licznik rzędów, który pamięta</h3>
+                <p data-i18n="wzorai_f3_d">Miejsce będzie czekać tam, gdzie je zostawiłaś.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="wzorai_f4_t">Trzy kalkulatory</h3>
+                <p data-i18n="wzorai_f4_d">Nabieranie oczek, wyrabianie i ilość włóczki.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">❐</span>
+                <h3 data-i18n="wzorai_f5_t">Elegancki PDF do druku</h3>
+                <p data-i18n="wzorai_f5_d">Siedem stron, wszystko w Twoim języku.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✦</span>
+                <h3 data-i18n="wzorai_f6_t">Twoja biblioteka wzorów</h3>
+                <p data-i18n="wzorai_f6_d">Historia zostaje na urządzeniu.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">↗</span>
+                <h3 data-i18n="wzorai_f7_t">Obrazek do udostępnienia</h3>
+                <p data-i18n="wzorai_f7_d">Schemat z legendą w jednym obrazku.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✻</span>
+                <h3 data-i18n="wzorai_f8_t">Porady i ciekawostki</h3>
+                <p data-i18n="wzorai_f8_d">Pięćdziesiąt praktycznych wskazówek o dzierganiu.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="wzorai_who_title">Dla kogo</h2>
+        <p class="app-lead" data-i18n="wzorai_who_d">Dla każdej osoby, która dzierga na drutach i chce wzoru, jakiego nigdzie nie znajdzie.</p>
+
+        <h2 class="app-section-title" data-i18n="wzorai_det_title">Szczegóły</h2>
+        <div class="app-description card" style="margin-bottom:2rem;">
+            <ul class="app-details-list">
+                <li data-i18n="wzorai_det_lang"><strong>Języki:</strong> polski, angielski, niemiecki, francuski, rosyjski, ukraiński.</li>
+                <li data-i18n="wzorai_det_sym"><strong>Symbole:</strong> standard europejski lub międzynarodowy (CYC).</li>
+                <li data-i18n="wzorai_det_priv"><strong>Prywatność:</strong> bez rejestracji, bez konta, bez podawania danych.</li>
+                <li data-i18n="wzorai_det_pay"><strong>Płatność:</strong> bez abonamentu.</li>
+            </ul>
+        </div>
+
+        <div class="app-note">
+            <h3 data-i18n="wzorai_ai_title">Uczciwie o AI</h3>
+            <p data-i18n="wzorai_ai_d">WzorAI korzysta ze sztucznej inteligencji — i mówimy o tym wprost.</p>
+        </div>
+
+        <div class="app-divider"><span>Para Drutów</span></div>
+
+        <!-- ————— StitchAI ————— -->
         <div class="app-hero">
             <img src="/assets/img/icon.png" alt="StitchAI Logo" class="app-hero-icon">
             <div class="app-hero-text">

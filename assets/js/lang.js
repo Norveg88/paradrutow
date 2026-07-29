@@ -11,6 +11,11 @@ async function loadLang(lang) {
                 el.innerHTML = data[key];
             }
         });
+        // Картинки, зависящие от языка: data-i18n-img="/assets/img/WzorAI{lang}.png"
+        document.querySelectorAll("[data-i18n-img]").forEach(el => {
+            const tpl = el.getAttribute("data-i18n-img");
+            if (tpl) el.setAttribute("src", tpl.replace("{lang}", lang));
+        });
         document.documentElement.lang = lang;
         document.querySelectorAll("[data-lang]").forEach(btn => {
             btn.classList.toggle("active-lang", btn.getAttribute("data-lang") === lang);
