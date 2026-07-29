@@ -92,6 +92,9 @@
             box-shadow: 0 0 24px rgba(197,160,89,0.25);
             flex-shrink: 0;
         }
+        .app-hero-text {
+            text-align: left;
+        }
         .app-hero-text h1 {
             font-size: 3rem;
             margin: 0 0 0.3rem;
@@ -309,6 +312,7 @@
 
         @media (max-width: 600px) {
             .app-hero { flex-direction: column; text-align: center; padding: 1.5rem; }
+            .app-hero-text { text-align: center; }
             .app-hero-text h1 { font-size: 2.2rem; }
             .app-section-title { font-size: 1.1rem; margin: 2rem 0 1rem; }
             .app-lead { font-size: 0.94rem; line-height: 1.8; }
@@ -360,6 +364,7 @@
 
         <!-- ————— WzorAI ————— -->
         <div class="app-hero">
+            <img src="/assets/img/icon2.png" alt="WzorAI Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h1>WzorAI</h1>
                 <p data-i18n="wzorai_tagline">Twój asystent w tworzeniu wzorów dziewiarskich</p>
