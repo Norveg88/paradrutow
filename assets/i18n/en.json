@@ -124,5 +124,14 @@
   "wzorai_det_priv": "<strong>Privacy:</strong> no registration, no account, no personal details. Your charts are stored on your device only.",
   "wzorai_det_pay": "<strong>Payment:</strong> no subscription. You buy a pack of patterns — 5, 20 or 50 — and use them at your own pace. If a generation fails, the pattern is not counted.",
   "wzorai_ai_title": "Honest about AI",
-  "wzorai_ai_d": "WzorAI uses artificial intelligence, and we say so plainly. That is exactly why every chart goes through a mathematical check, and why each pattern carries the reminder that holds for any pattern anyway: knit a small swatch first. It is the surest way to see how the motif behaves in your yarn."
+  "wzorai_ai_d": "WzorAI uses artificial intelligence, and we say so plainly. That is exactly why every chart goes through a mathematical check, and why each pattern carries the reminder that holds for any pattern anyway: knit a small swatch first. It is the surest way to see how the motif behaves in your yarn.",
+  "news_title": "Stay in the loop",
+  "news_desc": "Sign up and we will write when new patterns, books, videos or app updates appear. A few messages a month — no spam.",
+  "news_placeholder": "Your email address",
+  "news_button": "Subscribe",
+  "news_consent": "I agree to receive news from Para Drutów at this email address. I can withdraw my consent at any time — see the <a href=\"/privacy.html\">privacy policy</a>.",
+  "news_success": "Almost there! Check your inbox — we have sent a link to confirm your subscription.",
+  "news_error": "Something went wrong. Please try again in a moment.",
+  "news_patterns_title": "We will let you know about new patterns",
+  "news_patterns_desc": "Leave your email and we will write as soon as a new pattern or chart is ready."
 }

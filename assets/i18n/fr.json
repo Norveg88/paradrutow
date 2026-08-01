@@ -124,5 +124,14 @@
   "wzorai_det_priv": "<strong>Confidentialité :</strong> sans inscription, sans compte, sans données personnelles. Vos grilles sont conservées uniquement sur votre appareil.",
   "wzorai_det_pay": "<strong>Paiement :</strong> sans abonnement. Vous achetez un lot de motifs — 5, 20 ou 50 — et les utilisez à votre rythme. Si une génération échoue, le motif n'est pas décompté.",
   "wzorai_ai_title": "Honnêtement, à propos de l'IA",
-  "wzorai_ai_d": "WzorAI utilise l'intelligence artificielle, et nous le disons franchement. C'est précisément pour cela que chaque grille passe une vérification mathématique, et que chaque motif s'accompagne du rappel valable pour n'importe quel motif : tricotez d'abord un petit échantillon. C'est le moyen le plus sûr de voir comment il se comporte avec votre laine."
+  "wzorai_ai_d": "WzorAI utilise l'intelligence artificielle, et nous le disons franchement. C'est précisément pour cela que chaque grille passe une vérification mathématique, et que chaque motif s'accompagne du rappel valable pour n'importe quel motif : tricotez d'abord un petit échantillon. C'est le moyen le plus sûr de voir comment il se comporte avec votre laine.",
+  "news_title": "Restez informée",
+  "news_desc": "Inscrivez-vous et nous vous écrirons dès que de nouveaux motifs, livres, vidéos ou mises à jour paraîtront. Quelques messages par mois — sans spam.",
+  "news_placeholder": "Votre adresse e-mail",
+  "news_button": "Sʼinscrire",
+  "news_consent": "Jʼaccepte de recevoir les actualités de Para Drutów à cette adresse. Je peux retirer mon consentement à tout moment — détails dans la <a href=\"/privacy.html\">politique de confidentialité</a>.",
+  "news_success": "Presque fini ! Consultez votre boîte — nous avons envoyé un lien de confirmation.",
+  "news_error": "Une erreur est survenue. Veuillez réessayer dans un instant.",
+  "news_patterns_title": "Nous vous préviendrons des nouveaux motifs",
+  "news_patterns_desc": "Laissez votre e-mail et nous écrirons dès quʼun nouveau motif sera prêt."
 }

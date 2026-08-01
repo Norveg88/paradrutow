@@ -124,5 +124,14 @@
   "wzorai_det_priv": "<strong>Datenschutz:</strong> keine Registrierung, kein Konto, keine persönlichen Angaben. Deine Strickschriften bleiben allein auf deinem Gerät.",
   "wzorai_det_pay": "<strong>Bezahlung:</strong> kein Abo. Du kaufst ein Paket Muster — 5, 20 oder 50 — und nutzt sie in deinem Tempo. Schlägt eine Generierung fehl, wird das Muster nicht abgezogen.",
   "wzorai_ai_title": "Ehrlich zur KI",
-  "wzorai_ai_d": "WzorAI arbeitet mit künstlicher Intelligenz, und wir sagen das offen. Genau deshalb durchläuft jede Strickschrift eine mathematische Prüfung, und genau deshalb steht bei jedem Muster der Hinweis, der ohnehin für jedes Muster gilt: stricke zuerst eine kleine Probe. So siehst du am sichersten, wie das Motiv in deiner Wolle wirkt."
+  "wzorai_ai_d": "WzorAI arbeitet mit künstlicher Intelligenz, und wir sagen das offen. Genau deshalb durchläuft jede Strickschrift eine mathematische Prüfung, und genau deshalb steht bei jedem Muster der Hinweis, der ohnehin für jedes Muster gilt: stricke zuerst eine kleine Probe. So siehst du am sichersten, wie das Motiv in deiner Wolle wirkt.",
+  "news_title": "Bleib auf dem Laufenden",
+  "news_desc": "Melde dich an, und wir schreiben, sobald neue Muster, Bücher, Videos oder App-Updates erscheinen. Ein paar Nachrichten im Monat — kein Spam.",
+  "news_placeholder": "Deine E-Mail-Adresse",
+  "news_button": "Anmelden",
+  "news_consent": "Ich möchte Neuigkeiten von Para Drutów an diese E-Mail-Adresse erhalten. Ich kann die Einwilligung jederzeit widerrufen — Details in der <a href=\"/privacy.html\">Datenschutzerklärung</a>.",
+  "news_success": "Fast geschafft! Sieh in dein Postfach — wir haben dir einen Bestätigungslink geschickt.",
+  "news_error": "Etwas ist schiefgelaufen. Bitte versuche es gleich noch einmal.",
+  "news_patterns_title": "Wir sagen dir bei neuen Mustern Bescheid",
+  "news_patterns_desc": "Hinterlasse deine E-Mail, und wir schreiben, sobald ein neues Muster fertig ist."
 }
