@@ -6,15 +6,15 @@
     <link rel="apple-touch-icon" href="/assets/img/site.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title_home">Para Drutów - Strona główna</title>
-    <meta name="description" content="Para Drutów — dziewiarstwo krok po kroku. Wzory, schematy, filmy YouTube i aplikacja StitchAI dla każdego poziomu.">
-    <meta name="keywords" content="dziewiarstwo, robótki na drutach, wzory na drutach, schematy dziewiarskie, nauka robótek, StitchAI, para drutów, knitting patterns, вязание спицами, в'язання спицями, tricot, stricken">
+    <meta name="description" content="Para Drutów — dziewiarstwo krok po kroku. Wzory, schematy, książki, filmy YouTube oraz aplikacja WzorAI, która tworzy schematy z Twojego opisu.">
+    <meta name="keywords" content="dziewiarstwo, robótki na drutach, wzory na drutach, schematy dziewiarskie, nauka robótek, WzorAI, StitchAI, para drutów, knitting patterns, вязание спицами, в'язання спицями, tricot, stricken">
     <meta name="author" content="Para Drutów">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://paradrutow.com/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://paradrutow.com/">
     <meta property="og:title" content="Para Drutów — Dziewiarstwo, które inspiruje">
-    <meta property="og:description" content="Wzory, schematy, filmy YouTube i aplikacja StitchAI. Nauka dziewiarstwa dla każdego poziomu — od podstaw po zaawansowane techniki.">
+    <meta property="og:description" content="Wzory, schematy, książki, filmy YouTube i aplikacja WzorAI. Nauka dziewiarstwa dla każdego poziomu — od podstaw po zaawansowane techniki.">
     <meta property="og:image" content="https://paradrutow.com/assets/img/feature.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,7 +22,7 @@
     <meta property="og:locale" content="pl_PL">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Para Drutów — Dziewiarstwo, które inspiruje">
-    <meta name="twitter:description" content="Wzory, schematy, filmy i aplikacja StitchAI. Nauka dziewiarstwa dla każdego.">
+    <meta name="twitter:description" content="Wzory, schematy, książki, filmy i aplikacja WzorAI. Nauka dziewiarstwa dla każdego.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/feature.jpg">
     <link rel="alternate" hreflang="pl" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="en" href="https://paradrutow.com/">
@@ -31,9 +31,9 @@
     <link rel="alternate" hreflang="de" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="fr" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/icon.png","description":"Dziewiarstwo krok po kroku — wzory, schematy, filmy YouTube i aplikacja StitchAI","sameAs":["https://www.youtube.com/@ParaDrutow"]}</script>
-    <link rel="stylesheet" href="/assets/css/style.css?v=2">
-    <script defer src="/assets/js/lang.js?v=2"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/site.png","description":"Dziewiarstwo krok po kroku — wzory, schematy, książki, filmy YouTube oraz aplikacje WzorAI i StitchAI","sameAs":["https://www.youtube.com/@ParaDrutow"]}</script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=3">
+    <script defer src="/assets/js/lang.js?v=3"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
     <style>
@@ -99,8 +99,8 @@
             gap: 0.65rem;
         }
         .head-icon {
-            width: 26px;
-            height: 26px;
+            width: 30px;
+            height: 30px;
             flex-shrink: 0;
             display: block;
         }
@@ -169,14 +169,16 @@
         }
         .tile-title {
             font-family: var(--font-header);
+            font-weight: 600;
             color: var(--accent-gold);
-            font-size: 1.1rem;
+            font-size: 1.5rem;
+            line-height: 1.25;
             margin: 0 0 0.6rem;
         }
         .tile-text {
             color: #bbb;
-            font-size: 0.92rem;
-            line-height: 1.6;
+            font-size: 1rem;
+            line-height: 1.65;
             margin: 0 0 1.2rem;
         }
         .tile-link {
@@ -223,15 +225,17 @@
         }
         .yt-card-text h2 {
             font-family: var(--font-header);
+            font-weight: 600;
             color: var(--accent-gold);
             margin: 0 0 0.7rem;
-            font-size: 1.3rem;
+            font-size: 1.75rem;
+            line-height: 1.25;
         }
         .yt-card-text p {
             color: #bbb;
             margin: 0 0 1.2rem;
-            line-height: 1.7;
-            font-size: 0.95rem;
+            line-height: 1.75;
+            font-size: 1.05rem;
         }
         .yt-badge {
             display: flex;
@@ -288,8 +292,10 @@
         .why-card.visible { opacity: 1; transform: translateY(0); }
         .why-card h2 {
             font-family: var(--font-header);
+            font-weight: 600;
             color: var(--accent-gold);
-            font-size: 1.3rem;
+            font-size: 1.75rem;
+            line-height: 1.25;
             margin: 0 0 1rem;
         }
         .why-list {
@@ -303,8 +309,8 @@
             align-items: flex-start;
             gap: 0.7rem;
             color: #ccc;
-            font-size: 0.95rem;
-            line-height: 1.5;
+            font-size: 1.05rem;
+            line-height: 1.55;
         }
         .why-item::before {
             content: '◆';
@@ -318,7 +324,7 @@
             font-style: italic;
             color: var(--accent-gold);
             margin-top: 1.5rem;
-            font-size: 1rem;
+            font-size: 1.15rem;
             line-height: 1.6;
         }
 
@@ -609,8 +615,8 @@
         <div class="sections-grid">
             <div class="section-tile card">
                 <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10.5 18.6h3"/><path d="M12 6.2l.85 2.05L14.9 9.1l-2.05.85L12 12l-.85-2.05L9.1 9.1l2.05-.85z"/><path d="M15.8 12.6l.45 1.1 1.1.45-1.1.45-.45 1.1-.45-1.1-1.1-.45 1.1-.45z"/></svg></span>
-                <h3 class="tile-title" data-i18n="home_app_title">StitchAI — aplikacja</h3>
-                <p class="tile-text" data-i18n="home_app_desc">Narzędzie edukacyjne do pracy ze schematami dziewiarskimi. Analizuje wzory, wyjaśnia symbole i wspiera naukę krok po kroku.</p>
+                <h3 class="tile-title" data-i18n="home_app_title">WzorAI — aplikacja</h3>
+                <p class="tile-text" data-i18n="home_app_desc">Opisz wzór własnymi słowami — WzorAI zbuduje raport, sprawdzi liczbę oczek i narysuje gotowy schemat. Z licznikiem rzędów, kalkulatorami i PDF do druku.</p>
                 <a href="/apps.html" class="tile-link" data-i18n="home_app_link">Zobacz aplikację →</a>
             </div>
 
@@ -644,6 +650,8 @@
                 <div class="why-item" data-i18n="home_why_li1">edukacja bez presji</div>
                 <div class="why-item" data-i18n="home_why_li2">wiedza oparta na doświadczeniu</div>
                 <div class="why-item" data-i18n="home_why_li3">nowoczesne narzędzia wspierające tradycyjne rzemiosło</div>
+                <div class="why-item" data-i18n="home_why_li4">materiały dostępne w sześciu językach</div>
+                <div class="why-item" data-i18n="home_why_li5">wzory i publikacje tworzone od podstaw</div>
             </div>
             <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką,<br>a dziewiarstwo staje się prawdziwą przyjemnością.</p>
         </div>
