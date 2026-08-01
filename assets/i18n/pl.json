@@ -130,6 +130,7 @@
   "news_consent": "Chcę otrzymywać informacje o nowościach Para Drutów na podany adres e-mail. Zgodę mogę wycofać w każdej chwili — szczegóły w <a href=\"/privacy.html\">polityce prywatności</a>.",
   "news_success": "Prawie gotowe! Sprawdź skrzynkę — wysłaliśmy link, który potwierdza zapis.",
   "news_error": "Coś poszło nie tak. Spróbuj jeszcze raz za chwilę.",
-  "news_patterns_title": "Powiadomimy Cię o nowych wzorach",
-  "news_patterns_desc": "Zostaw adres e-mail, a napiszemy, gdy tylko pojawi się nowy wzór lub schemat."
+  "news_patterns_title": "Nie przegap nowych wzorów",
+  "news_patterns_desc": "Zostaw adres e-mail, a napiszemy, gdy tylko pojawi się nowy wzór — a przy okazji o nowych książkach, filmach i aktualizacjach aplikacji. Kilka wiadomości w miesiącu, bez spamu.",
+  "nav_newsletter": "Newsletter"
 }

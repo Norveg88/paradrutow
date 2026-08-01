@@ -132,6 +132,7 @@
   "news_consent": "I agree to receive news from Para Drutów at this email address. I can withdraw my consent at any time — see the <a href=\"/privacy.html\">privacy policy</a>.",
   "news_success": "Almost there! Check your inbox — we have sent a link to confirm your subscription.",
   "news_error": "Something went wrong. Please try again in a moment.",
-  "news_patterns_title": "We will let you know about new patterns",
-  "news_patterns_desc": "Leave your email and we will write as soon as a new pattern or chart is ready."
+  "news_patterns_title": "Never miss a new pattern",
+  "news_patterns_desc": "Leave your email and we will write as soon as a new pattern is ready — along with news about books, videos and app updates. A few messages a month, no spam.",
+  "nav_newsletter": "Newsletter"
 }

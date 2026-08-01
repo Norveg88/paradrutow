@@ -132,6 +132,7 @@
   "news_consent": "Ich möchte Neuigkeiten von Para Drutów an diese E-Mail-Adresse erhalten. Ich kann die Einwilligung jederzeit widerrufen — Details in der <a href=\"/privacy.html\">Datenschutzerklärung</a>.",
   "news_success": "Fast geschafft! Sieh in dein Postfach — wir haben dir einen Bestätigungslink geschickt.",
   "news_error": "Etwas ist schiefgelaufen. Bitte versuche es gleich noch einmal.",
-  "news_patterns_title": "Wir sagen dir bei neuen Mustern Bescheid",
-  "news_patterns_desc": "Hinterlasse deine E-Mail, und wir schreiben, sobald ein neues Muster fertig ist."
+  "news_patterns_title": "Verpasse kein neues Muster",
+  "news_patterns_desc": "Hinterlasse deine E-Mail, und wir schreiben, sobald ein neues Muster fertig ist — und dazu über neue Bücher, Videos und App-Updates. Ein paar Nachrichten im Monat, kein Spam.",
+  "nav_newsletter": "Newsletter"
 }

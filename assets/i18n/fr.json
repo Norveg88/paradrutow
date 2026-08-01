@@ -132,6 +132,7 @@
   "news_consent": "Jʼaccepte de recevoir les actualités de Para Drutów à cette adresse. Je peux retirer mon consentement à tout moment — détails dans la <a href=\"/privacy.html\">politique de confidentialité</a>.",
   "news_success": "Presque fini ! Consultez votre boîte — nous avons envoyé un lien de confirmation.",
   "news_error": "Une erreur est survenue. Veuillez réessayer dans un instant.",
-  "news_patterns_title": "Nous vous préviendrons des nouveaux motifs",
-  "news_patterns_desc": "Laissez votre e-mail et nous écrirons dès quʼun nouveau motif sera prêt."
+  "news_patterns_title": "Ne manquez aucun nouveau motif",
+  "news_patterns_desc": "Laissez votre e-mail et nous écrirons dès quʼun nouveau motif sera prêt — ainsi que pour les nouveaux livres, vidéos et mises à jour. Quelques messages par mois, sans spam.",
+  "nav_newsletter": "Newsletter"
 }

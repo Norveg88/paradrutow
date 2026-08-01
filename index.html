@@ -32,10 +32,10 @@
     <link rel="alternate" hreflang="fr" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/site.png","description":"Dziewiarstwo krok po kroku — wzory, schematy, książki, filmy YouTube oraz aplikacje WzorAI i StitchAI","sameAs":["https://www.youtube.com/@ParaDrutow"]}</script>
-    <link rel="stylesheet" href="/assets/css/style.css?v=4">
+    <link rel="stylesheet" href="/assets/css/style.css?v=5">
     <script defer src="/assets/js/lang.js?v=4"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
-    <script defer src="/assets/js/newsletter.js?v=1"></script>
+    <script defer src="/assets/js/newsletter.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
     <style>
         main { margin: 1rem auto 2rem; }
@@ -46,15 +46,15 @@
         }
         .hero-eyebrow {
             font-family: var(--font-header);
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             letter-spacing: 1.5px;
             color: var(--accent-copper);
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         .hero h1 {
-            font-size: clamp(2.4rem, 5vw, 3.6rem);
-            margin: 0 0 0.7rem;
+            font-size: clamp(2.1rem, 4.2vw, 3rem);
+            margin: 0 0 0.45rem;
             border: none;
             display: block;
             background: linear-gradient(135deg, var(--accent-gold), #fff5d6, var(--accent-copper));
@@ -64,18 +64,18 @@
             line-height: 1.1;
         }
         .hero-sub {
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #aaa;
             max-width: 520px;
-            margin: 0 auto 1.1rem;
-            line-height: 1.6;
+            margin: 0 auto 0.75rem;
+            line-height: 1.55;
         }
         .hero-divider {
             display: flex;
             align-items: center;
             gap: 1rem;
             justify-content: center;
-            margin-bottom: 1.1rem;
+            margin-bottom: 0.8rem;
         }
         .hero-divider::before,
         .hero-divider::after {
@@ -334,7 +334,7 @@
             background: rgba(40,40,40,0.45);
             border: 1px solid var(--glass-border);
             border-radius: 16px;
-            padding: 2rem 2.5rem 2.5rem;
+            padding: 1.6rem 2.5rem 2.5rem;
             margin-bottom: 2rem;
             backdrop-filter: blur(8px);
             position: relative;
@@ -372,9 +372,9 @@
         .song-title {
             font-family: 'Dancing Script', cursive;
             color: var(--accent-gold);
-            font-size: clamp(2rem, 4.5vw, 2.8rem);
+            font-size: clamp(1.9rem, 4.2vw, 2.6rem);
             font-weight: 600;
-            margin: 0 0 1.8rem;
+            margin: 0 0 1.3rem;
             border: none;
             line-height: 1.2;
             text-shadow: 0 2px 14px rgba(197,160,89,0.25);
@@ -459,12 +459,12 @@
             margin-bottom: 0;
         }
         @media (max-width: 640px) {
-            main { margin: 1rem auto; }
-            .hero { padding: 0.5rem 1rem 0.4rem; }
-            .hero-eyebrow { font-size: 0.66rem; letter-spacing: 3px; margin-bottom: 0.5rem; }
-            .hero h1 { font-size: clamp(2.1rem, 10vw, 3rem); margin-bottom: 0.5rem; }
-            .hero-sub { font-size: 0.96rem; margin: 0 auto 0.9rem; line-height: 1.55; }
-            .hero-divider { margin-bottom: 1rem; }
+            main { margin: 0.5rem auto 1rem; }
+            .hero { padding: 0.3rem 1rem 0.3rem; }
+            .hero-eyebrow { font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 0.4rem; }
+            .hero h1 { font-size: clamp(1.9rem, 8.5vw, 2.5rem); margin-bottom: 0.4rem; }
+            .hero-sub { font-size: 0.92rem; margin: 0 auto 0.6rem; line-height: 1.5; }
+            .hero-divider { margin-bottom: 0.6rem; }
         }
         @media (max-width: 600px) {
             .song-card { padding: 1.8rem 1.2rem; }
@@ -493,6 +493,7 @@
             <span></span><span></span><span></span>
         </button>
         <div class="nav-links">
+            <a href="#" class="nav-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
             <a href="/index.html" class="active-link" data-i18n="menu_home">Strona główna</a>
             <a href="/video.html" data-i18n="menu_video">Wideo</a>
             <a href="/shorts.html" data-i18n="menu_shorts">Shorts</a>
