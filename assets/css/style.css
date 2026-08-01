@@ -546,7 +546,7 @@ label {
     border: 1px solid var(--accent-gold);
     border-radius: 16px;
     padding: 2rem 2.5rem;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
@@ -682,7 +682,7 @@ label {
     margin-top: 0.8rem;
 }
 @media (max-width: 600px) {
-    .news-card { padding: 1.6rem 1.3rem; margin-top: 2.5rem; }
+    .news-card { padding: 1.6rem 1.3rem; }
     .news-btn { width: 100%; }
 }
 
