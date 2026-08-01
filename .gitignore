@@ -19,3 +19,6 @@ create-content.ps1
 # Системные файлы
 .DS_Store
 Thumbs.db
+
+# Логотип для писем — только локально
+/email-logo.*
