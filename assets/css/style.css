@@ -6,7 +6,7 @@
     --glass-bg: rgba(30, 30, 30, 0.6);
     --glass-border: rgba(197, 160, 89, 0.3);
     --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --font-header: 'Cinzel', serif; /* Стимпанк шрифт */
+    --font-header: 'Cormorant Garamond', 'Cinzel', serif; /* Классическая антиква с настоящими строчными */
     --font-body: 'Lato', sans-serif;
 }
 
@@ -95,10 +95,10 @@ header {
     text-decoration: none;
     margin-right: 20px;
     font-family: var(--font-header);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
     transition: color 0.3s, text-shadow 0.3s;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
 }
 
 .nav a:hover, .nav a.active-link {
@@ -110,11 +110,11 @@ header {
 .nav-brand {
     display: none;
     font-family: var(--font-header);
+    font-weight: 700;
     color: var(--accent-gold);
-    font-size: 1.1rem;
-    letter-spacing: 2px;
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 /* --- Hamburger кнопка --- */
@@ -233,6 +233,8 @@ header {
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--font-header);
+    font-weight: 600;
+    font-size: 0.95rem;
     transition: all 0.3s;
 }
 
@@ -255,8 +257,9 @@ main {
 
 h1 {
     font-family: var(--font-header);
+    font-weight: 700;
     color: var(--accent-gold);
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-align: center;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px #000;
@@ -301,6 +304,7 @@ h1 {
 
 h2 {
     font-family: var(--font-header);
+    font-weight: 600;
     color: var(--accent-copper);
     margin-top: 0;
 }
@@ -322,10 +326,10 @@ button[type="submit"] {
     border: none;
     color: #000;
     padding: 10px 25px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.05rem;
     cursor: pointer;
     font-family: var(--font-header);
-    text-transform: uppercase;
     clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
     transition: transform 0.2s;
 }
@@ -345,14 +349,14 @@ button[type="submit"]:hover {
 
 .btn-youtube {
     color: #ff4444;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
     border: 1px solid #ff4444;
     padding: 6px 14px;
     border-radius: 6px;
     font-family: var(--font-header);
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
     transition: all 0.3s;
 }
 
@@ -368,7 +372,8 @@ button[type="submit"]:hover {
     border-bottom: 1px solid var(--accent-copper);
     padding-bottom: 2px;
     font-family: var(--font-header);
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 1.05rem;
     transition: color 0.3s, border-color 0.3s;
 }
 
@@ -514,10 +519,10 @@ label {
     gap: 6px;
     margin-bottom: 1.2rem;
     font-family: var(--font-header);
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
     color: var(--accent-copper);
-    text-transform: uppercase;
 }
 
 /* Videos & Shorts pages */
