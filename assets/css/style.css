@@ -538,6 +538,153 @@ label {
     color: var(--accent-copper);
 }
 
+/* =====================================================
+   ФОРМА ПОДПИСКИ НА РАССЫЛКУ
+   ===================================================== */
+.news-card {
+    background: rgba(197,160,89,0.06);
+    border: 1px solid var(--accent-gold);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.news-card::after {
+    content: '✉';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    font-size: 7rem;
+    opacity: 0.05;
+    pointer-events: none;
+    line-height: 1;
+}
+.news-head {
+    font-family: var(--font-header);
+    font-weight: 600;
+    color: var(--accent-gold);
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin: 0 0 0.7rem;
+}
+.news-desc {
+    color: #bbb;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin: 0 0 1.4rem;
+    max-width: 620px;
+    position: relative;
+    z-index: 1;
+}
+.news-form {
+    position: relative;
+    z-index: 1;
+}
+.news-row {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.news-input {
+    flex: 1 1 260px;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid var(--accent-copper);
+    color: var(--text-color);
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    margin: 0;
+    width: auto;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.news-input:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 3px rgba(197,160,89,0.15);
+}
+.news-btn {
+    background: linear-gradient(45deg, var(--accent-copper), var(--accent-gold));
+    border: none;
+    color: #1a1a1a;
+    padding: 12px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-header);
+    font-weight: 700;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.3s, opacity 0.2s;
+}
+.news-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(197,160,89,0.25);
+}
+.news-btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+.news-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    color: #999;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    font-family: var(--font-body);
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 0;
+    max-width: 620px;
+    cursor: pointer;
+}
+.news-consent input {
+    width: auto;
+    margin: 3px 0 0;
+    accent-color: var(--accent-gold);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.news-consent a {
+    color: var(--accent-copper);
+    text-decoration: underline;
+}
+.news-trap {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+.news-msg {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0.9rem 1.1rem;
+    border-radius: 8px;
+}
+.news-msg--ok {
+    background: rgba(80,180,100,0.12);
+    border: 1px solid rgba(80,180,100,0.35);
+    color: #8fdc9f;
+}
+.news-msg--err {
+    background: rgba(220,80,80,0.12);
+    border: 1px solid rgba(220,80,80,0.35);
+    color: #f0a0a0;
+    margin-top: 0.8rem;
+}
+@media (max-width: 600px) {
+    .news-card { padding: 1.6rem 1.3rem; }
+    .news-btn { width: 100%; }
+}
+
 /* На узких экранах возвращаем базовый кегль, чтобы не было переполнения */
 @media (max-width: 600px) {
     html { font-size: 16px; }

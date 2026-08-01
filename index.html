@@ -32,9 +32,10 @@
     <link rel="alternate" hreflang="fr" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/site.png","description":"Dziewiarstwo krok po kroku — wzory, schematy, książki, filmy YouTube oraz aplikacje WzorAI i StitchAI","sameAs":["https://www.youtube.com/@ParaDrutow"]}</script>
-    <link rel="stylesheet" href="/assets/css/style.css?v=3">
-    <script defer src="/assets/js/lang.js?v=3"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=4">
+    <script defer src="/assets/js/lang.js?v=4"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
+    <script defer src="/assets/js/newsletter.js?v=1"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
     <style>
         main { margin: 1rem auto 2rem; }
@@ -654,6 +655,28 @@
                 <div class="why-item" data-i18n="home_why_li5">wzory i publikacje tworzone od podstaw</div>
             </div>
             <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką,<br>a dziewiarstwo staje się prawdziwą przyjemnością.</p>
+        </div>
+
+        <!-- Подписка на рассылку -->
+        <div class="news-card">
+            <h2 class="news-head" data-i18n="news_title">Bądź na bieżąco</h2>
+            <p class="news-desc" data-i18n="news_desc">Zapisz się, a napiszemy, gdy pojawią się nowe wzory, książki, filmy albo aktualizacje aplikacji. Kilka wiadomości w miesiącu — bez spamu.</p>
+
+            <form class="news-form" action="https://app.kit.com/forms/9752061/subscriptions" method="post" novalidate>
+                <input type="text" class="news-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="news-row">
+                    <input type="email" class="news-input" name="email_address" required
+                           data-i18n-placeholder="news_placeholder" placeholder="Twój adres e-mail" aria-label="E-mail">
+                    <button type="submit" class="news-btn" data-i18n="news_button">Zapisz się</button>
+                </div>
+                <label class="news-consent">
+                    <input type="checkbox" required>
+                    <span data-i18n="news_consent">Chcę otrzymywać informacje o nowościach Para Drutów na podany adres e-mail. Zgodę mogę wycofać w każdej chwili — szczegóły w <a href="/privacy.html">polityce prywatności</a>.</span>
+                </label>
+            </form>
+
+            <p class="news-msg news-msg--ok" data-i18n="news_success" hidden>Prawie gotowe! Sprawdź skrzynkę — wysłaliśmy link, który potwierdza zapis.</p>
+            <p class="news-msg news-msg--err" data-i18n="news_error" hidden>Coś poszło nie tak. Spróbuj jeszcze raz za chwilę.</p>
         </div>
 
     </div>

@@ -16,6 +16,11 @@ async function loadLang(lang) {
             const tpl = el.getAttribute("data-i18n-img");
             if (tpl) el.setAttribute("src", tpl.replace("{lang}", lang));
         });
+        // Подсказки в полях ввода
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+            const key = el.getAttribute("data-i18n-placeholder");
+            if (data[key]) el.setAttribute("placeholder", data[key]);
+        });
         document.documentElement.lang = lang;
         document.querySelectorAll("[data-lang]").forEach(btn => {
             btn.classList.toggle("active-lang", btn.getAttribute("data-lang") === lang);
