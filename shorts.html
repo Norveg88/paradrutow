@@ -21,7 +21,7 @@
     <meta name="twitter:title" content="Shorts — Para Drutów">
     <meta name="twitter:description" content="Krótkie filmy z trikami i poradami dziewiarskimi.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/feature.jpg">
-    <link rel="stylesheet" href="/assets/css/style.css?v=5">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6">
     <script defer src="/assets/js/lang.js?v=4"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
     <script defer src="/assets/js/newsletter.js?v=2"></script>
@@ -50,7 +50,6 @@
             <span></span><span></span><span></span>
         </button>
         <div class="nav-links">
-            <a href="#" class="nav-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
             <a href="/index.html" data-i18n="menu_home">Strona główna</a>
             <a href="/video.html" data-i18n="menu_video">Wideo</a>
             <a href="/shorts.html" class="active-link" data-i18n="menu_shorts">Shorts</a>
@@ -76,8 +75,13 @@
 <main>
     <div class="content-wrapper">
 
-        <h1 data-i18n="shorts_title">Shorts</h1>
-        <p class="subtitle" data-i18n="shorts_desc">Krótkie filmiki z praktycznymi trikami i poradami.</p>
+        <div class="page-head">
+            <div class="page-head-text">
+                <h1 data-i18n="shorts_title">Shorts</h1>
+                <p class="subtitle" data-i18n="shorts_desc">Krótkie filmiki z praktycznymi trikami i poradami.</p>
+            </div>
+            <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">✉ Newsletter</a>
+        </div>
 
         <div id="shorts-loader" class="videos-loader">
             <div class="spinner"></div>
@@ -88,6 +92,28 @@
 
         <div id="shorts-error" class="videos-error" style="display: none;">
             <p>⚠️ Nie udało się załadować shorts. Spróbuj odświeżyć stronę.</p>
+        </div>
+
+        <!-- Подписка на рассылку -->
+        <div class="news-card">
+            <h2 class="news-head" data-i18n="news_title">Bądź na bieżąco</h2>
+            <p class="news-desc" data-i18n="news_desc">Zapisz się, a napiszemy, gdy pojawią się nowe wzory, książki, filmy albo aktualizacje aplikacji. Kilka wiadomości w miesiącu — bez spamu.</p>
+
+            <form class="news-form" action="https://app.kit.com/forms/9752061/subscriptions" method="post" novalidate>
+                <input type="text" class="news-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="news-row">
+                    <input type="email" class="news-input" name="email_address" required
+                           data-i18n-placeholder="news_placeholder" placeholder="Twój adres e-mail" aria-label="E-mail">
+                    <button type="submit" class="news-btn" data-i18n="news_button">Zapisz się</button>
+                </div>
+                <label class="news-consent">
+                    <input type="checkbox" required>
+                    <span data-i18n="news_consent">Chcę otrzymywać informacje o nowościach Para Drutów na podany adres e-mail. Zgodę mogę wycofać w każdej chwili — szczegóły w <a href="/privacy.html">polityce prywatności</a>.</span>
+                </label>
+            </form>
+
+            <p class="news-msg news-msg--ok" data-i18n="news_success" hidden>Prawie gotowe! Sprawdź skrzynkę — wysłaliśmy link, który potwierdza zapis.</p>
+            <p class="news-msg news-msg--err" data-i18n="news_error" hidden>Coś poszło nie tak. Spróbuj jeszcze raz za chwilę.</p>
         </div>
 
     </div>

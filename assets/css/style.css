@@ -685,20 +685,74 @@ label {
     .news-btn { width: 100%; }
 }
 
-/* Кнопка подписки в меню */
-.nav a.nav-subscribe {
+/* Шапка страницы: заголовок слева, кнопка подписки справа */
+.page-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.page-head-text {
+    flex: 1 1 320px;
+    min-width: 0;
+}
+.page-head h1 {
+    text-align: left;
+}
+.page-head .subtitle {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.btn-subscribe {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     color: var(--accent-gold);
     border: 1px solid var(--accent-gold);
-    border-radius: 20px;
-    padding: 3px 14px;
-    margin-right: 22px;
-    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 26px;
+    padding: 10px 24px;
+    font-family: var(--font-header);
+    font-weight: 600;
+    font-size: 1.15rem;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-top: 0.6rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
-.nav a.nav-subscribe:hover {
+.btn-subscribe:hover {
     background: var(--accent-gold);
     color: #1a1a1a;
-    text-shadow: none;
-    box-shadow: 0 0 14px rgba(197,160,89,0.35);
+    box-shadow: 0 0 18px rgba(197,160,89,0.35);
+    transform: translateY(-1px);
+}
+
+/* Главная: hero остаётся по центру, кнопка — в правом верхнем углу */
+.hero .btn-subscribe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+/* Страница приложений: кнопка справа по центру блока */
+.app-hero .btn-subscribe {
+    margin-top: 0;
+    margin-left: auto;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .page-head { gap: 0.8rem; }
+    .btn-subscribe { font-size: 1.05rem; padding: 8px 20px; margin-top: 0; }
+    .hero .btn-subscribe {
+        position: static;
+        margin: 0 auto 0.8rem;
+    }
+    .app-hero .btn-subscribe { margin: 0.5rem auto 0; }
 }
 
 /* Окно подписки */
