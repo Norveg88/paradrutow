@@ -16,6 +16,12 @@ _hugo_build.lock
 _gitmodules
 create-content.ps1
 
+# Сборки Hugo — на сайт не деплоятся, лежат только локально
+docs/
+public/
+resources/
+.hugo_build.lock
+
 # Системные файлы
 .DS_Store
 Thumbs.db

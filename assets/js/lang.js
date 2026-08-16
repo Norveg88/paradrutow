@@ -1,4 +1,59 @@
-﻿const defaultLang = localStorage.getItem("lang") || "pl";
+﻿// ---------- Определение языка ----------
+const SUPPORTED_LANGS = ["pl", "en", "ru", "ua", "de", "fr"];
+
+// Коды браузера -> коды сайта
+const LANG_ALIASES = {
+    pl: "pl", en: "en", ru: "ru", de: "de", fr: "fr",
+    uk: "ua",  // украинский по ISO — uk, у нас папка ua
+    be: "ru",  // белорусский -> русский
+    cs: "pl", sk: "pl"  // чешский/словацкий ближе к польскому, чем к английскому
+};
+
+// Поисковым роботам всегда отдаём польскую версию:
+// она совпадает с HTML-исходником, canonical и og:locale
+function isCrawler() {
+    return /bot|crawler|spider|crawling|slurp|lighthouse|headlesschrome|pagespeed/i
+        .test(navigator.userAgent || "");
+}
+
+function readSavedLang() {
+    try {
+        const v = localStorage.getItem("lang");
+        return SUPPORTED_LANGS.includes(v) ? v : null;
+    } catch (e) {
+        return null; // приватный режим / отключённое хранилище
+    }
+}
+
+function detectLang() {
+    // 1. Явный выбор пользователя — высший приоритет
+    const saved = readSavedLang();
+    if (saved) return saved;
+
+    // 2. ?lang=en в ссылке (рассылка, соцсети, реклама)
+    try {
+        const urlLang = new URLSearchParams(location.search).get("lang");
+        if (SUPPORTED_LANGS.includes(urlLang)) return urlLang;
+    } catch (e) { /* игнорируем */ }
+
+    // 3. Роботы — только польский
+    if (isCrawler()) return "pl";
+
+    // 4. Языки браузера, по порядку приоритета
+    const prefs = (navigator.languages && navigator.languages.length)
+        ? navigator.languages
+        : [navigator.language || ""];
+    for (const tag of prefs) {
+        const base = String(tag).toLowerCase().split("-")[0];
+        const mapped = LANG_ALIASES[base];
+        if (mapped) return mapped;
+    }
+
+    // 5. Ничего не подошло — английский как международный
+    return "en";
+}
+
+const defaultLang = detectLang();
 
 async function loadLang(lang) {
     try {
@@ -27,11 +82,16 @@ async function loadLang(lang) {
         });
     } catch (e) {
         console.warn("Translations not found for:", lang);
+        // Файл перевода недоступен — не оставляем страницу наполовину
+        if (lang !== "pl") loadLang("pl");
     }
 }
 
 function setLang(lang) {
-    localStorage.setItem("lang", lang);
+    if (!SUPPORTED_LANGS.includes(lang)) return;
+    try {
+        localStorage.setItem("lang", lang);
+    } catch (e) { /* приватный режим — язык применится только на эту сессию */ }
     loadLang(lang);
 }
 
