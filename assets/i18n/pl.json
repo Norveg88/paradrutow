@@ -132,5 +132,8 @@
   "news_error": "Coś poszło nie tak. Spróbuj jeszcze raz za chwilę.",
   "news_patterns_title": "Nie przegap nowych wzorów",
   "news_patterns_desc": "Zostaw adres e-mail, a napiszemy, gdy tylko pojawi się nowy wzór — a przy okazji o nowych książkach, filmach i aktualizacjach aplikacji. Kilka wiadomości w miesiącu, bez spamu.",
-  "nav_newsletter": "Newsletter"
+  "nav_newsletter": "Newsletter",
+  "lang_pl": "🇵🇱 Po polsku",
+  "lang_en": "🇬🇧 Po angielsku",
+  "lang_chart": "🇵🇱 Legenda PL + EN"
 }

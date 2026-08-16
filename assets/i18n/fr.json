@@ -134,5 +134,8 @@
   "news_error": "Une erreur est survenue. Veuillez réessayer dans un instant.",
   "news_patterns_title": "Ne manquez aucun nouveau motif",
   "news_patterns_desc": "Laissez votre e-mail et nous écrirons dès quʼun nouveau motif sera prêt — ainsi que pour les nouveaux livres, vidéos et mises à jour. Quelques messages par mois, sans spam.",
-  "nav_newsletter": "Newsletter"
+  "nav_newsletter": "Newsletter",
+  "lang_pl": "🇵🇱 En polonais",
+  "lang_en": "🇬🇧 En anglais",
+  "lang_chart": "Légende PL + EN"
 }

@@ -55,9 +55,13 @@ function detectLang() {
 
 const defaultLang = detectLang();
 
+// Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
+// иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
+const I18N_VERSION = 6;
+
 async function loadLang(lang) {
     try {
-        const res = await fetch(`/assets/i18n/${lang}.json`);
+        const res = await fetch(`/assets/i18n/${lang}.json?v=${I18N_VERSION}`);
         if (!res.ok) throw new Error("Not found");
         const data = await res.json();
         document.querySelectorAll("[data-i18n]").forEach(el => {

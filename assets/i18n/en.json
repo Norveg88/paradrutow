@@ -134,5 +134,8 @@
   "news_error": "Something went wrong. Please try again in a moment.",
   "news_patterns_title": "Never miss a new pattern",
   "news_patterns_desc": "Leave your email and we will write as soon as a new pattern is ready — along with news about books, videos and app updates. A few messages a month, no spam.",
-  "nav_newsletter": "Newsletter"
+  "nav_newsletter": "Newsletter",
+  "lang_pl": "🇵🇱 In Polish",
+  "lang_en": "🇬🇧 In English",
+  "lang_chart": "Legend PL + EN"
 }
