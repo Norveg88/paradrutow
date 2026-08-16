@@ -24,6 +24,15 @@
     <meta name="twitter:title" content="Para Drutów — Dziewiarstwo, które inspiruje">
     <meta name="twitter:description" content="Wzory, schematy, książki, filmy i aplikacja WzorAI. Nauka dziewiarstwa dla każdego.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/feature.jpg">
+    <!--
+      hreflang отключён 2026-08-16.
+      Все семь тегов вели на один адрес: "английская версия — вот тут" и указывали
+      на польскую страницу. Google такую разметку либо отбрасывает как
+      самопротиворечивую, либо считает, что шесть языков живут на одной странице.
+      Пользы нет — язык переключается в JavaScript, URL не меняется, и об этом уже
+      сообщает canonical выше плюс <html lang="pl">.
+      Включать обратно имеет смысл только вместе с отдельными адресами
+      (/en/index.html, /de/index.html — со своими title, canonical и текстом в HTML).
     <link rel="alternate" hreflang="pl" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="en" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="ru" href="https://paradrutow.com/">
@@ -31,6 +40,7 @@
     <link rel="alternate" hreflang="de" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="fr" href="https://paradrutow.com/">
     <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/">
+    -->
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/site.png","description":"Dziewiarstwo krok po kroku — wzory, schematy, książki, filmy YouTube oraz aplikacje WzorAI i StitchAI","sameAs":["https://www.youtube.com/@ParaDrutow"]}</script>
     <link rel="stylesheet" href="/assets/css/style.css?v=8">
     <script defer src="/assets/js/lang.js?v=6"></script>
