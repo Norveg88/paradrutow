@@ -60,7 +60,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=8">
-    <script defer src="/assets/js/lang.js?v=6"></script>
+    <script defer src="/assets/js/lang.js?v=7"></script>
     <script defer src="/assets/js/ui.js?v=2"></script>
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -109,6 +109,30 @@
             font-weight: 600;
             letter-spacing: 0.3px;
             margin: 0;
+        }
+
+        .store-row {
+            text-align: center;
+            margin: 0 0 2.5rem;
+        }
+        .btn-store {
+            display: inline-block;
+            padding: 0.85rem 2.2rem;
+            border-radius: 999px;
+            border: 1px solid var(--accent-copper);
+            background: linear-gradient(135deg, rgba(197,160,89,0.18), rgba(140,95,55,0.18));
+            color: var(--accent-gold);
+            font-family: var(--font-header);
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-decoration: none;
+            transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+        }
+        .btn-store:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, rgba(197,160,89,0.32), rgba(140,95,55,0.32));
+            box-shadow: 0 8px 24px rgba(197,160,89,0.28);
         }
 
         .feature-image-wrapper {
@@ -370,6 +394,121 @@
 
 <main>
     <div class="content-wrapper">
+
+        <!-- ————— ShiftLens ————— -->
+        <div class="app-hero">
+            <div class="app-hero-text">
+                <h1>ShiftLens</h1>
+                <p data-i18n="shift_tagline">Zdjęcie grafiku zmian zamienia się w budziki</p>
+            </div>
+            <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">✉ Newsletter</a>
+        </div>
+
+        <p class="app-claim" data-i18n="shift_hero_sub">Sfotografuj grafik — budziki ustawią się same</p>
+
+        <div class="feature-image-wrapper">
+            <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" loading="lazy">
+        </div>
+
+        <p class="app-lead" data-i18n="shift_intro">Grafik zmian zwykle wisi na ścianie w szatni albo przychodzi zdjęciem na komunikatorze. Potem zaczyna się ręczna robota: znaleźć swój wiersz, rozczytać cudze pismo, policzyć, o której wstać, i ustawić budziki na miesiąc do przodu. Jedna pominięta kratka — i zmiana przespana.</p>
+
+        <h2 class="app-section-title" data-i18n="shift_how_title">Jak to działa</h2>
+        <div class="steps-grid">
+            <div class="step-item card">
+                <h3 data-i18n="shift_how1_t">1. Zrób zdjęcie</h3>
+                <p data-i18n="shift_how1_d">Cała kartka razem z datami w nagłówku. Możesz też wgrać plik Excel albo PDF.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how2_t">2. Wpisz nazwisko</h3>
+                <p data-i18n="shift_how2_d">Dokładnie tak, jak widnieje w grafiku. Jeśli jesteś na kartce sam — zostaw puste.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how3_t">3. Sprawdź oznaczone dni</h3>
+                <p data-i18n="shift_how3_d">Aplikacja pokazuje, gdzie nie jest pewna. Poprawka to jedno dotknięcie.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how4_t">4. Ustaw budziki</h3>
+                <p data-i18n="shift_how4_d">Na każdą zmianę osobny, o wybranej porze przed jej początkiem.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how5_t">5. Sprawdź dzwonek</h3>
+                <p data-i18n="shift_how5_d">Ekran „Niezawodność” pokazuje, co może przeszkodzić budzikowi, i pozwala zadzwonić próbnie.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how6_t">6. Dodaj widżet</h3>
+                <p data-i18n="shift_how6_d">Najbliższa zmiana zawsze przed oczami na ekranie głównym.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="shift_feat_title">Możliwości</h2>
+        <div class="features-grid">
+            <div class="feature-item card">
+                <span class="feature-item-icon">◷</span>
+                <h3 data-i18n="shift_f1_t">Różne zapisy godzin</h3>
+                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 oraz zmiany nocne przez północ.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f2_t">Kody literowe</h3>
+                <p data-i18n="shift_f2_d">Wolne, chorobowe, urlop, zmiana nocna.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f3_t">Nie zgaduje</h3>
+                <p data-i18n="shift_f3_d">Niepewne dni oznacza „do sprawdzenia” zamiast strzelać na oślep.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✦</span>
+                <h3 data-i18n="shift_f4_t">Prawdziwy budzik</h3>
+                <p data-i18n="shift_f4_d">Dokładne budziki Androida — nie wycisza ich tryb snu.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">❐</span>
+                <h3 data-i18n="shift_f5_t">Ekran ponad blokadą</h3>
+                <p data-i18n="shift_f5_d">Narastająca głośność, drzemka pięć minut, własna melodia.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f6_t">Widżet na ekranie głównym</h3>
+                <p data-i18n="shift_f6_d">Najbliższa zmiana, odliczanie, trzy rozmiary, motyw jasny i ciemny.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✻</span>
+                <h3 data-i18n="shift_f7_t">Licznik godzin</h3>
+                <p data-i18n="shift_f7_d">Suma za miesiąc, odliczenie przerwy, szacunek zarobku.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">↗</span>
+                <h3 data-i18n="shift_f8_t">Przypomnienie o końcu grafiku</h3>
+                <p data-i18n="shift_f8_d">Kilka dni wcześniej — zdążysz sfotografować nowy.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="shift_who_title">Dla kogo</h2>
+        <p class="app-lead" data-i18n="shift_who_d">Dla wszystkich, do których grafik przychodzi kartką, a nie kalendarzem: sprzedawców i kasjerów, pracowników magazynu i produkcji, pielęgniarek i sanitariuszy, ochrony, kelnerów i barmanów, kierowców.</p>
+
+        <h2 class="app-section-title" data-i18n="shift_det_title">Szczegóły</h2>
+        <div class="app-description card" style="margin-bottom:2rem;">
+            <ul class="app-details-list">
+                <li data-i18n="shift_det_plat"><strong>Platforma:</strong> Android 8.0 i nowszy.</li>
+                <li data-i18n="shift_det_lang"><strong>Języki:</strong> polski, ukraiński, angielski, rosyjski, niemiecki, francuski, hiszpański.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> potrzebny raz, przy instalacji.</li>
+                <li data-i18n="shift_det_acc"><strong>Konto:</strong> niepotrzebne.</li>
+                <li data-i18n="shift_det_ads"><strong>Reklamy:</strong> brak.</li>
+                <li data-i18n="shift_det_price"><strong>Cena:</strong> bezpłatnie.</li>
+            </ul>
+        </div>
+
+        <div class="app-note">
+            <h3 data-i18n="shift_priv_title">Twój grafik zostaje w telefonie</h3>
+            <p data-i18n="shift_priv_d">Grafik to dokument z nazwiskami współpracowników i Twoim rozkładem na miesiąc do przodu. Takie rzeczy nie powinny trafiać na cudzy serwer. ShiftLens rozpoznaje tekst bezpośrednio w telefonie: zdjęcia nigdzie nie są wysyłane, konta nie trzeba zakładać, a aplikacja działa bez internetu.</p>
+        </div>
+
+        <p class="store-row">
+            <a class="btn-store" href="https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens" target="_blank" rel="noopener" data-i18n="shift_cta">▶ Pobierz z Google Play</a>
+        </p>
+
+        <div class="app-divider"><span>Para Drutów</span></div>
 
         <!-- ————— WzorAI ————— -->
         <div class="app-hero">

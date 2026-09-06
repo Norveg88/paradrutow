@@ -33,3 +33,7 @@ Thumbs.db
 /scripts/add-lang-badges.js
 /scripts/inspect-cards.js
 /scripts/strip-bom.js
+/scripts/add-shiftlens-i18n.js
+/scripts/check-i18n.js
+/scripts/fix-pl-gaps.js
+/scripts/bump-version.js
