@@ -179,7 +179,6 @@
   "shift_det_net": "<strong>Internet:</strong> needed once, at installation.",
   "shift_det_acc": "<strong>Account:</strong> not required.",
   "shift_det_ads": "<strong>Ads:</strong> none.",
-  "shift_det_price": "<strong>Price:</strong> free.",
   "shift_priv_title": "Your rota stays on your phone",
   "shift_priv_d": "A rota is a document carrying your colleagues' surnames and your own schedule for a month ahead. That should not travel to someone else's server. ShiftLens recognises the text directly on the phone: photos are never uploaded, no account is needed, and the app works without an internet connection.",
   "shift_cta": "▶ Get it on Google Play"

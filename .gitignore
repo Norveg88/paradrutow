@@ -37,3 +37,4 @@ Thumbs.db
 /scripts/check-i18n.js
 /scripts/fix-pl-gaps.js
 /scripts/bump-version.js
+/scripts/edit-shiftlens.js
