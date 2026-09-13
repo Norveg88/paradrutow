@@ -6,25 +6,29 @@
 // 1. FADE-IN карточек при скролле
 // -----------------------------------------
 function initFadeIn() {
-    const observer = new IntersectionObserver((entries) => {
+    // Появление как раньше — когда в кадр вошло 10% высоты блока, — но требуя
+    // не больше MAX_PX. У очень длинных карточек (песенка на главной) 10% это
+    // сотни пикселей: на невысоких экранах блок не успевал проявиться до
+    // прокрутки и снизу оставалась пустота. Короткие карточки не меняются:
+    // для них 10% и так меньше порога в пикселях.
+    const MAX_PX = 160;
+    const reveal = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
                 observer.unobserve(entry.target); // один раз — и хватит
             }
         });
-    }, {
-        // 0, а не 0.1: порог считается от высоты самого элемента, поэтому у длинных
-        // блоков (карточка с песней) 10% — это сотни пикселей, и на невысоких экранах
-        // они не успевали проявиться до прокрутки. Отступ -40px не даёт сработать,
-        // пока блок лишь чуть выглядывает снизу.
-        threshold: 0,
-        rootMargin: "0px 0px -40px 0px"
-    });
+    };
 
     document.querySelectorAll(".card.glass-card, .app-hero, .feature-image-wrapper, .yt-card, .section-tile, .why-card, .song-card").forEach((el, i) => {
         el.style.transitionDelay = `${i * 60}ms`; // каскадная задержка
-        observer.observe(el);
+        const h = el.offsetHeight;
+        const threshold = h > 0 ? Math.min(0.1, MAX_PX / h) : 0.1;
+        new IntersectionObserver(reveal, {
+            threshold,
+            rootMargin: "0px 0px -40px 0px"
+        }).observe(el);
     });
 }
 
