@@ -39,3 +39,4 @@ Thumbs.db
 /scripts/bump-version.js
 /scripts/edit-shiftlens.js
 /scripts/find-hero.js
+/scripts/bump-ui.js
