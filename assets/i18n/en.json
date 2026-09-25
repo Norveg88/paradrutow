@@ -176,10 +176,10 @@
   "shift_det_title": "Details",
   "shift_det_plat": "<strong>Platform:</strong> Android 8.0 and newer.",
   "shift_det_lang": "<strong>Languages:</strong> Polish, Ukrainian, English, Russian, German, French, Spanish.",
-  "shift_det_net": "<strong>Internet:</strong> needed once, at installation.",
+  "shift_det_net": "<strong>Internet:</strong> needed at installation and once, when the scanner is first used.",
   "shift_det_acc": "<strong>Account:</strong> not required.",
   "shift_det_ads": "<strong>Ads:</strong> none.",
   "shift_priv_title": "Your rota stays on your phone",
-  "shift_priv_d": "A rota is a document carrying your colleagues' surnames and your own schedule for a month ahead. That should not travel to someone else's server. ShiftLens recognises the text directly on the phone: photos are never uploaded, no account is needed, and the app works without an internet connection.",
+  "shift_priv_d": "A rota is a document carrying your colleagues' surnames and your own schedule for a month ahead. That should not travel to someone else's server. ShiftLens recognises the text directly on the phone: photos are never uploaded, no account is needed, and the app works without an internet connection. The only exception is your choice: if a rota is recognised wrongly, you can email a report to the developer.",
   "shift_cta": "▶ Get it on Google Play"
 }
