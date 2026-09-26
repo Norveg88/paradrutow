@@ -176,7 +176,7 @@
   "shift_det_title": "Details",
   "shift_det_plat": "<strong>Plattform:</strong> Android 8.0 und neuer.",
   "shift_det_lang": "<strong>Sprachen:</strong> Polnisch, Ukrainisch, Englisch, Russisch, Deutsch, Französisch, Spanisch.",
-  "shift_det_net": "<strong>Internet:</strong> nötig bei der Installation und einmalig beim ersten Start des Scanners.",
+  "shift_det_net": "<strong>Internet:</strong> einmalig nötig, bei der Installation.",
   "shift_det_acc": "<strong>Konto:</strong> nicht erforderlich.",
   "shift_det_ads": "<strong>Werbung:</strong> keine.",
   "shift_priv_title": "Ihr Schichtplan bleibt auf dem Telefon",

@@ -176,7 +176,7 @@
   "shift_det_title": "Подробности",
   "shift_det_plat": "<strong>Платформа:</strong> Android 8.0 и новее.",
   "shift_det_lang": "<strong>Языки:</strong> польский, украинский, английский, русский, немецкий, французский, испанский.",
-  "shift_det_net": "<strong>Интернет:</strong> нужен при установке и один раз, при первом запуске сканера.",
+  "shift_det_net": "<strong>Интернет:</strong> нужен один раз, при установке.",
   "shift_det_acc": "<strong>Аккаунт:</strong> не требуется.",
   "shift_det_ads": "<strong>Реклама:</strong> нет.",
   "shift_priv_title": "Ваш график остаётся в телефоне",
