@@ -66,9 +66,20 @@ function initContactForm() {
         submitBtn.textContent = "⏳ ...";
 
         try {
+            // Тема письма с именем и адресом посетителя — чтобы в ящике
+            // было видно, кто написал, не открывая письмо. Скрытое поле
+            // _subject в разметке остаётся запасным вариантом.
+            const data = new FormData(form);
+            const name = (data.get("name") || "").toString().trim().slice(0, 60);
+            const email = (data.get("email") || "").toString().trim().slice(0, 80);
+            if (name || email) {
+                const who = name && email ? `${name} (${email})` : (name || email);
+                data.set("_subject", `Wiadomość od ${who} — paradrutow.com`);
+            }
+
             const response = await fetch(form.action, {
                 method: "POST",
-                body: new FormData(form),
+                body: data,
                 headers: { "Accept": "application/json" }
             });
 
