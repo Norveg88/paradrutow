@@ -49,14 +49,8 @@
         .e404-text { color: #bbb; max-width: 560px; margin: 0 auto 1.8rem; line-height: 1.7; }
         .e404-links { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
     </style>
-    <!-- Google Analytics: видно, по каким битым адресам приходят люди -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0TEX42D1S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-T0TEX42D1S');
-    </script>
+    <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
+    <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
 </head>
 <body>
 
