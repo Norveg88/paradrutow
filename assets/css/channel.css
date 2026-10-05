@@ -17,13 +17,6 @@
     background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
     z-index: 1;
 }
-.ch-banner {
-    aspect-ratio: 2048 / 339; /* точная пропорция полосы баннера, которую отдаёт YouTube */
-    background-color: #1a1a1a;
-    background-size: cover;
-    background-position: center;
-    border-bottom: 1px solid var(--glass-border);
-}
 .ch-body {
     display: flex;
     gap: 1.6rem;
@@ -42,7 +35,6 @@
     position: relative;
     z-index: 2;
 }
-.channel-card.has-banner .ch-avatar { margin-top: -58px; }
 .ch-info { flex: 1 1 auto; min-width: 0; }
 .ch-title {
     font-family: var(--font-header);
@@ -138,7 +130,6 @@
         gap: 0.8rem;
     }
     .ch-avatar { width: 84px; height: 84px; }
-    .channel-card.has-banner .ch-avatar { margin-top: -50px; }
-    .ch-foot { justify-content: center; }
+        .ch-foot { justify-content: center; }
     .ch-num { font-size: 1.35rem; }
 }
