@@ -44,19 +44,28 @@
 
     function setBanner(card, src) {
         if (!src) return;
-        // У googleusercontent размер задаётся суффиксом: берём 1707px вместо оригинала 2560px.
-        // Если уменьшенная версия не загрузится — используем оригинал.
-        const small = src.includes('=') ? src : src + '=w1707';
+        // Тот же вариант, которым YouTube сам показывает баннер на канале:
+        // готовая полоса из центра (fcrop64), JPEG, 2120 px — ~150 КБ.
+        // Без суффикса YouTube отдаёт весь баннер 16:9, а «=w1707» — PNG на 2+ МБ.
+        const CROP = '=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj';
+        const best = src.includes('=') ? src : src + CROP;
         const banner = document.getElementById('ch-banner');
         const apply = (u) => {
             banner.style.backgroundImage = `url("${u}")`;
             banner.hidden = false;
             card.classList.add('has-banner');
         };
+        // Блок показывается только после полной загрузки картинки —
+        // пустой полосы на её месте не будет
         const probe = new Image();
-        probe.onload = () => apply(small);
-        probe.onerror = () => { if (small !== src) apply(src); };
-        probe.src = small;
+        probe.onload = () => apply(best);
+        probe.onerror = () => {
+            if (best === src) return;
+            const raw = new Image();
+            raw.onload = () => apply(src);
+            raw.src = src;
+        };
+        probe.src = best;
     }
 
     async function load() {
