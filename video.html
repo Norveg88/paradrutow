@@ -23,11 +23,13 @@
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/feature.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Para Drutów — Filmy o dziewiarstwie","description":"Filmy YouTube o technikach dziewiarskich, wzorach i schematach","thumbnailUrl":"https://paradrutow.com/assets/img/feature.jpg","uploadDate":"2026-01-01","author":{"@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com"}}</script>
     <link rel="stylesheet" href="/assets/css/style.css?v=8">
-    <script defer src="/assets/js/lang.js?v=8"></script>
+    <script defer src="/assets/js/lang.js?v=9"></script>
     <script defer src="/assets/js/ui.js?v=5"></script>
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <script defer src="/assets/js/videos.js?v=3"></script>
+    <script defer src="/assets/js/channel.js?v=1"></script>
     <link rel="stylesheet" href="/assets/css/videos-shorts.css">
+    <link rel="stylesheet" href="/assets/css/channel.css?v=1">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0TEX42D1S"></script>
@@ -83,6 +85,29 @@
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">✉ Newsletter</a>
         </div>
+
+        <!-- Баннер канала — данные из assets/data/channel.json (их пишет scripts/fetch-videos.js) -->
+        <section class="channel-card" id="channel-card" hidden>
+            <div class="ch-banner" id="ch-banner" hidden></div>
+            <div class="ch-body">
+                <img class="ch-avatar" id="ch-avatar" alt="Para Drutów" hidden>
+                <div class="ch-info">
+                    <h2 class="ch-title" id="ch-title">Para Drutów</h2>
+                    <p class="ch-handle" id="ch-handle">@ParaDrutow</p>
+                    <p class="ch-desc" id="ch-desc"></p>
+                    <button type="button" class="ch-more" id="ch-more" hidden><span data-i18n="ch_more">Pokaż więcej</span><span data-i18n="ch_less" hidden>Pokaż mniej</span></button>
+                    <div class="ch-stats">
+                        <div class="ch-stat"><span class="ch-num" id="ch-subs">—</span><span class="ch-label" data-i18n="ch_subscribers">Subskrybenci</span></div>
+                        <div class="ch-stat"><span class="ch-num" id="ch-videos">—</span><span class="ch-label" data-i18n="ch_videos">Filmy</span></div>
+                        <div class="ch-stat"><span class="ch-num" id="ch-views">—</span><span class="ch-label" data-i18n="ch_views">Wyświetlenia</span></div>
+                    </div>
+                    <div class="ch-foot">
+                        <p class="ch-updated"><span data-i18n="ch_updated">Dane z dnia</span> <time id="ch-date"></time></p>
+                        <a class="btn-youtube" id="ch-link" href="https://www.youtube.com/@ParaDrutow" target="_blank" rel="noopener" data-i18n="ch_cta">▶ Zobacz kanał na YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Loader while fetching -->
         <div id="videos-loader" class="videos-loader">

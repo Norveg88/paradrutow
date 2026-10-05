@@ -181,5 +181,12 @@
   "shift_det_ads": "<strong>Ads:</strong> none.",
   "shift_priv_title": "Your rota stays on your phone",
   "shift_priv_d": "A rota is a document carrying your colleagues' surnames and your own schedule for a month ahead. That should not travel to someone else's server. ShiftLens recognises the text directly on the phone: photos are never uploaded, no account is needed, and the app works without an internet connection. The only exception is your choice: if a rota is recognised wrongly, you can email a report to the developer.",
-  "shift_cta": "▶ Get it on Google Play"
+  "shift_cta": "▶ Get it on Google Play",
+  "ch_subscribers": "Subscribers",
+  "ch_videos": "Videos",
+  "ch_views": "Views",
+  "ch_updated": "Data as of",
+  "ch_cta": "▶ Visit the channel on YouTube",
+  "ch_more": "Show more",
+  "ch_less": "Show less"
 }

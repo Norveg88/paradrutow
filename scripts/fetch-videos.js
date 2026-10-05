@@ -28,7 +28,7 @@ const CONFIG = {
   MAX_RESULTS:         0,           // 0 = все видео
   MERGE_WITH_EXISTING: true,
   SORT_ORDER:          'newest-first',
-  AUTO_DEPLOY:         true,
+  AUTO_DEPLOY:         !process.argv.includes('--no-deploy'), // node fetch-videos.js --no-deploy — без коммита и пуша
   REPO_DIR:            path.join(__dirname, '..'),
   GIT_BRANCH:          'main',
   GIT_COMMIT_MESSAGE:  'Update video data'
@@ -87,9 +87,11 @@ async function fetchChannelVideos() {
       console.log(`Channel ID: ${channelId}\n`);
     }
 
-    // 2. Uploads playlist
-    const uploadsId = await getUploadsPlaylistId(channelId);
-    console.log(`Uploads playlist: ${uploadsId}\n`);
+    // 2. Канал: плейлист загрузок + описание, баннер и статистика (один запрос)
+    const channel = await fetchChannelInfo(channelId);
+    const uploadsId = channel.uploadsId;
+    console.log(`Uploads playlist: ${uploadsId}`);
+    console.log(`Channel stats: ${channel.info.subscriberCount ?? 'скрыто'} subs, ${channel.info.videoCount} videos, ${channel.info.viewCount} views\n`);
 
     // 3. Загрузить все видео из плейлиста
     console.log('Fetching playlist...');
@@ -149,13 +151,25 @@ async function fetchChannelVideos() {
     fs.writeFileSync(shortsPath, JSON.stringify(finalShorts, null, 2), 'utf-8');
     console.log(`Saved shorts.json: ${finalShorts.length} shorts\n`);
 
+    // 9b. Данные канала для баннера на странице видео.
+    // updatedAt — момент запуска скрипта: на эту дату действительны цифры.
+    const channelPath = path.join(outputDir, 'channel.json');
+    const channelData = {
+      ...channel.info,
+      regularVideos: finalVideos.length,
+      shorts:        finalShorts.length,
+      updatedAt:     new Date().toISOString()
+    };
+    fs.writeFileSync(channelPath, JSON.stringify(channelData, null, 2), 'utf-8');
+    console.log(`Saved channel.json: updated ${channelData.updatedAt}\n`);
+
     // 10. Генерация video sitemap
     const sitemapPath = path.join(CONFIG.REPO_DIR, 'sitemap-video.xml');
     generateVideoSitemap(finalVideos, finalShorts, sitemapPath);
 
     // 11. Деплой
-    if (CONFIG.AUTO_DEPLOY) deployToGitHub(videosPath, shortsPath, sitemapPath);
-    else console.log('AUTO_DEPLOY off. Run: git add . && git commit && git push\n');
+    if (CONFIG.AUTO_DEPLOY) deployToGitHub(videosPath, shortsPath, sitemapPath, channelPath);
+    else console.log('AUTO_DEPLOY off. Run:\n  git add assets/data/videos.json assets/data/shorts.json assets/data/channel.json sitemap-video.xml\n  git commit -m "Update video data" && git push\n');
 
   } catch (err) {
     console.error('\nError:', err.message);
@@ -226,21 +240,22 @@ function mergeData(filePath, newItems) {
 // ─────────────────────────────────────────────────────
 // Deploy: git add → commit → push
 // ─────────────────────────────────────────────────────
-function deployToGitHub(videosPath, shortsPath, sitemapPath) {
+function deployToGitHub(videosPath, shortsPath, sitemapPath, channelPath) {
   console.log('Deploying to GitHub...\n');
   const date = new Date().toISOString().slice(0, 10);
   const msg  = `${CONFIG.GIT_COMMIT_MESSAGE} ${date}`;
   try {
     process.chdir(CONFIG.REPO_DIR);
-    execSync(`git add "${videosPath}" "${shortsPath}" "${sitemapPath}"`, { stdio: 'inherit' });
-    const status = execSync('git status --porcelain').toString().trim();
-    if (!status) { console.log('Nothing to commit — already up to date.\n'); return; }
+    execSync(`git add "${videosPath}" "${shortsPath}" "${sitemapPath}" "${channelPath}"`, { stdio: 'inherit' });
+    // Проверяем только подготовленные файлы, а не всю папку
+    const staged = execSync('git diff --cached --name-only').toString().trim();
+    if (!staged) { console.log('Nothing to commit — already up to date.\n'); return; }
     execSync(`git commit -m "${msg}"`, { stdio: 'inherit' });
     execSync(`git push origin ${CONFIG.GIT_BRANCH}`, { stdio: 'inherit' });
-    console.log(`\nDeployed! https://norveg88.github.io/\n`);
+    console.log(`\nDeployed! https://paradrutow.com/\n`);
   } catch (err) {
     console.error('Git error:', err.message);
-    console.log(`\nRun manually:\n  git add assets/data/videos.json assets/data/shorts.json\n  git commit -m "${msg}"\n  git push origin ${CONFIG.GIT_BRANCH}\n`);
+    console.log(`\nRun manually:\n  git add assets/data/videos.json assets/data/shorts.json assets/data/channel.json sitemap-video.xml\n  git commit -m "${msg}"\n  git push origin ${CONFIG.GIT_BRANCH}\n`);
   }
 }
 
@@ -257,13 +272,40 @@ async function resolveChannelHandle(handle) {
   return data.items[0].id;
 }
 
-async function getUploadsPlaylistId(channelId) {
-  const url  = `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${channelId}&key=${CONFIG.API_KEY}`;
+// Один запрос channels.list: плейлист загрузок + всё для баннера на сайте.
+// Стоит 1 единицу квоты API, как и прежний запрос только за плейлистом.
+async function fetchChannelInfo(channelId) {
+  const parts = 'snippet,statistics,contentDetails,brandingSettings';
+  const url  = `https://www.googleapis.com/youtube/v3/channels?part=${parts}&id=${channelId}&key=${CONFIG.API_KEY}`;
   const res  = await fetch(url);
   const data = await res.json();
   if (data.error) throw new Error(data.error.message);
-  if (!data.items?.[0]) throw new Error('Channel not found');
-  return data.items[0].contentDetails.relatedPlaylists.uploads;
+  const ch = data.items?.[0];
+  if (!ch) throw new Error('Channel not found');
+
+  const sn = ch.snippet || {};
+  const st = ch.statistics || {};
+  const handle = sn.customUrl ? (sn.customUrl.startsWith('@') ? sn.customUrl : '@' + sn.customUrl) : CONFIG.CHANNEL_ID;
+  const thumbs = sn.thumbnails || {};
+  const num = (v) => (v === undefined || v === null || v === '') ? null : Number(v);
+
+  return {
+    uploadsId: ch.contentDetails.relatedPlaylists.uploads,
+    info: {
+      id:          ch.id,
+      title:       sn.title || '',
+      description: sn.description || '',
+      handle,
+      url:         `https://www.youtube.com/${handle}`,
+      avatar:      (thumbs.high || thumbs.medium || thumbs.default || {}).url || '',
+      banner:      ch.brandingSettings?.image?.bannerExternalUrl || '',
+      // YouTube отдаёт число подписчиков округлённым до 3 значащих цифр;
+      // если автор скрыл его — поля нет, на сайте эта цифра не показывается
+      subscriberCount: st.hiddenSubscriberCount ? null : num(st.subscriberCount),
+      videoCount:  num(st.videoCount),
+      viewCount:   num(st.viewCount)
+    }
+  };
 }
 
 async function fetchPlaylistVideos(playlistId, pageToken = null, all = [], max = Infinity) {

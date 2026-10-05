@@ -1,0 +1,145 @@
+/* channel.css — баннер канала YouTube на странице видео */
+.channel-card {
+    position: relative;
+    margin: 0 0 2rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(40,40,40,0.45);
+    backdrop-filter: blur(8px);
+    animation: chFade 0.5s ease both;
+}
+.channel-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+    z-index: 1;
+}
+.ch-banner {
+    aspect-ratio: 6.2 / 1;
+    background-color: #1a1a1a;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid var(--glass-border);
+}
+.ch-body {
+    display: flex;
+    gap: 1.6rem;
+    padding: 1.5rem 2rem 1.8rem;
+    align-items: flex-start;
+}
+.ch-avatar {
+    flex: 0 0 auto;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-gold);
+    object-fit: cover;
+    background: #222;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 2;
+}
+.channel-card.has-banner .ch-avatar { margin-top: -58px; }
+.ch-info { flex: 1 1 auto; min-width: 0; }
+.ch-title {
+    font-family: var(--font-header);
+    font-weight: 600;
+    color: var(--accent-gold);
+    font-size: 1.7rem;
+    line-height: 1.2;
+    margin: 0 0 0.15rem;
+}
+.ch-handle {
+    color: var(--accent-copper);
+    font-size: 0.95rem;
+    margin: 0 0 0.8rem;
+}
+.ch-desc {
+    color: #bbb;
+    font-size: 1rem;
+    line-height: 1.7;
+    white-space: pre-line;
+    margin: 0 0 0.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.ch-desc.open {
+    display: block;
+    -webkit-line-clamp: unset;
+}
+.ch-more {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--accent-copper);
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.ch-more:hover { color: var(--accent-gold); }
+.ch-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.2rem 0 0.4rem;
+}
+.ch-stat {
+    flex: 1 1 120px;
+    text-align: center;
+    padding: 0.8rem 0.6rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    background: rgba(0,0,0,0.25);
+}
+.ch-num {
+    display: block;
+    font-family: var(--font-header);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    line-height: 1.2;
+}
+.ch-label {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.82rem;
+    color: #aaa;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+.ch-foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.ch-updated {
+    color: #888;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin: 0;
+}
+@keyframes chFade {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: none; }
+}
+@media (max-width: 600px) {
+    .ch-body {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.2rem 1.2rem 1.5rem;
+        gap: 0.8rem;
+    }
+    .ch-avatar { width: 84px; height: 84px; }
+    .channel-card.has-banner .ch-avatar { margin-top: -50px; }
+    .ch-foot { justify-content: center; }
+    .ch-num { font-size: 1.35rem; }
+}

@@ -51,3 +51,5 @@ Thumbs.db
 /scripts/set-descriptions.js
 /scripts/audit-meta.js
 /scripts/fix-home-links.js
+/scripts/add-channel-i18n.js
+/scripts/serve.js

@@ -181,5 +181,12 @@
   "shift_det_ads": "<strong>Publicité :</strong> aucune.",
   "shift_priv_title": "Votre planning reste sur votre téléphone",
   "shift_priv_d": "Un planning est un document qui porte les noms de vos collègues et votre emploi du temps pour un mois. Cela n'a pas à partir sur le serveur d'un tiers. ShiftLens reconnaît le texte directement sur le téléphone : aucune photo n'est envoyée, aucun compte n'est nécessaire, et l'application fonctionne sans connexion. La seule exception, c'est vous qui la décidez : si un planning est mal reconnu, vous pouvez envoyer un rapport au développeur par e-mail.",
-  "shift_cta": "▶ Télécharger sur Google Play"
+  "shift_cta": "▶ Télécharger sur Google Play",
+  "ch_subscribers": "Abonnés",
+  "ch_videos": "Vidéos",
+  "ch_views": "Vues",
+  "ch_updated": "Données au",
+  "ch_cta": "▶ Voir la chaîne YouTube",
+  "ch_more": "Afficher plus",
+  "ch_less": "Afficher moins"
 }
