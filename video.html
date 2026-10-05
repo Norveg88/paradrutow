@@ -22,9 +22,12 @@
     <meta name="twitter:description" content="Filmy YouTube o dziewiarstwie od Para Drutów — techniki, schematy i wzory pokazane krok po kroku. Oglądaj, ucz się i dziergaj razem z nami, we własnym tempie.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/feature.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Para Drutów — Filmy o dziewiarstwie","description":"Filmy YouTube o technikach dziewiarskich, wzorach i schematach","thumbnailUrl":"https://paradrutow.com/assets/img/feature.jpg","uploadDate":"2026-01-01","author":{"@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com"}}</script>
-    <link rel="stylesheet" href="/assets/css/style.css?v=8">
+    <link rel="stylesheet" href="/assets/css/style.css?v=9">
     <script defer src="/assets/js/lang.js?v=13"></script>
-    <script defer src="/assets/js/ui.js?v=5"></script>
+    <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
+    <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
+    <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
+    <script defer src="/assets/js/ui.js?v=6"></script>
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <script defer src="/assets/js/videos.js?v=3"></script>
     <script defer src="/assets/js/channel.js?v=3"></script>

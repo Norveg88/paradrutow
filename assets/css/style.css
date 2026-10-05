@@ -813,3 +813,19 @@ label {
 
 /* Videos & Shorts pages */
 @import url('videos-shorts.css');
+
+/* =====================================================
+   Страховка для fade-in: если ui.js не загрузился или сломался,
+   встроенный таймер в <head> ставит на <html> класс no-fx —
+   и карточки показываются сразу, без анимации.
+   ===================================================== */
+html.no-fx .card.glass-card,
+html.no-fx .app-hero,
+html.no-fx .feature-image-wrapper,
+html.no-fx .yt-card,
+html.no-fx .section-tile,
+html.no-fx .why-card,
+html.no-fx .song-card {
+    opacity: 1 !important;
+    transform: none !important;
+}

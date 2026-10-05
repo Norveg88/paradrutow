@@ -138,6 +138,7 @@ function showFormMessage(form, type) {
 // -----------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
     initFadeIn();
+    window.uiReady = true; // страховочный таймер в <head> видит, что анимация запущена
     initBackToTop();
     initContactForm();
 });
