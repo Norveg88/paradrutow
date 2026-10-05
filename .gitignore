@@ -57,3 +57,7 @@ Thumbs.db
 /scripts/fix-apps-h1.js
 /scripts/audit-h1.js
 /scripts/audit-lang.js
+/archetypes/
+/content/
+/layouts/
+/scripts/audit-site.js
