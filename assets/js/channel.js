@@ -57,25 +57,6 @@
         probe.src = small;
     }
 
-    function setDescription(text) {
-        const desc = document.getElementById('ch-desc');
-        const more = document.getElementById('ch-more');
-        if (!desc) return;
-        desc.textContent = text || '';
-        desc.hidden = !text;
-        if (!more || !text) return;
-        // Кнопка нужна, только если текст не влез в 4 строки
-        requestAnimationFrame(() => {
-            if (desc.scrollHeight <= desc.clientHeight + 2) return;
-            more.hidden = false;
-            more.addEventListener('click', () => {
-                const open = desc.classList.toggle('open');
-                more.querySelector('[data-i18n="ch_more"]').hidden = open;
-                more.querySelector('[data-i18n="ch_less"]').hidden = !open;
-            });
-        });
-    }
-
     async function load() {
         const card = document.getElementById('channel-card');
         if (!card) return;
@@ -99,7 +80,6 @@
 
         card.hidden = false;
         setBanner(card, data.banner);
-        setDescription(data.description);
         renderLocalized();
 
         new MutationObserver(renderLocalized)

@@ -294,7 +294,6 @@ async function fetchChannelInfo(channelId) {
     info: {
       id:          ch.id,
       title:       sn.title || '',
-      description: sn.description || '',
       handle,
       url:         `https://www.youtube.com/${handle}`,
       avatar:      (thumbs.high || thumbs.medium || thumbs.default || {}).url || '',

@@ -57,31 +57,30 @@
     font-size: 0.95rem;
     margin: 0 0 0.8rem;
 }
+.ch-intro {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0 0 0.5rem;
+}
 .ch-desc {
     color: #bbb;
     font-size: 1rem;
     line-height: 1.7;
-    white-space: pre-line;
-    margin: 0 0 0.3rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    margin: 0 0 0.5rem;
 }
-.ch-desc.open {
-    display: block;
-    -webkit-line-clamp: unset;
+.ch-contact {
+    color: #999;
+    font-size: 0.92rem;
+    margin: 0;
 }
-.ch-more {
-    background: none;
-    border: 0;
-    padding: 0;
+.ch-contact a {
     color: var(--accent-copper);
-    font: inherit;
-    font-size: 0.9rem;
-    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-copper);
 }
-.ch-more:hover { color: var(--accent-gold); }
+.ch-contact a:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
 .ch-stats {
     display: flex;
     flex-wrap: wrap;
