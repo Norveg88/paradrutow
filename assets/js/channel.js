@@ -7,7 +7,9 @@
     let data = null;
 
     function locale() {
-        const l = (document.documentElement.lang || 'pl').toLowerCase();
+        // Язык интерфейса (data-ui-lang ставит lang.js); <html lang> всегда "pl"
+        const root = document.documentElement;
+        const l = (root.dataset.uiLang || root.lang || 'pl').toLowerCase();
         return LOCALE[l] || l;
     }
     function fmtNum(n) {
@@ -83,7 +85,7 @@
         renderLocalized();
 
         new MutationObserver(renderLocalized)
-            .observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+            .observe(document.documentElement, { attributes: true, attributeFilter: ['data-ui-lang'] });
     }
 
     document.addEventListener('DOMContentLoaded', load);

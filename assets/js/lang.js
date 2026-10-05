@@ -57,7 +57,7 @@ const defaultLang = detectLang();
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
-const I18N_VERSION = 11;
+const I18N_VERSION = 12;
 
 async function loadLang(lang) {
     try {
@@ -80,7 +80,10 @@ async function loadLang(lang) {
             const key = el.getAttribute("data-i18n-placeholder");
             if (data[key]) el.setAttribute("placeholder", data[key]);
         });
-        document.documentElement.lang = lang;
+        // <html lang> всегда остаётся "pl": основной текст сайта — польские описания
+        // книг и схем, переводятся только кнопки, меню и подписи. Язык интерфейса
+        // хранится отдельно — по нему скрипты форматируют числа и даты.
+        document.documentElement.dataset.uiLang = lang;
         document.querySelectorAll("[data-lang]").forEach(btn => {
             btn.classList.toggle("active-lang", btn.getAttribute("data-lang") === lang);
         });
