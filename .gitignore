@@ -48,3 +48,5 @@ Thumbs.db
 /scripts/set-formspree.js
 /scripts/add-book13.js
 /scripts/add-book13-amazon.js
+/scripts/set-descriptions.js
+/scripts/audit-meta.js
