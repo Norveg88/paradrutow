@@ -60,7 +60,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=8">
-    <script defer src="/assets/js/lang.js?v=10"></script>
+    <script defer src="/assets/js/lang.js?v=11"></script>
     <script defer src="/assets/js/ui.js?v=5"></script>
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -96,9 +96,30 @@
         .app-hero-text {
             text-align: left;
         }
-        .app-hero-text h1 {
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
+        .app-hero-text h2 {
+            /* Раньше это был h1 и часть вида приходила из общего правила h1 —
+               теперь всё задано здесь, чтобы название выглядело как прежде */
+            font-family: var(--font-header);
+            font-weight: 700;
+            color: var(--accent-gold);
             font-size: 3rem;
+            line-height: inherit;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000;
             margin: 0 0 0.3rem;
+            padding-bottom: 10px;
             border: none;
             display: block;
         }
@@ -346,7 +367,7 @@
         @media (max-width: 600px) {
             .app-hero { flex-direction: column; text-align: center; padding: 1.5rem; }
             .app-hero-text { text-align: center; }
-            .app-hero-text h1 { font-size: 2.2rem; }
+            .app-hero-text h2 { font-size: 2.2rem; }
             .app-section-title { font-size: 1.1rem; margin: 2rem 0 1rem; }
             .app-lead { font-size: 0.94rem; line-height: 1.8; }
             .app-note { padding: 1.2rem 1.3rem; }
@@ -395,11 +416,14 @@
 <main>
     <div class="content-wrapper">
 
+        <!-- Один заголовок первого уровня на страницу; визуально скрыт, названия приложений — h2 -->
+        <h1 class="visually-hidden" data-i18n="apps_h1">Aplikacje Para Drutów</h1>
+
         <!-- ————— ShiftLens ————— -->
         <div class="app-hero">
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
-                <h1>ShiftLens</h1>
+                <h2>ShiftLens</h2>
                 <p data-i18n="shift_tagline">Zdjęcie grafiku zmian zamienia się w budziki</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">✉ Newsletter</a>
@@ -514,7 +538,7 @@
         <div class="app-hero">
             <img src="/assets/img/icon2.png" alt="WzorAI Logo" class="app-hero-icon">
             <div class="app-hero-text">
-                <h1>WzorAI</h1>
+                <h2>WzorAI</h2>
                 <p data-i18n="wzorai_tagline">Twój asystent w tworzeniu wzorów dziewiarskich</p>
             </div>
         </div>
@@ -611,7 +635,7 @@
         <div class="app-hero">
             <img src="/assets/img/icon.png" alt="StitchAI Logo" class="app-hero-icon">
             <div class="app-hero-text">
-                <h1>StitchAI</h1>
+                <h2>StitchAI</h2>
                 <p>Aplikacja edukacyjna do schematów dziewiarskich</p>
             </div>
         </div>
