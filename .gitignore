@@ -62,3 +62,6 @@ Thumbs.db
 /layouts/
 /scripts/audit-site.js
 /scripts/add-404.js
+/scripts/lazy-images.js
+/scripts/audit-img.js
+/scripts/img-dims.json
