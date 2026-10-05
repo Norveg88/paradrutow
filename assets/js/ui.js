@@ -12,6 +12,7 @@ function initFadeIn() {
     // прокрутки и снизу оставалась пустота. Короткие карточки не меняются:
     // для них 10% и так меньше порога в пикселях.
     const MAX_PX = 160;
+    const viewportH = window.innerHeight || document.documentElement.clientHeight;
     const reveal = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -23,6 +24,14 @@ function initFadeIn() {
 
     document.querySelectorAll(".card.glass-card, .app-hero, .feature-image-wrapper, .yt-card, .section-tile, .why-card, .song-card").forEach((el, i) => {
         el.style.transitionDelay = `${i * 60}ms`; // каскадная задержка
+        // Всё, что хотя бы краем видно на первом экране при открытии, проявляется
+        // сразу, не дожидаясь прокрутки. Иначе песенка на главной, выглядывая
+        // из-под баннера узкой полоской, ждала свайпа.
+        const r = el.getBoundingClientRect();
+        if (r.height > 0 && r.top < viewportH && r.bottom > 0) {
+            requestAnimationFrame(() => el.classList.add("visible"));
+            return;
+        }
         const h = el.offsetHeight;
         const threshold = h > 0 ? Math.min(0.1, MAX_PX / h) : 0.1;
         new IntersectionObserver(reveal, {
