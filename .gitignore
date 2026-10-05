@@ -61,3 +61,4 @@ Thumbs.db
 /content/
 /layouts/
 /scripts/audit-site.js
+/scripts/add-404.js
