@@ -50,3 +50,4 @@ Thumbs.db
 /scripts/add-book13-amazon.js
 /scripts/set-descriptions.js
 /scripts/audit-meta.js
+/scripts/fix-home-links.js
