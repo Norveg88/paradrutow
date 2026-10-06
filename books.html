@@ -266,7 +266,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=9">
-    <script defer src="/assets/js/lang.js?v=13"></script>
+    <script defer src="/assets/js/lang.js?v=14"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -368,6 +368,25 @@
                 display: block;
             }
         }
+        /* Парные издания: ссылка на двойника и подсветка карточки, к которой перешли */
+        .book-twin {
+            display: inline-block;
+            margin: -0.4rem 0 1rem;
+            font-size: 0.92rem;
+            color: var(--accent-copper);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent-copper);
+        }
+        .book-twin:hover { color: var(--accent-gold); border-bottom-color: var(--accent-gold); }
+        .book-card[id] { scroll-margin-top: 110px; }
+        .book-card:target { animation: twinGlow 2.4s ease-out; }
+        @keyframes twinGlow {
+            0%, 35% { box-shadow: 0 0 0 2px var(--accent-gold), 0 0 32px rgba(197,160,89,0.45); }
+            100%    { box-shadow: 0 0 0 0 transparent; }
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            html { scroll-behavior: smooth; }
+        }
     </style>
     <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
     <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
@@ -414,11 +433,12 @@
         </div>
 
         <!-- Książka 13 — Sekretne życie włóczki (PL) -->
-        <div class="book-card card glass-card">
+        <div class="book-card card glass-card" id="book-sekretne-zycie-wloczki">
             <img src="/assets/img/book13.jpg" alt="Sekretne życie włóczki — Od owcy do swetra" class="book-cover" width="631" height="925" fetchpriority="high">
             <div class="book-body">
                 <h2>Sekretne życie włóczki</h2>
                 <p style="color:#bbb;font-size:0.95rem;font-style:italic;margin:0 0 1rem;">Od owcy do swetra — wszystko, czego nie napiszą na banderoli</p>
+                <a class="book-twin" href="#book-secret-life-of-yarn"><span data-i18n="twin_en">🇬🇧 Wydanie angielskie</span>: The Secret Life of Yarn ↓</a>
 
                 <p><strong style="color:var(--accent-gold);">Sweter urósł po pierwszym praniu. Czapka, która w sklepie była miękka jak kotek, gryzie. Skarpety przetarły się po miesiącu.</strong></p>
 
@@ -458,12 +478,13 @@
         </div>
 
         <!-- Książka 12 — The Secret Life of Yarn (EN) -->
-        <div class="book-card card glass-card">
+        <div class="book-card card glass-card" id="book-secret-life-of-yarn">
             <img src="/assets/img/book12.jpg" alt="The Secret Life of Yarn — From Sheep to Sweater" class="book-cover" width="628" height="925" loading="lazy" decoding="async">
             <div class="book-body">
                 <p style="font-size:1rem;font-weight:600;color:var(--accent-copper);font-family:var(--font-header);letter-spacing:0.3px;margin:0 0 0.4rem;">🇬🇧 Wydanie angielskie</p>
                 <h2>The Secret Life of Yarn</h2>
                 <p style="color:#bbb;font-size:0.95rem;font-style:italic;margin:0 0 1rem;">From Sheep to Sweater — Everything the Label Won’t Tell You</p>
+                <a class="book-twin" href="#book-sekretne-zycie-wloczki"><span data-i18n="twin_pl">🇵🇱 Wydanie polskie</span>: Sekretne życie włóczki ↑</a>
 
                 <p><strong style="color:var(--accent-gold);">Your sweater grew a size in its first wash. The hat that felt kitten-soft in the store itches. Your socks wore through in a month.</strong></p>
 
@@ -504,11 +525,12 @@
         </div>
 
         <!-- Książka 11 — Dom na drutach (PL) -->
-        <div class="book-card card glass-card">
+        <div class="book-card card glass-card" id="book-dom-na-drutach">
             <img src="/assets/img/book11.png" alt="Dom na drutach — Nowoczesne dzierganie do wnętrz" class="book-cover" width="1024" height="1536" loading="lazy" decoding="async">
             <div class="book-body">
                 <h2>Dom na drutach</h2>
                 <p style="color:#bbb;font-size:0.95rem;font-style:italic;margin:0 0 1rem;">Nowoczesne dzierganie do wnętrz</p>
+                <a class="book-twin" href="#book-knitted-home"><span data-i18n="twin_en">🇬🇧 Wydanie angielskie</span>: The Knitted Home ↓</a>
 
                 <p><strong style="color:var(--accent-gold);">Ładny kosz na zdjęciu i kosz, który naprawdę stoi na półce, to dwie różne rzeczy.</strong></p>
 
@@ -545,12 +567,13 @@
         </div>
 
         <!-- Książka 10 — The Knitted Home (EN) -->
-        <div class="book-card card glass-card">
+        <div class="book-card card glass-card" id="book-knitted-home">
             <img src="/assets/img/book10.png" alt="The Knitted Home — Modern Knitting for Your Interior" class="book-cover" width="1023" height="1537" loading="lazy" decoding="async">
             <div class="book-body">
                 <p style="font-size:1rem;font-weight:600;color:var(--accent-copper);font-family:var(--font-header);letter-spacing:0.3px;margin:0 0 0.4rem;">🇬🇧 Wydanie angielskie</p>
                 <h2>The Knitted Home</h2>
                 <p style="color:#bbb;font-size:0.95rem;font-style:italic;margin:0 0 1rem;">Modern Knitting for Your Interior</p>
+                <a class="book-twin" href="#book-dom-na-drutach"><span data-i18n="twin_pl">🇵🇱 Wydanie polskie</span>: Dom na drutach ↑</a>
 
                 <p><strong style="color:var(--accent-gold);">A handsome basket in a photograph and a basket that actually stands on a shelf are two different things.</strong></p>
 
