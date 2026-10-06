@@ -73,3 +73,5 @@ Thumbs.db
 /scripts/book-twins.js
 /scripts/fix-twin-css.js
 /scripts/.indexnow-state.json
+/scripts/set-titles.js
+/scripts/audit-titles.js
