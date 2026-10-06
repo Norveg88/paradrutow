@@ -1,13 +1,17 @@
 // IndexNow: сообщает Bing (а через него DuckDuckGo, Yahoo, Ecosia, Copilot),
 // Yandex, Seznam и Naver, что страницы сайта изменились. Google IndexNow не использует.
 //
-//   node scripts/indexnow.js                  — страницы, изменённые в последнем коммите
+//   node scripts/indexnow.js                  — всё, что изменилось с прошлой отправки
+//                                               (если отправок ещё не было — последний коммит)
 //   node scripts/indexnow.js --since <commit> — изменённые начиная с указанного коммита
 //   node scripts/indexnow.js --all            — все страницы из sitemap.xml
 //   node scripts/indexnow.js books.html       — конкретные страницы
 //   ... --dry                                 — только показать, ничего не отправлять
 //
-// Отправляются только адреса, которые есть в sitemap.xml: 404 и служебные файлы — никогда.
+// Отправляется только то, что уже на GitHub (origin/main), и только адреса из sitemap.xml:
+// 404 и служебные файлы — никогда. Место последней отправки хранится в
+// scripts/.indexnow-state.json (локально, в репозиторий не попадает).
+// fetch-videos.js вызывает этот скрипт после каждого пуша — отдельно запускать не нужно.
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -40,16 +44,41 @@ const DATA_TO_PAGE = {
   'assets/data/shorts.json':  'shorts.html'
 };
 
+function git(cmd) {
+  return execSync(`git ${cmd}`, { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+}
+
+// Отправляем только то, что уже на GitHub: конец диапазона — origin/main
+function endRef() {
+  try { git('rev-parse --verify origin/main'); return 'origin/main'; } catch (e) { return 'HEAD'; }
+}
+
+// Запоминаем, до какого коммита всё уже отправлено (локальный файл, не в репозитории)
+const STATE = path.join(__dirname, '.indexnow-state.json');
+function readLast() {
+  try {
+    const c = JSON.parse(fs.readFileSync(STATE, 'utf8')).lastCommit;
+    git(`merge-base --is-ancestor ${c} ${endRef()}`); // коммит всё ещё в истории?
+    return c;
+  } catch (e) { return null; }
+}
+function saveLast() {
+  fs.writeFileSync(STATE, JSON.stringify({ lastCommit: git(`rev-parse ${endRef()}`), at: new Date().toISOString() }, null, 2));
+}
+
 function changedFiles() {
-  const range = since ? `${since}..HEAD` : 'HEAD~1..HEAD';
-  const list = execSync(`git diff --name-only ${range}`, { cwd: ROOT }).toString().split(/\r?\n/).filter(Boolean);
+  const end = endRef();
+  const last = readLast();
+  const range = since ? `${since}..${end}` : last ? `${last}..${end}` : `${end}~1..${end}`;
+  console.log(`IndexNow: изменения ${range}${!since && last ? ' (с прошлой отправки)' : ''}`);
+  const list = git(`diff --name-only ${range}`).split(/\r?\n/).filter(Boolean);
   // Страница, в которой поменялась только версия подключённых файлов (?v=13 -> ?v=14),
   // для поисковика не изменилась — такие не отправляем
   return list.filter((f) => !/\.html$/.test(f) || !onlyVersionBump(range, f));
 }
 
 function onlyVersionBump(range, file) {
-  const diff = execSync(`git diff -U0 ${range} -- "${file}"`, { cwd: ROOT }).toString().split(/\r?\n/);
+  const diff = git(`diff -U0 ${range} -- "${file}"`).split(/\r?\n/);
   const norm = (l) => l.slice(1).replace(/\?v=\d+/g, '?v=').trim();
   const minus = diff.filter((l) => l.startsWith('-') && !l.startsWith('---')).map(norm).sort();
   const plus  = diff.filter((l) => l.startsWith('+') && !l.startsWith('+++')).map(norm).sort();
@@ -64,8 +93,12 @@ else {
   pages = [...new Set(html.map(toUrl))].filter((u) => allowed.includes(u));
 }
 
+// Запоминать место можно, только если проверены все изменения, а не выбранные вручную файлы
+const tracksState = !dry && !files.length && !since;
+
 if (!pages.length) {
   console.log('IndexNow: изменённых страниц нет — отправлять нечего.');
+  if (tracksState) saveLast();
   process.exit(0);
 }
 
@@ -90,6 +123,7 @@ if (dry) { console.log('(--dry: ничего не отправлено)'); proce
     };
     console.log(`IndexNow: ответ ${res.status} — ${MSG[res.status] || res.statusText}`);
     if (res.status >= 400) process.exitCode = 1;
+    else if (tracksState) saveLast(); // отправлено — в следующий раз начнём отсюда
   } catch (err) {
     console.log('IndexNow: не удалось отправить — ' + err.message);
     process.exitCode = 1;
