@@ -253,6 +253,14 @@ function deployToGitHub(videosPath, shortsPath, sitemapPath, channelPath) {
     execSync(`git commit -m "${msg}"`, { stdio: 'inherit' });
     execSync(`git push origin ${CONFIG.GIT_BRANCH}`, { stdio: 'inherit' });
     console.log(`\nDeployed! https://paradrutow.com/\n`);
+    // IndexNow: сообщить Bing и др., какие страницы обновились в этом коммите
+    // (videos.json/channel.json -> video.html, shorts.json -> shorts.html).
+    // Ошибка здесь не мешает обновлению — данные уже на сайте.
+    try {
+      execSync('node scripts/indexnow.js', { stdio: 'inherit' });
+    } catch (e) {
+      console.log('IndexNow: пропущено — ' + e.message);
+    }
   } catch (err) {
     console.error('Git error:', err.message);
     console.log(`\nRun manually:\n  git add assets/data/videos.json assets/data/shorts.json assets/data/channel.json sitemap-video.xml\n  git commit -m "${msg}"\n  git push origin ${CONFIG.GIT_BRANCH}\n`);
