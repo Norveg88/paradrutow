@@ -75,3 +75,4 @@ Thumbs.db
 /scripts/.indexnow-state.json
 /scripts/set-titles.js
 /scripts/audit-titles.js
+/scripts/add-faq-refund.js
