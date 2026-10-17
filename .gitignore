@@ -77,3 +77,5 @@ Thumbs.db
 /scripts/audit-titles.js
 /scripts/add-faq-refund.js
 /scripts/patterns-faq-i18n.js
+/scripts/add-offer-policies.js
+/scripts/audit-offers.js
