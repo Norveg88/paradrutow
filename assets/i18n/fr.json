@@ -210,5 +210,9 @@
   "e404_text": "L'adresse a peut-être changé, ou le lien contient une faute de frappe. Commencez par l'une de ces pages :",
   "title_404": "Page introuvable — Para Drutów",
   "twin_en": "🇬🇧 Édition anglaise",
-  "twin_pl": "🇵🇱 Édition polonaise"
+  "twin_pl": "🇵🇱 Édition polonaise",
+  "video_loading": "Chargement des vidéos...",
+  "video_error": "⚠️ Impossible de charger les vidéos. Veuillez actualiser la page.",
+  "shorts_loading": "Chargement des shorts...",
+  "shorts_error": "⚠️ Impossible de charger les shorts. Veuillez actualiser la page."
 }

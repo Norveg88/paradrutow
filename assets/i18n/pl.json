@@ -216,5 +216,11 @@
   "e404_text": "Adres mógł się zmienić albo w linku jest literówka. Zacznij od jednej z tych stron:",
   "title_404": "Nie ma takiej strony — Para Drutów",
   "twin_en": "🇬🇧 Wydanie angielskie",
-  "twin_pl": "🇵🇱 Wydanie polskie"
+  "twin_pl": "🇵🇱 Wydanie polskie",
+  "meta_desc_video": "Filmy YouTube o dziewiarstwie od Para Drutów — techniki, schematy i wzory pokazane krok po kroku. Oglądaj, ucz się i dziergaj razem z nami, we własnym tempie.",
+  "meta_desc_shorts": "Krótkie filmy dziewiarskie Para Drutów — szybkie triki, porady i techniki robótek na drutach w minutę. YouTube Shorts dla początkujących i zaawansowanych.",
+  "video_loading": "Ładowanie wideo...",
+  "video_error": "⚠️ Nie udało się załadować wideo. Spróbuj odświeżyć stronę.",
+  "shorts_loading": "Ładowanie shorts...",
+  "shorts_error": "⚠️ Nie udało się załadować shorts. Spróbuj odświeżyć stronę."
 }

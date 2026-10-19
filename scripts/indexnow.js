@@ -89,7 +89,9 @@ let pages;
 if (all) pages = allowed.slice();
 else {
   const list = files.length ? files : changedFiles();
-  const html = list.map((f) => DATA_TO_PAGE[f.replace(/\\/g, '/')] || f).filter((f) => /^[^/\\]+\.html$/.test(f));
+  // страницы в корне и языковые версии в папках вида en/video.html
+  const html = list.map((f) => DATA_TO_PAGE[f.replace(/\\/g, '/')] || f.replace(/\\/g, '/'))
+    .filter((f) => /^(?:[a-z]{2}\/)?[^/]+\.html$/.test(f));
   pages = [...new Set(html.map(toUrl))].filter((u) => allowed.includes(u));
 }
 

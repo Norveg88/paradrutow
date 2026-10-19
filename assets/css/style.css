@@ -829,3 +829,41 @@ html.no-fx .song-card {
     opacity: 1 !important;
     transform: none !important;
 }
+
+
+/* ---------- Переключатель: ссылки на языковые версии страниц (scripts/build-pages.js) ---------- */
+.lang-switcher a {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid var(--accent-copper);
+    color: var(--accent-copper);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: var(--font-header);
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.lang-switcher a:hover, .lang-switcher a.active-lang {
+    background: var(--accent-copper);
+    color: #000;
+    box-shadow: 0 0 10px var(--accent-copper);
+}
+@media (max-width: 768px) {
+    .lang-switcher a { padding: 4px 8px; font-size: 0.75rem; }
+}
+
+/* ---------- Плашка «страница есть на вашем языке» (lang.js) ---------- */
+.lang-suggest {
+    display: flex; align-items: center; justify-content: center; gap: .75rem;
+    max-width: 1100px; margin: 0 auto 1rem; padding: .6rem 1rem;
+    border: 1px solid var(--accent-copper); border-radius: 10px;
+    background: rgba(20, 20, 20, .75); font-size: .9rem;
+}
+.lang-suggest a { color: var(--accent-gold); text-decoration: none; }
+.lang-suggest a:hover { text-decoration: underline; }
+.lang-suggest button {
+    background: none; border: 0; color: #aaa; font-size: 1.2rem; line-height: 1; cursor: pointer; padding: 0 .25rem;
+}

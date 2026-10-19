@@ -210,5 +210,9 @@
   "e404_text": "Die Adresse hat sich vielleicht geändert, oder der Link enthält einen Tippfehler. Starte auf einer dieser Seiten:",
   "title_404": "Seite nicht gefunden — Para Drutów",
   "twin_en": "🇬🇧 Englische Ausgabe",
-  "twin_pl": "🇵🇱 Polnische Ausgabe"
+  "twin_pl": "🇵🇱 Polnische Ausgabe",
+  "video_loading": "Videos werden geladen...",
+  "video_error": "⚠️ Die Videos konnten nicht geladen werden. Bitte laden Sie die Seite neu.",
+  "shorts_loading": "Shorts werden geladen...",
+  "shorts_error": "⚠️ Die Shorts konnten nicht geladen werden. Bitte laden Sie die Seite neu."
 }

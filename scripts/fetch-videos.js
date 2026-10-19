@@ -8,6 +8,7 @@
 const fs   = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const pages = require('./build-pages');   // языковые версии video.html / shorts.html
 
 // Читаем API ключ из .env файла (не публикуется на GitHub)
 function loadEnv() {
@@ -192,9 +193,12 @@ async function fetchChannelVideos() {
     const sitemapPath = path.join(CONFIG.REPO_DIR, 'sitemap-video.xml');
     generateVideoSitemap(finalVideos, finalShorts, sitemapPath);
 
+    // 10b. Языковые версии страниц video.html / shorts.html с карточками в HTML
+    const built = pages.build().map(f => path.join(CONFIG.REPO_DIR, f));
+
     // 11. Деплой
-    if (CONFIG.AUTO_DEPLOY) deployToGitHub(videosPath, shortsPath, sitemapPath, channelPath);
-    else console.log('AUTO_DEPLOY off. Run:\n  git add assets/data/videos.json assets/data/shorts.json assets/data/channel.json sitemap-video.xml\n  git commit -m "Update video data" && git push\n');
+    if (CONFIG.AUTO_DEPLOY) deployToGitHub([videosPath, shortsPath, sitemapPath, channelPath, ...built]);
+    else console.log('AUTO_DEPLOY off. Run:\n  git add assets/data sitemap-video.xml sitemap.xml video.html shorts.html en\n  git commit -m "Update video data" && git push\n');
 
   } catch (err) {
     console.error('\nError:', err.message);
@@ -218,28 +222,24 @@ function generateVideoSitemap(videos, shorts, sitemapPath) {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
   xml += `        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n`;
-  xml += `  <url>\n    <loc>https://paradrutow.com/video.html</loc>\n`;
-  for (const v of videos) {
-    xml += `    <video:video>\n`;
-    xml += `      <video:thumbnail_loc>${v.thumbnail}</video:thumbnail_loc>\n`;
-    xml += `      <video:title>${esc(v.title)}</video:title>\n`;
-    xml += `      <video:description>${esc(v.description)}</video:description>\n`;
-    xml += `      <video:player_loc>https://www.youtube.com/embed/${v.id}</video:player_loc>\n`;
-    xml += `      <video:publication_date>${v.publishedAt}</video:publication_date>\n`;
-    xml += `    </video:video>\n`;
+  // Каждая языковая версия страницы — свой <url>, названия роликов на её языке
+  // (описание — оригинальное: переводов описаний у роликов нет)
+  for (const [file, items] of [['video.html', videos], ['shorts.html', shorts]]) {
+    for (const lang of pages.versionsOf(file)) {
+      xml += `  <url>\n    <loc>${pages.fullUrl(file, lang)}</loc>\n`;
+      for (const v of items) {
+        xml += `    <video:video>\n`;
+        xml += `      <video:thumbnail_loc>${v.thumbnail}</video:thumbnail_loc>\n`;
+        xml += `      <video:title>${esc(pages.titleOf(v, lang))}</video:title>\n`;
+        xml += `      <video:description>${esc(v.description)}</video:description>\n`;
+        xml += `      <video:player_loc>https://www.youtube.com/embed/${v.id}</video:player_loc>\n`;
+        xml += `      <video:publication_date>${v.publishedAt}</video:publication_date>\n`;
+        xml += `    </video:video>\n`;
+      }
+      xml += `  </url>\n`;
+    }
   }
-  xml += `  </url>\n`;
-  xml += `  <url>\n    <loc>https://paradrutow.com/shorts.html</loc>\n`;
-  for (const s of shorts) {
-    xml += `    <video:video>\n`;
-    xml += `      <video:thumbnail_loc>${s.thumbnail}</video:thumbnail_loc>\n`;
-    xml += `      <video:title>${esc(s.title)}</video:title>\n`;
-    xml += `      <video:description>${esc(s.description)}</video:description>\n`;
-    xml += `      <video:player_loc>https://www.youtube.com/embed/${s.id}</video:player_loc>\n`;
-    xml += `      <video:publication_date>${s.publishedAt}</video:publication_date>\n`;
-    xml += `    </video:video>\n`;
-  }
-  xml += `  </url>\n</urlset>`;
+  xml += `</urlset>`;
   fs.writeFileSync(sitemapPath, xml, 'utf-8');
   console.log(`Saved sitemap-video.xml: ${videos.length} videos + ${shorts.length} shorts\n`);
 }
@@ -265,13 +265,13 @@ function mergeData(filePath, newItems) {
 // ─────────────────────────────────────────────────────
 // Deploy: git add → commit → push
 // ─────────────────────────────────────────────────────
-function deployToGitHub(videosPath, shortsPath, sitemapPath, channelPath) {
+function deployToGitHub(files) {
   console.log('Deploying to GitHub...\n');
   const date = new Date().toISOString().slice(0, 10);
   const msg  = `${CONFIG.GIT_COMMIT_MESSAGE} ${date}`;
   try {
     process.chdir(CONFIG.REPO_DIR);
-    execSync(`git add "${videosPath}" "${shortsPath}" "${sitemapPath}" "${channelPath}"`, { stdio: 'inherit' });
+    execSync(`git add ${files.map(f => `"${f}"`).join(' ')}`, { stdio: 'inherit' });
     // Проверяем только подготовленные файлы, а не всю папку
     const staged = execSync('git diff --cached --name-only').toString().trim();
     if (!staged) { console.log('Nothing to commit — already up to date.\n'); return; }

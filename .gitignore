@@ -84,3 +84,9 @@ Thumbs.db
 /scripts/six-langs.js
 /scripts/audit-lang-switch.js
 /scripts/write-flags.js
+/scripts/check-thumbs.js
+/scripts/check-thumbs2.js
+/scripts/add-vs-keys.js
+/scripts/audit-vs.js
+/scripts/vs-css-bump.js
+/scripts/audit-en.js

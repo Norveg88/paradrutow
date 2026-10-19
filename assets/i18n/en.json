@@ -210,5 +210,11 @@
   "e404_text": "The address may have changed, or there is a typo in the link. Start from one of these pages:",
   "title_404": "Page not found — Para Drutów",
   "twin_en": "🇬🇧 English edition",
-  "twin_pl": "🇵🇱 Polish edition"
+  "twin_pl": "🇵🇱 Polish edition",
+  "meta_desc_video": "Knitting videos on YouTube from Para Drutów — techniques, charts and patterns shown step by step. Watch, learn and knit along with us at your own pace.",
+  "meta_desc_shorts": "Short knitting videos from Para Drutów — quick tricks, tips and knitting techniques in a minute. YouTube Shorts for beginners and advanced knitters.",
+  "video_loading": "Loading videos...",
+  "video_error": "⚠️ Could not load the videos. Please refresh the page.",
+  "shorts_loading": "Loading shorts...",
+  "shorts_error": "⚠️ Could not load the shorts. Please refresh the page."
 }

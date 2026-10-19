@@ -27,21 +27,14 @@ function readSavedLang() {
     }
 }
 
-function detectLang() {
-    // 1. Явный выбор пользователя — высший приоритет
-    const saved = readSavedLang();
-    if (saved) return saved;
-
-    // 2. ?lang=en в ссылке (рассылка, соцсети, реклама)
+function readUrlLang() {
     try {
-        const urlLang = new URLSearchParams(location.search).get("lang");
-        if (SUPPORTED_LANGS.includes(urlLang)) return urlLang;
-    } catch (e) { /* игнорируем */ }
+        const v = new URLSearchParams(location.search).get("lang");
+        return SUPPORTED_LANGS.includes(v) ? v : null;
+    } catch (e) { return null; }
+}
 
-    // 3. Роботы — только польский
-    if (isCrawler()) return "pl";
-
-    // 4. Языки браузера, по порядку приоритета
+function browserLang() {
     const prefs = (navigator.languages && navigator.languages.length)
         ? navigator.languages
         : [navigator.language || ""];
@@ -50,9 +43,86 @@ function detectLang() {
         const mapped = LANG_ALIASES[base];
         if (mapped) return mapped;
     }
+    return "en"; // ничего не подошло — английский как международный
+}
 
-    // 5. Ничего не подошло — английский как международный
-    return "en";
+// ---------- Страницы с отдельными языковыми версиями ----------
+// scripts/build-pages.js ставит <meta name="pd-versions" content="pl,en"> и ссылки
+// в переключателе. На таких страницах язык задаёт сам адрес (/en/video.html),
+// а не скрипт: Google видит каждую версию отдельно.
+const PAGE_VERSIONS = (document.querySelector('meta[name="pd-versions"]')?.content || "")
+    .split(",").map(s => s.trim()).filter(Boolean);
+const PAGE_LANG = PAGE_VERSIONS.length ? (document.documentElement.lang || "pl") : null;
+const MAIN_VERSION = PAGE_VERSIONS[0] || "pl";   // польская версия в корне сайта
+
+function versionUrl(lang) {
+    const a = document.querySelector(`.lang-switcher a[data-lang="${lang}"]`);
+    return a ? a.getAttribute("href") : null;
+}
+
+function goToVersion(lang) {
+    const u = versionUrl(lang);
+    if (u) location.replace(u + location.hash);
+}
+
+function detectLang() {
+    const saved = readSavedLang();
+    const urlLang = readUrlLang();
+    const explicit = saved || urlLang;   // выбор посетителя или ссылка с ?lang=
+
+    if (PAGE_LANG) {
+        if (isCrawler()) return PAGE_LANG;
+        if (explicit) {
+            // Посетитель выбрал язык, у которого есть своя страница — открываем её
+            if (explicit !== PAGE_LANG && PAGE_VERSIONS.includes(explicit)) goToVersion(explicit);
+            // Языка нет среди версий — переводим интерфейс скриптом на основной (польской) странице
+            else if (!PAGE_VERSIONS.includes(explicit) && PAGE_LANG !== MAIN_VERSION) goToVersion(MAIN_VERSION);
+            return explicit;
+        }
+        // Без явного выбора никуда не перебрасываем (иначе Google не увидит все версии).
+        const b = browserLang();
+        if (!PAGE_VERSIONS.includes(b) && PAGE_LANG === MAIN_VERSION) return b; // как раньше: перевод интерфейса
+        if (b !== PAGE_LANG && PAGE_VERSIONS.includes(b)) window.PD_SUGGEST = b; // предложим версию плашкой
+        return PAGE_LANG;
+    }
+
+    // ---------- Обычные страницы: язык переключает скрипт ----------
+    if (explicit) return explicit;
+    if (isCrawler()) return "pl";   // роботам — польский, как в HTML
+    return browserLang();
+}
+
+// Плашка «Эта страница есть на вашем языке» — только предложение, без автоперехода
+const SUGGEST_TEXT = {
+    pl: "Ta strona jest dostępna także po polsku",
+    en: "This page is also available in English",
+    de: "Diese Seite gibt es auch auf Deutsch",
+    fr: "Cette page existe aussi en français",
+    es: "Esta página también está disponible en español",
+    pt: "Esta página também está disponível em português"
+};
+function showSuggestion(lang) {
+    try { if (sessionStorage.getItem("pd-suggest-off")) return; } catch (e) {}
+    const url = versionUrl(lang);
+    if (!url || !SUGGEST_TEXT[lang]) return;
+    const bar = document.createElement("div");
+    bar.className = "lang-suggest";
+    const link = document.createElement("a");
+    link.href = url;
+    link.hreflang = lang;
+    link.textContent = SUGGEST_TEXT[lang] + " →";
+    link.addEventListener("click", () => { try { localStorage.setItem("lang", lang); } catch (e) {} });
+    const close = document.createElement("button");
+    close.type = "button";
+    close.setAttribute("aria-label", "×");
+    close.textContent = "×";
+    close.addEventListener("click", () => {
+        bar.remove();
+        try { sessionStorage.setItem("pd-suggest-off", "1"); } catch (e) {}
+    });
+    bar.append(link, close);
+    const main = document.querySelector("main") || document.body;
+    main.insertBefore(bar, main.firstChild);
 }
 
 const defaultLang = detectLang();
@@ -61,7 +131,7 @@ window.PD_LANG = defaultLang;
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
-const I18N_VERSION = 17;
+const I18N_VERSION = 18;
 
 async function loadLang(lang) {
     try {
@@ -147,10 +217,24 @@ function initHamburger() {
 document.addEventListener("DOMContentLoaded", () => {
     loadLang(defaultLang);
     initHamburger();
+    if (window.PD_SUGGEST) showSuggestion(window.PD_SUGGEST);
 
-    document.querySelectorAll("[data-lang]").forEach(btn => {
-        btn.addEventListener("click", () => {
-            setLang(btn.getAttribute("data-lang"));
+    document.querySelectorAll(".lang-switcher [data-lang]").forEach(el => {
+        el.addEventListener("click", (e) => {
+            const lang = el.getAttribute("data-lang");
+            if (el.tagName === "A") {
+                // Ссылка на версию страницы: запоминаем выбор, переход делает сам браузер
+                try { localStorage.setItem("lang", lang); } catch (err) {}
+                return;
+            }
+            // Кнопка — языка без своей страницы: перевод скриптом на основной версии
+            if (PAGE_LANG && PAGE_LANG !== MAIN_VERSION) {
+                e.preventDefault();
+                try { localStorage.setItem("lang", lang); } catch (err) {}
+                goToVersion(MAIN_VERSION);
+                return;
+            }
+            setLang(lang);
         });
     });
 });
