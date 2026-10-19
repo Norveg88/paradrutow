@@ -117,5 +117,16 @@
   "wzorai_det_priv": "<strong>Privacidad:</strong> sin registro, sin cuenta y sin datos personales. Tus esquemas se guardan solo en tu dispositivo.",
   "wzorai_det_pay": "<strong>Pago:</strong> sin suscripción. Compras un paquete de patrones —5, 20 o 50— y lo usas a tu ritmo. Si una generación falla, ese patrón no se descuenta.",
   "wzorai_ai_title": "Con sinceridad sobre la IA",
-  "wzorai_ai_d": "WzorAI utiliza inteligencia artificial, y lo decimos abiertamente. Por eso cada esquema pasa un control matemático y cada patrón incluye el recordatorio que vale para cualquier patrón: teje primero una pequeña muestra. Es la forma más segura de ver cómo se comporta el motivo con tu lana."
+  "wzorai_ai_d": "WzorAI utiliza inteligencia artificial, y lo decimos abiertamente. Por eso cada esquema pasa un control matemático y cada patrón incluye el recordatorio que vale para cualquier patrón: teje primero una pequeña muestra. Es la forma más segura de ver cómo se comporta el motivo con tu lana.",
+  "title_contact": "Contacto — Para Drutów: patrones, libros, colaboraciones",
+  "meta_desc_contact": "Ponte en contacto con Para Drutów: preguntas sobre patrones, libros, colaboraciones publicitarias o las aplicaciones WzorAI y ShiftLens. Escríbenos mediante el formulario o por correo electrónico.",
+  "contact_title": "Contacto",
+  "contact_desc": "Escríbenos: respondemos a todas las preguntas.",
+  "contact_find": "✦ Encuéntranos",
+  "contact_tagline": "Tejido y aprendizaje",
+  "contact_form_title": "Escríbenos",
+  "contact_name": "Nombre",
+  "contact_email": "Correo electrónico",
+  "contact_message": "Mensaje",
+  "contact_send": "Enviar"
 }

@@ -107,7 +107,7 @@
   "patterns_title": "Wzory",
   "patterns_desc": "Wzory, schematy i elementy dekoracyjne.",
   "contact_title": "Kontakt",
-  "contact_desc": "Napisz do nas, jeśli masz pytania.",
+  "contact_desc": "Napisz do nas — odpowiemy na każde pytanie.",
   "contact_name": "Imię",
   "contact_message": "Wiadomość",
   "contact_send": "Wyślij",
@@ -223,5 +223,10 @@
   "ld_apps_name": "Aplikacje Para Drutów",
   "ld_wzorai_desc": "Generator wzorów dziewiarskich — opisz wzór własnymi słowami, a aplikacja zbuduje raport, sprawdzi liczbę oczek i narysuje przejrzysty schemat. PDF, licznik rzędów i trzy kalkulatory.",
   "ld_wzorai_offer": "Osiem gotowych przykładów za darmo, pakiety wzorów bez abonamentu",
-  "ld_shift_desc": "Aplikacja, która zamienia zdjęcie grafiku zmian w budziki: znajduje Twój wiersz, rozpoznaje godziny i kody zmian i ustawia budzik na każdą zmianę w miesiącu. Działa offline, jednorazowy zakup, bez reklam."
+  "ld_shift_desc": "Aplikacja, która zamienia zdjęcie grafiku zmian w budziki: znajduje Twój wiersz, rozpoznaje godziny i kody zmian i ustawia budzik na każdą zmianę w miesiącu. Działa offline, jednorazowy zakup, bez reklam.",
+  "meta_desc_contact": "Skontaktuj się z Para Drutów — pytania o wzory, książki, współpracę reklamową albo aplikacje WzorAI i ShiftLens. Napisz przez formularz lub e-mailem.",
+  "contact_find": "✦ Znajdź nas",
+  "contact_tagline": "Dziewiarstwo i edukacja",
+  "contact_form_title": "Napisz do nas",
+  "contact_email": "E-mail"
 }

@@ -217,5 +217,10 @@
   "ld_apps_name": "Para Drutów apps",
   "ld_wzorai_desc": "A knitting pattern generator — describe a pattern in your own words and the app builds the repeat, checks the stitch count and draws a clear chart. PDF, row counter and three calculators.",
   "ld_wzorai_offer": "Eight built-in examples free, pattern packs without a subscription",
-  "ld_shift_desc": "An app that turns a photo of your shift rota into alarms: it finds your row, recognises times and shift codes, and sets an alarm for every shift of the month. Works offline, one-time purchase, no ads."
+  "ld_shift_desc": "An app that turns a photo of your shift rota into alarms: it finds your row, recognises times and shift codes, and sets an alarm for every shift of the month. Works offline, one-time purchase, no ads.",
+  "meta_desc_contact": "Get in touch with Para Drutów — questions about patterns, books, advertising collaboration or the WzorAI and ShiftLens apps. Write via the form or by email.",
+  "contact_find": "✦ Find us",
+  "contact_tagline": "Knitting and education",
+  "contact_form_title": "Write to us",
+  "contact_email": "Email"
 }

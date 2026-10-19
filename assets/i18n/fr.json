@@ -217,5 +217,10 @@
   "ld_apps_name": "Applications Para Drutów",
   "ld_wzorai_desc": "Générateur de motifs de tricot — décrivez un motif avec vos mots, l’application construit le rapport, vérifie le nombre de mailles et dessine une grille claire. PDF, compteur de rangs et trois calculateurs.",
   "ld_wzorai_offer": "Huit exemples gratuits, lots de motifs sans abonnement",
-  "ld_shift_desc": "Une application qui transforme la photo de votre planning en réveils : elle trouve votre ligne, reconnaît les horaires et les codes de poste et règle un réveil pour chaque poste du mois. Hors ligne, achat unique, sans publicité."
+  "ld_shift_desc": "Une application qui transforme la photo de votre planning en réveils : elle trouve votre ligne, reconnaît les horaires et les codes de poste et règle un réveil pour chaque poste du mois. Hors ligne, achat unique, sans publicité.",
+  "meta_desc_contact": "Contactez Para Drutów — questions sur les modèles, les livres, les partenariats publicitaires ou les applications WzorAI et ShiftLens. Écrivez via le formulaire ou par e-mail.",
+  "contact_find": "✦ Nous trouver",
+  "contact_tagline": "Tricot et apprentissage",
+  "contact_form_title": "Écrivez-nous",
+  "contact_email": "E-mail"
 }

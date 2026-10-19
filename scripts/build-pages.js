@@ -26,6 +26,8 @@ const PAGES = {
   // ldKeys — строки JSON-LD, которые переводятся: в польском исходнике стоит значение из pl.json
   'apps.html':   { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_apps', titleKey: 'title_apps',
                    ldKeys: ['ld_apps_name', 'ld_wzorai_desc', 'ld_wzorai_offer', 'ld_shift_desc'] },
+  // tagSubject — в теме письма с формы виден язык страницы: «Wiadomość z paradrutow.com [DE]»
+  'contact.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_contact', titleKey: 'title_contact', tagSubject: true },
 };
 
 const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${file}` : `/${lang}/${file}`;
@@ -148,6 +150,12 @@ function translate(html, file, cfg, lang) {
       JSON.parse(body);
       return a + body + c;
     });
+  }
+
+  if (cfg.tagSubject) {
+    const re = /(<input type="hidden" name="_subject" value=")([^"]*?)(?: \[[A-Z]{2}\])?(")/;
+    if (!re.test(html)) throw new Error(`${file}: _subject not found`);
+    html = html.replace(re, (m, a, v, b) => `${a}${v} [${lang.toUpperCase()}]${b}`);
   }
 
   // внутренние ссылки на страницы, у которых есть версия на этом языке

@@ -117,5 +117,16 @@
   "wzorai_det_priv": "<strong>Privacidade:</strong> sem cadastro, sem conta e sem dados pessoais. Seus gráficos ficam guardados só no seu aparelho.",
   "wzorai_det_pay": "<strong>Pagamento:</strong> sem assinatura. Você compra um pacote de padrões — 5, 20 ou 50 — e usa no seu ritmo. Se uma geração falhar, o padrão não é descontado.",
   "wzorai_ai_title": "Com sinceridade sobre IA",
-  "wzorai_ai_d": "O WzorAI usa inteligência artificial, e dizemos isso abertamente. Por isso cada gráfico passa por uma verificação matemática, e cada padrão traz o lembrete que vale para qualquer padrão: tricote antes uma pequena amostra. É o jeito mais seguro de ver como o desenho se comporta no seu fio."
+  "wzorai_ai_d": "O WzorAI usa inteligência artificial, e dizemos isso abertamente. Por isso cada gráfico passa por uma verificação matemática, e cada padrão traz o lembrete que vale para qualquer padrão: tricote antes uma pequena amostra. É o jeito mais seguro de ver como o desenho se comporta no seu fio.",
+  "title_contact": "Contato — Para Drutów: receitas, livros, parcerias",
+  "meta_desc_contact": "Fale com a Para Drutów — dúvidas sobre receitas, livros, parcerias publicitárias ou os aplicativos WzorAI e ShiftLens. Escreva pelo formulário ou por e-mail.",
+  "contact_title": "Contato",
+  "contact_desc": "Escreva para nós — respondemos a todas as perguntas.",
+  "contact_find": "✦ Onde nos encontrar",
+  "contact_tagline": "Tricô e aprendizado",
+  "contact_form_title": "Escreva para nós",
+  "contact_name": "Nome",
+  "contact_email": "E-mail",
+  "contact_message": "Mensagem",
+  "contact_send": "Enviar"
 }

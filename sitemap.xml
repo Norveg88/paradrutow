@@ -255,6 +255,78 @@
   </url>
   <url>
     <loc>https://paradrutow.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

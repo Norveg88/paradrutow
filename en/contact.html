@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/assets/img/site.png">
+    <link rel="apple-touch-icon" href="/assets/img/site.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_contact">Contact — Para Drutów: patterns, books, collaboration</title>
+    <meta name="description" content="Get in touch with Para Drutów — questions about patterns, books, advertising collaboration or the WzorAI and ShiftLens apps. Write via the form or by email.">
+    <meta name="keywords" content="kontakt Para Drutów, pytania o wzory, książki na drutach, współpraca reklamowa, WzorAI, ShiftLens">
+    <meta name="author" content="Para Drutów">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://paradrutow.com/en/contact.html">
+    <!-- i18n:alternates (scripts/build-pages.js) -->
+    <link rel="alternate" hreflang="pl" href="https://paradrutow.com/contact.html">
+    <link rel="alternate" hreflang="en" href="https://paradrutow.com/en/contact.html">
+    <link rel="alternate" hreflang="de" href="https://paradrutow.com/de/contact.html">
+    <link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/contact.html">
+    <link rel="alternate" hreflang="es" href="https://paradrutow.com/es/contact.html">
+    <link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/contact.html">
+    <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/contact.html">
+    <meta name="pd-versions" content="pl,en,de,fr,es,pt">
+    <!-- /i18n:alternates -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paradrutow.com/en/contact.html">
+    <meta property="og:title" content="Contact — Para Drutów: patterns, books, collaboration">
+    <meta property="og:description" content="Get in touch with Para Drutów — questions about patterns, books, advertising collaboration or the WzorAI and ShiftLens apps. Write via the form or by email.">
+    <meta property="og:image" content="https://paradrutow.com/assets/img/feature.jpg">
+    <meta property="og:site_name" content="Para Drutów">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact — Para Drutów: patterns, books, collaboration">
+    <meta name="twitter:description" content="Get in touch with Para Drutów — questions about patterns, books, advertising collaboration or the WzorAI and ShiftLens apps. Write via the form or by email.">
+    <link rel="stylesheet" href="/assets/css/style.css?v=10">
+    <script defer src="/assets/js/lang.js?v=22"></script>
+    <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
+    <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
+    <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
+    <script defer src="/assets/js/ui.js?v=7"></script>
+    <script defer src="/assets/js/newsletter.js?v=2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        @media (max-width: 700px) {
+            .contact-layout { grid-template-columns: 1fr; }
+        }
+
+        .contact-info {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-info::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .contact-info h2 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+        }
+        .contact-link-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.9rem 0;
+            border-bottom: 1px solid rgba(197,160,89,0.1);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-link-item:last-child { border-bottom: none; }
+        .contact-link-item:hover .cli-label { color: var(--accent-gold); }
+        .cli-icon {
+            width: 40px; height: 40px;
+            background: rgba(197,160,89,0.1);
+            border: 1px solid rgba(197,160,89,0.25);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .cli-label {
+            font-family: var(--font-header);
+            font-size: 0.85rem;
+            color: var(--accent-copper);
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+        .cli-value {
+            font-size: 0.82rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .contact-form-wrap {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-form-wrap::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: linear-gradient(to bottom, var(--accent-gold), var(--accent-copper));
+        }
+        .contact-form-wrap h2 {
+            font-family: var(--font-header);
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin: 0 0 1.5rem;
+        }
+    </style>
+    <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
+    <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
+</head>
+<body>
+<div class="background-effects"><div class="steam-overlay"></div></div>
+
+<header>
+    <nav class="nav glass-panel">
+        <a href="/" class="nav-brand">Para Drutów</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/" data-i18n="menu_home">Home</a>
+            <a href="/en/video.html" data-i18n="menu_video">Videos</a>
+            <a href="/en/shorts.html" data-i18n="menu_shorts">Shorts</a>
+            <a href="/en/apps.html" data-i18n="menu_apps">Apps</a>
+            <a href="/books.html" data-i18n="menu_books">Books</a>
+            <a href="/patterns.html" data-i18n="menu_patterns">Patterns</a>
+            <a href="/en/contact.html" class="active-link" data-i18n="menu_contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <a data-lang="pl" href="/contact.html" hreflang="pl">PL</a>
+                <a data-lang="en" href="/en/contact.html" hreflang="en">EN</a>
+                <a data-lang="de" href="/de/contact.html" hreflang="de">DE</a>
+                <a data-lang="fr" href="/fr/contact.html" hreflang="fr">FR</a>
+                <a data-lang="es" href="/es/contact.html" hreflang="es">ES</a>
+                <a data-lang="pt" href="/pt/contact.html" hreflang="pt">PT</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-wrapper">
+        <div class="page-head">
+            <div class="page-head-text">
+                <h1 data-i18n="contact_title">Contact</h1>
+                <p class="subtitle" data-i18n="contact_desc">Write to us — we reply to every question.</p>
+            </div>
+            <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
+        </div>
+
+        <div class="contact-layout">
+
+            <!-- Контактная инфо -->
+            <div class="contact-info card">
+                <h2 data-i18n="contact_find">✦ Find us</h2>
+                <a href="https://www.youtube.com/@ParaDrutow" target="_blank" rel="noopener" class="contact-link-item">
+                    <div class="cli-icon">▶</div>
+                    <div>
+                        <div class="cli-label">YouTube</div>
+                        <div class="cli-value">@ParaDrutow</div>
+                    </div>
+                </a>
+                <a href="mailto:kontakt@paradrutow.com" class="contact-link-item">
+                    <div class="cli-icon">✉</div>
+                    <div>
+                        <div class="cli-label" data-i18n="contact_email">Email</div>
+                        <div class="cli-value">kontakt@paradrutow.com</div>
+                    </div>
+                </a>
+                <div class="contact-link-item">
+                    <div class="cli-icon">🧶</div>
+                    <div>
+                        <div class="cli-label">Para Drutów</div>
+                        <div class="cli-value" data-i18n="contact_tagline">Knitting and education</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Форма -->
+            <div class="contact-form-wrap card">
+                <h2 data-i18n="contact_form_title">Write to us</h2>
+                <form id="contact-form" action="https://formspree.io/f/myekgodg" method="POST">
+                    <input type="hidden" name="_subject" value="Wiadomość z paradrutow.com [EN]">
+                    <label>
+                        <span data-i18n="contact_name">Name</span>
+                        <input type="text" name="name" required autocomplete="name">
+                    </label>
+                    <label>
+                        <span data-i18n="contact_email">Email</span>
+                        <input type="email" name="email" required autocomplete="email">
+                    </label>
+                    <label>
+                        <span data-i18n="contact_message">Message</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" data-i18n="contact_send">Send</button>
+                </form>
+            </div>
+
+        </div>
+        <!-- Подписка на рассылку -->
+        <div class="news-card">
+            <h2 class="news-head" data-i18n="news_title">Stay in the loop</h2>
+            <p class="news-desc" data-i18n="news_desc">Sign up and we will write when new patterns, books, videos or app updates appear. A few messages a month — no spam.</p>
+
+            <form class="news-form" action="https://app.kit.com/forms/9752061/subscriptions" method="post" novalidate>
+                <input type="text" class="news-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="news-row">
+                    <input type="email" class="news-input" name="email_address" required
+                           data-i18n-placeholder="news_placeholder" placeholder="Your email address" aria-label="E-mail">
+                    <button type="submit" class="news-btn" data-i18n="news_button">Subscribe</button>
+                </div>
+                <label class="news-consent">
+                    <input type="checkbox" required>
+                    <span data-i18n="news_consent">I agree to receive news from Para Drutów at this email address. I can withdraw my consent at any time — see the <a href="/privacy.html">privacy policy</a>.</span>
+                </label>
+            </form>
+
+            <p class="news-msg news-msg--ok" data-i18n="news_success" hidden>Almost there! Check your inbox — we have sent a link to confirm your subscription.</p>
+            <p class="news-msg news-msg--err" data-i18n="news_error" hidden>Something went wrong. Please try again in a moment.</p>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 ParaDrutow | <a href="/privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+</footer>
+<button id="back-to-top" aria-label="Back to top">&#8679;</button>
+</body>
+</html>
