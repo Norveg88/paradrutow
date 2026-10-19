@@ -7,9 +7,15 @@ const LANG_ALIASES = {
     cs: "pl", sk: "pl"  // чешский/словацкий ближе к польскому, чем к английскому
 };
 
-// Языки, для которых словаря интерфейса пока нет: меню и кнопки берём из этого словаря,
-// а названия роликов всё равно показываются на выбранном языке (video-langs.js).
+// Словари ES и PT пока неполные (переведены страницы видео и шортсов):
+// всё, чего в них нет, берётся из английского словаря, а не остаётся по-польски.
 const DICT_FALLBACK = { es: "en", pt: "en" };
+
+async function fetchDict(name) {
+    const res = await fetch(`/assets/i18n/${name}.json?v=${I18N_VERSION}`);
+    if (!res.ok) throw new Error("Not found: " + name);
+    return res.json();
+}
 
 // Поисковым роботам всегда отдаём польскую версию:
 // она совпадает с HTML-исходником, canonical и og:locale
@@ -131,14 +137,15 @@ window.PD_LANG = defaultLang;
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
-const I18N_VERSION = 18;
+const I18N_VERSION = 19;
 
 async function loadLang(lang) {
     try {
-        const dict = DICT_FALLBACK[lang] || lang;
-        const res = await fetch(`/assets/i18n/${dict}.json?v=${I18N_VERSION}`);
-        if (!res.ok) throw new Error("Not found");
-        const data = await res.json();
+        const base = DICT_FALLBACK[lang];
+        const data = base
+            ? { ...(await fetchDict(base)), ...(await fetchDict(lang).catch(() => ({}))) }
+            : await fetchDict(lang);
+        const dict = base || lang;   // для картинок вида WzorAI{lang}.png
         document.querySelectorAll("[data-i18n]").forEach(el => {
             const key = el.getAttribute("data-i18n");
             if (data[key]) {

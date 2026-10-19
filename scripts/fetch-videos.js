@@ -198,7 +198,7 @@ async function fetchChannelVideos() {
 
     // 11. Деплой
     if (CONFIG.AUTO_DEPLOY) deployToGitHub([videosPath, shortsPath, sitemapPath, channelPath, ...built]);
-    else console.log('AUTO_DEPLOY off. Run:\n  git add assets/data sitemap-video.xml sitemap.xml video.html shorts.html en\n  git commit -m "Update video data" && git push\n');
+    else console.log('AUTO_DEPLOY off. Run:\n  git add assets/data sitemap-video.xml sitemap.xml video.html shorts.html en de fr es pt\n  git commit -m "Update video data" && git push\n');
 
   } catch (err) {
     console.error('\nError:', err.message);

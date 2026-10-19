@@ -21,15 +21,17 @@ const ALL_LANGS = ['pl', 'en', 'de', 'fr', 'es', 'pt'];   // кнопки пер
 const DEFAULT_LANG = 'pl';                                // корень сайта, x-default
 
 const PAGES = {
-  'video.html':  { langs: ['pl', 'en'], data: 'videos.json', kind: 'video', metaKey: 'meta_desc_video', titleKey: 'title_video' },
-  'shorts.html': { langs: ['pl', 'en'], data: 'shorts.json', kind: 'short', metaKey: 'meta_desc_shorts', titleKey: 'title_shorts' },
+  'video.html':  { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], data: 'videos.json', kind: 'video', metaKey: 'meta_desc_video', titleKey: 'title_video' },
+  'shorts.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], data: 'shorts.json', kind: 'short', metaKey: 'meta_desc_shorts', titleKey: 'title_shorts' },
 };
 
 const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${file}` : `/${lang}/${file}`;
 const fullUrl  = (file, lang) => SITE + pageUrl(file, lang);
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8').replace(/^\uFEFF/, ''));
-const dict = lang => readJson(path.join(ROOT, 'assets/i18n', `${lang}.json`));
+const dictFile = lang => readJson(path.join(ROOT, 'assets/i18n', `${lang}.json`));
+// Чего нет в словаре языка — берём из английского (как lang.js для ES/PT), но не из польского
+const dict = lang => lang === 'en' ? dictFile('en') : { ...dictFile('en'), ...dictFile(lang) };
 
 function titleOf(item, lang) {
   const t = item.titles || {};

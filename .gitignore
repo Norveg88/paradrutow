@@ -90,3 +90,7 @@ Thumbs.db
 /scripts/audit-vs.js
 /scripts/vs-css-bump.js
 /scripts/audit-en.js
+/scripts/audit-keys.js
+/scripts/keys-dump.json
+/scripts/add-langs-vs.js
+/scripts/bump-lang20.js

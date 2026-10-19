@@ -11,6 +11,10 @@
     <loc>https://paradrutow.com/video.html</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/video.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/video.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/video.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -20,6 +24,62 @@
     <loc>https://paradrutow.com/en/video.html</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/video.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/video.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/video.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/video.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/video.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/video.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/video.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/video.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/video.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/video.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/video.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/video.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/video.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/video.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/video.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/video.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -29,6 +89,10 @@
     <loc>https://paradrutow.com/shorts.html</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/shorts.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/shorts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/shorts.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -38,6 +102,62 @@
     <loc>https://paradrutow.com/en/shorts.html</loc>
     <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/shorts.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/shorts.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/shorts.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/shorts.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/shorts.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/shorts.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/shorts.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/shorts.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/shorts.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/shorts.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/shorts.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/shorts.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>

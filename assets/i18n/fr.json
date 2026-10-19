@@ -214,5 +214,7 @@
   "video_loading": "Chargement des vidéos...",
   "video_error": "⚠️ Impossible de charger les vidéos. Veuillez actualiser la page.",
   "shorts_loading": "Chargement des shorts...",
-  "shorts_error": "⚠️ Impossible de charger les shorts. Veuillez actualiser la page."
+  "shorts_error": "⚠️ Impossible de charger les shorts. Veuillez actualiser la page.",
+  "meta_desc_video": "Vidéos de tricot sur YouTube par Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.",
+  "meta_desc_shorts": "Courtes vidéos de tricot par Para Drutów — astuces rapides, conseils et techniques de tricot en une minute. YouTube Shorts pour débutantes et tricoteuses confirmées."
 }
