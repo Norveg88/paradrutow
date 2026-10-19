@@ -31,6 +31,9 @@ const PAGES = {
   // Описания узоров переведены, сами PDF — на польском: это сказано на каждой карточке (pat_note_*)
   'patterns.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_patterns', titleKey: 'title_patterns',
                      ldKeys: ['ld_pat_list', 'ld_pat5', 'ld_pat4', 'ld_pat3', 'ld_pat2', 'ld_pat1'] },
+  // content — длинный текст не в словарях, а в scripts/i18n-content/privacy.<lang>.html
+  // (польский тоже: правим файл .pl.html, сборка вставляет его в privacy.html)
+  'privacy.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_privacy', titleKey: 'title_privacy', content: 'privacy' },
 };
 
 const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${file}` : `/${lang}/${file}`;
@@ -97,6 +100,16 @@ function applyCommon(html, file, cfg, lang, items) {
   if (alt.test(html)) html = html.replace(alt, () => block);
   else html = html.replace(/(<link rel="canonical"[^>]*>)/, (m) => `${m}\n    ${block}`);
   return html;
+}
+
+// Текст страницы на языке lang между <!-- i18n:content --> и <!-- /i18n:content -->
+function applyContent(html, file, cfg, lang) {
+  const f = path.join(__dirname, 'i18n-content', `${cfg.content}.${lang}.html`);
+  if (!fs.existsSync(f)) throw new Error(`${file}: ${path.relative(ROOT, f)} missing`);
+  const body = fs.readFileSync(f, 'utf8').replace(/^\uFEFF/, '').replace(/\r\n/g, '\n').replace(/\n+$/, '');
+  const re = /(<!-- i18n:content\b.*?-->\n)[\s\S]*?(\n\s*<!-- \/i18n:content -->)/;
+  if (!re.test(html)) throw new Error(`${file}: i18n:content markers not found`);
+  return html.replace(re, (m, a, b) => a + body + b);
 }
 
 // Перевод польского исходника на язык lang
@@ -210,7 +223,8 @@ function build() {
     const base = src.replace(/\r\n/g, '\n');
     for (const lang of cfg.langs) {
       // сначала перевод (он переписывает внутренние ссылки), потом переключатель и hreflang
-      let html = lang === DEFAULT_LANG ? base : translate(base, file, cfg, lang);
+      let html = cfg.content ? applyContent(base, file, cfg, lang) : base;
+      if (lang !== DEFAULT_LANG) html = translate(html, file, cfg, lang);
       html = applyCommon(html, file, cfg, lang, items);
       if (CRLF) html = html.replace(/\n/g, '\r\n');
       const out = lang === DEFAULT_LANG ? srcPath : path.join(ROOT, lang, file);

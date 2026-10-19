@@ -405,7 +405,79 @@
   </url>
   <url>
     <loc>https://paradrutow.com/privacy.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/privacy.html"/>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/privacy.html"/>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/privacy.html"/>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/privacy.html"/>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/privacy.html"/>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/privacy.html"/>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
