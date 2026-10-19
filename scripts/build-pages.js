@@ -23,6 +23,9 @@ const DEFAULT_LANG = 'pl';                                // корень сай
 const PAGES = {
   'video.html':  { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], data: 'videos.json', kind: 'video', metaKey: 'meta_desc_video', titleKey: 'title_video' },
   'shorts.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], data: 'shorts.json', kind: 'short', metaKey: 'meta_desc_shorts', titleKey: 'title_shorts' },
+  // ldKeys — строки JSON-LD, которые переводятся: в польском исходнике стоит значение из pl.json
+  'apps.html':   { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_apps', titleKey: 'title_apps',
+                   ldKeys: ['ld_apps_name', 'ld_wzorai_desc', 'ld_wzorai_offer', 'ld_shift_desc'] },
 };
 
 const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${file}` : `/${lang}/${file}`;
@@ -71,12 +74,14 @@ function renderAlternates(file, langs) {
 
 // Общая часть для всех версий: карточки, переключатель, hreflang
 function applyCommon(html, file, cfg, lang, items) {
-  const id = cfg.kind === 'video' ? 'videos' : 'shorts';
-  const container = new RegExp(`<div id="${id}-container"[^>]*>[\\s\\S]*?<\\/div><!-- \\/${id}-container -->|<div id="${id}-container"><\\/div>`);
-  if (!container.test(html)) throw new Error(`${file}: #${id}-container not found`);
-  html = html.replace(container, () => `<div id="${id}-container" data-pre="1">\n${renderCards(items, cfg.kind, lang)}\n</div><!-- /${id}-container -->`);
-  // лоадер не нужен — карточки уже в HTML
-  html = html.replace(new RegExp(`<div id="${id}-loader" class="videos-loader"[^>]*>`), `<div id="${id}-loader" class="videos-loader" style="display:none">`);
+  if (cfg.kind) {
+    const id = cfg.kind === 'video' ? 'videos' : 'shorts';
+    const container = new RegExp(`<div id="${id}-container"[^>]*>[\\s\\S]*?<\\/div><!-- \\/${id}-container -->|<div id="${id}-container"><\\/div>`);
+    if (!container.test(html)) throw new Error(`${file}: #${id}-container not found`);
+    html = html.replace(container, () => `<div id="${id}-container" data-pre="1">\n${renderCards(items, cfg.kind, lang)}\n</div><!-- /${id}-container -->`);
+    // лоадер не нужен — карточки уже в HTML
+    html = html.replace(new RegExp(`<div id="${id}-loader" class="videos-loader"[^>]*>`), `<div id="${id}-loader" class="videos-loader" style="display:none">`);
+  }
 
   const sw = /<div class="lang-switcher">[\s\S]*?<\/div>/;
   if (!sw.test(html)) throw new Error(`${file}: lang-switcher not found`);
@@ -114,6 +119,36 @@ function translate(html, file, cfg, lang) {
     const v = val(key);
     return v === undefined ? m : tagStr.replace(/(\s)placeholder="[^"]*"/, `$1placeholder="${esc(v)}"`);
   });
+
+  // картинки по языку: data-i18n-img="/assets/img/WzorAI{lang}.png"; если файла на этом языке нет — английский
+  const imgFor = tpl => {
+    const pick = l => tpl.replace('{lang}', l);
+    return fs.existsSync(path.join(ROOT, pick(lang))) ? pick(lang) : pick('en');
+  };
+  const imgSwaps = [];
+  html = html.replace(/<img\b[^>]*\sdata-i18n-img="([^"]+)"[^>]*>/g, (tag, tpl) => {
+    const plSrc = tpl.replace('{lang}', DEFAULT_LANG), src = imgFor(tpl);
+    if (plSrc !== src) imgSwaps.push([plSrc, src]);
+    return tag.replace(/(\ssrc=")[^"]*(")/, `$1${src}$2`);
+  });
+  // та же картинка в og:image / twitter:image / JSON-LD
+  for (const [a, b] of imgSwaps) html = html.split(a).join(b);
+
+  // JSON-LD: переводимые строки и адрес страницы
+  if (cfg.ldKeys) {
+    const pl = dictFile(DEFAULT_LANG);
+    html = html.replace(/(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/g, (m, a, body, c) => {
+      for (const k of cfg.ldKeys) {
+        if (!pl[k]) throw new Error(`pl.json: ${k} missing`);
+        const from = JSON.stringify(pl[k]);
+        if (!body.includes(from)) throw new Error(`${file}: JSON-LD text for ${k} differs from pl.json`);
+        body = body.split(from).join(JSON.stringify(val(k) ?? pl[k]));
+      }
+      body = body.split(`"${fullUrl(file, DEFAULT_LANG)}"`).join(`"${fullUrl(file, lang)}"`);
+      JSON.parse(body);
+      return a + body + c;
+    });
+  }
 
   // внутренние ссылки на страницы, у которых есть версия на этом языке
   for (const [f, c] of Object.entries(PAGES)) {
@@ -157,7 +192,7 @@ function updateSitemap() {
 function build() {
   const changed = [];
   for (const [file, cfg] of Object.entries(PAGES)) {
-    const items = readJson(path.join(ROOT, 'assets/data', cfg.data));
+    const items = cfg.data ? readJson(path.join(ROOT, 'assets/data', cfg.data)) : [];
     const srcPath = path.join(ROOT, file);
     const src = fs.readFileSync(srcPath, 'utf8');
     const CRLF = src.includes('\r\n');

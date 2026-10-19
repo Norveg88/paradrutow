@@ -10,7 +10,7 @@
   "title_home": "Para Drutów — tricot : modèles, livres et vidéos",
   "title_video": "Tutoriels de tricot pas à pas — Para Drutów",
   "title_shorts": "Astuces de tricot en bref — Shorts | Para Drutów",
-  "title_apps": "Applications : ShiftLens, WzorAI et StitchAI — Para Drutów",
+  "title_apps": "Applications : ShiftLens et WzorAI — Para Drutów",
   "title_books": "Livres sur le tricot — PDF et papier | Para Drutów",
   "title_patterns": "Modèles de tricot et grilles PDF — Para Drutów",
   "title_contact": "Contact — Para Drutów : modèles, livres, collaboration",
@@ -216,5 +216,10 @@
   "shorts_loading": "Chargement des shorts...",
   "shorts_error": "⚠️ Impossible de charger les shorts. Veuillez actualiser la page.",
   "meta_desc_video": "Vidéos de tricot sur YouTube par Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.",
-  "meta_desc_shorts": "Courtes vidéos de tricot par Para Drutów — astuces rapides, conseils et techniques de tricot en une minute. YouTube Shorts pour débutantes et tricoteuses confirmées."
+  "meta_desc_shorts": "Courtes vidéos de tricot par Para Drutów — astuces rapides, conseils et techniques de tricot en une minute. YouTube Shorts pour débutantes et tricoteuses confirmées.",
+  "meta_desc_apps": "Applications Para Drutów : ShiftLens transforme la photo de votre planning en réveils, et WzorAI crée une grille de tricot à partir d’un motif décrit avec vos mots.",
+  "ld_apps_name": "Applications Para Drutów",
+  "ld_wzorai_desc": "Générateur de motifs de tricot — décrivez un motif avec vos mots, l’application construit le rapport, vérifie le nombre de mailles et dessine une grille claire. PDF, compteur de rangs et trois calculateurs.",
+  "ld_wzorai_offer": "Huit exemples gratuits, lots de motifs sans abonnement",
+  "ld_shift_desc": "Une application qui transforme la photo de votre planning en réveils : elle reconnaît les horaires et les codes de poste, puis règle un réveil pour chaque poste. Sans compte, sans publicité."
 }

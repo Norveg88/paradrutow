@@ -171,6 +171,78 @@
   </url>
   <url>
     <loc>https://paradrutow.com/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/en/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/apps.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

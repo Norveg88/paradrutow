@@ -94,3 +94,5 @@ Thumbs.db
 /scripts/keys-dump.json
 /scripts/add-langs-vs.js
 /scripts/bump-lang20.js
+/scripts/apps-remove-stitchai.js
+/scripts/add-langs-apps.js

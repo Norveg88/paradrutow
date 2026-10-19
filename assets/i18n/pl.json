@@ -10,7 +10,7 @@
   "title_home": "Para Drutów — robienie na drutach: wzory, książki i filmy",
   "title_video": "Tutoriale robienia na drutach krok po kroku — Para Drutów",
   "title_shorts": "Krótkie porady i triki na drutach — Shorts | Para Drutów",
-  "title_apps": "Aplikacje: ShiftLens, WzorAI i StitchAI — Para Drutów",
+  "title_apps": "Aplikacje: ShiftLens i WzorAI — Para Drutów",
   "title_books": "Książki o robieniu na drutach — PDF i druk | Para Drutów",
   "title_patterns": "Wzory na drutach i schematy PDF — Para Drutów",
   "title_contact": "Kontakt — Para Drutów: wzory, książki, współpraca",
@@ -222,5 +222,10 @@
   "video_loading": "Ładowanie wideo...",
   "video_error": "⚠️ Nie udało się załadować wideo. Spróbuj odświeżyć stronę.",
   "shorts_loading": "Ładowanie shorts...",
-  "shorts_error": "⚠️ Nie udało się załadować shorts. Spróbuj odświeżyć stronę."
+  "shorts_error": "⚠️ Nie udało się załadować shorts. Spróbuj odświeżyć stronę.",
+  "meta_desc_apps": "Aplikacje Para Drutów: ShiftLens zamienia zdjęcie grafiku zmian w budziki, a WzorAI tworzy schemat dziewiarski z opisu wzoru własnymi słowami.",
+  "ld_apps_name": "Aplikacje Para Drutów",
+  "ld_wzorai_desc": "Generator wzorów dziewiarskich — opisz wzór własnymi słowami, a aplikacja zbuduje raport, sprawdzi liczbę oczek i narysuje przejrzysty schemat. PDF, licznik rzędów i trzy kalkulatory.",
+  "ld_wzorai_offer": "Osiem gotowych przykładów za darmo, pakiety wzorów bez abonamentu",
+  "ld_shift_desc": "Aplikacja, która zamienia zdjęcie grafiku zmian w budziki: rozpoznaje godziny i kody zmian, a potem ustawia osobny budzik na każdą zmianę. Bez konta i bez reklam."
 }

@@ -10,7 +10,7 @@
   "title_home": "Para Drutów — knitting patterns, books and videos",
   "title_video": "Step-by-step knitting tutorials — Para Drutów",
   "title_shorts": "Quick knitting tips and tricks — Shorts | Para Drutów",
-  "title_apps": "Apps: ShiftLens, WzorAI and StitchAI — Para Drutów",
+  "title_apps": "Apps: ShiftLens and WzorAI — Para Drutów",
   "title_books": "Knitting books — PDF and print | Para Drutów",
   "title_patterns": "Knitting patterns and PDF charts — Para Drutów",
   "title_contact": "Contact — Para Drutów: patterns, books, collaboration",
@@ -216,5 +216,10 @@
   "video_loading": "Loading videos...",
   "video_error": "⚠️ Could not load the videos. Please refresh the page.",
   "shorts_loading": "Loading shorts...",
-  "shorts_error": "⚠️ Could not load the shorts. Please refresh the page."
+  "shorts_error": "⚠️ Could not load the shorts. Please refresh the page.",
+  "meta_desc_apps": "Para Drutów apps: ShiftLens turns a photo of your shift rota into alarms, and WzorAI creates a knitting chart from a pattern described in your own words.",
+  "ld_apps_name": "Para Drutów apps",
+  "ld_wzorai_desc": "A knitting pattern generator — describe a pattern in your own words and the app builds the repeat, checks the stitch count and draws a clear chart. PDF, row counter and three calculators.",
+  "ld_wzorai_offer": "Eight built-in examples free, pattern packs without a subscription",
+  "ld_shift_desc": "An app that turns a photo of your shift rota into alarms: it recognises times and shift codes, then sets a separate alarm for every shift. No account, no ads."
 }

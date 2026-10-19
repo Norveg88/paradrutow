@@ -10,7 +10,7 @@
   "title_home": "Para Drutów — Stricken: Muster, Bücher und Videos",
   "title_video": "Strickanleitungen Schritt für Schritt — Para Drutów",
   "title_shorts": "Kurze Stricktipps und Tricks — Shorts | Para Drutów",
-  "title_apps": "Apps: ShiftLens, WzorAI und StitchAI — Para Drutów",
+  "title_apps": "Apps: ShiftLens und WzorAI — Para Drutów",
   "title_books": "Bücher übers Stricken — PDF und Druck | Para Drutów",
   "title_patterns": "Strickmuster und PDF-Strickschriften — Para Drutów",
   "title_contact": "Kontakt — Para Drutów: Muster, Bücher, Zusammenarbeit",
@@ -216,5 +216,10 @@
   "shorts_loading": "Shorts werden geladen...",
   "shorts_error": "⚠️ Die Shorts konnten nicht geladen werden. Bitte laden Sie die Seite neu.",
   "meta_desc_video": "Strickvideos von Para Drutów auf YouTube — Techniken, Strickschriften und Muster Schritt für Schritt erklärt. Anschauen, lernen und mitstricken — im eigenen Tempo.",
-  "meta_desc_shorts": "Kurze Strickvideos von Para Drutów — schnelle Tricks, Tipps und Stricktechniken in einer Minute. YouTube Shorts für Anfänger und Fortgeschrittene."
+  "meta_desc_shorts": "Kurze Strickvideos von Para Drutów — schnelle Tricks, Tipps und Stricktechniken in einer Minute. YouTube Shorts für Anfänger und Fortgeschrittene.",
+  "meta_desc_apps": "Apps von Para Drutów: ShiftLens macht aus dem Foto des Schichtplans Wecker, und WzorAI erstellt eine Strickschrift aus einer Musterbeschreibung in eigenen Worten.",
+  "ld_apps_name": "Apps von Para Drutów",
+  "ld_wzorai_desc": "Strickmuster-Generator — beschreibe ein Muster in eigenen Worten, und die App baut den Rapport, prüft die Maschenzahl und zeichnet eine klare Strickschrift. PDF, Reihenzähler und drei Rechner.",
+  "ld_wzorai_offer": "Acht Beispiele kostenlos, Musterpakete ohne Abo",
+  "ld_shift_desc": "Eine App, die aus dem Foto des Schichtplans Wecker macht: Sie erkennt Uhrzeiten und Schichtcodes und stellt für jede Schicht einen eigenen Wecker. Ohne Konto, ohne Werbung."
 }

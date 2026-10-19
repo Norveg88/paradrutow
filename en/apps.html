@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/assets/img/site.png">
+    <link rel="apple-touch-icon" href="/assets/img/site.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_apps">Apps: ShiftLens and WzorAI — Para Drutów</title>
+    <meta name="description" content="Para Drutów apps: ShiftLens turns a photo of your shift rota into alarms, and WzorAI creates a knitting chart from a pattern described in your own words.">
+    <meta name="keywords" content="WzorAI, ShiftLens, generator wzorów dziewiarskich, aplikacja dla dziewiarek, schematy na drutach, grafik zmian, budzik na zmiany, knitting pattern generator, knitting app, shift schedule alarm">
+    <meta name="author" content="Para Drutów">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://paradrutow.com/en/apps.html">
+    <!-- i18n:alternates (scripts/build-pages.js) -->
+    <link rel="alternate" hreflang="pl" href="https://paradrutow.com/apps.html">
+    <link rel="alternate" hreflang="en" href="https://paradrutow.com/en/apps.html">
+    <link rel="alternate" hreflang="de" href="https://paradrutow.com/de/apps.html">
+    <link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/apps.html">
+    <link rel="alternate" hreflang="es" href="https://paradrutow.com/es/apps.html">
+    <link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/apps.html">
+    <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/apps.html">
+    <meta name="pd-versions" content="pl,en,de,fr,es,pt">
+    <!-- /i18n:alternates -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paradrutow.com/en/apps.html">
+    <meta property="og:title" content="Apps: ShiftLens and WzorAI — Para Drutów">
+    <meta property="og:description" content="Para Drutów apps: ShiftLens turns a photo of your shift rota into alarms, and WzorAI creates a knitting chart from a pattern described in your own words.">
+    <meta property="og:image" content="https://paradrutow.com/assets/img/WzorAIen.png">
+    <meta property="og:site_name" content="Para Drutów">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apps: ShiftLens and WzorAI — Para Drutów">
+    <meta name="twitter:description" content="Para Drutów apps: ShiftLens turns a photo of your shift rota into alarms, and WzorAI creates a knitting chart from a pattern described in your own words.">
+    <meta name="twitter:image" content="https://paradrutow.com/assets/img/WzorAIen.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Para Drutów apps",
+      "itemListElement": [
+        {
+          "@type": "ListItem", "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "WzorAI",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "Android",
+            "description": "A knitting pattern generator — describe a pattern in your own words and the app builds the repeat, checks the stitch count and draws a clear chart. PDF, row counter and three calculators.",
+            "image": "https://paradrutow.com/assets/img/WzorAIen.png",
+            "url": "https://paradrutow.com/en/apps.html",
+            "inLanguage": ["pl","en","de","fr","ru","uk"],
+            "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"},
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "PLN", "description": "Eight built-in examples free, pattern packs without a subscription"}
+          }
+        },
+        {
+          "@type": "ListItem", "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "ShiftLens",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Android 8.0+",
+            "description": "An app that turns a photo of your shift rota into alarms: it recognises times and shift codes, then sets a separate alarm for every shift. No account, no ads.",
+            "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
+            "url": "https://paradrutow.com/en/apps.html",
+            "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
+            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
+          }
+        }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=10">
+    <script defer src="/assets/js/lang.js?v=20"></script>
+    <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
+    <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
+    <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
+    <script defer src="/assets/js/ui.js?v=7"></script>
+    <script defer src="/assets/js/newsletter.js?v=2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .app-hero {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem 2.5rem;
+            background: rgba(20,20,20,0.5);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .app-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .app-hero-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            border: 2px solid var(--accent-copper);
+            box-shadow: 0 0 24px rgba(197,160,89,0.25);
+            flex-shrink: 0;
+        }
+        .app-hero-text {
+            text-align: left;
+        }
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
+        }
+        .app-hero-text h2 {
+            /* Раньше это был h1 и часть вида приходила из общего правила h1 —
+               теперь всё задано здесь, чтобы название выглядело как прежде */
+            font-family: var(--font-header);
+            font-weight: 700;
+            color: var(--accent-gold);
+            font-size: 3rem;
+            line-height: inherit;
+            text-align: center;
+            text-shadow: 2px 2px 4px #000;
+            margin: 0 0 0.3rem;
+            padding-bottom: 10px;
+            border: none;
+            display: block;
+        }
+        .app-hero-text p {
+            color: var(--accent-copper);
+            font-family: var(--font-header);
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            margin: 0;
+        }
+
+        .store-row {
+            text-align: center;
+            margin: 0 0 2.5rem;
+        }
+        .btn-store {
+            display: inline-block;
+            padding: 0.85rem 2.2rem;
+            border-radius: 999px;
+            border: 1px solid var(--accent-copper);
+            background: linear-gradient(135deg, rgba(197,160,89,0.18), rgba(140,95,55,0.18));
+            color: var(--accent-gold);
+            font-family: var(--font-header);
+            font-size: 1.05rem;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-decoration: none;
+            transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+        }
+        .btn-store:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, rgba(197,160,89,0.32), rgba(140,95,55,0.32));
+            box-shadow: 0 8px 24px rgba(197,160,89,0.28);
+        }
+
+        .feature-image-wrapper {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            margin-bottom: 2rem;
+        }
+        .feature-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .feature-item {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.4rem;
+            backdrop-filter: blur(6px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .feature-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(197,160,89,0.1);
+        }
+        .feature-item-icon {
+            font-size: 1.6rem;
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+        .feature-item h3 {
+            font-family: var(--font-header);
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-size: 1.25rem;
+            line-height: 1.3;
+            margin: 0 0 0.45rem;
+        }
+        .feature-item p {
+            color: #aaa;
+            font-size: 0.96rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .app-description {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem 2.5rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .app-description::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: linear-gradient(to bottom, var(--accent-gold), var(--accent-copper));
+        }
+        .app-description p {
+            color: #ccc;
+            line-height: 1.8;
+            font-size: 0.97rem;
+            margin: 0 0 1rem;
+        }
+        .app-description p:last-child { margin: 0; }
+
+        /* ——— Блоки WzorAI ——— */
+        .app-section-title {
+            font-family: var(--font-header);
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-size: 1.7rem;
+            line-height: 1.25;
+            margin: 2.5rem 0 1.2rem;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        .app-lead {
+            color: #ccc;
+            font-size: 1.08rem;
+            line-height: 1.9;
+            max-width: 780px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+        .app-claim {
+            font-family: var(--font-header);
+            font-weight: 600;
+            color: var(--accent-copper);
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 0 0 1.8rem;
+            letter-spacing: 0.3px;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .step-item {
+            background: rgba(40,40,40,0.4);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(6px);
+            position: relative;
+            overflow: hidden;
+        }
+        .step-item::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 2px;
+            background: linear-gradient(to right, var(--accent-gold), transparent);
+        }
+        .step-item h3 {
+            font-family: var(--font-header);
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-size: 1.25rem;
+            line-height: 1.3;
+            margin: 0 0 0.5rem;
+        }
+        .step-item p {
+            color: #aaa;
+            font-size: 0.96rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+        .app-details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .app-details-list li {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.8;
+            padding: 0.7rem 0 0.7rem 1.5rem;
+            border-bottom: 1px solid rgba(197,160,89,0.12);
+            position: relative;
+        }
+        .app-details-list li:last-child { border-bottom: none; }
+        .app-details-list li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: var(--accent-copper);
+            font-size: 0.7rem;
+            top: 0.95rem;
+        }
+        .app-note {
+            background: rgba(197,160,89,0.06);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 0 12px 12px 0;
+            padding: 1.5rem 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .app-note h3 {
+            font-family: var(--font-header);
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-size: 1.3rem;
+            margin: 0 0 0.6rem;
+        }
+        .app-note p {
+            color: #bbb;
+            font-size: 1rem;
+            line-height: 1.85;
+            margin: 0;
+        }
+        .app-divider {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            justify-content: center;
+            margin: 3.5rem 0 2.5rem;
+        }
+        .app-divider::before,
+        .app-divider::after {
+            content: '';
+            flex: 1;
+            max-width: 220px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(197,160,89,0.45));
+        }
+        .app-divider::after {
+            background: linear-gradient(to left, transparent, rgba(197,160,89,0.45));
+        }
+        .app-divider span {
+            color: var(--accent-copper);
+            font-family: var(--font-header);
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 600px) {
+            .app-hero { flex-direction: column; text-align: center; padding: 1.5rem; }
+            .app-hero-text { text-align: center; }
+            .app-hero-text h2 { font-size: 2.2rem; }
+            .app-section-title { font-size: 1.1rem; margin: 2rem 0 1rem; }
+            .app-lead { font-size: 0.94rem; line-height: 1.8; }
+            .app-note { padding: 1.2rem 1.3rem; }
+        }
+    </style>
+    <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
+    <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
+</head>
+<body>
+<div class="background-effects"><div class="steam-overlay"></div></div>
+
+<header>
+    <nav class="nav glass-panel">
+        <a href="/" class="nav-brand">Para Drutów</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/" data-i18n="menu_home">Home</a>
+            <a href="/en/video.html" data-i18n="menu_video">Videos</a>
+            <a href="/en/shorts.html" data-i18n="menu_shorts">Shorts</a>
+            <a href="/en/apps.html" class="active-link" data-i18n="menu_apps">Apps</a>
+            <a href="/books.html" data-i18n="menu_books">Books</a>
+            <a href="/patterns.html" data-i18n="menu_patterns">Patterns</a>
+            <a href="/contact.html" data-i18n="menu_contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <a data-lang="pl" href="/apps.html" hreflang="pl">PL</a>
+                <a data-lang="en" href="/en/apps.html" hreflang="en">EN</a>
+                <a data-lang="de" href="/de/apps.html" hreflang="de">DE</a>
+                <a data-lang="fr" href="/fr/apps.html" hreflang="fr">FR</a>
+                <a data-lang="es" href="/es/apps.html" hreflang="es">ES</a>
+                <a data-lang="pt" href="/pt/apps.html" hreflang="pt">PT</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-wrapper">
+
+        <!-- Один заголовок первого уровня на страницу; визуально скрыт, названия приложений — h2 -->
+        <h1 class="visually-hidden" data-i18n="apps_h1">Para Drutów apps</h1>
+
+        <!-- ————— ShiftLens ————— -->
+        <div class="app-hero">
+            <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
+            <div class="app-hero-text">
+                <h2>ShiftLens</h2>
+                <p data-i18n="shift_tagline">A photo of the shift rota turns into alarms</p>
+            </div>
+            <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
+        </div>
+
+        <p class="app-claim" data-i18n="shift_hero_sub">Photograph the rota — the alarms set themselves</p>
+
+        <div class="feature-image-wrapper">
+            <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
+        </div>
+
+        <p class="app-lead" data-i18n="shift_intro">The shift rota usually hangs on a wall in the changing room or arrives as a photo in a messenger. Then the manual work begins: find your row, decipher someone else's handwriting, work out when to get up, and set alarms a month ahead. One missed cell and you sleep through a shift.</p>
+
+        <h2 class="app-section-title" data-i18n="shift_how_title">How it works</h2>
+        <div class="steps-grid">
+            <div class="step-item card">
+                <h3 data-i18n="shift_how1_t">1. Take a photo</h3>
+                <p data-i18n="shift_how1_d">The whole sheet, including the dates in the header. You can also upload an Excel or PDF file.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how2_t">2. Type your surname</h3>
+                <p data-i18n="shift_how2_d">Exactly as it is printed on the rota. If you are the only person on the sheet, leave it empty.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how3_t">3. Check the flagged days</h3>
+                <p data-i18n="shift_how3_d">The app shows where it is unsure. Correcting a day takes one tap.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how4_t">4. Set the alarms</h3>
+                <p data-i18n="shift_how4_d">One for every shift, at the time you choose before it starts.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how5_t">5. Test the ring</h3>
+                <p data-i18n="shift_how5_d">The Reliability screen shows what could silence the alarm and lets you ring a test.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="shift_how6_t">6. Add the widget</h3>
+                <p data-i18n="shift_how6_d">Your next shift always in sight on the home screen.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="shift_feat_title">What it does</h2>
+        <div class="features-grid">
+            <div class="feature-item card">
+                <span class="feature-item-icon">◷</span>
+                <h3 data-i18n="shift_f1_t">Reads different time formats</h3>
+                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 and night shifts running past midnight.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f2_t">Understands letter codes</h3>
+                <p data-i18n="shift_f2_d">Day off, sick leave, holiday, night shift.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f3_t">Never guesses</h3>
+                <p data-i18n="shift_f3_d">Uncertain days are marked for review instead of being guessed.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✦</span>
+                <h3 data-i18n="shift_f4_t">A real alarm</h3>
+                <p data-i18n="shift_f4_d">Android exact alarms — sleep mode does not silence them.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">❐</span>
+                <h3 data-i18n="shift_f5_t">Rings over the lock screen</h3>
+                <p data-i18n="shift_f5_d">Rising volume, five-minute snooze, your own ringtone.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f6_t">Home screen widget</h3>
+                <p data-i18n="shift_f6_d">Next shift, countdown, three sizes, light and dark theme.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✻</span>
+                <h3 data-i18n="shift_f7_t">Hours tracker</h3>
+                <p data-i18n="shift_f7_d">Monthly total, unpaid break deducted, earnings estimate.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">↗</span>
+                <h3 data-i18n="shift_f8_t">Reminder before the rota ends</h3>
+                <p data-i18n="shift_f8_d">A few days ahead — time enough to photograph the new one.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="shift_who_title">Who it is for</h2>
+        <p class="app-lead" data-i18n="shift_who_d">Anyone whose rota arrives on paper rather than in a calendar: shop and checkout staff, warehouse and production workers, nurses and care assistants, security, waiters and bartenders, drivers.</p>
+
+        <h2 class="app-section-title" data-i18n="shift_det_title">Details</h2>
+        <div class="app-description card" style="margin-bottom:2rem;">
+            <ul class="app-details-list">
+                <li data-i18n="shift_det_plat"><strong>Platform:</strong> Android 8.0 and newer.</li>
+                <li data-i18n="shift_det_lang"><strong>Languages:</strong> Polish, Ukrainian, English, Russian, German, French, Spanish.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> needed once, at installation.</li>
+                <li data-i18n="shift_det_acc"><strong>Account:</strong> not required.</li>
+                <li data-i18n="shift_det_ads"><strong>Ads:</strong> none.</li>
+            </ul>
+        </div>
+
+        <div class="app-note">
+            <h3 data-i18n="shift_priv_title">Your rota stays on your phone</h3>
+            <p data-i18n="shift_priv_d">A rota is a document carrying your colleagues' surnames and your own schedule for a month ahead. That should not travel to someone else's server. ShiftLens recognises the text directly on the phone: photos are never uploaded, no account is needed, and the app works without an internet connection. The only exception is your choice: if a rota is recognised wrongly, you can email a report to the developer.</p>
+        </div>
+
+        <p class="store-row">
+            <a class="btn-store" href="https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens" target="_blank" rel="noopener" data-i18n="shift_cta">▶ Get it on Google Play</a>
+        </p>
+
+        <div class="app-divider"><span>Para Drutów</span></div>
+
+        <!-- ————— WzorAI ————— -->
+        <div class="app-hero">
+            <img src="/assets/img/icon2.png" alt="WzorAI Logo" class="app-hero-icon" loading="lazy" decoding="async">
+            <div class="app-hero-text">
+                <h2>WzorAI</h2>
+                <p data-i18n="wzorai_tagline">Your assistant for creative knitting patterns</p>
+            </div>
+        </div>
+
+        <p class="app-claim" data-i18n="wzorai_hero_sub">Describe a pattern in your own words — get a ready-to-knit chart</p>
+
+        <div class="feature-image-wrapper">
+            <img src="/assets/img/WzorAIen.png" data-i18n-img="/assets/img/WzorAI{lang}.png" alt="WzorAI" width="1024" height="1536" loading="lazy" decoding="async">
+        </div>
+
+        <p class="app-lead" data-i18n="wzorai_intro">Every knitter knows the feeling: you can picture the fabric exactly — the way the lace opens, where the cable crosses — but that pattern is in no book and on no forum. WzorAI starts from your words. Write ‘lace diamonds on a purl ground’ or ‘a cable with seed stitch on either side’ — and the app builds the repeat, checks that every row adds up, and draws a clear chart in the symbols you know.</p>
+
+        <h2 class="app-section-title" data-i18n="wzorai_how_title">How it works</h2>
+        <div class="steps-grid">
+            <div class="step-item card">
+                <h3 data-i18n="wzorai_how1_t">1. You describe</h3>
+                <p data-i18n="wzorai_how1_d">In plain language, the way you would tell a friend. If you are short of an idea, open the idea builder: tap a few words — lace, leaves, airy, for a scarf — and the description writes itself.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="wzorai_how2_t">2. WzorAI counts and draws</h3>
+                <p data-i18n="wzorai_how2_d">It builds the repeat and checks it row by row: does the stitch count work out, do the yarn-overs balance the decreases. A chart that cannot be knitted never reaches your screen.</p>
+            </div>
+            <div class="step-item card">
+                <h3 data-i18n="wzorai_how3_t">3. You knit</h3>
+                <p data-i18n="wzorai_how3_d">From your phone with zoom and a row counter, or from a printed PDF beside your needles. Whichever suits you.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="wzorai_feat_title">What you get</h2>
+        <div class="features-grid">
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="wzorai_f1_t">A chart that adds up</h3>
+                <p data-i18n="wzorai_f1_d">Every pattern goes through an automatic check. If a row does not balance, the app corrects the pattern and checks again — until it works.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="wzorai_f2_t">Fabric preview</h3>
+                <p data-i18n="wzorai_f2_d">One tap switches the view to fabric: the pattern repeated nine times, with fine gold lines at the repeat boundaries. Only here does the motif reveal itself.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">◷</span>
+                <h3 data-i18n="wzorai_f3_t">A row counter that remembers</h3>
+                <p data-i18n="wzorai_f3_d">Tap a row and it lights up. Close the app, come back a week later — your place is waiting where you left it.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="wzorai_f4_t">Three calculators</h3>
+                <p data-i18n="wzorai_f4_d">Cast-on, shaping for sleeves and necklines, and how much yarn — worked out from the weight of your own swatch, not from a table.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">❐</span>
+                <h3 data-i18n="wzorai_f5_t">An elegant PDF to print</h3>
+                <p data-i18n="wzorai_f5_d">Seven pages: cover, chart, fabric preview, legend, row-by-row instructions, care and blocking. All in your language, ready to print.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✦</span>
+                <h3 data-i18n="wzorai_f6_t">Your own pattern library</h3>
+                <p data-i18n="wzorai_f6_d">The history stays on your device. Name patterns your own way, star the favourites, and add notes. Six months on you will still know what the project was.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">↗</span>
+                <h3 data-i18n="wzorai_f7_t">An image to share</h3>
+                <p data-i18n="wzorai_f7_d">Chart and legend in one picture — to send to a friend or post on Instagram.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✻</span>
+                <h3 data-i18n="wzorai_f8_t">Tips and curious facts</h3>
+                <p data-i18n="wzorai_f8_d">Fifty practical tips and facts about knitting — from keeping your ball of yarn from rolling away, to why mohair unravels better after an hour in the freezer.</p>
+            </div>
+        </div>
+
+        <h2 class="app-section-title" data-i18n="wzorai_who_title">Who it is for</h2>
+        <p class="app-lead" data-i18n="wzorai_who_d">For anyone who knits and wants a pattern they will not find anywhere else. Skill level does not matter: every chart is marked with a difficulty, and eight built-in examples can be viewed and exported free of charge before you decide on anything.</p>
+
+        <h2 class="app-section-title" data-i18n="wzorai_det_title">Details</h2>
+        <div class="app-description card" style="margin-bottom:2rem;">
+            <ul class="app-details-list">
+                <li data-i18n="wzorai_det_lang"><strong>Languages:</strong> English, Polish, German, French, Russian, Ukrainian — the whole app and every PDF.</li>
+                <li data-i18n="wzorai_det_sym"><strong>Symbols:</strong> European or international (CYC) standard, your choice in settings.</li>
+                <li data-i18n="wzorai_det_priv"><strong>Privacy:</strong> no registration, no account, no personal details. Your charts are stored on your device only.</li>
+                <li data-i18n="wzorai_det_pay"><strong>Payment:</strong> no subscription. You buy a pack of patterns — 5, 20 or 50 — and use them at your own pace. If a generation fails, the pattern is not counted.</li>
+            </ul>
+        </div>
+
+        <div class="app-note">
+            <h3 data-i18n="wzorai_ai_title">Honest about AI</h3>
+            <p data-i18n="wzorai_ai_d">WzorAI uses artificial intelligence, and we say so plainly. That is exactly why every chart goes through a mathematical check, and why each pattern carries the reminder that holds for any pattern anyway: knit a small swatch first. It is the surest way to see how the motif behaves in your yarn.</p>
+        </div>
+
+                <!-- Подписка на рассылку -->
+        <div class="news-card">
+            <h2 class="news-head" data-i18n="news_title">Stay in the loop</h2>
+            <p class="news-desc" data-i18n="news_desc">Sign up and we will write when new patterns, books, videos or app updates appear. A few messages a month — no spam.</p>
+
+            <form class="news-form" action="https://app.kit.com/forms/9752061/subscriptions" method="post" novalidate>
+                <input type="text" class="news-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="news-row">
+                    <input type="email" class="news-input" name="email_address" required
+                           data-i18n-placeholder="news_placeholder" placeholder="Your email address" aria-label="E-mail">
+                    <button type="submit" class="news-btn" data-i18n="news_button">Subscribe</button>
+                </div>
+                <label class="news-consent">
+                    <input type="checkbox" required>
+                    <span data-i18n="news_consent">I agree to receive news from Para Drutów at this email address. I can withdraw my consent at any time — see the <a href="/privacy.html">privacy policy</a>.</span>
+                </label>
+            </form>
+
+            <p class="news-msg news-msg--ok" data-i18n="news_success" hidden>Almost there! Check your inbox — we have sent a link to confirm your subscription.</p>
+            <p class="news-msg news-msg--err" data-i18n="news_error" hidden>Something went wrong. Please try again in a moment.</p>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 ParaDrutow | <a href="/privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+</footer>
+<button id="back-to-top" aria-label="Back to top">&#8679;</button>
+</body>
+</html>
