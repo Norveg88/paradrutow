@@ -49,22 +49,46 @@ function parseDuration(iso) {
 }
 
 // ─────────────────────────────────────────────────────
-// Получить длительности для массива videoId (по 50 за раз)
-// Возвращает Map: id → seconds
+// Языки сайта, для которых сохраняем названия роликов.
+// YouTube отдаёт коды вида en-US, de-DE, pt-BR — приводим к базовому коду.
 // ─────────────────────────────────────────────────────
-async function fetchDurations(videoIds) {
+const TITLE_LANGS = ['pl', 'en', 'de', 'fr', 'es', 'pt'];
+
+function collectTitles(item) {
+  const titles = {};
+  const add = (code, title) => {
+    const base = String(code || '').toLowerCase().split('-')[0];
+    if (TITLE_LANGS.includes(base) && title && !titles[base]) titles[base] = title;
+  };
+  // Основное название — на языке ролика (у канала это польский)
+  add(item.snippet?.defaultLanguage || 'pl', item.snippet?.title);
+  for (const [code, loc] of Object.entries(item.localizations || {})) add(code, loc?.title);
+  // Польское название есть всегда: если ролик помечен другим языком, берём основное
+  if (!titles.pl && item.snippet?.title) titles.pl = item.snippet.title;
+  // Порядок ключей как в TITLE_LANGS — так JSON стабилен между запусками
+  return Object.fromEntries(TITLE_LANGS.filter(l => titles[l]).map(l => [l, titles[l]]));
+}
+
+// ─────────────────────────────────────────────────────
+// Длительности и названия на всех языках для массива videoId (по 50 за раз).
+// Один запрос videos.list стоит 1 единицу квоты независимо от числа part.
+// Возвращает Map: id → { duration, titles }
+// ─────────────────────────────────────────────────────
+async function fetchVideoDetails(videoIds) {
   const result = new Map();
-  // API принимает до 50 id за раз
   for (let i = 0; i < videoIds.length; i += 50) {
     const chunk = videoIds.slice(i, i + 50).join(',');
-    const url = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${chunk}&key=${CONFIG.API_KEY}`;
+    const url = `https://www.googleapis.com/youtube/v3/videos?part=contentDetails,snippet,localizations&id=${chunk}&key=${CONFIG.API_KEY}`;
     const res  = await fetch(url);
     const data = await res.json();
     if (data.error) throw new Error(data.error.message);
     for (const item of (data.items || [])) {
-      result.set(item.id, parseDuration(item.contentDetails?.duration));
+      result.set(item.id, {
+        duration: parseDuration(item.contentDetails?.duration),
+        titles:   collectTitles(item)
+      });
     }
-    process.stdout.write(`  Durations fetched: ${result.size}/${videoIds.length}...\r`);
+    process.stdout.write(`  Details fetched: ${result.size}/${videoIds.length}...\r`);
   }
   process.stdout.write('\n');
   return result;
@@ -99,21 +123,22 @@ async function fetchChannelVideos() {
     const allVideos = await fetchPlaylistVideos(uploadsId, null, [], max);
     console.log(`Total fetched: ${allVideos.length}\n`);
 
-    // 4. Получить длительности через videos.list API
-    console.log('Fetching video durations via API...');
+    // 4. Длительности и названия на всех языках через videos.list API
+    console.log('Fetching video details (durations + titles) via API...');
     const ids = allVideos.map(v => v.id);
-    const durations = await fetchDurations(ids);
-    console.log(`Durations fetched: ${durations.size}\n`);
+    const details = await fetchVideoDetails(ids);
+    console.log(`Details fetched: ${details.size}\n`);
 
     // 5. Разделить: Shorts ≤ 60 сек, Videos > 60 сек
     const regularVideos = [];
     const shorts = [];
 
     for (const video of allVideos) {
-      const secs = durations.get(video.id) ?? 999;
-      // Пропускаем видео без длительности (приватные/удалённые — API не вернул duration)
-      if (!durations.has(video.id)) continue;
+      // Пропускаем видео без данных (приватные/удалённые — API их не вернул)
+      if (!details.has(video.id)) continue;
+      const { duration: secs, titles } = details.get(video.id);
       video.duration = secs; // сохранить длительность в JSON
+      video.titles   = titles; // { pl: "...", en: "...", ... } — названия по языкам
       if (secs <= 90) {
         // Обновить URL на формат /shorts/ для шортсов
         video.url = `https://www.youtube.com/shorts/${video.id}`;

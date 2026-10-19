@@ -1,13 +1,15 @@
 ﻿// ---------- Определение языка ----------
-const SUPPORTED_LANGS = ["pl", "en", "ru", "ua", "de", "fr"];
+const SUPPORTED_LANGS = ["pl", "en", "de", "fr", "es", "pt"];
 
-// Коды браузера -> коды сайта
+// Коды браузера -> коды сайта (остальные языки получают английский, см. detectLang)
 const LANG_ALIASES = {
-    pl: "pl", en: "en", ru: "ru", de: "de", fr: "fr",
-    uk: "ua",  // украинский по ISO — uk, у нас папка ua
-    be: "ru",  // белорусский -> русский
+    pl: "pl", en: "en", de: "de", fr: "fr", es: "es", pt: "pt",
     cs: "pl", sk: "pl"  // чешский/словацкий ближе к польскому, чем к английскому
 };
+
+// Языки, для которых словаря интерфейса пока нет: меню и кнопки берём из этого словаря,
+// а названия роликов всё равно показываются на выбранном языке (video-langs.js).
+const DICT_FALLBACK = { es: "en", pt: "en" };
 
 // Поисковым роботам всегда отдаём польскую версию:
 // она совпадает с HTML-исходником, canonical и og:locale
@@ -54,6 +56,8 @@ function detectLang() {
 }
 
 const defaultLang = detectLang();
+// Текущий язык страницы — его читают другие скрипты (например, video-langs.js)
+window.PD_LANG = defaultLang;
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
@@ -61,7 +65,8 @@ const I18N_VERSION = 17;
 
 async function loadLang(lang) {
     try {
-        const res = await fetch(`/assets/i18n/${lang}.json?v=${I18N_VERSION}`);
+        const dict = DICT_FALLBACK[lang] || lang;
+        const res = await fetch(`/assets/i18n/${dict}.json?v=${I18N_VERSION}`);
         if (!res.ok) throw new Error("Not found");
         const data = await res.json();
         document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -73,7 +78,7 @@ async function loadLang(lang) {
         // Картинки, зависящие от языка: data-i18n-img="/assets/img/WzorAI{lang}.png"
         document.querySelectorAll("[data-i18n-img]").forEach(el => {
             const tpl = el.getAttribute("data-i18n-img");
-            if (tpl) el.setAttribute("src", tpl.replace("{lang}", lang));
+            if (tpl) el.setAttribute("src", tpl.replace("{lang}", dict));
         });
         // Подсказки в полях ввода
         document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
@@ -87,6 +92,8 @@ async function loadLang(lang) {
         document.querySelectorAll("[data-lang]").forEach(btn => {
             btn.classList.toggle("active-lang", btn.getAttribute("data-lang") === lang);
         });
+        window.PD_LANG = lang;
+        document.dispatchEvent(new CustomEvent("pd:lang", { detail: { lang } }));
     } catch (e) {
         console.warn("Translations not found for:", lang);
         // Файл перевода недоступен — не оставляем страницу наполовину

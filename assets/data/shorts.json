@@ -6,7 +6,10 @@
     "thumbnail": "https://i.ytimg.com/vi/AflTuIRWrcY/hqdefault.jpg",
     "publishedAt": "2026-09-28T18:35:51Z",
     "url": "https://www.youtube.com/shorts/AflTuIRWrcY",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "Każdy pirat ma swoje hobby... 🏴‍☠️🧶"
+    }
   },
   {
     "id": "1MMGhLGaPF4",
@@ -15,7 +18,10 @@
     "thumbnail": "https://i.ytimg.com/vi/1MMGhLGaPF4/hqdefault.jpg",
     "publishedAt": "2026-09-23T16:00:14Z",
     "url": "https://www.youtube.com/shorts/1MMGhLGaPF4",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "Geralt po godzinach... ⚔️🧶 Co on dzierga?!"
+    }
   },
   {
     "id": "QYClf-dWmZI",
@@ -24,7 +30,10 @@
     "thumbnail": "https://i.ytimg.com/vi/QYClf-dWmZI/hqdefault.jpg",
     "publishedAt": "2026-08-30T16:00:27Z",
     "url": "https://www.youtube.com/shorts/QYClf-dWmZI",
-    "duration": 11
+    "duration": 11,
+    "titles": {
+      "pl": "Nawet robot dzierga. A Ty jeszcze nie?"
+    }
   },
   {
     "id": "4yxu-1U8Pp8",
@@ -33,7 +42,10 @@
     "thumbnail": "https://i.ytimg.com/vi/4yxu-1U8Pp8/hqdefault.jpg",
     "publishedAt": "2026-08-26T08:00:18Z",
     "url": "https://www.youtube.com/shorts/4yxu-1U8Pp8",
-    "duration": 39
+    "duration": 39,
+    "titles": {
+      "pl": "Wciągająca historia... swetra?! 🤔 Zobacz tę nowość! #paradrutow"
+    }
   },
   {
     "id": "Y7_vCL81g1Q",
@@ -42,7 +54,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Y7_vCL81g1Q/hqdefault.jpg",
     "publishedAt": "2026-08-19T17:15:06Z",
     "url": "https://www.youtube.com/shorts/Y7_vCL81g1Q",
-    "duration": 27
+    "duration": 27,
+    "titles": {
+      "pl": "CO BĘDZIE Z TEGO? 🤔🧶 Tego jeszcze nie zgadniecie!"
+    }
   },
   {
     "id": "Vjfe6O1PsGc",
@@ -51,7 +66,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Vjfe6O1PsGc/hqdefault.jpg",
     "publishedAt": "2026-08-16T16:00:09Z",
     "url": "https://www.youtube.com/shorts/Vjfe6O1PsGc",
-    "duration": 11
+    "duration": 11,
+    "titles": {
+      "pl": "Secret agent 🕵️‍♂️                               też robi na drutach! 😂🧶"
+    }
   },
   {
     "id": "zVoxj_MPFFk",
@@ -60,7 +78,10 @@
     "thumbnail": "https://i.ytimg.com/vi/zVoxj_MPFFk/hqdefault.jpg",
     "publishedAt": "2026-08-09T16:00:26Z",
     "url": "https://www.youtube.com/shorts/zVoxj_MPFFk",
-    "duration": 11
+    "duration": 11,
+    "titles": {
+      "pl": "Gruba włóczka + druty = WOW! 😍"
+    }
   },
   {
     "id": "mklXGQWmDuQ",
@@ -69,7 +90,10 @@
     "thumbnail": "https://i.ytimg.com/vi/mklXGQWmDuQ/hqdefault.jpg",
     "publishedAt": "2026-07-07T10:30:24Z",
     "url": "https://www.youtube.com/shorts/mklXGQWmDuQ",
-    "duration": 19
+    "duration": 19,
+    "titles": {
+      "pl": "Jak dobrać druty do włóczki? 5 prostych zasad, które zmienią Twoje robótki! 🧶"
+    }
   },
   {
     "id": "tIi8LODpamQ",
@@ -78,7 +102,10 @@
     "thumbnail": "https://i.ytimg.com/vi/tIi8LODpamQ/hqdefault.jpg",
     "publishedAt": "2026-06-30T04:00:16Z",
     "url": "https://www.youtube.com/shorts/tIi8LODpamQ",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "The Final Showdown | Wild West #shorts #druty #włóczka #knittig"
+    }
   },
   {
     "id": "NPXFdc0C30Q",
@@ -87,7 +114,11 @@
     "thumbnail": "https://i.ytimg.com/vi/NPXFdc0C30Q/hqdefault.jpg",
     "publishedAt": "2026-06-08T15:02:05Z",
     "url": "https://www.youtube.com/shorts/NPXFdc0C30Q",
-    "duration": 76
+    "duration": 76,
+    "titles": {
+      "pl": "Mały pies, wielka przygoda | Daisy odkrywa Chorwację 🐾🌊",
+      "en": "Small dog, big adventure | Daisy discovers Croatia 🐾🌊"
+    }
   },
   {
     "id": "EFZAUkI7UcQ",
@@ -96,7 +127,14 @@
     "thumbnail": "https://i.ytimg.com/vi/EFZAUkI7UcQ/hqdefault.jpg",
     "publishedAt": "2026-05-24T16:00:14Z",
     "url": "https://www.youtube.com/shorts/EFZAUkI7UcQ",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "Został ostatni człowiek na Ziemi. Wybrał druty. #druty #włóczka #rękodzieło",
+      "en": "The last human on Earth. He chose to knit.#knitting #yarn #epic #postapocalyptic #satisfying #craft",
+      "de": "Der letzte Mensch auf der Erde. Er entschied sich zu stricken. #stricken #wolle",
+      "es": "El último humano en la Tierra. Eligió tejer.#tejer #lana #épico #tejidoamano #crochet #satisfactorio",
+      "pt": "O último humano na Terra. Ele escolheu tricotar.#tricô #lã #épico #tricôàmão #crochê #satisfatório"
+    }
   },
   {
     "id": "UDKfjOzJXtI",
@@ -105,7 +143,10 @@
     "thumbnail": "https://i.ytimg.com/vi/UDKfjOzJXtI/hqdefault.jpg",
     "publishedAt": "2026-05-21T16:00:08Z",
     "url": "https://www.youtube.com/shorts/UDKfjOzJXtI",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "Babcia by była dumna. NASA też. #knitting #rekodzielo #druty #włóczka #kosmos #szydełkowanie"
+    }
   },
   {
     "id": "NlimPvSxnls",
@@ -114,7 +155,10 @@
     "thumbnail": "https://i.ytimg.com/vi/NlimPvSxnls/hqdefault.jpg",
     "publishedAt": "2026-05-19T19:17:08Z",
     "url": "https://www.youtube.com/shorts/NlimPvSxnls",
-    "duration": 13
+    "duration": 13,
+    "titles": {
+      "pl": "Najbardziej przytulna katastrofa w historii"
+    }
   },
   {
     "id": "SRyTlSDakIE",
@@ -123,7 +167,10 @@
     "thumbnail": "https://i.ytimg.com/vi/SRyTlSDakIE/hqdefault.jpg",
     "publishedAt": "2026-04-19T15:00:46Z",
     "url": "https://www.youtube.com/shorts/SRyTlSDakIE",
-    "duration": 42
+    "duration": 42,
+    "titles": {
+      "pl": "16 Pięt do skarpetek #robienienadrutach #knitting #knittig #knittingtutorial"
+    }
   },
   {
     "id": "5Nj0uHrIl4U",
@@ -132,7 +179,10 @@
     "thumbnail": "https://i.ytimg.com/vi/5Nj0uHrIl4U/hqdefault.jpg",
     "publishedAt": "2026-04-01T17:15:00Z",
     "url": "https://www.youtube.com/shorts/5Nj0uHrIl4U",
-    "duration": 82
+    "duration": 82,
+    "titles": {
+      "pl": "1 sposób robienia ściągacza = 2 różne efekty 😱"
+    }
   },
   {
     "id": "F4fZm_2TqnU",
@@ -141,7 +191,10 @@
     "thumbnail": "https://i.ytimg.com/vi/F4fZm_2TqnU/hqdefault.jpg",
     "publishedAt": "2026-03-26T22:01:32Z",
     "url": "https://www.youtube.com/shorts/F4fZm_2TqnU",
-    "duration": 9
+    "duration": 9,
+    "titles": {
+      "pl": "Tworzenie wideo z obrazów"
+    }
   },
   {
     "id": "QWQR4xrH9Vk",
@@ -150,7 +203,10 @@
     "thumbnail": "https://i.ytimg.com/vi/QWQR4xrH9Vk/hqdefault.jpg",
     "publishedAt": "2026-03-17T18:15:03Z",
     "url": "https://www.youtube.com/shorts/QWQR4xrH9Vk",
-    "duration": 36
+    "duration": 36,
+    "titles": {
+      "pl": "Ten sweterek wygląda jak z butiku 🧶✨"
+    }
   },
   {
     "id": "s_P_jpceh_I",
@@ -159,7 +215,11 @@
     "thumbnail": "https://i.ytimg.com/vi/s_P_jpceh_I/hqdefault.jpg",
     "publishedAt": "2026-03-15T17:01:14Z",
     "url": "https://www.youtube.com/shorts/s_P_jpceh_I",
-    "duration": 9
+    "duration": 9,
+    "titles": {
+      "pl": "Wygląda jak ze sklepu… a to rękodzieło! 😍",
+      "en": "It looks like something from a store… but it's handmade! 😍"
+    }
   },
   {
     "id": "DOaZx8uQIXM",
@@ -168,7 +228,10 @@
     "thumbnail": "https://i.ytimg.com/vi/DOaZx8uQIXM/hqdefault.jpg",
     "publishedAt": "2026-03-12T11:10:00Z",
     "url": "https://www.youtube.com/shorts/DOaZx8uQIXM",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "Najpiękniejsze miejsce do dziergania? 🌸🧶"
+    }
   },
   {
     "id": "bsfZpT5U-9M",
@@ -177,7 +240,11 @@
     "thumbnail": "https://i.ytimg.com/vi/bsfZpT5U-9M/hqdefault.jpg",
     "publishedAt": "2026-03-07T17:01:00Z",
     "url": "https://www.youtube.com/shorts/bsfZpT5U-9M",
-    "duration": 19
+    "duration": 19,
+    "titles": {
+      "pl": "🧦 Chcecie tutorial na te skarpetki?",
+      "en": "🧦 Want a tutorial on these socks?"
+    }
   },
   {
     "id": "YQKJ8Vs0pf4",
@@ -186,7 +253,11 @@
     "thumbnail": "https://i.ytimg.com/vi/YQKJ8Vs0pf4/hqdefault.jpg",
     "publishedAt": "2026-03-05T18:00:39Z",
     "url": "https://www.youtube.com/shorts/YQKJ8Vs0pf4",
-    "duration": 11
+    "duration": 11,
+    "titles": {
+      "pl": "Twoja robótka znów się zwija? 😱 Zrób TO!",
+      "en": "Is your knitting curling up again? 😱 Do THIS!"
+    }
   },
   {
     "id": "ZoCvtQyFXno",
@@ -195,7 +266,11 @@
     "thumbnail": "https://i.ytimg.com/vi/ZoCvtQyFXno/hqdefault.jpg",
     "publishedAt": "2026-03-04T18:19:00Z",
     "url": "https://www.youtube.com/shorts/ZoCvtQyFXno",
-    "duration": 33
+    "duration": 33,
+    "titles": {
+      "pl": "Dlaczego krawędź się zawija?🤔",
+      "en": "Why does the edge curl?🤔"
+    }
   },
   {
     "id": "IZ5Emuou2f8",
@@ -204,7 +279,11 @@
     "thumbnail": "https://i.ytimg.com/vi/IZ5Emuou2f8/hqdefault.jpg",
     "publishedAt": "2026-02-28T18:30:25Z",
     "url": "https://www.youtube.com/shorts/IZ5Emuou2f8",
-    "duration": 27
+    "duration": 27,
+    "titles": {
+      "pl": "Robisz skarpetki? Ten trik Ci się przyda! 👀🧶",
+      "en": "Do you knit socks? This trick will come in handy! 👀🧶"
+    }
   },
   {
     "id": "1CSGpW_XREY",
@@ -213,7 +292,11 @@
     "thumbnail": "https://i.ytimg.com/vi/1CSGpW_XREY/hqdefault.jpg",
     "publishedAt": "2026-02-24T16:36:51Z",
     "url": "https://www.youtube.com/shorts/1CSGpW_XREY",
-    "duration": 52
+    "duration": 52,
+    "titles": {
+      "pl": "Mój kardigan na drutach | Gotowy projekt | Hand knitted cardigan",
+      "en": "My knitted cardigan | Finished project | Hand knitted cardigan"
+    }
   },
   {
     "id": "Ku1p_WkVbCQ",
@@ -222,7 +305,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Ku1p_WkVbCQ/hqdefault.jpg",
     "publishedAt": "2026-02-23T12:00:34Z",
     "url": "https://www.youtube.com/shorts/Ku1p_WkVbCQ",
-    "duration": 6
+    "duration": 6,
+    "titles": {
+      "pl": "​Ten wzór na drutach zachwyca! 😍 Pełny tutorial na kanale Para drutów ✨",
+      "en": "This knitting pattern is amazing! 😍 Full tutorial on the Para Knitów channel ✨"
+    }
   },
   {
     "id": "-nMBWkSl_ro",
@@ -231,7 +318,11 @@
     "thumbnail": "https://i.ytimg.com/vi/-nMBWkSl_ro/hqdefault.jpg",
     "publishedAt": "2026-02-20T17:00:01Z",
     "url": "https://www.youtube.com/shorts/-nMBWkSl_ro",
-    "duration": 22
+    "duration": 22,
+    "titles": {
+      "pl": "Ten detal zdradza amatora… 😳🧶",
+      "en": "This detail betrays the amateur... 😳🧶"
+    }
   },
   {
     "id": "y2j3vcqq1D4",
@@ -240,7 +331,11 @@
     "thumbnail": "https://i.ytimg.com/vi/y2j3vcqq1D4/hqdefault.jpg",
     "publishedAt": "2026-02-18T18:19:00Z",
     "url": "https://www.youtube.com/shorts/y2j3vcqq1D4",
-    "duration": 40
+    "duration": 40,
+    "titles": {
+      "pl": "Ten ściągacz wygląda OBŁĘDNIE! 😍 Musisz go wypróbować 🧶",
+      "en": "This puller looks AMAZING! 😍 You have to try it 🧶"
+    }
   },
   {
     "id": "gU6gad8zLRA",
@@ -249,7 +344,11 @@
     "thumbnail": "https://i.ytimg.com/vi/gU6gad8zLRA/hqdefault.jpg",
     "publishedAt": "2026-02-16T18:19:00Z",
     "url": "https://www.youtube.com/shorts/gU6gad8zLRA",
-    "duration": 85
+    "duration": 85,
+    "titles": {
+      "pl": "Pierwsze rzędy jak marzenie! 😍 Prosty trik po nabieraniu oczek 🧶",
+      "en": "First rows are a dream! 😍 A simple trick after casting on stitches 🧶"
+    }
   },
   {
     "id": "WId9J95AwfQ",
@@ -258,7 +357,10 @@
     "thumbnail": "https://i.ytimg.com/vi/WId9J95AwfQ/hqdefault.jpg",
     "publishedAt": "2026-02-15T18:19:00Z",
     "url": "https://www.youtube.com/shorts/WId9J95AwfQ",
-    "duration": 84
+    "duration": 84,
+    "titles": {
+      "pl": "Idealne oczka brzegowe – 1 PROSTY trik! 🧶"
+    }
   },
   {
     "id": "5-hb4Vsy590",
@@ -267,7 +369,10 @@
     "thumbnail": "https://i.ytimg.com/vi/5-hb4Vsy590/hqdefault.jpg",
     "publishedAt": "2026-02-14T18:19:00Z",
     "url": "https://www.youtube.com/shorts/5-hb4Vsy590",
-    "duration": 36
+    "duration": 36,
+    "titles": {
+      "pl": "To naprawdę jest szydełko?! 😳 Ten efekt 3D wygląda jak z maszyny!"
+    }
   },
   {
     "id": "5_BVt9Z12uk",
@@ -276,7 +381,10 @@
     "thumbnail": "https://i.ytimg.com/vi/5_BVt9Z12uk/hqdefault.jpg",
     "publishedAt": "2026-02-13T18:19:00Z",
     "url": "https://www.youtube.com/shorts/5_BVt9Z12uk",
-    "duration": 21
+    "duration": 21,
+    "titles": {
+      "pl": "Genialne triki na drutach, które ułatwią Ci dzierganie! 🧶✨"
+    }
   },
   {
     "id": "nc9eZdw4S5o",
@@ -285,7 +393,10 @@
     "thumbnail": "https://i.ytimg.com/vi/nc9eZdw4S5o/hqdefault.jpg",
     "publishedAt": "2026-02-12T18:19:00Z",
     "url": "https://www.youtube.com/shorts/nc9eZdw4S5o",
-    "duration": 44
+    "duration": 44,
+    "titles": {
+      "pl": "Ten sweterek robi efekt WOW ✨ Zobacz detale!"
+    }
   },
   {
     "id": "jkf3uu_KKqA",
@@ -294,7 +405,10 @@
     "thumbnail": "https://i.ytimg.com/vi/jkf3uu_KKqA/hqdefault.jpg",
     "publishedAt": "2026-02-11T18:19:00Z",
     "url": "https://www.youtube.com/shorts/jkf3uu_KKqA",
-    "duration": 31
+    "duration": 31,
+    "titles": {
+      "pl": "REGAN, który wygląda jak z wzornika 😍 Ten wzór robi CAŁĄ robotę!"
+    }
   },
   {
     "id": "qkzT6tVQYOA",
@@ -303,7 +417,11 @@
     "thumbnail": "https://i.ytimg.com/vi/qkzT6tVQYOA/hqdefault.jpg",
     "publishedAt": "2026-02-06T18:19:00Z",
     "url": "https://www.youtube.com/shorts/qkzT6tVQYOA",
-    "duration": 22
+    "duration": 22,
+    "titles": {
+      "pl": "Zgadniesz co z tego powstanie? 😏Mała podpowiedź na końcu…",
+      "en": "Can you guess what this will turn out to be? 😏A little hint at the end..."
+    }
   },
   {
     "id": "7na4115wL9E",
@@ -312,7 +430,11 @@
     "thumbnail": "https://i.ytimg.com/vi/7na4115wL9E/hqdefault.jpg",
     "publishedAt": "2026-02-05T19:20:01Z",
     "url": "https://www.youtube.com/shorts/7na4115wL9E",
-    "duration": 40
+    "duration": 40,
+    "titles": {
+      "pl": "JAK TO ZROBIĆ?! 🧶 Genialny trik na druty!",
+      "en": "HOW TO DO IT?! 🧶 Brilliant knitting trick!"
+    }
   },
   {
     "id": "a_C2RU80hJ4",
@@ -321,7 +443,10 @@
     "thumbnail": "https://i.ytimg.com/vi/a_C2RU80hJ4/hqdefault.jpg",
     "publishedAt": "2026-02-04T18:19:00Z",
     "url": "https://www.youtube.com/shorts/a_C2RU80hJ4",
-    "duration": 25
+    "duration": 25,
+    "titles": {
+      "pl": "Twój piesek też może mieć taki sweterek! 🐶✨"
+    }
   },
   {
     "id": "5MTnRPf6Q2s",
@@ -330,7 +455,10 @@
     "thumbnail": "https://i.ytimg.com/vi/5MTnRPf6Q2s/hqdefault.jpg",
     "publishedAt": "2026-02-02T18:15:00Z",
     "url": "https://www.youtube.com/shorts/5MTnRPf6Q2s",
-    "duration": 17
+    "duration": 17,
+    "titles": {
+      "pl": "Zamykać oczka czy zszyć bez zamykania? Ten trik daje NIEWIDOCZNY szew! 😳🧶"
+    }
   },
   {
     "id": "mJREpmPda3s",
@@ -339,7 +467,11 @@
     "thumbnail": "https://i.ytimg.com/vi/mJREpmPda3s/hqdefault.jpg",
     "publishedAt": "2026-01-30T13:01:28Z",
     "url": "https://www.youtube.com/shorts/mJREpmPda3s",
-    "duration": 30
+    "duration": 30,
+    "titles": {
+      "pl": "KAMIZELKA, która podbiła serca! 😱 Ekskluzywny tutorial tylko dla Wspierających 🧶 Info w Opisie",
+      "en": "A VEST that has won hearts! 😱 Exclusive tutorial only for Backers 🧶 Info in the Description"
+    }
   },
   {
     "id": "UfH7NSnUvG0",
@@ -348,7 +480,10 @@
     "thumbnail": "https://i.ytimg.com/vi/UfH7NSnUvG0/hqdefault.jpg",
     "publishedAt": "2026-01-14T18:10:00Z",
     "url": "https://www.youtube.com/shorts/UfH7NSnUvG0",
-    "duration": 50
+    "duration": 50,
+    "titles": {
+      "pl": "Ten efekt zawsze robi WOW 😍🧶"
+    }
   },
   {
     "id": "HwqfkyUHftA",
@@ -357,7 +492,11 @@
     "thumbnail": "https://i.ytimg.com/vi/HwqfkyUHftA/hqdefault.jpg",
     "publishedAt": "2026-01-09T19:30:08Z",
     "url": "https://www.youtube.com/shorts/HwqfkyUHftA",
-    "duration": 13
+    "duration": 13,
+    "titles": {
+      "pl": "O tej metodzie prawie nikt nie mówi… a efekt robi WOW 😍",
+      "en": "Almost no one talks about this method... but the effect is WOW 😍"
+    }
   },
   {
     "id": "Ef_qOW8cepM",
@@ -366,7 +505,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Ef_qOW8cepM/hqdefault.jpg",
     "publishedAt": "2026-01-01T16:30:07Z",
     "url": "https://www.youtube.com/shorts/Ef_qOW8cepM",
-    "duration": 11
+    "duration": 11,
+    "titles": {
+      "pl": "„Krótka skarpetka na drutach w 1 godzinę 😱 Nikt Ci tego nie pokaże!”",
+      "en": "\"Knit a short sock in 1 hour 😱 No one will show you how!\""
+    }
   },
   {
     "id": "yPDxfe2tEJU",
@@ -375,7 +518,11 @@
     "thumbnail": "https://i.ytimg.com/vi/yPDxfe2tEJU/hqdefault.jpg",
     "publishedAt": "2025-12-29T17:24:13Z",
     "url": "https://www.youtube.com/shorts/yPDxfe2tEJU",
-    "duration": 57
+    "duration": 57,
+    "titles": {
+      "pl": "Mały detal, wielki efekt – mankiety",
+      "en": "Small detail, great effect – cuffs"
+    }
   },
   {
     "id": "2Lcg21FK4k0",
@@ -384,7 +531,11 @@
     "thumbnail": "https://i.ytimg.com/vi/2Lcg21FK4k0/hqdefault.jpg",
     "publishedAt": "2025-12-14T16:51:45Z",
     "url": "https://www.youtube.com/shorts/2Lcg21FK4k0",
-    "duration": 15
+    "duration": 15,
+    "titles": {
+      "pl": "Dlaczego nikt o tym nie mówi?",
+      "en": "Why is no one talking about this?"
+    }
   },
   {
     "id": "qsFeFAfLPe8",
@@ -393,7 +544,11 @@
     "thumbnail": "https://i.ytimg.com/vi/qsFeFAfLPe8/hqdefault.jpg",
     "publishedAt": "2025-12-11T15:53:24Z",
     "url": "https://www.youtube.com/shorts/qsFeFAfLPe8",
-    "duration": 66
+    "duration": 66,
+    "titles": {
+      "pl": "Zrób kieszeń na drutach w 30 minut !👌🧶",
+      "en": "Knit a pocket in 30 minutes!👌🧶"
+    }
   },
   {
     "id": "2_rBzTgjMoA",
@@ -402,7 +557,11 @@
     "thumbnail": "https://i.ytimg.com/vi/2_rBzTgjMoA/hqdefault.jpg",
     "publishedAt": "2025-12-09T17:15:00Z",
     "url": "https://www.youtube.com/shorts/2_rBzTgjMoA",
-    "duration": 55
+    "duration": 55,
+    "titles": {
+      "pl": "Kreatywny wzór na drutach – wygląda trudno, a jest prosty! 💛🧶",
+      "en": "Creative knitting pattern – it looks difficult, but it's simple! 💛🧶"
+    }
   },
   {
     "id": "M7nXw5PCVig",
@@ -411,7 +570,11 @@
     "thumbnail": "https://i.ytimg.com/vi/M7nXw5PCVig/hqdefault.jpg",
     "publishedAt": "2025-12-08T17:15:04Z",
     "url": "https://www.youtube.com/shorts/M7nXw5PCVig",
-    "duration": 26
+    "duration": 26,
+    "titles": {
+      "pl": "Jak zrobić kieszeń skośną – prosty trik dla każdego!",
+      "en": "How to make a slanted pocket – a simple trick for everyone!"
+    }
   },
   {
     "id": "CKzZm1yn3dI",
@@ -420,7 +583,10 @@
     "thumbnail": "https://i.ytimg.com/vi/CKzZm1yn3dI/hqdefault.jpg",
     "publishedAt": "2025-12-03T19:47:03Z",
     "url": "https://www.youtube.com/shorts/CKzZm1yn3dI",
-    "duration": 38
+    "duration": 38,
+    "titles": {
+      "pl": "9 pięknych ściągaczy na druty – wybierz swój ulubiony! 🧶💜"
+    }
   },
   {
     "id": "_B3BjkocJOQ",
@@ -429,7 +595,11 @@
     "thumbnail": "https://i.ytimg.com/vi/_B3BjkocJOQ/hqdefault.jpg",
     "publishedAt": "2025-11-29T17:45:02Z",
     "url": "https://www.youtube.com/shorts/_B3BjkocJOQ",
-    "duration": 30
+    "duration": 30,
+    "titles": {
+      "pl": "Najłatwiejsze schematy i wzory – teraz w mojej książce! 📖",
+      "en": "The easiest patterns and diagrams – now in my book! 📖"
+    }
   },
   {
     "id": "yGeukqBHBFU",
@@ -438,7 +608,11 @@
     "thumbnail": "https://i.ytimg.com/vi/yGeukqBHBFU/hqdefault.jpg",
     "publishedAt": "2025-11-27T17:15:09Z",
     "url": "https://www.youtube.com/shorts/yGeukqBHBFU",
-    "duration": 66
+    "duration": 66,
+    "titles": {
+      "pl": "Dwie skarpetki naraz?! 🔥 Megaszybki trik na drutach!",
+      "en": "Two socks at once?! 🔥 Mega-fast knitting trick!"
+    }
   },
   {
     "id": "sPA0EoaVlnM",
@@ -447,7 +621,11 @@
     "thumbnail": "https://i.ytimg.com/vi/sPA0EoaVlnM/hqdefault.jpg",
     "publishedAt": "2025-11-24T08:32:36Z",
     "url": "https://www.youtube.com/shorts/sPA0EoaVlnM",
-    "duration": 70
+    "duration": 70,
+    "titles": {
+      "pl": "Ta czapka to HIT! Pełny tutorial w opisie 💛",
+      "en": "This hat is a HIT! Full tutorial in the description 💛"
+    }
   },
   {
     "id": "Px9vcCCVCg8",
@@ -456,7 +634,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Px9vcCCVCg8/hqdefault.jpg",
     "publishedAt": "2025-11-21T20:49:25Z",
     "url": "https://www.youtube.com/shorts/Px9vcCCVCg8",
-    "duration": 81
+    "duration": 81,
+    "titles": {
+      "pl": "Łatwe nabieranie oczek (mój jeden z ulubionych sposobów!)",
+      "en": "Easy cast-on (one of my favorites!)"
+    }
   },
   {
     "id": "6jIGWAjEZDw",
@@ -465,7 +647,11 @@
     "thumbnail": "https://i.ytimg.com/vi/6jIGWAjEZDw/hqdefault.jpg",
     "publishedAt": "2025-11-13T17:00:22Z",
     "url": "https://www.youtube.com/shorts/6jIGWAjEZDw",
-    "duration": 78
+    "duration": 78,
+    "titles": {
+      "pl": "Zapisz ten trik 💛",
+      "en": "Save this trick 💛"
+    }
   },
   {
     "id": "ywUdRxQzVog",
@@ -474,7 +660,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ywUdRxQzVog/hqdefault.jpg",
     "publishedAt": "2025-09-08T08:35:30Z",
     "url": "https://www.youtube.com/shorts/ywUdRxQzVog",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "💜 Twoje kolory czekają – napisz i zamów!"
+    }
   },
   {
     "id": "WEkSPDUYm-M",
@@ -483,7 +672,10 @@
     "thumbnail": "https://i.ytimg.com/vi/WEkSPDUYm-M/hqdefault.jpg",
     "publishedAt": "2025-06-10T06:23:49Z",
     "url": "https://www.youtube.com/shorts/WEkSPDUYm-M",
-    "duration": 54
+    "duration": 54,
+    "titles": {
+      "pl": "Gwiazda plaży 🤩, początek urlopu"
+    }
   },
   {
     "id": "i_EGAXBCY4w",
@@ -492,7 +684,10 @@
     "thumbnail": "https://i.ytimg.com/vi/i_EGAXBCY4w/hqdefault.jpg",
     "publishedAt": "2025-06-02T12:16:59Z",
     "url": "https://www.youtube.com/shorts/i_EGAXBCY4w",
-    "duration": 36
+    "duration": 36,
+    "titles": {
+      "pl": "staw paluszek do góry w komentarzu,o nagraniu filmików (krok po kroku) o szydełkowaniu"
+    }
   },
   {
     "id": "9yI-IErnmII",
@@ -501,7 +696,10 @@
     "thumbnail": "https://i.ytimg.com/vi/9yI-IErnmII/hqdefault.jpg",
     "publishedAt": "2025-05-28T11:13:32Z",
     "url": "https://www.youtube.com/shorts/9yI-IErnmII",
-    "duration": 6
+    "duration": 6,
+    "titles": {
+      "pl": "Nie przegap tego 🙂"
+    }
   },
   {
     "id": "QVXP0-Y0VCc",
@@ -510,7 +708,10 @@
     "thumbnail": "https://i.ytimg.com/vi/QVXP0-Y0VCc/hqdefault.jpg",
     "publishedAt": "2025-05-27T09:31:02Z",
     "url": "https://www.youtube.com/shorts/QVXP0-Y0VCc",
-    "duration": 36
+    "duration": 36,
+    "titles": {
+      "pl": "Kod paradrutow5 obniża wartość koszyka o 5%. Obowiązuje na kokonki.pl, od 27.05.2025 do 31.05.2026 r"
+    }
   },
   {
     "id": "ZVIDmndKWZ0",
@@ -519,7 +720,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ZVIDmndKWZ0/hqdefault.jpg",
     "publishedAt": "2025-05-27T07:23:46Z",
     "url": "https://www.youtube.com/shorts/ZVIDmndKWZ0",
-    "duration": 37
+    "duration": 37,
+    "titles": {
+      "pl": "pomysły na drutach"
+    }
   },
   {
     "id": "6wzxjvfSwxk",
@@ -528,7 +732,10 @@
     "thumbnail": "https://i.ytimg.com/vi/6wzxjvfSwxk/hqdefault.jpg",
     "publishedAt": "2025-04-14T16:33:13Z",
     "url": "https://www.youtube.com/shorts/6wzxjvfSwxk",
-    "duration": 28
+    "duration": 28,
+    "titles": {
+      "pl": "Napisz komentarz i obserwuj kanał"
+    }
   },
   {
     "id": "am1FK7ebE2I",
@@ -537,7 +744,10 @@
     "thumbnail": "https://i.ytimg.com/vi/am1FK7ebE2I/hqdefault.jpg",
     "publishedAt": "2025-04-11T06:56:46Z",
     "url": "https://www.youtube.com/shorts/am1FK7ebE2I",
-    "duration": 61
+    "duration": 61,
+    "titles": {
+      "pl": "Link do zakupu książki podany w opisie kanału, lub link podany pod filmem trzeba skopiować"
+    }
   },
   {
     "id": "5Srms_QbRJ4",
@@ -546,7 +756,10 @@
     "thumbnail": "https://i.ytimg.com/vi/5Srms_QbRJ4/hqdefault.jpg",
     "publishedAt": "2025-03-21T18:15:01Z",
     "url": "https://www.youtube.com/shorts/5Srms_QbRJ4",
-    "duration": 37
+    "duration": 37,
+    "titles": {
+      "pl": "Biała piękność na drutach"
+    }
   },
   {
     "id": "EGWogH9J3AA",
@@ -555,7 +768,10 @@
     "thumbnail": "https://i.ytimg.com/vi/EGWogH9J3AA/hqdefault.jpg",
     "publishedAt": "2025-03-11T17:48:55Z",
     "url": "https://www.youtube.com/shorts/EGWogH9J3AA",
-    "duration": 37
+    "duration": 37,
+    "titles": {
+      "pl": "Piękne wzory swetrów i schematy do robienia na drutach"
+    }
   },
   {
     "id": "sxhm2JByhFQ",
@@ -564,7 +780,10 @@
     "thumbnail": "https://i.ytimg.com/vi/sxhm2JByhFQ/hqdefault.jpg",
     "publishedAt": "2024-09-15T15:57:23Z",
     "url": "https://www.youtube.com/shorts/sxhm2JByhFQ",
-    "duration": 60
+    "duration": 60,
+    "titles": {
+      "pl": "Pomysły na żakardowe swetry Obrazki pobrane z internetu"
+    }
   },
   {
     "id": "NBOI7QfvM_E",
@@ -573,7 +792,10 @@
     "thumbnail": "https://i.ytimg.com/vi/NBOI7QfvM_E/hqdefault.jpg",
     "publishedAt": "2024-08-18T10:25:42Z",
     "url": "https://www.youtube.com/shorts/NBOI7QfvM_E",
-    "duration": 19
+    "duration": 19,
+    "titles": {
+      "pl": "Daisyna garderoba 🐶"
+    }
   },
   {
     "id": "gzsUf1F0Ikw",
@@ -582,7 +804,10 @@
     "thumbnail": "https://i.ytimg.com/vi/gzsUf1F0Ikw/hqdefault.jpg",
     "publishedAt": "2024-08-02T19:40:10Z",
     "url": "https://www.youtube.com/shorts/gzsUf1F0Ikw",
-    "duration": 60
+    "duration": 60,
+    "titles": {
+      "pl": "Pomysł na drutach.Piękne warkocze"
+    }
   },
   {
     "id": "s1aNYXgHHBM",
@@ -591,7 +816,10 @@
     "thumbnail": "https://i.ytimg.com/vi/s1aNYXgHHBM/hqdefault.jpg",
     "publishedAt": "2024-02-29T10:42:27Z",
     "url": "https://www.youtube.com/shorts/s1aNYXgHHBM",
-    "duration": 46
+    "duration": 46,
+    "titles": {
+      "pl": "♥️ Księżniczka na wybiegu 🥰"
+    }
   },
   {
     "id": "-tj5aHR1A3w",
@@ -600,7 +828,10 @@
     "thumbnail": "https://i.ytimg.com/vi/-tj5aHR1A3w/hqdefault.jpg",
     "publishedAt": "2024-02-28T07:16:57Z",
     "url": "https://www.youtube.com/shorts/-tj5aHR1A3w",
-    "duration": 8
+    "duration": 8,
+    "titles": {
+      "pl": "Vintage  knitting pattern \"Argyle\""
+    }
   },
   {
     "id": "j6Ni9-JXhvc",
@@ -609,7 +840,10 @@
     "thumbnail": "https://i.ytimg.com/vi/j6Ni9-JXhvc/hqdefault.jpg",
     "publishedAt": "2024-02-20T13:13:30Z",
     "url": "https://www.youtube.com/shorts/j6Ni9-JXhvc",
-    "duration": 11
+    "duration": 11,
+    "titles": {
+      "pl": "20 lutego 2024"
+    }
   },
   {
     "id": "AIlHUUqxIfU",
@@ -618,7 +852,10 @@
     "thumbnail": "https://i.ytimg.com/vi/AIlHUUqxIfU/hqdefault.jpg",
     "publishedAt": "2024-02-16T09:54:32Z",
     "url": "https://www.youtube.com/shorts/AIlHUUqxIfU",
-    "duration": 61
+    "duration": 61,
+    "titles": {
+      "pl": "Ręcznie robione ubranko na drutach"
+    }
   },
   {
     "id": "fLNpPJ4l2JQ",
@@ -627,7 +864,10 @@
     "thumbnail": "https://i.ytimg.com/vi/fLNpPJ4l2JQ/hqdefault.jpg",
     "publishedAt": "2024-02-14T09:02:44Z",
     "url": "https://www.youtube.com/shorts/fLNpPJ4l2JQ",
-    "duration": 51
+    "duration": 51,
+    "titles": {
+      "pl": "Ręcznie robione ubranko na drutach"
+    }
   },
   {
     "id": "3P1PAXVQDag",
@@ -636,7 +876,10 @@
     "thumbnail": "https://i.ytimg.com/vi/3P1PAXVQDag/hqdefault.jpg",
     "publishedAt": "2024-02-02T14:13:04Z",
     "url": "https://www.youtube.com/shorts/3P1PAXVQDag",
-    "duration": 68
+    "duration": 68,
+    "titles": {
+      "pl": "Modne pomysły na drutach | Inspiracje dziewiarskie | Knitting ideas"
+    }
   },
   {
     "id": "C5ENyjhH_oY",
@@ -645,7 +888,10 @@
     "thumbnail": "https://i.ytimg.com/vi/C5ENyjhH_oY/hqdefault.jpg",
     "publishedAt": "2023-08-30T20:37:35Z",
     "url": "https://www.youtube.com/shorts/C5ENyjhH_oY",
-    "duration": 19
+    "duration": 19,
+    "titles": {
+      "pl": "Pluszowa poduszka na drutach bez żadnego szwu"
+    }
   },
   {
     "id": "jPgtukMRFvA",
@@ -654,7 +900,10 @@
     "thumbnail": "https://i.ytimg.com/vi/jPgtukMRFvA/hqdefault.jpg",
     "publishedAt": "2023-08-10T10:00:11Z",
     "url": "https://www.youtube.com/shorts/jPgtukMRFvA",
-    "duration": 85
+    "duration": 85,
+    "titles": {
+      "pl": "Schematy wzorów na druty | Inspiracje dziewiarskie | Knitting patterns"
+    }
   },
   {
     "id": "sMgnCsCWSdQ",
@@ -663,7 +912,10 @@
     "thumbnail": "https://i.ytimg.com/vi/sMgnCsCWSdQ/hqdefault.jpg",
     "publishedAt": "2023-01-15T06:53:56Z",
     "url": "https://www.youtube.com/shorts/sMgnCsCWSdQ",
-    "duration": 16
+    "duration": 16,
+    "titles": {
+      "pl": "Staw like  jak podobają się ci  takie kolory i wzór"
+    }
   },
   {
     "id": "iPk98ddao5E",
@@ -672,6 +924,9 @@
     "thumbnail": "https://i.ytimg.com/vi/iPk98ddao5E/hqdefault.jpg",
     "publishedAt": "2022-12-26T20:01:14Z",
     "url": "https://www.youtube.com/shorts/iPk98ddao5E",
-    "duration": 60
+    "duration": 60,
+    "titles": {
+      "pl": "Moje robótki na drutach | Inspiracje dziewiarskie"
+    }
   }
 ]

@@ -6,7 +6,15 @@
     "thumbnail": "https://i.ytimg.com/vi/zVLrfxyxxtA/hqdefault.jpg",
     "publishedAt": "2026-10-18T16:00:07Z",
     "url": "https://www.youtube.com/watch?v=zVLrfxyxxtA",
-    "duration": 4793
+    "duration": 4793,
+    "titles": {
+      "pl": "Ten Luksusowy Szalik Żakardowy Odmieni Twoją Zimę! ❄️ Krok po Kroku (Double Knitting)",
+      "en": "This Luxurious Colorwork Scarf Will Transform Your Winter! ❄️ Step by Step (Double Knitting)",
+      "de": "Dieser luxuriöse Jacquard-Schal verändert deinen Winter! ❄️ Schritt für Schritt (Double Knitting)",
+      "fr": "Cette écharpe jacquard de luxe va transformer ton hiver ! ❄️ Pas à pas (Double Knitting)",
+      "es": "¡Esta bufanda de jacquard de lujo cambiará tu invierno! ❄️ Paso a paso (Double Knitting)",
+      "pt": "Este Cachecol Jacquard de Luxo Vai Transformar o Seu Inverno! ❄️ Passo a Passo (Double Knitting)"
+    }
   },
   {
     "id": "cYFOuFsmadI",
@@ -15,7 +23,15 @@
     "thumbnail": "https://i.ytimg.com/vi/cYFOuFsmadI/hqdefault.jpg",
     "publishedAt": "2026-10-11T17:30:06Z",
     "url": "https://www.youtube.com/watch?v=cYFOuFsmadI",
-    "duration": 4004
+    "duration": 4004,
+    "titles": {
+      "pl": "⏱️ Najszybsze Mitenki na Drutach –Zrobisz Je Nawet Dzisiaj! ⏱️ ",
+      "en": "⏱️ The Fastest Fingerless Gloves to Knit – Make Them Today! ⏱️",
+      "de": "⏱️ Schnellste Pulswärmer stricken – Heute noch fertig! ⏱️",
+      "fr": "⏱️ Les mitaines au tricot les plus rapides – Faites-les dès aujourd'hui ! ⏱️",
+      "es": "⏱️ Los Mitones a Dos Agujas Más Rápidos – ¡Hazlos Hoy Mismo! ⏱️",
+      "pt": "⏱️ Luvas sem Dedos de Tricô Super Rápidas – Faça Ainda Hoje! ⏱️"
+    }
   },
   {
     "id": "9R-JwvPYXoU",
@@ -24,7 +40,12 @@
     "thumbnail": "https://i.ytimg.com/vi/9R-JwvPYXoU/hqdefault.jpg",
     "publishedAt": "2026-10-08T17:00:09Z",
     "url": "https://www.youtube.com/watch?v=9R-JwvPYXoU",
-    "duration": 3046
+    "duration": 3046,
+    "titles": {
+      "pl": "MĘSKA CZAPKA DLA OPORNYCH – TUTORIAL",
+      "en": "Men's Hat for the Reluctant – Tutorial",
+      "de": "Männermütze für die, die keine tragen – Tutorial"
+    }
   },
   {
     "id": "5orKTpFwJLE",
@@ -33,7 +54,11 @@
     "thumbnail": "https://i.ytimg.com/vi/5orKTpFwJLE/hqdefault.jpg",
     "publishedAt": "2026-10-04T17:00:10Z",
     "url": "https://www.youtube.com/watch?v=5orKTpFwJLE",
-    "duration": 4601
+    "duration": 4601,
+    "titles": {
+      "pl": "Miękki, puszysty szalik na drutach",
+      "en": "Soft, fluffy knitted scarf"
+    }
   },
   {
     "id": "QoHYedizdq4",
@@ -42,7 +67,11 @@
     "thumbnail": "https://i.ytimg.com/vi/QoHYedizdq4/hqdefault.jpg",
     "publishedAt": "2026-09-30T18:00:09Z",
     "url": "https://www.youtube.com/watch?v=QoHYedizdq4",
-    "duration": 2382
+    "duration": 2382,
+    "titles": {
+      "pl": "Eleganckie ponczo na drutach krok po kroku! Zrobisz je łatwiej, niż myślisz 🌿",
+      "en": "Elegant knit poncho step-by-step! Easier to make than you think 🌿"
+    }
   },
   {
     "id": "m1nRAV7qSVc",
@@ -51,7 +80,11 @@
     "thumbnail": "https://i.ytimg.com/vi/m1nRAV7qSVc/hqdefault.jpg",
     "publishedAt": "2026-09-20T18:00:08Z",
     "url": "https://www.youtube.com/watch?v=m1nRAV7qSVc",
-    "duration": 1903
+    "duration": 1903,
+    "titles": {
+      "pl": "PIĘKNY SZALIK NA KAŻDY DZIEŃ! 🧶 Prosty wzór na drutach krok po kroku",
+      "en": "BEAUTIFUL EVERYDAY SCARF! 🧶 Simple step-by-step knitting pattern"
+    }
   },
   {
     "id": "Lhc_tk1TLo4",
@@ -60,7 +93,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Lhc_tk1TLo4/hqdefault.jpg",
     "publishedAt": "2026-09-14T16:15:06Z",
     "url": "https://www.youtube.com/watch?v=Lhc_tk1TLo4",
-    "duration": 2636
+    "duration": 2636,
+    "titles": {
+      "pl": "Pełny tutorial: Prosta czapka na drutach z Pinteresta 🧶 Krok po kroku od A do Z | Ze zszywaniem!",
+      "en": "Full Tutorial: Simple Pinterest Knit Beanie 🧶 Step-by-Step From A to Z | With Seaming!"
+    }
   },
   {
     "id": "nQ6KLA_zTPw",
@@ -69,7 +106,11 @@
     "thumbnail": "https://i.ytimg.com/vi/nQ6KLA_zTPw/hqdefault.jpg",
     "publishedAt": "2026-09-13T16:00:05Z",
     "url": "https://www.youtube.com/watch?v=nQ6KLA_zTPw",
-    "duration": 1617
+    "duration": 1617,
+    "titles": {
+      "pl": "Prosta czapka na drutach z Pinteresta 🧶 Krok po kroku dla początkujących! | Hit sezonu",
+      "en": "Simple Pinterest-Inspired Knitted Beanie 🧶 Step-by-Step for Beginners! | Seasonal Hit"
+    }
   },
   {
     "id": "WEi1dotAFH8",
@@ -78,7 +119,11 @@
     "thumbnail": "https://i.ytimg.com/vi/WEi1dotAFH8/hqdefault.jpg",
     "publishedAt": "2026-09-06T18:00:05Z",
     "url": "https://www.youtube.com/watch?v=WEi1dotAFH8",
-    "duration": 2233
+    "duration": 2233,
+    "titles": {
+      "pl": "Szalik z moheru – HIT TEGO SEZONU! | Prosty tutorial dla początkujących ✨",
+      "en": "Mohair Scarf – THIS SEASON'S MUST-HAVE! | Simple tutorial for beginners ✨"
+    }
   },
   {
     "id": "k8LzXYa1mjo",
@@ -87,7 +132,11 @@
     "thumbnail": "https://i.ytimg.com/vi/k8LzXYa1mjo/hqdefault.jpg",
     "publishedAt": "2026-09-04T16:00:06Z",
     "url": "https://www.youtube.com/watch?v=k8LzXYa1mjo",
-    "duration": 1919
+    "duration": 1919,
+    "titles": {
+      "pl": "CO MAM NA DRUTACH? 🧶 Nowe i skończone projekty | Co teraz robię?",
+      "en": "WHAT'S ON MY NEEDLES? 🧶 New and finished projects | What I'm working on now?"
+    }
   },
   {
     "id": "tuGOIwL0UL4",
@@ -96,7 +145,10 @@
     "thumbnail": "https://i.ytimg.com/vi/tuGOIwL0UL4/hqdefault.jpg",
     "publishedAt": "2026-08-27T16:00:06Z",
     "url": "https://www.youtube.com/watch?v=tuGOIwL0UL4",
-    "duration": 4209
+    "duration": 4209,
+    "titles": {
+      "pl": "Kamizelka dla pieska na drutach 🐶🧶 | Łatwy tutorial krok po kroku"
+    }
   },
   {
     "id": "lcP4T9cRJbg",
@@ -105,7 +157,11 @@
     "thumbnail": "https://i.ytimg.com/vi/lcP4T9cRJbg/hqdefault.jpg",
     "publishedAt": "2026-08-15T17:00:06Z",
     "url": "https://www.youtube.com/watch?v=lcP4T9cRJbg",
-    "duration": 446
+    "duration": 446,
+    "titles": {
+      "pl": "Własna włóczka? POMÓŻ MI ZDECYDOWAĆ! 🧶 [Cena i Skład]",
+      "en": "My own yarn? HELP ME DECIDE! 🧶 [Price and Composition]"
+    }
   },
   {
     "id": "Y2FGdi-7gE0",
@@ -114,7 +170,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Y2FGdi-7gE0/hqdefault.jpg",
     "publishedAt": "2026-08-06T16:00:06Z",
     "url": "https://www.youtube.com/watch?v=Y2FGdi-7gE0",
-    "duration": 681
+    "duration": 681,
+    "titles": {
+      "pl": "Łatwy LETNI AŻUR na drutach [KROK PO KROKU]",
+      "en": "Easy SUMMER LACE knitting pattern [STEP BY STEP]"
+    }
   },
   {
     "id": "6Nisi3KXmuU",
@@ -123,7 +183,11 @@
     "thumbnail": "https://i.ytimg.com/vi/6Nisi3KXmuU/hqdefault.jpg",
     "publishedAt": "2026-07-15T18:00:05Z",
     "url": "https://www.youtube.com/watch?v=6Nisi3KXmuU",
-    "duration": 163
+    "duration": 163,
+    "titles": {
+      "pl": "Wzory, filmy i książki na druty: SZYBKO znajdziesz to, czego szukasz! [NOWOŚĆ]",
+      "en": "Knitting patterns, videos, and books: Find exactly what you're looking for FAST! [NEW]"
+    }
   },
   {
     "id": "kqm4whammNQ",
@@ -132,7 +196,11 @@
     "thumbnail": "https://i.ytimg.com/vi/kqm4whammNQ/hqdefault.jpg",
     "publishedAt": "2026-07-12T18:00:05Z",
     "url": "https://www.youtube.com/watch?v=kqm4whammNQ",
-    "duration": 360
+    "duration": 360,
+    "titles": {
+      "pl": "Mój PIERWSZY raz przed kamerą! 😱 Piękne Wzory na Druty i PDF [Poradnik]",
+      "en": "My FIRST time on camera! 😱 Beautiful Knitting Patterns and PDF [Tutorial]"
+    }
   },
   {
     "id": "AR2qmviQVPw",
@@ -141,7 +209,11 @@
     "thumbnail": "https://i.ytimg.com/vi/AR2qmviQVPw/hqdefault.jpg",
     "publishedAt": "2026-07-05T08:00:05Z",
     "url": "https://www.youtube.com/watch?v=AR2qmviQVPw",
-    "duration": 2684
+    "duration": 2684,
+    "titles": {
+      "pl": "Zjawiskowy AŻUR na lato na drutach! ☀️ [Tutorial krok po kroku]",
+      "en": "Stunning knitted LACE for summer! ☀️ [Step-by-step tutorial]"
+    }
   },
   {
     "id": "A5HISpMluGo",
@@ -150,7 +222,11 @@
     "thumbnail": "https://i.ytimg.com/vi/A5HISpMluGo/hqdefault.jpg",
     "publishedAt": "2026-04-25T15:15:05Z",
     "url": "https://www.youtube.com/watch?v=A5HISpMluGo",
-    "duration": 212
+    "duration": 212,
+    "titles": {
+      "pl": "Jak zrobić skarpetki Z RESZTEK WŁÓCZKI na drutach? [NOWA KSIĄŻKA]",
+      "en": "How to knit socks from YARN SCRAPS? [NEW BOOK]"
+    }
   },
   {
     "id": "ynPlg_rP_64",
@@ -159,7 +235,11 @@
     "thumbnail": "https://i.ytimg.com/vi/ynPlg_rP_64/hqdefault.jpg",
     "publishedAt": "2026-04-15T17:00:05Z",
     "url": "https://www.youtube.com/watch?v=ynPlg_rP_64",
-    "duration": 1185
+    "duration": 1185,
+    "titles": {
+      "pl": "Proste KAPCIE na drutach w 1 wieczór! 🧦 [Tutorial]",
+      "en": "Simple Knitted SLIPPERS in 1 Evening! 🧦 [Tutorial]"
+    }
   },
   {
     "id": "y4gxMhv-WXE",
@@ -168,7 +248,11 @@
     "thumbnail": "https://i.ytimg.com/vi/y4gxMhv-WXE/hqdefault.jpg",
     "publishedAt": "2026-04-03T17:00:05Z",
     "url": "https://www.youtube.com/watch?v=y4gxMhv-WXE",
-    "duration": 380
+    "duration": 380,
+    "titles": {
+      "pl": "NOWOCZESNA BAZA: 12 rzeczy na drutach, które nosisz codziennie! 🧶",
+      "en": "MODERN BASICS: 12 Knitted Items You Wear Every Day! 🧶"
+    }
   },
   {
     "id": "weFiywLWaYw",
@@ -177,7 +261,11 @@
     "thumbnail": "https://i.ytimg.com/vi/weFiywLWaYw/hqdefault.jpg",
     "publishedAt": "2026-04-02T17:15:05Z",
     "url": "https://www.youtube.com/watch?v=weFiywLWaYw",
-    "duration": 811
+    "duration": 811,
+    "titles": {
+      "pl": "Niewidoczne ŁĄCZENIE na drutach! 🧶 [Poradnik krok po kroku]",
+      "en": "Invisible JOIN in knitting! 🧶 [Step-by-step guide]"
+    }
   },
   {
     "id": "EEk3HIJJTms",
@@ -186,7 +274,11 @@
     "thumbnail": "https://i.ytimg.com/vi/EEk3HIJJTms/hqdefault.jpg",
     "publishedAt": "2026-03-30T17:15:06Z",
     "url": "https://www.youtube.com/watch?v=EEk3HIJJTms",
-    "duration": 2052
+    "duration": 2052,
+    "titles": {
+      "pl": "PROSTA i uniwersalna kamizelka na drutach [KROK PO KROKU]",
+      "en": "SIMPLE and versatile knitted vest [STEP BY STEP]"
+    }
   },
   {
     "id": "ay0hk2hVfKA",
@@ -195,7 +287,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ay0hk2hVfKA/hqdefault.jpg",
     "publishedAt": "2026-03-19T18:00:06Z",
     "url": "https://www.youtube.com/watch?v=ay0hk2hVfKA",
-    "duration": 9138
+    "duration": 9138,
+    "titles": {
+      "pl": "Każdy zapyta, GDZIE GO KUPIŁAŚ! Prosty żółty sweterek na drutach"
+    }
   },
   {
     "id": "g6OTiTDPimU",
@@ -204,7 +299,11 @@
     "thumbnail": "https://i.ytimg.com/vi/g6OTiTDPimU/hqdefault.jpg",
     "publishedAt": "2026-03-10T17:00:22Z",
     "url": "https://www.youtube.com/watch?v=g6OTiTDPimU",
-    "duration": 2566
+    "duration": 2566,
+    "titles": {
+      "pl": "Zrób swoje pierwsze skarpetki BEZ TRUDNEJ PIĘTY! [Krok po Kroku]\"",
+      "en": "Knit your first socks WITHOUT A DIFFICULT HEEL! [Step by Step]"
+    }
   },
   {
     "id": "DKW-9wvGg50",
@@ -213,7 +312,11 @@
     "thumbnail": "https://i.ytimg.com/vi/DKW-9wvGg50/hqdefault.jpg",
     "publishedAt": "2026-03-08T18:00:21Z",
     "url": "https://www.youtube.com/watch?v=DKW-9wvGg50",
-    "duration": 2492
+    "duration": 2492,
+    "titles": {
+      "pl": "Idealny kardigan na drutach! Wygląda jak z butiku [TUTORIAL]",
+      "en": "The Perfect Knitted Cardigan! Looks Boutique-Quality [TUTORIAL]"
+    }
   },
   {
     "id": "e31WTLmLNdI",
@@ -222,7 +325,10 @@
     "thumbnail": "https://i.ytimg.com/vi/e31WTLmLNdI/hqdefault.jpg",
     "publishedAt": "2026-03-03T18:00:47Z",
     "url": "https://www.youtube.com/watch?v=e31WTLmLNdI",
-    "duration": 6793
+    "duration": 6793,
+    "titles": {
+      "pl": "Kamizelka na drutach | Jak zrobić kamizelkę krok po kroku | Knitting vest"
+    }
   },
   {
     "id": "BUJaVUNMaPo",
@@ -231,7 +337,11 @@
     "thumbnail": "https://i.ytimg.com/vi/BUJaVUNMaPo/hqdefault.jpg",
     "publishedAt": "2026-02-21T17:00:15Z",
     "url": "https://www.youtube.com/watch?v=BUJaVUNMaPo",
-    "duration": 952
+    "duration": 952,
+    "titles": {
+      "pl": "Ażurowy wzór na drutach | Piękny ścieg krok po kroku | Lace knitting pattern",
+      "en": "Openwork knitting pattern | Beautiful stitch step by step | Lace knitting pattern"
+    }
   },
   {
     "id": "K2QY1Ud24fI",
@@ -240,7 +350,11 @@
     "thumbnail": "https://i.ytimg.com/vi/K2QY1Ud24fI/hqdefault.jpg",
     "publishedAt": "2026-02-17T18:19:01Z",
     "url": "https://www.youtube.com/watch?v=K2QY1Ud24fI",
-    "duration": 324
+    "duration": 324,
+    "titles": {
+      "pl": "Robótka się zawija ?| Jak zrobić równe oczka | Knitting tips",
+      "en": "Is your knitting curling? | How to get even stitches | Knitting tips"
+    }
   },
   {
     "id": "efF4mGs7RAM",
@@ -249,7 +363,10 @@
     "thumbnail": "https://i.ytimg.com/vi/efF4mGs7RAM/hqdefault.jpg",
     "publishedAt": "2026-02-07T18:19:00Z",
     "url": "https://www.youtube.com/watch?v=efF4mGs7RAM",
-    "duration": 7672
+    "duration": 7672,
+    "titles": {
+      "pl": "Skarpetki na drutach krok po kroku | 3 sposoby wykończenia | Knitting socks tutorial"
+    }
   },
   {
     "id": "Y70ioZYh5Do",
@@ -258,7 +375,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Y70ioZYh5Do/hqdefault.jpg",
     "publishedAt": "2026-02-03T19:20:00Z",
     "url": "https://www.youtube.com/watch?v=Y70ioZYh5Do",
-    "duration": 106
+    "duration": 106,
+    "titles": {
+      "pl": "Te Skarpetki Pasują na KAŻDĄ Stopę! 🧦 Zobacz Jak Je Zrobić!",
+      "en": "These Socks Fit EVERY Foot! 🧦 See How to Make Them!"
+    }
   },
   {
     "id": "r1ytazdqnVg",
@@ -267,7 +388,11 @@
     "thumbnail": "https://i.ytimg.com/vi/r1ytazdqnVg/hqdefault.jpg",
     "publishedAt": "2026-01-13T19:30:06Z",
     "url": "https://www.youtube.com/watch?v=r1ytazdqnVg",
-    "duration": 2178
+    "duration": 2178,
+    "titles": {
+      "pl": "Skarpetki na drutach | Prosty sposób robienia skarpet | Knitting socks",
+      "en": "Knitted socks | Easy way to knit socks | Knitting socks"
+    }
   },
   {
     "id": "ZpqTzPdw5Es",
@@ -276,7 +401,11 @@
     "thumbnail": "https://i.ytimg.com/vi/ZpqTzPdw5Es/hqdefault.jpg",
     "publishedAt": "2025-12-10T21:57:27Z",
     "url": "https://www.youtube.com/watch?v=ZpqTzPdw5Es",
-    "duration": 1286
+    "duration": 1286,
+    "titles": {
+      "pl": "Ciepły kołnierz na drutach | Prosty projekt krok po kroku | Knitting collar",
+      "en": "Warm Knitted Collar | Easy Step-by-Step Project | Knitting Collar"
+    }
   },
   {
     "id": "0z9fivSn2DU",
@@ -285,7 +414,11 @@
     "thumbnail": "https://i.ytimg.com/vi/0z9fivSn2DU/hqdefault.jpg",
     "publishedAt": "2025-12-04T17:25:06Z",
     "url": "https://www.youtube.com/watch?v=0z9fivSn2DU",
-    "duration": 284
+    "duration": 284,
+    "titles": {
+      "pl": "Lekki wzór na drutach z prawych oczek | Prosty ścieg | Knitting pattern",
+      "en": "Lightweight knitting pattern with straight stitches | Straight stitch | Knitting pattern"
+    }
   },
   {
     "id": "7I6cxYtIPIs",
@@ -294,7 +427,11 @@
     "thumbnail": "https://i.ytimg.com/vi/7I6cxYtIPIs/hqdefault.jpg",
     "publishedAt": "2025-12-01T17:44:00Z",
     "url": "https://www.youtube.com/watch?v=7I6cxYtIPIs",
-    "duration": 490
+    "duration": 490,
+    "titles": {
+      "pl": "Łatwy wzór na drutach | Ścieg który wygląda trudno | Knitting pattern",
+      "en": "Easy knitting pattern | A stitch that looks difficult | Knitting pattern"
+    }
   },
   {
     "id": "ALY5I-U-EwE",
@@ -303,7 +440,11 @@
     "thumbnail": "https://i.ytimg.com/vi/ALY5I-U-EwE/hqdefault.jpg",
     "publishedAt": "2025-11-25T17:30:06Z",
     "url": "https://www.youtube.com/watch?v=ALY5I-U-EwE",
-    "duration": 688
+    "duration": 688,
+    "titles": {
+      "pl": "Idealne krawędzie w robótce | 3 sposoby na piękny brzeg | Knitting tips",
+      "en": "Perfect edges in knitting | 3 ways to create a beautiful edge | Knitting tips"
+    }
   },
   {
     "id": "NfreU_mXIKM",
@@ -312,7 +453,11 @@
     "thumbnail": "https://i.ytimg.com/vi/NfreU_mXIKM/hqdefault.jpg",
     "publishedAt": "2025-11-22T16:10:43Z",
     "url": "https://www.youtube.com/watch?v=NfreU_mXIKM",
-    "duration": 100
+    "duration": 100,
+    "titles": {
+      "pl": "Twoje prawe oczka będą perfekcyjne! Mój sprawdzony sposób 🧶✨",
+      "en": "Your right eyes will be perfect! My proven method 🧶✨"
+    }
   },
   {
     "id": "V9vH-AbZAt4",
@@ -321,7 +466,11 @@
     "thumbnail": "https://i.ytimg.com/vi/V9vH-AbZAt4/hqdefault.jpg",
     "publishedAt": "2025-11-19T17:00:06Z",
     "url": "https://www.youtube.com/watch?v=V9vH-AbZAt4",
-    "duration": 270
+    "duration": 270,
+    "titles": {
+      "pl": "Magiczny sposób nabierania oczek | Elastyczny brzeg | Knitting cast on",
+      "en": "The Magic Way to Cast on | Elastic Edge | Knitting Cast On"
+    }
   },
   {
     "id": "-lLygAn6zvQ",
@@ -330,7 +479,11 @@
     "thumbnail": "https://i.ytimg.com/vi/-lLygAn6zvQ/hqdefault.jpg",
     "publishedAt": "2025-11-10T08:55:42Z",
     "url": "https://www.youtube.com/watch?v=-lLygAn6zvQ",
-    "duration": 114
+    "duration": 114,
+    "titles": {
+      "pl": "👉 „Nie panikuj! Tak uratujesz źle przerobione oczko 🧶”",
+      "en": "👉 \"Don't panic! This is how you can save a badly stitched eyelet 🧶\""
+    }
   },
   {
     "id": "iySEhzeuhUo",
@@ -339,7 +492,11 @@
     "thumbnail": "https://i.ytimg.com/vi/iySEhzeuhUo/hqdefault.jpg",
     "publishedAt": "2025-10-11T19:24:31Z",
     "url": "https://www.youtube.com/watch?v=iySEhzeuhUo",
-    "duration": 308
+    "duration": 308,
+    "titles": {
+      "pl": "Moja książka o robieniu na drutach | Pasja tworzenia",
+      "en": "My Book on Knitting | Passion for Creation"
+    }
   },
   {
     "id": "qPYOeepQuiY",
@@ -348,7 +505,11 @@
     "thumbnail": "https://i.ytimg.com/vi/qPYOeepQuiY/hqdefault.jpg",
     "publishedAt": "2025-09-18T18:05:06Z",
     "url": "https://www.youtube.com/watch?v=qPYOeepQuiY",
-    "duration": 2969
+    "duration": 2969,
+    "titles": {
+      "pl": "Sweter na drutach krok po kroku | Część 6 | Knitting sweater tutorial",
+      "en": "Knitting a sweater step by step | Part 6 | Knitting sweater tutorial"
+    }
   },
   {
     "id": "tWPEtLia8DA",
@@ -357,7 +518,11 @@
     "thumbnail": "https://i.ytimg.com/vi/tWPEtLia8DA/hqdefault.jpg",
     "publishedAt": "2025-09-09T17:15:04Z",
     "url": "https://www.youtube.com/watch?v=tWPEtLia8DA",
-    "duration": 2767
+    "duration": 2767,
+    "titles": {
+      "pl": "Sweter bez szwu na drutach | Projekt krok po kroku | Część 5 | Seamless sweater knitting",
+      "en": "Seamless Knitting Sweater | Step-by-Step Project | Part 5 | Seamless sweater knitting"
+    }
   },
   {
     "id": "Ydt6SEXjtLQ",
@@ -366,7 +531,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Ydt6SEXjtLQ/hqdefault.jpg",
     "publishedAt": "2025-09-04T15:45:04Z",
     "url": "https://www.youtube.com/watch?v=Ydt6SEXjtLQ",
-    "duration": 2750
+    "duration": 2750,
+    "titles": {
+      "pl": "Sweter bez szwu na drutach | Projekt krok po kroku | Część 4 | | Seamless sweater knitting",
+      "en": "Seamless Knitting Sweater | Step-by-Step Project | Part 4 | | Seamless sweater knitting"
+    }
   },
   {
     "id": "R83QcDfIbl8",
@@ -375,7 +544,11 @@
     "thumbnail": "https://i.ytimg.com/vi/R83QcDfIbl8/hqdefault.jpg",
     "publishedAt": "2025-08-25T09:59:58Z",
     "url": "https://www.youtube.com/watch?v=R83QcDfIbl8",
-    "duration": 3038
+    "duration": 3038,
+    "titles": {
+      "pl": "Sweter bez szwu na drutach | Projekt krok po kroku | Część 3 | Knitting sweater",
+      "en": "Seamless Knitted Sweater | Step-by-Step Project | Part 3 | Knitting Sweater"
+    }
   },
   {
     "id": "xRtQmkxYsWA",
@@ -384,7 +557,11 @@
     "thumbnail": "https://i.ytimg.com/vi/xRtQmkxYsWA/hqdefault.jpg",
     "publishedAt": "2025-08-19T13:45:06Z",
     "url": "https://www.youtube.com/watch?v=xRtQmkxYsWA",
-    "duration": 2959
+    "duration": 2959,
+    "titles": {
+      "pl": "Jak zrobić sweter bez szwu na drutach | Tutorial krok po kroku |Część 2 | Knitting sweater",
+      "en": "How to Knit a Seamless Sweater | Step-by-step tutorial | Part 2 | Knitting sweater"
+    }
   },
   {
     "id": "lC2wKNy9VPU",
@@ -393,7 +570,11 @@
     "thumbnail": "https://i.ytimg.com/vi/lC2wKNy9VPU/hqdefault.jpg",
     "publishedAt": "2025-08-16T13:45:06Z",
     "url": "https://www.youtube.com/watch?v=lC2wKNy9VPU",
-    "duration": 2668
+    "duration": 2668,
+    "titles": {
+      "pl": "Sweter bez szwu na drutach krok po kroku | Część 1 | Piękny projekt | Knitting sweater",
+      "en": "Knit a seamless sweater step by step | Part 1 | Beautiful project | Knitting sweater"
+    }
   },
   {
     "id": "LRH1S2l6HYc",
@@ -402,7 +583,11 @@
     "thumbnail": "https://i.ytimg.com/vi/LRH1S2l6HYc/hqdefault.jpg",
     "publishedAt": "2025-07-17T15:45:04Z",
     "url": "https://www.youtube.com/watch?v=LRH1S2l6HYc",
-    "duration": 1265
+    "duration": 1265,
+    "titles": {
+      "pl": "Łatwy wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Easy knitting pattern | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "a2tNLlJJFFI",
@@ -411,7 +596,11 @@
     "thumbnail": "https://i.ytimg.com/vi/a2tNLlJJFFI/hqdefault.jpg",
     "publishedAt": "2025-07-07T13:15:06Z",
     "url": "https://www.youtube.com/watch?v=a2tNLlJJFFI",
-    "duration": 372
+    "duration": 372,
+    "titles": {
+      "pl": "Letni wzór na drutach | Delikatny ścieg krok po kroku | Knitting pattern",
+      "en": "Summer Knitting Pattern | Delicate Stitch Step by Step | Knitting Pattern"
+    }
   },
   {
     "id": "qBr4rKr8BvY",
@@ -420,7 +609,11 @@
     "thumbnail": "https://i.ytimg.com/vi/qBr4rKr8BvY/hqdefault.jpg",
     "publishedAt": "2025-05-28T16:15:21Z",
     "url": "https://www.youtube.com/watch?v=qBr4rKr8BvY",
-    "duration": 3396
+    "duration": 3396,
+    "titles": {
+      "pl": "Elegancki wzór na drutach | efektowny ścieg krok po kroku | Knitting pattern",
+      "en": "Elegant knitting pattern | Eye-catching stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "BLLp-JRu0lg",
@@ -429,7 +622,10 @@
     "thumbnail": "https://i.ytimg.com/vi/BLLp-JRu0lg/hqdefault.jpg",
     "publishedAt": "2025-05-23T17:45:06Z",
     "url": "https://www.youtube.com/watch?v=BLLp-JRu0lg",
-    "duration": 698
+    "duration": 698,
+    "titles": {
+      "pl": "Lekki wzór na drutach | prosty ścieg krok po kroku | Easy knitting pattern"
+    }
   },
   {
     "id": "bnoPC5eW20s",
@@ -438,7 +634,11 @@
     "thumbnail": "https://i.ytimg.com/vi/bnoPC5eW20s/hqdefault.jpg",
     "publishedAt": "2025-05-17T08:00:21Z",
     "url": "https://www.youtube.com/watch?v=bnoPC5eW20s",
-    "duration": 1044
+    "duration": 1044,
+    "titles": {
+      "pl": "Bardzo lekki wzór na drutach | letni ścieg krok po kroku | Knitting pattern",
+      "en": "Very light knitting pattern | summer stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "m0OcSpybxM8",
@@ -447,7 +647,11 @@
     "thumbnail": "https://i.ytimg.com/vi/m0OcSpybxM8/hqdefault.jpg",
     "publishedAt": "2025-05-12T15:45:06Z",
     "url": "https://www.youtube.com/watch?v=m0OcSpybxM8",
-    "duration": 810
+    "duration": 810,
+    "titles": {
+      "pl": "Piękny wzór na drutach | prosty ścieg krok po kroku | Knitting pattern",
+      "en": "Beautiful knitting pattern | simple stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "78rIXU3yLoU",
@@ -456,7 +660,11 @@
     "thumbnail": "https://i.ytimg.com/vi/78rIXU3yLoU/hqdefault.jpg",
     "publishedAt": "2025-05-10T15:45:06Z",
     "url": "https://www.youtube.com/watch?v=78rIXU3yLoU",
-    "duration": 2355
+    "duration": 2355,
+    "titles": {
+      "pl": "Jak zrobić kieszeń w swetrze na drutach | krok po kroku",
+      "en": "How to knit a pocket in a sweater | step by step"
+    }
   },
   {
     "id": "krrxPD8Jopo",
@@ -465,7 +673,10 @@
     "thumbnail": "https://i.ytimg.com/vi/krrxPD8Jopo/hqdefault.jpg",
     "publishedAt": "2025-05-06T15:45:06Z",
     "url": "https://www.youtube.com/watch?v=krrxPD8Jopo",
-    "duration": 726
+    "duration": 726,
+    "titles": {
+      "pl": "Ażurowy wzór na drutach | Piękny ścieg krok po kroku | Lace knitting pattern"
+    }
   },
   {
     "id": "wOiW_MPPTd0",
@@ -474,7 +685,10 @@
     "thumbnail": "https://i.ytimg.com/vi/wOiW_MPPTd0/hqdefault.jpg",
     "publishedAt": "2025-04-30T16:15:06Z",
     "url": "https://www.youtube.com/watch?v=wOiW_MPPTd0",
-    "duration": 1354
+    "duration": 1354,
+    "titles": {
+      "pl": "Delikatny ażurowy wzór na drutach | Łatwy ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "UMEH0T4fu6s",
@@ -483,7 +697,10 @@
     "thumbnail": "https://i.ytimg.com/vi/UMEH0T4fu6s/hqdefault.jpg",
     "publishedAt": "2025-04-26T15:15:15Z",
     "url": "https://www.youtube.com/watch?v=UMEH0T4fu6s",
-    "duration": 1051
+    "duration": 1051,
+    "titles": {
+      "pl": "Piękny wzór na drutach | Prosty ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "zZrgCkJ54Bg",
@@ -492,7 +709,11 @@
     "thumbnail": "https://i.ytimg.com/vi/zZrgCkJ54Bg/hqdefault.jpg",
     "publishedAt": "2025-04-22T15:15:27Z",
     "url": "https://www.youtube.com/watch?v=zZrgCkJ54Bg",
-    "duration": 457
+    "duration": 457,
+    "titles": {
+      "pl": "Piękny wzór na drutach inspirowany tradycją | Knitting pattern",
+      "en": "A beautiful knitting pattern inspired by tradition | Knitting pattern"
+    }
   },
   {
     "id": "7oM_XnR5IA0",
@@ -501,7 +722,10 @@
     "thumbnail": "https://i.ytimg.com/vi/7oM_XnR5IA0/hqdefault.jpg",
     "publishedAt": "2025-04-18T15:45:06Z",
     "url": "https://www.youtube.com/watch?v=7oM_XnR5IA0",
-    "duration": 894
+    "duration": 894,
+    "titles": {
+      "pl": "Wzór na drutach krok po kroku | Piękny ścieg dziewiarski | Knitting pattern"
+    }
   },
   {
     "id": "ol0PHEvwAqE",
@@ -510,7 +734,11 @@
     "thumbnail": "https://i.ytimg.com/vi/ol0PHEvwAqE/hqdefault.jpg",
     "publishedAt": "2025-04-15T15:15:10Z",
     "url": "https://www.youtube.com/watch?v=ol0PHEvwAqE",
-    "duration": 675
+    "duration": 675,
+    "titles": {
+      "pl": "Przepiękny wzór na drutach | Tutorial krok po kroku | Knitting pattern",
+      "en": "Beautiful knitting pattern | Step-by-step tutorial | Knitting pattern"
+    }
   },
   {
     "id": "pREGKkYfS-8",
@@ -519,7 +747,11 @@
     "thumbnail": "https://i.ytimg.com/vi/pREGKkYfS-8/hqdefault.jpg",
     "publishedAt": "2025-04-09T15:15:06Z",
     "url": "https://www.youtube.com/watch?v=pREGKkYfS-8",
-    "duration": 2008
+    "duration": 2008,
+    "titles": {
+      "pl": "Jak zrobić kieszeń na drutach | Tutorial krok po kroku | Knitting tips",
+      "en": "How to knit a pocket | Step-by-step tutorial | Knitting tips"
+    }
   },
   {
     "id": "Lf3UwSV-DnE",
@@ -528,7 +760,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Lf3UwSV-DnE/hqdefault.jpg",
     "publishedAt": "2025-04-06T07:17:06Z",
     "url": "https://www.youtube.com/watch?v=Lf3UwSV-DnE",
-    "duration": 352
+    "duration": 352,
+    "titles": {
+      "pl": "Schematy wzorów na druty | Inspiracje dziewiarskie"
+    }
   },
   {
     "id": "LHEpbchVKKA",
@@ -537,7 +772,10 @@
     "thumbnail": "https://i.ytimg.com/vi/LHEpbchVKKA/hqdefault.jpg",
     "publishedAt": "2025-04-01T08:38:41Z",
     "url": "https://www.youtube.com/watch?v=LHEpbchVKKA",
-    "duration": 717
+    "duration": 717,
+    "titles": {
+      "pl": "Wiosenno-letni wzór na drutach | Delikatny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "O00St7hQFw4",
@@ -546,7 +784,10 @@
     "thumbnail": "https://i.ytimg.com/vi/O00St7hQFw4/hqdefault.jpg",
     "publishedAt": "2025-03-30T07:41:51Z",
     "url": "https://www.youtube.com/watch?v=O00St7hQFw4",
-    "duration": 674
+    "duration": 674,
+    "titles": {
+      "pl": "Piękny wzór na drutach | Miłość w każdym oczku | Knitting pattern"
+    }
   },
   {
     "id": "btGuWpZpcDE",
@@ -555,7 +796,10 @@
     "thumbnail": "https://i.ytimg.com/vi/btGuWpZpcDE/hqdefault.jpg",
     "publishedAt": "2025-03-27T17:31:58Z",
     "url": "https://www.youtube.com/watch?v=btGuWpZpcDE",
-    "duration": 1889
+    "duration": 1889,
+    "titles": {
+      "pl": "Piękne rękawki na drutach | Tutorial krok po kroku | Knitting sleeves"
+    }
   },
   {
     "id": "EBfDm_PBQ98",
@@ -564,7 +808,10 @@
     "thumbnail": "https://i.ytimg.com/vi/EBfDm_PBQ98/hqdefault.jpg",
     "publishedAt": "2025-03-18T18:15:05Z",
     "url": "https://www.youtube.com/watch?v=EBfDm_PBQ98",
-    "duration": 2905
+    "duration": 2905,
+    "titles": {
+      "pl": "Wzór na bluzkę na drutach | Piękny ścieg krok po kroku | Knitting blouse"
+    }
   },
   {
     "id": "ah0pmOc9474",
@@ -573,7 +820,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ah0pmOc9474/hqdefault.jpg",
     "publishedAt": "2025-03-04T16:16:05Z",
     "url": "https://www.youtube.com/watch?v=ah0pmOc9474",
-    "duration": 991
+    "duration": 991,
+    "titles": {
+      "pl": "Ciekawy wzór na drutach | Pomysł na wiosnę | Knitting pattern"
+    }
   },
   {
     "id": "RsdiZAwEyXA",
@@ -582,7 +832,11 @@
     "thumbnail": "https://i.ytimg.com/vi/RsdiZAwEyXA/hqdefault.jpg",
     "publishedAt": "2025-02-17T09:15:05Z",
     "url": "https://www.youtube.com/watch?v=RsdiZAwEyXA",
-    "duration": 1324
+    "duration": 1324,
+    "titles": {
+      "pl": "Jak robić na drutach | Piękny efekt | Knitting tutorial",
+      "en": "How to knit | Beautiful effect | Knitting tutorial"
+    }
   },
   {
     "id": "W036p6RVmB4",
@@ -591,7 +845,10 @@
     "thumbnail": "https://i.ytimg.com/vi/W036p6RVmB4/hqdefault.jpg",
     "publishedAt": "2025-01-31T16:05:32Z",
     "url": "https://www.youtube.com/watch?v=W036p6RVmB4",
-    "duration": 2482
+    "duration": 2482,
+    "titles": {
+      "pl": "Nabieranie oczek na drutach | Tutorial krok po kroku | Knitting cast on"
+    }
   },
   {
     "id": "0WGzXl8PPN8",
@@ -600,7 +857,11 @@
     "thumbnail": "https://i.ytimg.com/vi/0WGzXl8PPN8/hqdefault.jpg",
     "publishedAt": "2025-01-25T16:05:06Z",
     "url": "https://www.youtube.com/watch?v=0WGzXl8PPN8",
-    "duration": 594
+    "duration": 594,
+    "titles": {
+      "pl": "Jak zamknąć oczka na drutach | Prosty sposób | Knitting bind off",
+      "en": "How to bind off stitches on knitting needles | Easy way | Knitting bind off"
+    }
   },
   {
     "id": "B4awErOMB2A",
@@ -609,7 +870,10 @@
     "thumbnail": "https://i.ytimg.com/vi/B4awErOMB2A/hqdefault.jpg",
     "publishedAt": "2025-01-16T14:54:51Z",
     "url": "https://www.youtube.com/watch?v=B4awErOMB2A",
-    "duration": 1073
+    "duration": 1073,
+    "titles": {
+      "pl": "Jak dodawać oczka na drutach | Najłatwiejszy sposób | Knitting increase"
+    }
   },
   {
     "id": "CvZK1f90t0E",
@@ -618,7 +882,10 @@
     "thumbnail": "https://i.ytimg.com/vi/CvZK1f90t0E/hqdefault.jpg",
     "publishedAt": "2025-01-08T09:46:35Z",
     "url": "https://www.youtube.com/watch?v=CvZK1f90t0E",
-    "duration": 1455
+    "duration": 1455,
+    "titles": {
+      "pl": "Dodawanie oczek bez dziurek | Prosty trik dziewiarski | Knitting increase"
+    }
   },
   {
     "id": "79k7jpa-YGo",
@@ -627,7 +894,11 @@
     "thumbnail": "https://i.ytimg.com/vi/79k7jpa-YGo/hqdefault.jpg",
     "publishedAt": "2024-12-02T09:15:00Z",
     "url": "https://www.youtube.com/watch?v=79k7jpa-YGo",
-    "duration": 1442
+    "duration": 1442,
+    "titles": {
+      "pl": "Ciekawostka dziewiarska | Przydatny trik na drutach | Knitting tip",
+      "en": "Knitting Fact | Useful Knitting Trick | Knitting Tip"
+    }
   },
   {
     "id": "FyFiK7KN2bU",
@@ -636,7 +907,11 @@
     "thumbnail": "https://i.ytimg.com/vi/FyFiK7KN2bU/hqdefault.jpg",
     "publishedAt": "2024-11-24T19:35:01Z",
     "url": "https://www.youtube.com/watch?v=FyFiK7KN2bU",
-    "duration": 562
+    "duration": 562,
+    "titles": {
+      "pl": "Piękny wzór ze ściągacza | Efektowny ścieg na drutach | Knitting pattern",
+      "en": "Beautiful ribbed pattern | Eye-catching knit stitch | Knitting pattern"
+    }
   },
   {
     "id": "ipV0vCZ24_Q",
@@ -645,7 +920,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ipV0vCZ24_Q/hqdefault.jpg",
     "publishedAt": "2024-11-18T09:30:24Z",
     "url": "https://www.youtube.com/watch?v=ipV0vCZ24_Q",
-    "duration": 1419
+    "duration": 1419,
+    "titles": {
+      "pl": "Pomysł na drutach | Piękny wzór krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "0C0vcMYr-Fg",
@@ -654,7 +932,10 @@
     "thumbnail": "https://i.ytimg.com/vi/0C0vcMYr-Fg/hqdefault.jpg",
     "publishedAt": "2024-11-12T07:40:55Z",
     "url": "https://www.youtube.com/watch?v=0C0vcMYr-Fg",
-    "duration": 5388
+    "duration": 5388,
+    "titles": {
+      "pl": "Kamizelka dla pieska | Projekt na szydełku | Crochet pet sweater"
+    }
   },
   {
     "id": "NDNZrYz-1MM",
@@ -663,7 +944,11 @@
     "thumbnail": "https://i.ytimg.com/vi/NDNZrYz-1MM/hqdefault.jpg",
     "publishedAt": "2024-10-24T11:00:21Z",
     "url": "https://www.youtube.com/watch?v=NDNZrYz-1MM",
-    "duration": 1177
+    "duration": 1177,
+    "titles": {
+      "pl": "Jak zamknąć oczka na drutach | Super metoda krok po kroku | Knitting bind off",
+      "en": "How to bind off stitches | Super step-by-step method | Knitting bind off"
+    }
   },
   {
     "id": "UgMVSiC-ReE",
@@ -672,7 +957,10 @@
     "thumbnail": "https://i.ytimg.com/vi/UgMVSiC-ReE/hqdefault.jpg",
     "publishedAt": "2024-10-06T11:45:35Z",
     "url": "https://www.youtube.com/watch?v=UgMVSiC-ReE",
-    "duration": 3348
+    "duration": 3348,
+    "titles": {
+      "pl": "Żakard dwustronny na drutach | Jak zrobić krok po kroku | Double knitting"
+    }
   },
   {
     "id": "qoRgBSzJt7Y",
@@ -681,7 +969,10 @@
     "thumbnail": "https://i.ytimg.com/vi/qoRgBSzJt7Y/hqdefault.jpg",
     "publishedAt": "2024-09-29T19:10:00Z",
     "url": "https://www.youtube.com/watch?v=qoRgBSzJt7Y",
-    "duration": 2668
+    "duration": 2668,
+    "titles": {
+      "pl": "Norweski żakard na drutach | Dwustronny wzór krok po kroku | Norwegian knitting"
+    }
   },
   {
     "id": "2yeG24WYt0s",
@@ -690,7 +981,10 @@
     "thumbnail": "https://i.ytimg.com/vi/2yeG24WYt0s/hqdefault.jpg",
     "publishedAt": "2024-09-20T15:15:05Z",
     "url": "https://www.youtube.com/watch?v=2yeG24WYt0s",
-    "duration": 4273
+    "duration": 4273,
+    "titles": {
+      "pl": "Skarpetki na drutach | Tutorial krok po kroku| Część 2 | Knitting socks"
+    }
   },
   {
     "id": "9aHWhO_WB6E",
@@ -699,7 +993,10 @@
     "thumbnail": "https://i.ytimg.com/vi/9aHWhO_WB6E/hqdefault.jpg",
     "publishedAt": "2024-09-07T15:15:06Z",
     "url": "https://www.youtube.com/watch?v=9aHWhO_WB6E",
-    "duration": 1644
+    "duration": 1644,
+    "titles": {
+      "pl": "Genialny trik dziewiarski | Przydatna technika na drutach | Część 1 | Knitting tips"
+    }
   },
   {
     "id": "3iqUNTa_TPc",
@@ -708,7 +1005,11 @@
     "thumbnail": "https://i.ytimg.com/vi/3iqUNTa_TPc/hqdefault.jpg",
     "publishedAt": "2024-08-31T15:15:00Z",
     "url": "https://www.youtube.com/watch?v=3iqUNTa_TPc",
-    "duration": 601
+    "duration": 601,
+    "titles": {
+      "pl": "Ciekawostka dziewiarska | Przydatny trik na drutach | Knitting tip",
+      "en": "Knitting Fact | Useful Knitting Trick | Knitting Tip"
+    }
   },
   {
     "id": "_YUfTaJCx9M",
@@ -717,7 +1018,10 @@
     "thumbnail": "https://i.ytimg.com/vi/_YUfTaJCx9M/hqdefault.jpg",
     "publishedAt": "2024-08-27T15:15:06Z",
     "url": "https://www.youtube.com/watch?v=_YUfTaJCx9M",
-    "duration": 1158
+    "duration": 1158,
+    "titles": {
+      "pl": "Super metoda na druty | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "A15fUADJe0Q",
@@ -726,7 +1030,11 @@
     "thumbnail": "https://i.ytimg.com/vi/A15fUADJe0Q/hqdefault.jpg",
     "publishedAt": "2024-08-20T09:00:12Z",
     "url": "https://www.youtube.com/watch?v=A15fUADJe0Q",
-    "duration": 439
+    "duration": 439,
+    "titles": {
+      "pl": "Fenomenalny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Phenomenal knitting pattern | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "7nk30auvHIs",
@@ -735,7 +1043,10 @@
     "thumbnail": "https://i.ytimg.com/vi/7nk30auvHIs/hqdefault.jpg",
     "publishedAt": "2024-08-17T07:30:06Z",
     "url": "https://www.youtube.com/watch?v=7nk30auvHIs",
-    "duration": 3289
+    "duration": 3289,
+    "titles": {
+      "pl": "Sweterek, kamizelkę dla pieska Część 2 | Pet sweater knitting"
+    }
   },
   {
     "id": "-qniFzKm0vw",
@@ -744,7 +1055,11 @@
     "thumbnail": "https://i.ytimg.com/vi/-qniFzKm0vw/hqdefault.jpg",
     "publishedAt": "2024-08-15T17:44:12Z",
     "url": "https://www.youtube.com/watch?v=-qniFzKm0vw",
-    "duration": 3235
+    "duration": 3235,
+    "titles": {
+      "pl": "Sweterek, kamizelka dla pieska | Tutorial na drutach| Część 1 | Knitting pet sweater",
+      "en": "Dog or cat sweater, vest | Knitting tutorial | Part 1 | Knitting pet sweater"
+    }
   },
   {
     "id": "0dNeALinZkY",
@@ -753,7 +1068,10 @@
     "thumbnail": "https://i.ytimg.com/vi/0dNeALinZkY/hqdefault.jpg",
     "publishedAt": "2024-08-10T06:30:06Z",
     "url": "https://www.youtube.com/watch?v=0dNeALinZkY",
-    "duration": 918
+    "duration": 918,
+    "titles": {
+      "pl": "Piękny wzór na drutach | Ścieg który wygląda imponująco | Knitting pattern"
+    }
   },
   {
     "id": "YBu5uI3lNKc",
@@ -762,7 +1080,10 @@
     "thumbnail": "https://i.ytimg.com/vi/YBu5uI3lNKc/hqdefault.jpg",
     "publishedAt": "2024-08-06T13:30:06Z",
     "url": "https://www.youtube.com/watch?v=YBu5uI3lNKc",
-    "duration": 554
+    "duration": 554,
+    "titles": {
+      "pl": "Jak nabierać oczka na druty | Super metoda | Knitting cast on"
+    }
   },
   {
     "id": "z5Rj7ieMJNo",
@@ -771,7 +1092,11 @@
     "thumbnail": "https://i.ytimg.com/vi/z5Rj7ieMJNo/hqdefault.jpg",
     "publishedAt": "2024-07-12T11:30:07Z",
     "url": "https://www.youtube.com/watch?v=z5Rj7ieMJNo",
-    "duration": 731
+    "duration": 731,
+    "titles": {
+      "pl": "Letni wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Summer Knitting Pattern | Beautiful Stitch Step by Step | Knitting Pattern"
+    }
   },
   {
     "id": "67W7j9GZIqY",
@@ -780,7 +1105,10 @@
     "thumbnail": "https://i.ytimg.com/vi/67W7j9GZIqY/hqdefault.jpg",
     "publishedAt": "2024-07-03T05:41:58Z",
     "url": "https://www.youtube.com/watch?v=67W7j9GZIqY",
-    "duration": 1085
+    "duration": 1085,
+    "titles": {
+      "pl": "Ażurowy wzór reglan na drutach | Tutorial krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "V9iOEWv5cbU",
@@ -789,7 +1117,10 @@
     "thumbnail": "https://i.ytimg.com/vi/V9iOEWv5cbU/hqdefault.jpg",
     "publishedAt": "2024-06-30T08:03:57Z",
     "url": "https://www.youtube.com/watch?v=V9iOEWv5cbU",
-    "duration": 707
+    "duration": 707,
+    "titles": {
+      "pl": "Pomysł na drutach | Wzór reglan krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "As8ciIx2PGw",
@@ -798,7 +1129,11 @@
     "thumbnail": "https://i.ytimg.com/vi/As8ciIx2PGw/hqdefault.jpg",
     "publishedAt": "2024-06-27T15:00:06Z",
     "url": "https://www.youtube.com/watch?v=As8ciIx2PGw",
-    "duration": 1004
+    "duration": 1004,
+    "titles": {
+      "pl": "Wciągający wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Addictive knitting pattern | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "HMfyFRLV0ts",
@@ -807,7 +1142,10 @@
     "thumbnail": "https://i.ytimg.com/vi/HMfyFRLV0ts/hqdefault.jpg",
     "publishedAt": "2024-06-10T14:00:13Z",
     "url": "https://www.youtube.com/watch?v=HMfyFRLV0ts",
-    "duration": 3238
+    "duration": 3238,
+    "titles": {
+      "pl": "Warkocz azjatycki na drutach | Piękny wzór krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "IZethuGtihE",
@@ -816,7 +1154,10 @@
     "thumbnail": "https://i.ytimg.com/vi/IZethuGtihE/hqdefault.jpg",
     "publishedAt": "2024-06-03T12:00:06Z",
     "url": "https://www.youtube.com/watch?v=IZethuGtihE",
-    "duration": 1772
+    "duration": 1772,
+    "titles": {
+      "pl": "Wzór na drutach 2w1 | Piękny ścieg na każdą porę roku | Knitting pattern"
+    }
   },
   {
     "id": "fHMTSJQD9tQ",
@@ -825,7 +1166,11 @@
     "thumbnail": "https://i.ytimg.com/vi/fHMTSJQD9tQ/hqdefault.jpg",
     "publishedAt": "2024-05-21T11:30:06Z",
     "url": "https://www.youtube.com/watch?v=fHMTSJQD9tQ",
-    "duration": 915
+    "duration": 915,
+    "titles": {
+      "pl": "Niesamowity wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Amazing knitting pattern | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "8VgShLhYDo0",
@@ -834,7 +1179,10 @@
     "thumbnail": "https://i.ytimg.com/vi/8VgShLhYDo0/hqdefault.jpg",
     "publishedAt": "2024-05-07T10:30:06Z",
     "url": "https://www.youtube.com/watch?v=8VgShLhYDo0",
-    "duration": 1584
+    "duration": 1584,
+    "titles": {
+      "pl": "Wzór na letnią bluzkę na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "9LlLJzD9ggk",
@@ -843,7 +1191,10 @@
     "thumbnail": "https://i.ytimg.com/vi/9LlLJzD9ggk/hqdefault.jpg",
     "publishedAt": "2024-05-04T17:15:07Z",
     "url": "https://www.youtube.com/watch?v=9LlLJzD9ggk",
-    "duration": 2854
+    "duration": 2854,
+    "titles": {
+      "pl": "Piękny letni wzór na drutach | Delikatny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "125Vr3tZMvE",
@@ -852,7 +1203,10 @@
     "thumbnail": "https://i.ytimg.com/vi/125Vr3tZMvE/hqdefault.jpg",
     "publishedAt": "2024-04-10T11:00:07Z",
     "url": "https://www.youtube.com/watch?v=125Vr3tZMvE",
-    "duration": 862
+    "duration": 862,
+    "titles": {
+      "pl": "Dwustronny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "mHtEFwmV240",
@@ -861,7 +1215,10 @@
     "thumbnail": "https://i.ytimg.com/vi/mHtEFwmV240/hqdefault.jpg",
     "publishedAt": "2024-03-22T15:30:07Z",
     "url": "https://www.youtube.com/watch?v=mHtEFwmV240",
-    "duration": 1493
+    "duration": 1493,
+    "titles": {
+      "pl": "Wiosenny wzór zyg-zag na drutach | Tutorial krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "wWg0aKUMgv4",
@@ -870,7 +1227,11 @@
     "thumbnail": "https://i.ytimg.com/vi/wWg0aKUMgv4/hqdefault.jpg",
     "publishedAt": "2024-03-18T15:00:06Z",
     "url": "https://www.youtube.com/watch?v=wWg0aKUMgv4",
-    "duration": 903
+    "duration": 903,
+    "titles": {
+      "pl": "Super łatwy wzór na drutach | Idealny na bluzkę lub koc | Knitting pattern",
+      "en": "Super easy knitting pattern | Perfect for a blouse or blanket | Knitting pattern"
+    }
   },
   {
     "id": "Q5T1yoQLX4k",
@@ -879,7 +1240,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Q5T1yoQLX4k/hqdefault.jpg",
     "publishedAt": "2024-03-12T15:15:06Z",
     "url": "https://www.youtube.com/watch?v=Q5T1yoQLX4k",
-    "duration": 2021
+    "duration": 2021,
+    "titles": {
+      "pl": "Wiosenny wzór na drutach „Kwiatuszki” | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Spring Knitting Pattern \"Little Flowers\" | Beautiful Stitch Step-by-Step | Knitting pattern"
+    }
   },
   {
     "id": "MZksxOkjsIA",
@@ -888,7 +1253,11 @@
     "thumbnail": "https://i.ytimg.com/vi/MZksxOkjsIA/hqdefault.jpg",
     "publishedAt": "2024-03-07T14:00:06Z",
     "url": "https://www.youtube.com/watch?v=MZksxOkjsIA",
-    "duration": 1060
+    "duration": 1060,
+    "titles": {
+      "pl": "Ponadczasowy wzór na drutach | Klasyczny ścieg krok po kroku | Knitting pattern",
+      "en": "A timeless knitting pattern | Classic stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "R_J6-tWJNgo",
@@ -897,7 +1266,10 @@
     "thumbnail": "https://i.ytimg.com/vi/R_J6-tWJNgo/hqdefault.jpg",
     "publishedAt": "2024-02-22T20:40:20Z",
     "url": "https://www.youtube.com/watch?v=R_J6-tWJNgo",
-    "duration": 2752
+    "duration": 2752,
+    "titles": {
+      "pl": "Fenomenalny wzór na drutach „Bukiet kwiatów” | Knitting pattern"
+    }
   },
   {
     "id": "SR5dYhSoDk4",
@@ -906,7 +1278,11 @@
     "thumbnail": "https://i.ytimg.com/vi/SR5dYhSoDk4/hqdefault.jpg",
     "publishedAt": "2024-02-19T11:00:09Z",
     "url": "https://www.youtube.com/watch?v=SR5dYhSoDk4",
-    "duration": 1239
+    "duration": 1239,
+    "titles": {
+      "pl": "Wzór na drutach tylko z prawych oczek | Efekt wow | Knitting pattern",
+      "en": "Knitting pattern using only right-hand stitches | Wow effect | Knitting pattern"
+    }
   },
   {
     "id": "mMZWUgWFklY",
@@ -915,7 +1291,10 @@
     "thumbnail": "https://i.ytimg.com/vi/mMZWUgWFklY/hqdefault.jpg",
     "publishedAt": "2024-02-14T11:00:08Z",
     "url": "https://www.youtube.com/watch?v=mMZWUgWFklY",
-    "duration": 1731
+    "duration": 1731,
+    "titles": {
+      "pl": "Niesamowity wzór na drutach „Szalone ósemki” | Knitting pattern"
+    }
   },
   {
     "id": "jw6p0toM9I4",
@@ -924,7 +1303,10 @@
     "thumbnail": "https://i.ytimg.com/vi/jw6p0toM9I4/hqdefault.jpg",
     "publishedAt": "2024-02-12T11:00:10Z",
     "url": "https://www.youtube.com/watch?v=jw6p0toM9I4",
-    "duration": 1643
+    "duration": 1643,
+    "titles": {
+      "pl": "Nietypowy wzór na drutach „Kłos” | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "Z6BcnjDamaw",
@@ -933,7 +1315,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Z6BcnjDamaw/hqdefault.jpg",
     "publishedAt": "2024-02-10T16:00:07Z",
     "url": "https://www.youtube.com/watch?v=Z6BcnjDamaw",
-    "duration": 644
+    "duration": 644,
+    "titles": {
+      "pl": "Prosty wzór na drutach | Tutorial krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "9hcl1fSdjoc",
@@ -942,7 +1327,10 @@
     "thumbnail": "https://i.ytimg.com/vi/9hcl1fSdjoc/hqdefault.jpg",
     "publishedAt": "2024-02-06T18:00:09Z",
     "url": "https://www.youtube.com/watch?v=9hcl1fSdjoc",
-    "duration": 665
+    "duration": 665,
+    "titles": {
+      "pl": "Nowoczesny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "jOTUrLX9Qig",
@@ -951,7 +1339,10 @@
     "thumbnail": "https://i.ytimg.com/vi/jOTUrLX9Qig/hqdefault.jpg",
     "publishedAt": "2024-01-29T12:00:07Z",
     "url": "https://www.youtube.com/watch?v=jOTUrLX9Qig",
-    "duration": 2251
+    "duration": 2251,
+    "titles": {
+      "pl": "Pantofelki na drutach | Kapcie robione na drutach krok po kroku |Część 2 |"
+    }
   },
   {
     "id": "zrgmuCo9p2g",
@@ -960,7 +1351,10 @@
     "thumbnail": "https://i.ytimg.com/vi/zrgmuCo9p2g/hqdefault.jpg",
     "publishedAt": "2024-01-24T12:00:11Z",
     "url": "https://www.youtube.com/watch?v=zrgmuCo9p2g",
-    "duration": 2546
+    "duration": 2546,
+    "titles": {
+      "pl": "Piękne pantofelki na drutach | Tutorial krok po kroku | Knitting slippers"
+    }
   },
   {
     "id": "JbmdI2MZkmo",
@@ -969,7 +1363,10 @@
     "thumbnail": "https://i.ytimg.com/vi/JbmdI2MZkmo/hqdefault.jpg",
     "publishedAt": "2024-01-20T17:07:12Z",
     "url": "https://www.youtube.com/watch?v=JbmdI2MZkmo",
-    "duration": 147
+    "duration": 147,
+    "titles": {
+      "pl": "Moda na drutach | Piękne projekty dziewiarskie | Knitting fashion"
+    }
   },
   {
     "id": "3ci6HphJ39g",
@@ -978,7 +1375,11 @@
     "thumbnail": "https://i.ytimg.com/vi/3ci6HphJ39g/hqdefault.jpg",
     "publishedAt": "2024-01-18T14:30:09Z",
     "url": "https://www.youtube.com/watch?v=3ci6HphJ39g",
-    "duration": 1884
+    "duration": 1884,
+    "titles": {
+      "pl": "Spódnica na drutach | Tutorial krok po kroku | Część 2 | Knitting skirt",
+      "en": "Knitted Skirt | Step-by-Step Tutorial | Part 2"
+    }
   },
   {
     "id": "ciZiAxYaJv0",
@@ -987,7 +1388,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ciZiAxYaJv0/hqdefault.jpg",
     "publishedAt": "2024-01-14T15:30:10Z",
     "url": "https://www.youtube.com/watch?v=ciZiAxYaJv0",
-    "duration": 2220
+    "duration": 2220,
+    "titles": {
+      "pl": "Stylowa spódnica na drutach | Tutorial dziewiarski | Część 1 | Knitting skirt"
+    }
   },
   {
     "id": "d33Cj30XqNM",
@@ -996,7 +1400,10 @@
     "thumbnail": "https://i.ytimg.com/vi/d33Cj30XqNM/hqdefault.jpg",
     "publishedAt": "2024-01-09T18:26:24Z",
     "url": "https://www.youtube.com/watch?v=d33Cj30XqNM",
-    "duration": 120
+    "duration": 120,
+    "titles": {
+      "pl": "Pomysły na robienie na drutach | Inspiracje dziewiarskie"
+    }
   },
   {
     "id": "AUCawIQSzwc",
@@ -1005,7 +1412,10 @@
     "thumbnail": "https://i.ytimg.com/vi/AUCawIQSzwc/hqdefault.jpg",
     "publishedAt": "2024-01-02T09:30:11Z",
     "url": "https://www.youtube.com/watch?v=AUCawIQSzwc",
-    "duration": 1362
+    "duration": 1362,
+    "titles": {
+      "pl": "Wzór zygzak na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "GYtPf3DD7KQ",
@@ -1014,7 +1424,11 @@
     "thumbnail": "https://i.ytimg.com/vi/GYtPf3DD7KQ/hqdefault.jpg",
     "publishedAt": "2023-12-29T11:30:11Z",
     "url": "https://www.youtube.com/watch?v=GYtPf3DD7KQ",
-    "duration": 1072
+    "duration": 1072,
+    "titles": {
+      "pl": "Łatwy i piękny wzór na drutach | Ścieg krok po kroku | Knitting pattern",
+      "en": "Easy and beautiful knitting pattern | Stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "p52Acf3CjnY",
@@ -1023,7 +1437,10 @@
     "thumbnail": "https://i.ytimg.com/vi/p52Acf3CjnY/hqdefault.jpg",
     "publishedAt": "2023-12-21T12:30:09Z",
     "url": "https://www.youtube.com/watch?v=p52Acf3CjnY",
-    "duration": 2135
+    "duration": 2135,
+    "titles": {
+      "pl": "Kombinowany wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "OGJ9fVSPbtU",
@@ -1032,7 +1449,10 @@
     "thumbnail": "https://i.ytimg.com/vi/OGJ9fVSPbtU/hqdefault.jpg",
     "publishedAt": "2023-12-15T10:30:07Z",
     "url": "https://www.youtube.com/watch?v=OGJ9fVSPbtU",
-    "duration": 1005
+    "duration": 1005,
+    "titles": {
+      "pl": "Kreatywny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "eKRk--Fgqzc",
@@ -1041,7 +1461,10 @@
     "thumbnail": "https://i.ytimg.com/vi/eKRk--Fgqzc/hqdefault.jpg",
     "publishedAt": "2023-12-08T12:00:09Z",
     "url": "https://www.youtube.com/watch?v=eKRk--Fgqzc",
-    "duration": 1191
+    "duration": 1191,
+    "titles": {
+      "pl": "Nietypowe skarpety na drutach | Tutorial krok po kroku | Część 3 | Knitting socks"
+    }
   },
   {
     "id": "ur6CWpGjrgI",
@@ -1050,7 +1473,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ur6CWpGjrgI/hqdefault.jpg",
     "publishedAt": "2023-12-05T09:00:10Z",
     "url": "https://www.youtube.com/watch?v=ur6CWpGjrgI",
-    "duration": 2608
+    "duration": 2608,
+    "titles": {
+      "pl": "Skarpety na drutach krok po kroku | Część 2 | Tutorial dziewiarski | Knitting socks"
+    }
   },
   {
     "id": "nSWb1eZd_9M",
@@ -1059,7 +1485,10 @@
     "thumbnail": "https://i.ytimg.com/vi/nSWb1eZd_9M/hqdefault.jpg",
     "publishedAt": "2023-12-03T13:30:09Z",
     "url": "https://www.youtube.com/watch?v=nSWb1eZd_9M",
-    "duration": 1620
+    "duration": 1620,
+    "titles": {
+      "pl": "Jak zrobić skarpety na drutach | Tutorial krok po kroku | Część 1 |Knitting socks"
+    }
   },
   {
     "id": "L-Xm75vYcRg",
@@ -1068,7 +1497,10 @@
     "thumbnail": "https://i.ytimg.com/vi/L-Xm75vYcRg/hqdefault.jpg",
     "publishedAt": "2023-11-24T12:00:09Z",
     "url": "https://www.youtube.com/watch?v=L-Xm75vYcRg",
-    "duration": 2399
+    "duration": 2399,
+    "titles": {
+      "pl": "Piękny warkocz na drutach | Prosty wzór krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "ZGxfiznM-m4",
@@ -1077,7 +1509,10 @@
     "thumbnail": "https://i.ytimg.com/vi/ZGxfiznM-m4/hqdefault.jpg",
     "publishedAt": "2023-11-21T19:47:41Z",
     "url": "https://www.youtube.com/watch?v=ZGxfiznM-m4",
-    "duration": 104
+    "duration": 104,
+    "titles": {
+      "pl": "Pomysły na robienie na drutach | Inspiracje dziewiarskie | Knitting ideas"
+    }
   },
   {
     "id": "Xv2BgoTY92E",
@@ -1086,7 +1521,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Xv2BgoTY92E/hqdefault.jpg",
     "publishedAt": "2023-11-16T09:30:08Z",
     "url": "https://www.youtube.com/watch?v=Xv2BgoTY92E",
-    "duration": 1799
+    "duration": 1799,
+    "titles": {
+      "pl": "Jak zrobić piękne brzegi na drutach | Początek robótki krok po kroku"
+    }
   },
   {
     "id": "kWOXidUMzIo",
@@ -1095,7 +1533,10 @@
     "thumbnail": "https://i.ytimg.com/vi/kWOXidUMzIo/hqdefault.jpg",
     "publishedAt": "2023-11-11T16:00:10Z",
     "url": "https://www.youtube.com/watch?v=kWOXidUMzIo",
-    "duration": 2818
+    "duration": 2818,
+    "titles": {
+      "pl": "Czapka szydełkiem krok po kroku | Prosty tutorial | Crochet hat"
+    }
   },
   {
     "id": "tnD_Y3-yCc4",
@@ -1104,7 +1545,11 @@
     "thumbnail": "https://i.ytimg.com/vi/tnD_Y3-yCc4/hqdefault.jpg",
     "publishedAt": "2023-11-09T11:00:09Z",
     "url": "https://www.youtube.com/watch?v=tnD_Y3-yCc4",
-    "duration": 3208
+    "duration": 3208,
+    "titles": {
+      "pl": "Czapka na drutach | Tutorial krok po kroku | Knitting hat",
+      "en": "Knitted hat | Step-by-step tutorial | Knitting hat"
+    }
   },
   {
     "id": "rvaNNZkDoUs",
@@ -1113,7 +1558,11 @@
     "thumbnail": "https://i.ytimg.com/vi/rvaNNZkDoUs/hqdefault.jpg",
     "publishedAt": "2023-11-02T06:45:40Z",
     "url": "https://www.youtube.com/watch?v=rvaNNZkDoUs",
-    "duration": 1328
+    "duration": 1328,
+    "titles": {
+      "pl": "Jak zrobić czapkę na drutach | Nietypowa metoda | Knitting hat tutorial",
+      "en": "How to knit a hat | Unusual method | Knitting hat tutorial"
+    }
   },
   {
     "id": "WlzfRhovTS4",
@@ -1122,7 +1571,10 @@
     "thumbnail": "https://i.ytimg.com/vi/WlzfRhovTS4/hqdefault.jpg",
     "publishedAt": "2023-10-27T06:16:45Z",
     "url": "https://www.youtube.com/watch?v=WlzfRhovTS4",
-    "duration": 200
+    "duration": 200,
+    "titles": {
+      "pl": "Fantazyjne pomysły na druty | Inspiracje dziewiarskie | Knitting ideas"
+    }
   },
   {
     "id": "4qhPtB4IJDo",
@@ -1131,7 +1583,10 @@
     "thumbnail": "https://i.ytimg.com/vi/4qhPtB4IJDo/hqdefault.jpg",
     "publishedAt": "2023-10-22T12:00:08Z",
     "url": "https://www.youtube.com/watch?v=4qhPtB4IJDo",
-    "duration": 2590
+    "duration": 2590,
+    "titles": {
+      "pl": "Puszysty wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "QVno6Panzss",
@@ -1140,7 +1595,10 @@
     "thumbnail": "https://i.ytimg.com/vi/QVno6Panzss/hqdefault.jpg",
     "publishedAt": "2023-10-15T10:30:09Z",
     "url": "https://www.youtube.com/watch?v=QVno6Panzss",
-    "duration": 1208
+    "duration": 1208,
+    "titles": {
+      "pl": "Wzór bąbelki na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "Jxb06uHxMto",
@@ -1149,7 +1607,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Jxb06uHxMto/hqdefault.jpg",
     "publishedAt": "2023-10-08T16:30:06Z",
     "url": "https://www.youtube.com/watch?v=Jxb06uHxMto",
-    "duration": 1543
+    "duration": 1543,
+    "titles": {
+      "pl": "Francuski wzór na drutach | Super łatwy ścieg krok po kroku | Knitting pattern",
+      "en": "French Knitting Pattern | Super Easy Step-by-Step Knitting Pattern"
+    }
   },
   {
     "id": "E4TS5UviObo",
@@ -1158,7 +1620,10 @@
     "thumbnail": "https://i.ytimg.com/vi/E4TS5UviObo/hqdefault.jpg",
     "publishedAt": "2023-10-04T14:30:05Z",
     "url": "https://www.youtube.com/watch?v=E4TS5UviObo",
-    "duration": 1224
+    "duration": 1224,
+    "titles": {
+      "pl": "Ażurowy wzór na drutach | Piękny ścieg krok po kroku | Lace knitting pattern"
+    }
   },
   {
     "id": "o-7cvtUl9jU",
@@ -1167,7 +1632,10 @@
     "thumbnail": "https://i.ytimg.com/vi/o-7cvtUl9jU/hqdefault.jpg",
     "publishedAt": "2023-10-01T13:00:39Z",
     "url": "https://www.youtube.com/watch?v=o-7cvtUl9jU",
-    "duration": 349
+    "duration": 349,
+    "titles": {
+      "pl": "Wzór „Migdały” na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "2bSLVSHQ4Ws",
@@ -1176,7 +1644,11 @@
     "thumbnail": "https://i.ytimg.com/vi/2bSLVSHQ4Ws/hqdefault.jpg",
     "publishedAt": "2023-09-28T16:00:04Z",
     "url": "https://www.youtube.com/watch?v=2bSLVSHQ4Ws",
-    "duration": 474
+    "duration": 474,
+    "titles": {
+      "pl": "Nowoczesny wzór na drutach | Idealny na czapki i szaliki | Knitting pattern",
+      "en": "Modern knitting pattern | Perfect for hats and scarves | Knitting pattern"
+    }
   },
   {
     "id": "Wz0jrJiEeHc",
@@ -1185,7 +1657,11 @@
     "thumbnail": "https://i.ytimg.com/vi/Wz0jrJiEeHc/hqdefault.jpg",
     "publishedAt": "2023-09-24T15:00:23Z",
     "url": "https://www.youtube.com/watch?v=Wz0jrJiEeHc",
-    "duration": 949
+    "duration": 949,
+    "titles": {
+      "pl": "Ażurowe kwiaty na drutach | Piękny wzór krok po kroku | Lace knitting",
+      "en": "Knitted Openwork Flowers | Beautiful Stitch Pattern Step-by-Step | Lace knitting"
+    }
   },
   {
     "id": "FW_OX5HasUA",
@@ -1194,7 +1670,10 @@
     "thumbnail": "https://i.ytimg.com/vi/FW_OX5HasUA/hqdefault.jpg",
     "publishedAt": "2023-09-06T07:30:57Z",
     "url": "https://www.youtube.com/watch?v=FW_OX5HasUA",
-    "duration": 160
+    "duration": 160,
+    "titles": {
+      "pl": "Spódnica na drutach | Modne projekty dziewiarskie | Knitting skirt"
+    }
   },
   {
     "id": "Px0H5c7_vlI",
@@ -1203,7 +1682,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Px0H5c7_vlI/hqdefault.jpg",
     "publishedAt": "2023-09-03T15:00:14Z",
     "url": "https://www.youtube.com/watch?v=Px0H5c7_vlI",
-    "duration": 3047
+    "duration": 3047,
+    "titles": {
+      "pl": "Poduszka na drutach | Puszysty wzór krok po kroku | Knitting pillow"
+    }
   },
   {
     "id": "c1l3fFQ8bMs",
@@ -1212,7 +1694,11 @@
     "thumbnail": "https://i.ytimg.com/vi/c1l3fFQ8bMs/hqdefault.jpg",
     "publishedAt": "2023-08-22T18:46:48Z",
     "url": "https://www.youtube.com/watch?v=c1l3fFQ8bMs",
-    "duration": 1639
+    "duration": 1639,
+    "titles": {
+      "pl": "Piękny wzór na drutach ze schematu | Tutorial krok po kroku | Knitting pattern",
+      "en": "Beautiful knitting pattern with a diagram | Step-by-step tutorial | Knitting pattern"
+    }
   },
   {
     "id": "RBKh8-N4aao",
@@ -1221,7 +1707,10 @@
     "thumbnail": "https://i.ytimg.com/vi/RBKh8-N4aao/hqdefault.jpg",
     "publishedAt": "2023-08-20T10:00:08Z",
     "url": "https://www.youtube.com/watch?v=RBKh8-N4aao",
-    "duration": 105
+    "duration": 105,
+    "titles": {
+      "pl": "Pomysł na sweter na drutach | Wzory i inspiracje | Knitting sweater"
+    }
   },
   {
     "id": "3UU8ToOTtVg",
@@ -1230,7 +1719,10 @@
     "thumbnail": "https://i.ytimg.com/vi/3UU8ToOTtVg/hqdefault.jpg",
     "publishedAt": "2023-08-13T14:00:01Z",
     "url": "https://www.youtube.com/watch?v=3UU8ToOTtVg",
-    "duration": 93
+    "duration": 93,
+    "titles": {
+      "pl": "Pomysły na robienie na drutach | Inspiracje dziewiarskie | Knitting ideas"
+    }
   },
   {
     "id": "oJzRjQPzhQE",
@@ -1239,7 +1731,10 @@
     "thumbnail": "https://i.ytimg.com/vi/oJzRjQPzhQE/hqdefault.jpg",
     "publishedAt": "2023-08-06T07:30:07Z",
     "url": "https://www.youtube.com/watch?v=oJzRjQPzhQE",
-    "duration": 101
+    "duration": 101,
+    "titles": {
+      "pl": "Inspiracje wzorów na druty | Schematy dziewiarskie | Knitting patterns"
+    }
   },
   {
     "id": "aI74J_PlrXo",
@@ -1248,7 +1743,11 @@
     "thumbnail": "https://i.ytimg.com/vi/aI74J_PlrXo/hqdefault.jpg",
     "publishedAt": "2023-07-12T09:07:00Z",
     "url": "https://www.youtube.com/watch?v=aI74J_PlrXo",
-    "duration": 898
+    "duration": 898,
+    "titles": {
+      "pl": "Wzór „Kwiat lawendy” na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "\"Lavender Flower\" knitting pattern | Beautiful stitch step-by-step | Knitting pattern"
+    }
   },
   {
     "id": "rTZlUUrkcpY",
@@ -1257,7 +1756,10 @@
     "thumbnail": "https://i.ytimg.com/vi/rTZlUUrkcpY/hqdefault.jpg",
     "publishedAt": "2023-05-30T14:00:37Z",
     "url": "https://www.youtube.com/watch?v=rTZlUUrkcpY",
-    "duration": 854
+    "duration": 854,
+    "titles": {
+      "pl": "Jak nabierać oczka na druty | Fabryczny sposób | Knitting cast on"
+    }
   },
   {
     "id": "sdAb8cyq7eA",
@@ -1266,7 +1768,10 @@
     "thumbnail": "https://i.ytimg.com/vi/sdAb8cyq7eA/hqdefault.jpg",
     "publishedAt": "2023-05-22T08:00:33Z",
     "url": "https://www.youtube.com/watch?v=sdAb8cyq7eA",
-    "duration": 745
+    "duration": 745,
+    "titles": {
+      "pl": "Najlepszy sposób nabierania oczek | Tutorial na druty | Knitting cast on"
+    }
   },
   {
     "id": "nm1VhTwxKjU",
@@ -1275,7 +1780,11 @@
     "thumbnail": "https://i.ytimg.com/vi/nm1VhTwxKjU/hqdefault.jpg",
     "publishedAt": "2023-05-18T14:30:16Z",
     "url": "https://www.youtube.com/watch?v=nm1VhTwxKjU",
-    "duration": 478
+    "duration": 478,
+    "titles": {
+      "pl": "Nietypowy ściągacz na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Unusual knit cuff | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "k6AQ3_ScozE",
@@ -1284,7 +1793,10 @@
     "thumbnail": "https://i.ytimg.com/vi/k6AQ3_ScozE/hqdefault.jpg",
     "publishedAt": "2023-05-15T11:31:09Z",
     "url": "https://www.youtube.com/watch?v=k6AQ3_ScozE",
-    "duration": 947
+    "duration": 947,
+    "titles": {
+      "pl": "Wzór bąbelki na drutach | Bez dziurek | Knitting pattern"
+    }
   },
   {
     "id": "1MIguGkpg40",
@@ -1293,7 +1805,10 @@
     "thumbnail": "https://i.ytimg.com/vi/1MIguGkpg40/hqdefault.jpg",
     "publishedAt": "2023-05-07T09:46:55Z",
     "url": "https://www.youtube.com/watch?v=1MIguGkpg40",
-    "duration": 1975
+    "duration": 1975,
+    "titles": {
+      "pl": "Piękne bąbelki na drutach | Wzór krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "kt4MjIl-fVk",
@@ -1302,7 +1817,11 @@
     "thumbnail": "https://i.ytimg.com/vi/kt4MjIl-fVk/hqdefault.jpg",
     "publishedAt": "2023-04-30T09:30:08Z",
     "url": "https://www.youtube.com/watch?v=kt4MjIl-fVk",
-    "duration": 610
+    "duration": 610,
+    "titles": {
+      "pl": "Jak zrobić dziurki na guziki na drutach | Prosty sposób | Knitting tips",
+      "en": "How to Knit Buttonholes | Easy Way | Knitting Tips"
+    }
   },
   {
     "id": "FfMRA2dV5A8",
@@ -1311,7 +1830,10 @@
     "thumbnail": "https://i.ytimg.com/vi/FfMRA2dV5A8/hqdefault.jpg",
     "publishedAt": "2023-04-10T10:30:08Z",
     "url": "https://www.youtube.com/watch?v=FfMRA2dV5A8",
-    "duration": 1664
+    "duration": 1664,
+    "titles": {
+      "pl": "Czarujący wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "S7RlZzD-qes",
@@ -1320,7 +1842,11 @@
     "thumbnail": "https://i.ytimg.com/vi/S7RlZzD-qes/hqdefault.jpg",
     "publishedAt": "2023-04-02T16:00:14Z",
     "url": "https://www.youtube.com/watch?v=S7RlZzD-qes",
-    "duration": 682
+    "duration": 682,
+    "titles": {
+      "pl": "Jak zrobić dekolt V na drutach | Tutorial krok po kroku | Knitting tips",
+      "en": "How to knit a V-neck | Step-by-step tutorial | Knitting tips"
+    }
   },
   {
     "id": "24ktHAopLm8",
@@ -1329,7 +1855,10 @@
     "thumbnail": "https://i.ytimg.com/vi/24ktHAopLm8/hqdefault.jpg",
     "publishedAt": "2023-03-30T16:00:02Z",
     "url": "https://www.youtube.com/watch?v=24ktHAopLm8",
-    "duration": 463
+    "duration": 463,
+    "titles": {
+      "pl": "Fantastyczny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "b2kLOjaD7cI",
@@ -1338,7 +1867,10 @@
     "thumbnail": "https://i.ytimg.com/vi/b2kLOjaD7cI/hqdefault.jpg",
     "publishedAt": "2023-03-26T15:30:12Z",
     "url": "https://www.youtube.com/watch?v=b2kLOjaD7cI",
-    "duration": 1296
+    "duration": 1296,
+    "titles": {
+      "pl": "Interesujący wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "vXSLwUq_PJs",
@@ -1347,7 +1879,11 @@
     "thumbnail": "https://i.ytimg.com/vi/vXSLwUq_PJs/hqdefault.jpg",
     "publishedAt": "2023-03-24T15:00:48Z",
     "url": "https://www.youtube.com/watch?v=vXSLwUq_PJs",
-    "duration": 254
+    "duration": 254,
+    "titles": {
+      "pl": "Niezwykły ściągacz na drutach | Piękny i elastyczny wzór | Knitting ribbing",
+      "en": "Unusual knitting ribbing | Beautiful and flexible pattern | Knitting ribbing"
+    }
   },
   {
     "id": "I4ohjtlKByw",
@@ -1356,7 +1892,10 @@
     "thumbnail": "https://i.ytimg.com/vi/I4ohjtlKByw/hqdefault.jpg",
     "publishedAt": "2023-03-19T13:30:10Z",
     "url": "https://www.youtube.com/watch?v=I4ohjtlKByw",
-    "duration": 195
+    "duration": 195,
+    "titles": {
+      "pl": "Pomysły na wiosenne projekty na drutach | Inspiracje dziewiarskie"
+    }
   },
   {
     "id": "jqUUqPaNFWY",
@@ -1365,7 +1904,10 @@
     "thumbnail": "https://i.ytimg.com/vi/jqUUqPaNFWY/hqdefault.jpg",
     "publishedAt": "2023-03-16T16:02:49Z",
     "url": "https://www.youtube.com/watch?v=jqUUqPaNFWY",
-    "duration": 153
+    "duration": 153,
+    "titles": {
+      "pl": "Co zrobić na drutach na wiosnę | Pomysły dziewiarskie"
+    }
   },
   {
     "id": "Z9RCo0rGCaw",
@@ -1374,7 +1916,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Z9RCo0rGCaw/hqdefault.jpg",
     "publishedAt": "2023-03-12T09:30:10Z",
     "url": "https://www.youtube.com/watch?v=Z9RCo0rGCaw",
-    "duration": 190
+    "duration": 190,
+    "titles": {
+      "pl": "Wiosenne pomysły na drutach | Inspiracje dziewiarskie"
+    }
   },
   {
     "id": "OuhNA3YZ-S0",
@@ -1383,7 +1928,11 @@
     "thumbnail": "https://i.ytimg.com/vi/OuhNA3YZ-S0/hqdefault.jpg",
     "publishedAt": "2023-03-09T09:30:05Z",
     "url": "https://www.youtube.com/watch?v=OuhNA3YZ-S0",
-    "duration": 572
+    "duration": 572,
+    "titles": {
+      "pl": "Nietypowa technika robienia na drutach | Knitting trick",
+      "en": "An unusual knitting technique | Knitting trick"
+    }
   },
   {
     "id": "kTq4_rSqfc0",
@@ -1392,7 +1941,11 @@
     "thumbnail": "https://i.ytimg.com/vi/kTq4_rSqfc0/hqdefault.jpg",
     "publishedAt": "2023-03-06T09:30:13Z",
     "url": "https://www.youtube.com/watch?v=kTq4_rSqfc0",
-    "duration": 864
+    "duration": 864,
+    "titles": {
+      "pl": "Bluzka na drutach krok po kroku | Knitting blouse tutorial",
+      "en": "Knitting blouse tutorial"
+    }
   },
   {
     "id": "WdHzd-RDjGc",
@@ -1401,7 +1954,10 @@
     "thumbnail": "https://i.ytimg.com/vi/WdHzd-RDjGc/hqdefault.jpg",
     "publishedAt": "2023-03-02T14:00:19Z",
     "url": "https://www.youtube.com/watch?v=WdHzd-RDjGc",
-    "duration": 1723
+    "duration": 1723,
+    "titles": {
+      "pl": "Piękna bluzka na drutach | Tutorial krok po kroku"
+    }
   },
   {
     "id": "wfRfsG8F_30",
@@ -1410,7 +1966,10 @@
     "thumbnail": "https://i.ytimg.com/vi/wfRfsG8F_30/hqdefault.jpg",
     "publishedAt": "2023-02-28T14:00:36Z",
     "url": "https://www.youtube.com/watch?v=wfRfsG8F_30",
-    "duration": 1067
+    "duration": 1067,
+    "titles": {
+      "pl": "Pomysł na wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "cgTi0ZnRNeg",
@@ -1419,7 +1978,10 @@
     "thumbnail": "https://i.ytimg.com/vi/cgTi0ZnRNeg/hqdefault.jpg",
     "publishedAt": "2023-02-26T13:52:57Z",
     "url": "https://www.youtube.com/watch?v=cgTi0ZnRNeg",
-    "duration": 606
+    "duration": 606,
+    "titles": {
+      "pl": "Wzór serduszka na drutach | Jak zrobić krok po kroku | Knitting hearts pattern"
+    }
   },
   {
     "id": "1io9QAr_DLE",
@@ -1428,7 +1990,11 @@
     "thumbnail": "https://i.ytimg.com/vi/1io9QAr_DLE/hqdefault.jpg",
     "publishedAt": "2023-02-20T14:00:03Z",
     "url": "https://www.youtube.com/watch?v=1io9QAr_DLE",
-    "duration": 2599
+    "duration": 2599,
+    "titles": {
+      "pl": "Piękny wzór na drutach | Efektowny ścieg krok po kroku | Knitting pattern",
+      "en": "Beautiful knitting pattern | Eye-catching stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "AEzrhyzpwbc",
@@ -1437,7 +2003,11 @@
     "thumbnail": "https://i.ytimg.com/vi/AEzrhyzpwbc/hqdefault.jpg",
     "publishedAt": "2023-02-17T17:30:01Z",
     "url": "https://www.youtube.com/watch?v=AEzrhyzpwbc",
-    "duration": 1181
+    "duration": 1181,
+    "titles": {
+      "pl": "Prześliczny wzór na drutach | Piękny ścieg dziewiarski | Knitting pattern",
+      "en": "Beautiful knitting pattern | Beautiful knitting stitch | Knitting pattern"
+    }
   },
   {
     "id": "JCAcRYdLCHQ",
@@ -1446,7 +2016,11 @@
     "thumbnail": "https://i.ytimg.com/vi/JCAcRYdLCHQ/hqdefault.jpg",
     "publishedAt": "2023-02-12T15:45:28Z",
     "url": "https://www.youtube.com/watch?v=JCAcRYdLCHQ",
-    "duration": 1493
+    "duration": 1493,
+    "titles": {
+      "pl": "Znakomity wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Beautiful knitting pattern | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "nt5djBYd_FY",
@@ -1455,7 +2029,10 @@
     "thumbnail": "https://i.ytimg.com/vi/nt5djBYd_FY/hqdefault.jpg",
     "publishedAt": "2023-02-07T15:30:10Z",
     "url": "https://www.youtube.com/watch?v=nt5djBYd_FY",
-    "duration": 152
+    "duration": 152,
+    "titles": {
+      "pl": "Pomysły na swetry robione na drutach | Inspiracje dziewiarskie"
+    }
   },
   {
     "id": "BgLUUkoZ3Xg",
@@ -1464,7 +2041,11 @@
     "thumbnail": "https://i.ytimg.com/vi/BgLUUkoZ3Xg/hqdefault.jpg",
     "publishedAt": "2023-02-06T17:48:50Z",
     "url": "https://www.youtube.com/watch?v=BgLUUkoZ3Xg",
-    "duration": 1109
+    "duration": 1109,
+    "titles": {
+      "pl": "Fenomenalny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern",
+      "en": "Phenomenal knitting pattern | Beautiful stitch step by step | Knitting pattern"
+    }
   },
   {
     "id": "VAlWHVF9Kcw",
@@ -1473,7 +2054,10 @@
     "thumbnail": "https://i.ytimg.com/vi/VAlWHVF9Kcw/hqdefault.jpg",
     "publishedAt": "2023-02-04T18:15:38Z",
     "url": "https://www.youtube.com/watch?v=VAlWHVF9Kcw",
-    "duration": 1894
+    "duration": 1894,
+    "titles": {
+      "pl": "Piękny wzór na drutach | Elegancki ścieg dziewiarski | Knitting pattern"
+    }
   },
   {
     "id": "FxX86tfTiCA",
@@ -1482,7 +2066,10 @@
     "thumbnail": "https://i.ytimg.com/vi/FxX86tfTiCA/hqdefault.jpg",
     "publishedAt": "2023-02-01T12:00:14Z",
     "url": "https://www.youtube.com/watch?v=FxX86tfTiCA",
-    "duration": 1270
+    "duration": 1270,
+    "titles": {
+      "pl": "Śliczny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "TV5NAEL7FP0",
@@ -1491,7 +2078,11 @@
     "thumbnail": "https://i.ytimg.com/vi/TV5NAEL7FP0/hqdefault.jpg",
     "publishedAt": "2023-01-29T11:30:07Z",
     "url": "https://www.youtube.com/watch?v=TV5NAEL7FP0",
-    "duration": 1585
+    "duration": 1585,
+    "titles": {
+      "pl": "Fascynujący wzór na drutach | Piękny ścieg dziewiarski | Knitting pattern",
+      "en": "Fascinating knitting pattern | Beautiful knitting stitch | Knitting pattern"
+    }
   },
   {
     "id": "cxK9sBteDxo",
@@ -1500,7 +2091,10 @@
     "thumbnail": "https://i.ytimg.com/vi/cxK9sBteDxo/hqdefault.jpg",
     "publishedAt": "2023-01-27T17:45:01Z",
     "url": "https://www.youtube.com/watch?v=cxK9sBteDxo",
-    "duration": 1301
+    "duration": 1301,
+    "titles": {
+      "pl": "Nadzwyczajny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "vNrI3ISK_hI",
@@ -1509,7 +2103,10 @@
     "thumbnail": "https://i.ytimg.com/vi/vNrI3ISK_hI/hqdefault.jpg",
     "publishedAt": "2023-01-25T16:00:27Z",
     "url": "https://www.youtube.com/watch?v=vNrI3ISK_hI",
-    "duration": 993
+    "duration": 993,
+    "titles": {
+      "pl": "Przepiękny wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "nATusLVD0L4",
@@ -1518,7 +2115,11 @@
     "thumbnail": "https://i.ytimg.com/vi/nATusLVD0L4/hqdefault.jpg",
     "publishedAt": "2023-01-24T17:30:10Z",
     "url": "https://www.youtube.com/watch?v=nATusLVD0L4",
-    "duration": 1005
+    "duration": 1005,
+    "titles": {
+      "pl": "Fenomenalny wzór na drutach | Piękny ścieg dziewiarski | Knitting pattern",
+      "en": "Phenomenal Knitting Pattern | Beautiful Knit Stitch | Knitting pattern"
+    }
   },
   {
     "id": "HIOhefJmygU",
@@ -1527,7 +2128,10 @@
     "thumbnail": "https://i.ytimg.com/vi/HIOhefJmygU/hqdefault.jpg",
     "publishedAt": "2023-01-23T12:35:25Z",
     "url": "https://www.youtube.com/watch?v=HIOhefJmygU",
-    "duration": 521
+    "duration": 521,
+    "titles": {
+      "pl": "Piękne wzory na swetry na drutach | Inspiracje dziewiarskie"
+    }
   },
   {
     "id": "Qta_P0Zi88E",
@@ -1536,7 +2140,10 @@
     "thumbnail": "https://i.ytimg.com/vi/Qta_P0Zi88E/hqdefault.jpg",
     "publishedAt": "2023-01-22T10:38:10Z",
     "url": "https://www.youtube.com/watch?v=Qta_P0Zi88E",
-    "duration": 1189
+    "duration": 1189,
+    "titles": {
+      "pl": "Wyjątkowy wzór na drutach | Piękny ścieg krok po kroku | Knitting pattern"
+    }
   },
   {
     "id": "gRAYHEVcmEQ",
@@ -1545,7 +2152,10 @@
     "thumbnail": "https://i.ytimg.com/vi/gRAYHEVcmEQ/hqdefault.jpg",
     "publishedAt": "2023-01-17T20:00:11Z",
     "url": "https://www.youtube.com/watch?v=gRAYHEVcmEQ",
-    "duration": 358
+    "duration": 358,
+    "titles": {
+      "pl": "Zestaw do robienia na drutach z AliExpress | Czy warto kupić?"
+    }
   },
   {
     "id": "14sMqUzu76E",
@@ -1554,7 +2164,10 @@
     "thumbnail": "https://i.ytimg.com/vi/14sMqUzu76E/hqdefault.jpg",
     "publishedAt": "2023-01-12T15:00:02Z",
     "url": "https://www.youtube.com/watch?v=14sMqUzu76E",
-    "duration": 1265
+    "duration": 1265,
+    "titles": {
+      "pl": "Cudny ściągacz na drutach | Wzór krok po kroku | Knitting ribbing"
+    }
   },
   {
     "id": "pF7xZrTNr7Q",
@@ -1563,7 +2176,10 @@
     "thumbnail": "https://i.ytimg.com/vi/pF7xZrTNr7Q/hqdefault.jpg",
     "publishedAt": "2023-01-08T07:06:22Z",
     "url": "https://www.youtube.com/watch?v=pF7xZrTNr7Q",
-    "duration": 723
+    "duration": 723,
+    "titles": {
+      "pl": "Fantastyczny ściągacz na drutach | Piękny wzór krok po kroku"
+    }
   },
   {
     "id": "reQsyyU2Jwc",
@@ -1572,7 +2188,10 @@
     "thumbnail": "https://i.ytimg.com/vi/reQsyyU2Jwc/hqdefault.jpg",
     "publishedAt": "2023-01-06T20:00:13Z",
     "url": "https://www.youtube.com/watch?v=reQsyyU2Jwc",
-    "duration": 1734
+    "duration": 1734,
+    "titles": {
+      "pl": "Przepiękny ściągacz na drutach | Wzór dziewiarski krok po kroku"
+    }
   },
   {
     "id": "eW3gHPZW4kc",
@@ -1581,7 +2200,10 @@
     "thumbnail": "https://i.ytimg.com/vi/eW3gHPZW4kc/hqdefault.jpg",
     "publishedAt": "2023-01-01T18:20:23Z",
     "url": "https://www.youtube.com/watch?v=eW3gHPZW4kc",
-    "duration": 4438
+    "duration": 4438,
+    "titles": {
+      "pl": "Jak zrobić sweterek dla pieska na drutach | Tutorial krok po kroku | Część 2 |"
+    }
   },
   {
     "id": "I73pqLgHTxc",
@@ -1590,6 +2212,10 @@
     "thumbnail": "https://i.ytimg.com/vi/I73pqLgHTxc/hqdefault.jpg",
     "publishedAt": "2022-12-29T20:42:16Z",
     "url": "https://www.youtube.com/watch?v=I73pqLgHTxc",
-    "duration": 2517
+    "duration": 2517,
+    "titles": {
+      "pl": "Sweter dla pieska na drutach | Jak zrobić krok po kroku | Część 1",
+      "en": "Knit a dog sweater | How to make it step by step | Part 1"
+    }
   }
 ]

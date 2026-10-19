@@ -74,6 +74,8 @@ function createVideoCard(video, index) {
     title.className = 'vc-title';
     title.textContent = video.title;
     body.appendChild(title);
+    /* название на языке страницы + флаги доступных языков */
+    if (window.PDVideoLangs) PDVideoLangs.attach(video, { body, title, img, iframe });
 
     card.appendChild(media);
     card.appendChild(body);

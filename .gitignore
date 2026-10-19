@@ -80,3 +80,7 @@ Thumbs.db
 /scripts/add-offer-policies.js
 /scripts/audit-offers.js
 /scripts/add-amazon-returns.js
+/scripts/check-localizations.js
+/scripts/six-langs.js
+/scripts/audit-lang-switch.js
+/scripts/write-flags.js

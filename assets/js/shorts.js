@@ -81,6 +81,8 @@ function createShortCard(short, index) {
     title.className = 'sc-title';
     title.textContent = short.title;
     body.appendChild(title);
+    /* название на языке страницы + флаги доступных языков */
+    if (window.PDVideoLangs) PDVideoLangs.attach(short, { body, title, img, iframe });
 
     card.appendChild(media);
     card.appendChild(body);
