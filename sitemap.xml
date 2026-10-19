@@ -249,6 +249,78 @@
   </url>
   <url>
     <loc>https://paradrutow.com/patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/patterns.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/en/patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/patterns.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/patterns.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/patterns.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/patterns.html"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/patterns.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/patterns.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/patterns.html"/>
     <lastmod>2026-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

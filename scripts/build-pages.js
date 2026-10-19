@@ -28,6 +28,9 @@ const PAGES = {
                    ldKeys: ['ld_apps_name', 'ld_wzorai_desc', 'ld_wzorai_offer', 'ld_shift_desc'] },
   // tagSubject — в теме письма с формы виден язык страницы: «Wiadomość z paradrutow.com [DE]»
   'contact.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_contact', titleKey: 'title_contact', tagSubject: true },
+  // Описания узоров переведены, сами PDF — на польском: это сказано на каждой карточке (pat_note_*)
+  'patterns.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_patterns', titleKey: 'title_patterns',
+                     ldKeys: ['ld_pat_list', 'ld_pat5', 'ld_pat4', 'ld_pat3', 'ld_pat2', 'ld_pat1'] },
 };
 
 const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${file}` : `/${lang}/${file}`;

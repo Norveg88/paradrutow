@@ -98,3 +98,6 @@ Thumbs.db
 /scripts/add-langs-apps.js
 /scripts/shiftlens-v2.js
 /scripts/contact-i18n.js
+/scripts/patterns-i18n.js
+/scripts/patterns-tiles.js
+/scripts/patterns-fix-css.js
