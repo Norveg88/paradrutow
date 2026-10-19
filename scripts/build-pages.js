@@ -34,9 +34,34 @@ const PAGES = {
   // content — длинный текст не в словарях, а в scripts/i18n-content/privacy.<lang>.html
   // (польский тоже: правим файл .pl.html, сборка вставляет его в privacy.html)
   'privacy.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_privacy', titleKey: 'title_privacy', content: 'privacy' },
+  // home — главная: адреса / и /en/; последние ролики, «С чего начать», полка книг и цифры канала
+  // вставляются при сборке (renderHome), поэтому главная обновляется вместе с загрузкой видео
+  'index.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_home', titleKey: 'title_home', home: true,
+                  ldKeys: ['ld_home_desc'] },
 };
 
-const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${file}` : `/${lang}/${file}`;
+// ---------- Главная ----------
+const HOME = {
+  // «С чего начать»: по 4 ролика на уровень (id роликов с YouTube)
+  levels: {
+    lvl1: ['V9vH-AbZAt4', '0WGzXl8PPN8', 'K2QY1Ud24fI', 'nQ6KLA_zTPw'],
+    lvl2: ['g6OTiTDPimU', 'ynPlg_rP_64', 'EEk3HIJJTms', 'weFiywLWaYw'],
+    lvl3: ['zVLrfxyxxtA', 'lC2wKNy9VPU', 'DKW-9wvGg50', 'AR2qmviQVPw'],
+  },
+  latest: 3,          // «Новое на канале» — без повторов с уровнями
+  shorts: 6,
+  // Полка книг: на польской главной — польские издания, на остальных — английские
+  books: {
+    pl:    [['book13', 'Sekretne życie włóczki'], ['book11', 'Dom na drutach'], ['book8', 'Sweter z historią'],
+            ['book7', 'Para Drutów. Miejsce, w którym ludzie zostają'], ['book5', '16 Pięt do Skarpetek'], ['book6', 'Planner Dziewiarski']],
+    other: [['book12', 'The Secret Life of Yarn'], ['book10', 'The Knitted Home'], ['book9', 'Your Knitting Journey']],
+  },
+};
+const OG_LOCALE = { pl: 'pl_PL', en: 'en_US', de: 'de_DE', fr: 'fr_FR', es: 'es_ES', pt: 'pt_BR' };
+
+// index.html открывается как / и /en/ (без имени файла)
+const pagePath = file => file === 'index.html' ? '' : file;
+const pageUrl  = (file, lang) => lang === DEFAULT_LANG ? `/${pagePath(file)}` : `/${lang}/${pagePath(file)}`;
 const fullUrl  = (file, lang) => SITE + pageUrl(file, lang);
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const readJson = p => JSON.parse(fs.readFileSync(p, 'utf8').replace(/^\uFEFF/, ''));
@@ -91,6 +116,8 @@ function applyCommon(html, file, cfg, lang, items) {
     html = html.replace(new RegExp(`<div id="${id}-loader" class="videos-loader"[^>]*>`), `<div id="${id}-loader" class="videos-loader" style="display:none">`);
   }
 
+  if (cfg.home) html = renderHome(html, lang);
+
   const sw = /<div class="lang-switcher">[\s\S]*?<\/div>/;
   if (!sw.test(html)) throw new Error(`${file}: lang-switcher not found`);
   html = html.replace(sw, () => renderSwitcher(file, cfg.langs));
@@ -99,6 +126,62 @@ function applyCommon(html, file, cfg, lang, items) {
   const block = renderAlternates(file, cfg.langs);
   if (alt.test(html)) html = html.replace(alt, () => block);
   else html = html.replace(/(<link rel="canonical"[^>]*>)/, (m) => `${m}\n    ${block}`);
+  return html;
+}
+
+// Главная: блоки между <!-- home:имя --> и <!-- /home:имя -->
+function renderHome(html, lang) {
+  const d = dict(lang);
+  const videos = readJson(path.join(ROOT, 'assets/data', 'videos.json'));
+  const shorts = readJson(path.join(ROOT, 'assets/data', 'shorts.json'));
+  const ch = readJson(path.join(ROOT, 'assets/data', 'channel.json'));
+  const byId = new Map(videos.map(v => [v.id, v]));
+  const linkTo = f => (PAGES[f] && PAGES[f].langs.includes(lang)) ? pageUrl(f, lang) : `/${f}`;
+  const need = k => { if (d[k] === undefined) throw new Error(`${lang}.json: ${k} missing`); return d[k]; };
+  const shown = [];
+  const pick = ids => ids.map(id => { const v = byId.get(id); if (!v) throw new Error(`home: video ${id} not in videos.json`); shown.push(v); return v; });
+
+  const block = (name, inner) => {
+    const re = new RegExp(`(<!-- home:${name}\\b.*?-->\\n)([ \\t]*)[\\s\\S]*?\\n([ \\t]*<!-- \\/home:${name} -->)`);
+    if (!re.test(html)) throw new Error(`index.html: home:${name} markers not found`);
+    html = html.replace(re, (m, a, ind, b) => a + inner(ind) + '\n' + b);
+  };
+
+  // Цифры канала одной фразой (формы слов — по правилам языка)
+  const nf = new Intl.NumberFormat(lang);
+  const pr = new Intl.PluralRules(lang);
+  const word = (base, n) => d[`${base}_${pr.select(n)}`] ?? need(`${base}_other`);
+  const fill = t => t
+    .replace('{views}', nf.format(Math.floor(ch.viewCount / 1e6)))
+    .replace('{videos}', `${nf.format(ch.videoCount)} ${word('home_n_videos', ch.videoCount)}`)
+    .replace('{people}', `${nf.format(ch.subscriberCount)} ${word('home_n_people', ch.subscriberCount)}`);
+  block('proof', ind => `${ind}<p class="hero-proof"><span class="proof-main">${fill(need('home_proof'))}</span>` +
+    `<span class="proof-meta">${fill(need('home_proof_meta'))}</span></p>`);
+
+  const cards = (list, ind, cls) => `${ind}<div class="${cls} js-video-cards">\n` +
+    renderCards(list, 'video', lang).split('\n').map(l => ind + '    ' + l).join('\n') + `\n${ind}</div>`;
+  for (const [k, ids] of Object.entries(HOME.levels)) block(k, ind => cards(pick(ids), ind, 'vgrid'));
+  const levelIds = new Set(Object.values(HOME.levels).flat());
+  const latest = videos.filter(v => !levelIds.has(v.id)).slice(0, HOME.latest);
+  shown.push(...latest);
+  block('latest', ind => cards(latest, ind, 'vgrid vgrid-3'));
+
+  block('shorts', ind => `${ind}<div class="shorts-strip">\n` + shorts.slice(0, HOME.shorts).map(s => {
+    const t = esc(titleOf(s, lang));
+    return `${ind}    <a class="short-thumb" href="${linkTo('shorts.html')}"><img src="${esc(s.thumbnail)}" alt="${t}" loading="lazy" decoding="async"><span>${t}</span></a>`;
+  }).join('\n') + `\n${ind}</div>`);
+
+  const books = HOME.books[lang] || HOME.books.other;
+  block('books', ind => `${ind}<div class="shelf">\n` + books.map(([img, title]) =>
+    `${ind}    <a href="${linkTo('books.html')}" title="${esc(title)}"><img src="/assets/img/home/${img}.webp" alt="${esc(title)}" width="300" height="450" loading="lazy" decoding="async"></a>`
+  ).join('\n') + `\n${ind}</div>`);
+
+  // Названия роликов на всех языках — для флагов (video-langs.js), без загрузки videos.json
+  const data = {};
+  for (const v of shown) data[v.id] = { title: v.title, titles: v.titles || {} };
+  const json = JSON.stringify(data).replace(/</g, '\\u003c');
+  html = html.replace(/\n?<script type="application\/json" id="home-video-data">[\s\S]*?<\/script>/, '');
+  html = html.replace('</main>', `</main>\n<script type="application/json" id="home-video-data">${json}</script>`);
   return html;
 }
 
@@ -168,6 +251,10 @@ function translate(html, file, cfg, lang) {
     });
   }
 
+  html = html.replace(/(<meta property="og:locale" content=")[^"]*(")/, `$1${OG_LOCALE[lang]}$2`);
+  html = html.split('/assets/img/og-home-pl.jpg').join(`/assets/img/og-home-${lang}.jpg`);
+  html = html.split('"inLanguage":"pl"').join(`"inLanguage":"${lang}"`);
+
   if (cfg.tagSubject) {
     const re = /(<input type="hidden" name="_subject" value=")([^"]*?)(?: \[[A-Z]{2}\])?(")/;
     if (!re.test(html)) throw new Error(`${file}: _subject not found`);
@@ -176,7 +263,9 @@ function translate(html, file, cfg, lang) {
 
   // внутренние ссылки на страницы, у которых есть версия на этом языке
   for (const [f, c] of Object.entries(PAGES)) {
-    if (c.langs.includes(lang)) html = html.split(`href="/${f}"`).join(`href="${pageUrl(f, lang)}"`);
+    if (!c.langs.includes(lang)) continue;
+    html = html.split(`href="/${f}"`).join(`href="${pageUrl(f, lang)}"`);
+    if (f === 'index.html') html = html.split('href="/"').join(`href="${pageUrl(f, lang)}"`);
   }
   if (missing.size) console.warn(`  ! ${lang}/${file}: no translation for ${[...missing].join(', ')} — left in Polish`);
   return html;

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/assets/img/site.png">
+    <link rel="apple-touch-icon" href="/assets/img/site.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title_home">Para Drutów — knitting patterns, books and videos</title>
+    <meta name="description" content="Para Drutów — knitting step by step. Over 250 videos, PDF patterns, books and the WzorAI and ShiftLens apps. From your first stitch to double knitting and seamless sweaters.">
+    <meta name="keywords" content="dziewiarstwo, robótki na drutach, wzory na drutach, schematy dziewiarskie, nauka robienia na drutach, tutoriale dziewiarskie, WzorAI, ShiftLens, Para Drutów">
+    <meta name="author" content="Para Drutów">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://paradrutow.com/en/">
+    <!-- i18n:alternates (scripts/build-pages.js) -->
+    <link rel="alternate" hreflang="pl" href="https://paradrutow.com/">
+    <link rel="alternate" hreflang="en" href="https://paradrutow.com/en/">
+    <link rel="alternate" hreflang="de" href="https://paradrutow.com/de/">
+    <link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/">
+    <link rel="alternate" hreflang="es" href="https://paradrutow.com/es/">
+    <link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/">
+    <link rel="alternate" hreflang="x-default" href="https://paradrutow.com/">
+    <meta name="pd-versions" content="pl,en,de,fr,es,pt">
+    <!-- /i18n:alternates -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paradrutow.com/en/">
+    <meta property="og:title" content="Para Drutów — knitting patterns, books and videos">
+    <meta property="og:description" content="Para Drutów — knitting step by step. Over 250 videos, PDF patterns, books and the WzorAI and ShiftLens apps. From your first stitch to double knitting and seamless sweaters.">
+    <meta property="og:image" content="https://paradrutow.com/assets/img/og-home-en.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Para Drutów">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Para Drutów — knitting patterns, books and videos">
+    <meta name="twitter:description" content="Para Drutów — knitting step by step. Over 250 videos, PDF patterns, books and the WzorAI and ShiftLens apps. From your first stitch to double knitting and seamless sweaters.">
+    <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-en.jpg">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paradrutow.com/#org","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/site.png","description":"Knitting step by step — YouTube videos, PDF patterns, books and the WzorAI and ShiftLens apps.","sameAs":["https://www.youtube.com/@ParaDrutow"]},{"@type":"WebSite","@id":"https://paradrutow.com/#website","url":"https://paradrutow.com","name":"Para Drutów","inLanguage":"en","publisher":{"@id":"https://paradrutow.com/#org"}}]}</script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=10">
+    <script defer src="/assets/js/lang.js?v=26"></script>
+    <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
+    <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
+    <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card,.reveal{opacity:1!important;transform:none!important}</style></noscript>
+    <script defer src="/assets/js/ui.js?v=7"></script>
+    <script defer src="/assets/js/newsletter.js?v=2"></script>
+    <script defer src="/assets/js/video-langs.js?v=1"></script>
+    <script defer src="/assets/js/home.js?v=1"></script>
+    <link rel="stylesheet" href="/assets/css/videos-shorts.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        main { margin: 0 auto 2rem; }
+        .visually-hidden {
+            position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+            overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+        }
+
+        /* ---------- Первый экран ---------- */
+        .hero {
+            position: relative;
+            border-radius: 18px;
+            border: 1px solid var(--glass-border);
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            margin-bottom: 2.4rem;
+            min-height: clamp(420px, 44vw, 560px);
+            display: flex; align-items: center; justify-content: center;
+            text-align: center;
+            isolation: isolate;
+        }
+        .hero-bg {
+            position: absolute; inset: 0; z-index: -2;
+            width: 100%; height: 100%; object-fit: cover; object-position: center;
+        }
+        .hero::after {
+            content: ''; position: absolute; inset: 0; z-index: -1;
+            background: radial-gradient(ellipse 46% 62% at 50% 52%, rgba(8,7,6,0.72), rgba(8,7,6,0.25) 70%, transparent);
+        }
+        .hero-content { padding: 2.6rem 1.4rem; max-width: 760px; }
+        .hero-eyebrow {
+            font-family: var(--font-header); font-weight: 600;
+            font-size: 1.05rem; letter-spacing: 3px; text-transform: uppercase;
+            color: var(--accent-copper); margin: 0 0 0.4rem;
+        }
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5.6rem);
+            margin: 0 0 0.6rem; border: none; display: block; line-height: 1.02; font-weight: 600;
+            background: linear-gradient(135deg, #e8c88a 10%, #fff5d6 45%, #c5a059 70%, var(--accent-copper));
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+            text-shadow: none;
+        }
+        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; }
+        .hero-proof { margin: 0 auto 1.6rem; }
+        .proof-main {
+            display: block; font-family: var(--font-header); font-style: italic;
+            font-size: clamp(1.2rem, 2.4vw, 1.5rem); color: var(--accent-gold); line-height: 1.35;
+        }
+        .proof-meta { display: block; margin-top: 0.45rem; color: #a9a294; font-size: 0.95rem; letter-spacing: 0.3px; }
+        .hero-cta { display: flex; gap: 0.9rem; justify-content: center; flex-wrap: wrap; }
+        .btn-gold, .btn-ghost {
+            display: inline-block; font-family: var(--font-header); font-weight: 700;
+            font-size: 1.08rem; letter-spacing: 0.4px; text-decoration: none;
+            padding: 0.72rem 1.6rem; border-radius: 999px; transition: all 0.3s;
+        }
+        .btn-gold {
+            color: #1a1408; background: linear-gradient(135deg, #e8c88a, var(--accent-gold) 55%, var(--accent-copper));
+            box-shadow: 0 6px 22px rgba(197,160,89,0.35);
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(197,160,89,0.5); }
+        .btn-ghost { color: var(--accent-gold); border: 1px solid var(--accent-gold); background: rgba(0,0,0,0.35); }
+        .btn-ghost:hover { background: rgba(197,160,89,0.15); }
+
+        /* ---------- Секции ---------- */
+        .home-section { margin-bottom: 3rem; scroll-margin-top: 100px; }
+        .section-head { margin-bottom: 1.3rem; }
+        .section-head.row { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+        .section-head h2 {
+            font-family: var(--font-header); font-weight: 600; color: var(--accent-gold);
+            font-size: clamp(1.7rem, 3.4vw, 2.2rem); line-height: 1.2; margin: 0 0 0.35rem; border: none;
+        }
+        .section-head p { color: #b5b0a6; margin: 0; font-size: 1.05rem; line-height: 1.6; max-width: 640px; }
+        .head-links { display: flex; align-items: center; gap: 1.1rem; flex-wrap: wrap; }
+        .tile-link {
+            font-family: var(--font-header); font-size: 1.05rem; font-weight: 600; letter-spacing: 0.3px;
+            color: var(--accent-copper); text-decoration: none;
+            border-bottom: 1px solid rgba(184,115,51,0.4); padding-bottom: 2px; transition: color 0.3s, border-color 0.3s;
+        }
+        .tile-link:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+
+        /* сетки карточек видео */
+        .vgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.3rem; }
+        .vgrid-3 { grid-template-columns: repeat(3, 1fr); }
+        .vgrid .vc-title { font-size: 0.98rem; }
+        .vgrid .vl-row { font-size: 0.8rem; }
+        @media (max-width: 1000px) { .vgrid { grid-template-columns: repeat(2, 1fr); } .vgrid-3 { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 760px) { .vgrid-3 { grid-template-columns: 1fr; } }
+        @media (max-width: 560px) {
+            /* на телефоне ролики листаются вбок, чтобы не растягивать страницу */
+            .vgrid, .vgrid-3 {
+                grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 84%;
+                overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.6rem; gap: 0.9rem;
+                scrollbar-width: thin;
+            }
+            .vgrid .video-card { scroll-snap-align: start; }
+            .vgrid .video-card:hover { transform: none; }
+        }
+
+        /* ---------- С чего начать ---------- */
+        .lvl-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 1.2rem; }
+        .lvl-tab {
+            display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;
+            background: rgba(40,40,40,0.45); border: 1px solid var(--glass-border); border-radius: 14px;
+            padding: 0.95rem 1.1rem; cursor: pointer; text-align: left; color: #ddd; transition: all 0.25s;
+            font: inherit;
+        }
+        .lvl-tab:hover { border-color: var(--accent-gold); }
+        .lvl-tab[aria-selected="true"] { background: rgba(197,160,89,0.13); border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold) inset; }
+        .lvl-dots { letter-spacing: 3px; color: var(--accent-copper); font-size: 0.8rem; }
+        .lvl-name { font-family: var(--font-header); font-weight: 700; font-size: 1.22rem; color: var(--accent-gold); line-height: 1.2; }
+        .lvl-panel[hidden] { display: none; }
+        .lvl-desc { color: #b5b0a6; margin: 0 0 1rem; font-size: 1rem; line-height: 1.6; }
+        @media (max-width: 640px) {
+            .lvl-tabs { grid-template-columns: 1fr; gap: 0.5rem; }
+            .lvl-tab { flex-direction: row; align-items: center; gap: 0.7rem; padding: 0.7rem 1rem; }
+        }
+
+        /* ---------- Shorts ---------- */
+        .shorts-strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
+        .short-thumb {
+            position: relative; display: block; aspect-ratio: 9/16; border-radius: 14px; overflow: hidden;
+            border: 1px solid var(--glass-border); background: #000; text-decoration: none;
+        }
+        .short-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+        .short-thumb:hover img { transform: scale(1.05); }
+        .short-thumb span {
+            position: absolute; left: 0; right: 0; bottom: 0; padding: 2rem 0.6rem 0.6rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85)); color: #eee; font-size: 0.82rem; line-height: 1.35;
+            display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+        }
+        @media (max-width: 900px) {
+            .shorts-strip { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.4rem; }
+            .short-thumb { scroll-snap-align: start; }
+        }
+        @media (max-width: 480px) { .shorts-strip { grid-auto-columns: 46%; } }
+
+        /* ---------- Мастерская ---------- */
+        .shop-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.4rem; }
+        .shop-side { display: grid; gap: 1.4rem; align-content: start; }
+        .shop-box {
+            background: rgba(40,40,40,0.45); border: 1px solid var(--glass-border); border-radius: 16px;
+            padding: 1.5rem; position: relative; overflow: hidden; backdrop-filter: blur(8px);
+        }
+        .shop-box::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(to right, var(--accent-gold), var(--accent-copper));
+        }
+        .shop-box h3 { font-family: var(--font-header); font-weight: 700; color: var(--accent-gold); font-size: 1.45rem; margin: 0 0 0.5rem; line-height: 1.2; }
+        .shop-box p { color: #bbb; line-height: 1.6; margin: 0 0 1rem; }
+        .shop-pattern { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1.4rem; align-items: center; }
+        .sp-cta .btn-gold { white-space: nowrap; }
+        .shop-pattern img { width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .badge {
+            display: inline-block; font-family: var(--font-header); font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px;
+            text-transform: uppercase; color: #1a1408; background: var(--accent-gold); border-radius: 999px; padding: 0.15rem 0.75rem; margin-bottom: 0.7rem;
+        }
+        .sp-note { font-size: 0.88rem; color: #999 !important; }
+        .sp-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 0.9rem; }
+        .shelf { display: flex; gap: 0.7rem; margin: 0 0 1.1rem; overflow-x: auto; padding-bottom: 0.3rem; }
+        .shelf a { flex: 0 0 auto; width: 92px; display: block; transition: transform 0.3s; }
+        .shelf a:hover { transform: translateY(-4px) rotate(-1deg); }
+        .shelf img { width: 100%; height: auto; border-radius: 5px; display: block; box-shadow: 0 6px 16px rgba(0,0,0,0.55); }
+        .app-row {
+            display: flex; align-items: center; gap: 0.9rem; text-decoration: none; padding: 0.6rem; margin: 0 -0.6rem 0.4rem;
+            border-radius: 12px; transition: background 0.25s;
+        }
+        .app-row:hover { background: rgba(197,160,89,0.08); }
+        .app-row img { width: 58px; height: 58px; border-radius: 14px; flex-shrink: 0; }
+        .app-row strong { display: block; font-family: var(--font-header); font-size: 1.2rem; color: var(--accent-gold); }
+        .app-row span { display: block; color: #bbb; font-size: 0.95rem; line-height: 1.45; }
+        @media (max-width: 900px) { .shop-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 520px) { .shop-pattern { grid-template-columns: 1fr; } .shop-pattern img { max-width: 260px; margin: 0 auto; } }
+
+        /* ---------- Почему ---------- */
+        .why-card {
+            background: rgba(197,160,89,0.06); border: 1px solid var(--accent-gold); border-radius: 16px;
+            padding: 2rem 2.5rem; margin-bottom: 3rem; position: relative; overflow: hidden;
+            opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+        .why-card.visible { opacity: 1; transform: translateY(0); }
+        .head-with-icon { display: flex; align-items: center; gap: 0.65rem; }
+        .head-icon { width: 30px; height: 30px; flex-shrink: 0; display: block; }
+        .head-icon svg { width: 100%; height: 100%; display: block; }
+        .head-icon--gold { color: var(--accent-gold); filter: drop-shadow(0 0 6px rgba(197,160,89,0.25)); }
+        .why-card h2 { font-family: var(--font-header); font-weight: 600; color: var(--accent-gold); font-size: 1.75rem; line-height: 1.25; margin: 0 0 1rem; }
+        .why-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 1rem 1.4rem; margin: 1.2rem 0; }
+        .why-item { display: flex; align-items: flex-start; gap: 0.7rem; color: #ccc; font-size: 1.05rem; line-height: 1.55; }
+        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.6rem; margin-top: 5px; flex-shrink: 0; }
+        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin-top: 1.5rem; font-size: 1.15rem; line-height: 1.6; }
+
+        /* ---------- Стихотворение ---------- */
+        .poem-card {
+            position: relative; text-align: center; margin: 0 auto 3rem; padding: 2.6rem 1.5rem 2.4rem;
+            border-top: 1px solid rgba(197,160,89,0.25); border-bottom: 1px solid rgba(197,160,89,0.25);
+            background: radial-gradient(ellipse at 50% 0%, rgba(197,160,89,0.08), transparent 65%);
+        }
+        .poem-eyebrow { font-family: var(--font-header); font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent-copper); font-size: 0.95rem; margin: 0 0 0.4rem; }
+        .poem-title {
+            font-family: var(--font-header); font-style: italic; font-weight: 500; color: var(--accent-gold);
+            font-size: clamp(2rem, 4.5vw, 2.8rem); margin: 0 0 1.8rem; border: none; line-height: 1.15;
+        }
+        .poem-body { display: grid; grid-template-columns: repeat(2, max-content); justify-content: center; gap: 1.6rem 4rem; }
+        .poem-body p {
+            font-family: var(--font-header); font-style: italic; font-size: 1.32rem; line-height: 1.75;
+            color: #ddd5c4; margin: 0; text-align: left; white-space: nowrap;
+        }
+        .poem-body p:last-child { color: var(--accent-gold); }
+        .poem-sign { margin: 1.8rem 0 0; color: var(--accent-copper); font-size: 1.1rem; letter-spacing: 6px; }
+        @media (max-width: 860px) {
+            .poem-body { grid-template-columns: 1fr; gap: 1.3rem; }
+            .poem-body p { text-align: center; font-size: 1.2rem; white-space: normal; }
+        }
+
+        /* появление при прокрутке (класс pre ставит home.js, без JS всё видно сразу) */
+        .reveal { transition: opacity 0.6s ease, transform 0.6s ease; }
+        .reveal.pre { opacity: 0; transform: translateY(24px); }
+        html.no-fx .reveal.pre { opacity: 1; transform: none; }
+
+        @media (max-width: 640px) {
+            main { margin: 0 auto 1rem; }
+            /* на телефоне баннер целиком полосой сверху, текст под ним */
+            .hero { display: block; min-height: 0; border-radius: 14px; background: #0b0a09; }
+            .hero-bg { position: relative; z-index: 0; display: block; height: auto; aspect-ratio: 900 / 399; }
+            .hero::after { background: linear-gradient(to bottom, transparent 18%, #0b0a09 34%); }
+            .hero-content { position: relative; z-index: 1; margin-top: -1.6rem; padding: 0 1.1rem 1.8rem; }
+            .hero-eyebrow { font-size: 0.78rem; letter-spacing: 1.2px; }
+            .home-section { margin-bottom: 2.4rem; }
+            .why-card { padding: 1.5rem; }
+        }
+    </style>
+    <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
+    <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
+</head>
+<body>
+<div class="background-effects"><div class="steam-overlay"></div></div>
+
+<header>
+    <nav class="nav glass-panel">
+        <a href="/en/" class="nav-brand">Para Drutów</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/en/" class="active-link" data-i18n="menu_home">Home</a>
+            <a href="/en/video.html" data-i18n="menu_video">Videos</a>
+            <a href="/en/shorts.html" data-i18n="menu_shorts">Shorts</a>
+            <a href="/en/apps.html" data-i18n="menu_apps">Apps</a>
+            <a href="/books.html" data-i18n="menu_books">Books</a>
+            <a href="/en/patterns.html" data-i18n="menu_patterns">Patterns</a>
+            <a href="/en/contact.html" data-i18n="menu_contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <a data-lang="pl" href="/" hreflang="pl">PL</a>
+                <a data-lang="en" href="/en/" hreflang="en">EN</a>
+                <a data-lang="de" href="/de/" hreflang="de">DE</a>
+                <a data-lang="fr" href="/fr/" hreflang="fr">FR</a>
+                <a data-lang="es" href="/es/" hreflang="es">ES</a>
+                <a data-lang="pt" href="/pt/" hreflang="pt">PT</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-wrapper">
+
+        <!-- Первый экран: баннер без надписей, текст поверх — переводится -->
+        <section class="hero">
+            <picture>
+                <source srcset="/assets/img/hero-900.webp" media="(max-width: 700px)">
+                <img src="/assets/img/hero.webp" alt="" class="hero-bg" width="1440" height="639" fetchpriority="high">
+            </picture>
+            <div class="hero-content">
+                <p class="hero-eyebrow" data-i18n="home_eyebrow">Craft · Knowledge · Passion</p>
+                <h1 data-i18n="home_title">Para Drutów</h1>
+                <p class="hero-sub" data-i18n="home_subtitle">Knitting that inspires. Knowledge that guides step by step.</p>
+                <!-- home:proof (scripts/build-pages.js — liczby z assets/data/channel.json) -->
+                <p class="hero-proof"><span class="proof-main">17 million times someone has sat down to knit with us.</span><span class="proof-meta">252 videos · 28,500 people on the channel · site in 6 languages</span></p>
+                <!-- /home:proof -->
+                <div class="hero-cta">
+                    <a href="#start" class="btn-gold" data-i18n="home_cta_start">Where do I start?</a>
+                    <a href="/en/patterns.html" class="btn-ghost" data-i18n="home_cta_patterns">PDF patterns</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- С чего начать: три уровня, по 4 ролика -->
+        <section class="home-section reveal" id="start">
+            <div class="section-head">
+                <h2 data-i18n="home_start_title">Where to start?</h2>
+                <p data-i18n="home_start_desc">Tell us where you are — we’ll suggest the videos worth starting with.</p>
+            </div>
+            <div class="lvl-tabs" role="tablist">
+                <button type="button" class="lvl-tab" role="tab" id="lvl-tab-1" aria-controls="lvl-1" aria-selected="true"><span class="lvl-dots">●○○</span><span class="lvl-name" data-i18n="home_lvl1">Just starting</span></button>
+                <button type="button" class="lvl-tab" role="tab" id="lvl-tab-2" aria-controls="lvl-2" aria-selected="false"><span class="lvl-dots">●●○</span><span class="lvl-name" data-i18n="home_lvl2">I know the basics</span></button>
+                <button type="button" class="lvl-tab" role="tab" id="lvl-tab-3" aria-controls="lvl-3" aria-selected="false"><span class="lvl-dots">●●●</span><span class="lvl-name" data-i18n="home_lvl3">I want a challenge</span></button>
+            </div>
+            <div class="lvl-panel" id="lvl-1" role="tabpanel" aria-labelledby="lvl-tab-1">
+                <p class="lvl-desc" data-i18n="home_lvl1_d">Casting on and binding off, even stitches and your first hat.</p>
+                <!-- home:lvl1 -->
+                <div class="vgrid js-video-cards">
+                    <div class="video-card" data-id="V9vH-AbZAt4"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/V9vH-AbZAt4/hqdefault.jpg" alt="The Magic Way to Cast on | Elastic Edge | Knitting Cast On" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">The Magic Way to Cast on | Elastic Edge | Knitting Cast On</h2></div></div>
+                    <div class="video-card" data-id="0WGzXl8PPN8"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/0WGzXl8PPN8/hqdefault.jpg" alt="How to bind off stitches on knitting needles | Easy way | Knitting bind off" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">How to bind off stitches on knitting needles | Easy way | Knitting bind off</h2></div></div>
+                    <div class="video-card" data-id="K2QY1Ud24fI"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/K2QY1Ud24fI/hqdefault.jpg" alt="Is your knitting curling? | How to get even stitches | Knitting tips" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Is your knitting curling? | How to get even stitches | Knitting tips</h2></div></div>
+                    <div class="video-card" data-id="nQ6KLA_zTPw"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/nQ6KLA_zTPw/hqdefault.jpg" alt="Simple Pinterest-Inspired Knitted Beanie 🧶 Step-by-Step for Beginners! | Seasonal Hit" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Simple Pinterest-Inspired Knitted Beanie 🧶 Step-by-Step for Beginners! | Seasonal Hit</h2></div></div>
+                </div>
+                <!-- /home:lvl1 -->
+            </div>
+            <div class="lvl-panel" id="lvl-2" role="tabpanel" aria-labelledby="lvl-tab-2" hidden>
+                <p class="lvl-desc" data-i18n="home_lvl2_d">Your first socks, slippers in one evening, a vest and an invisible join.</p>
+                <!-- home:lvl2 -->
+                <div class="vgrid js-video-cards">
+                    <div class="video-card" data-id="g6OTiTDPimU"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/g6OTiTDPimU/hqdefault.jpg" alt="Knit your first socks WITHOUT A DIFFICULT HEEL! [Step by Step]" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Knit your first socks WITHOUT A DIFFICULT HEEL! [Step by Step]</h2></div></div>
+                    <div class="video-card" data-id="ynPlg_rP_64"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/ynPlg_rP_64/hqdefault.jpg" alt="Simple Knitted SLIPPERS in 1 Evening! 🧦 [Tutorial]" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Simple Knitted SLIPPERS in 1 Evening! 🧦 [Tutorial]</h2></div></div>
+                    <div class="video-card" data-id="EEk3HIJJTms"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/EEk3HIJJTms/hqdefault.jpg" alt="SIMPLE and versatile knitted vest [STEP BY STEP]" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">SIMPLE and versatile knitted vest [STEP BY STEP]</h2></div></div>
+                    <div class="video-card" data-id="weFiywLWaYw"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/weFiywLWaYw/hqdefault.jpg" alt="Invisible JOIN in knitting! 🧶 [Step-by-step guide]" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Invisible JOIN in knitting! 🧶 [Step-by-step guide]</h2></div></div>
+                </div>
+                <!-- /home:lvl2 -->
+            </div>
+            <div class="lvl-panel" id="lvl-3" role="tabpanel" aria-labelledby="lvl-tab-3" hidden>
+                <p class="lvl-desc" data-i18n="home_lvl3_d">Double knitting, a seamless sweater, a cardigan and stunning lace.</p>
+                <!-- home:lvl3 -->
+                <div class="vgrid js-video-cards">
+                    <div class="video-card" data-id="zVLrfxyxxtA"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/zVLrfxyxxtA/hqdefault.jpg" alt="This Luxurious Colorwork Scarf Will Transform Your Winter! ❄️ Step by Step (Double Knitting)" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">This Luxurious Colorwork Scarf Will Transform Your Winter! ❄️ Step by Step (Double Knitting)</h2></div></div>
+                    <div class="video-card" data-id="lC2wKNy9VPU"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/lC2wKNy9VPU/hqdefault.jpg" alt="Knit a seamless sweater step by step | Part 1 | Beautiful project | Knitting sweater" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Knit a seamless sweater step by step | Part 1 | Beautiful project | Knitting sweater</h2></div></div>
+                    <div class="video-card" data-id="DKW-9wvGg50"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/DKW-9wvGg50/hqdefault.jpg" alt="The Perfect Knitted Cardigan! Looks Boutique-Quality [TUTORIAL]" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">The Perfect Knitted Cardigan! Looks Boutique-Quality [TUTORIAL]</h2></div></div>
+                    <div class="video-card" data-id="AR2qmviQVPw"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/AR2qmviQVPw/hqdefault.jpg" alt="Stunning knitted LACE for summer! ☀️ [Step-by-step tutorial]" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Stunning knitted LACE for summer! ☀️ [Step-by-step tutorial]</h2></div></div>
+                </div>
+                <!-- /home:lvl3 -->
+            </div>
+        </section>
+
+        <!-- Новое на канале: 3 последних ролика, обновляется при загрузке видео -->
+        <section class="home-section reveal">
+            <div class="section-head row">
+                <div>
+                    <h2 data-i18n="home_latest_title">New on the channel</h2>
+                    <p data-i18n="home_latest_desc">A new tutorial every week — from a one-evening hat to projects for the whole winter.</p>
+                </div>
+                <div class="head-links">
+                    <a href="/en/video.html" class="tile-link" data-i18n="home_latest_all">All videos →</a>
+                    <a href="https://www.youtube.com/@ParaDrutow?sub_confirmation=1" target="_blank" rel="noopener" class="btn-youtube" data-i18n="home_youtube_subscribe">Subscribe to the channel →</a>
+                </div>
+            </div>
+            <!-- home:latest -->
+            <div class="vgrid vgrid-3 js-video-cards">
+                <div class="video-card" data-id="cYFOuFsmadI"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/cYFOuFsmadI/hqdefault.jpg" alt="⏱️ The Fastest Fingerless Gloves to Knit – Make Them Today! ⏱️" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">⏱️ The Fastest Fingerless Gloves to Knit – Make Them Today! ⏱️</h2></div></div>
+                <div class="video-card" data-id="9R-JwvPYXoU"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/9R-JwvPYXoU/hqdefault.jpg" alt="Men's Hat for the Reluctant – Tutorial" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Men's Hat for the Reluctant – Tutorial</h2></div></div>
+                <div class="video-card" data-id="5orKTpFwJLE"><div class="vc-media"><div class="vc-preview"><img src="https://i.ytimg.com/vi/5orKTpFwJLE/hqdefault.jpg" alt="Soft, fluffy knitted scarf" loading="lazy"><div class="vc-play">&#9658;</div></div></div><div class="vc-body"><h2 class="vc-title">Soft, fluffy knitted scarf</h2></div></div>
+            </div>
+            <!-- /home:latest -->
+        </section>
+
+        <!-- Мастерская: узор, книги, приложения -->
+        <section class="home-section reveal">
+            <div class="section-head">
+                <h2 data-i18n="home_shop_title">From our workshop</h2>
+                <p data-i18n="home_shop_desc">Patterns, books and apps — we make all of it ourselves, from the very first stitch.</p>
+            </div>
+            <div class="shop-grid">
+                <article class="shop-box shop-pattern">
+                    <a href="/en/patterns.html"><img src="/assets/img/home/pattern5.webp" alt="Zaczarowany Las — wzór ażurowy Para Drutów" width="520" height="735" loading="lazy" decoding="async"></a>
+                    <div class="sp-body">
+                        <span class="badge" data-i18n="home_pat_badge">New pattern</span>
+                        <h3 data-i18n="home_pat_name">Enchanted Forest</h3>
+                        <p data-i18n="home_pat_desc">A lace motif with a flowing rhythm and a 3D effect. 13 stitches × 12 rows — for shawls, scarves, tops and light sweaters.</p>
+                        <p class="sp-note" data-i18n="pat_note_pl">📄 PDF language: Polish.</p>
+                        <div class="sp-cta">
+                            <a href="https://payhip.com/b/OZhDG" target="_blank" rel="noopener" class="btn-gold" data-i18n="pat_buy">Buy the PDF pattern →</a>
+                            <a href="/en/patterns.html" class="tile-link" data-i18n="home_pat_all">All patterns →</a>
+                        </div>
+                    </div>
+                </article>
+                <div class="shop-side">
+                    <article class="shop-box">
+                        <h3 data-i18n="home_books_title">Para Drutów books</h3>
+                        <p data-i18n="home_books_desc2">Guides, stitch collections and stories about knitting — in PDF and in print.</p>
+                        <!-- home:books -->
+                        <div class="shelf">
+                            <a href="/books.html" title="The Secret Life of Yarn"><img src="/assets/img/home/book12.webp" alt="The Secret Life of Yarn" width="300" height="450" loading="lazy" decoding="async"></a>
+                            <a href="/books.html" title="The Knitted Home"><img src="/assets/img/home/book10.webp" alt="The Knitted Home" width="300" height="450" loading="lazy" decoding="async"></a>
+                            <a href="/books.html" title="Your Knitting Journey"><img src="/assets/img/home/book9.webp" alt="Your Knitting Journey" width="300" height="450" loading="lazy" decoding="async"></a>
+                        </div>
+                        <!-- /home:books -->
+                        <a href="/books.html" class="tile-link" data-i18n="home_books_link">See the books →</a>
+                    </article>
+                    <article class="shop-box">
+                        <h3 data-i18n="home_apps_title">Our apps</h3>
+                        <a href="/en/apps.html" class="app-row">
+                            <img src="/assets/img/home/icon-wzorai.webp" alt="" width="58" height="58" loading="lazy">
+                            <div><strong>WzorAI</strong><span data-i18n="home_wz_desc">Describe a pattern in your own words — get a chart that adds up.</span></div>
+                        </a>
+                        <a href="/en/apps.html" class="app-row">
+                            <img src="/assets/img/home/icon-shiftlens.webp" alt="" width="58" height="58" loading="lazy">
+                            <div><strong>ShiftLens</strong><span data-i18n="home_sl_desc">A photo of your work rota turns into alarms for the whole month.</span></div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shorts: 6 последних -->
+        <section class="home-section reveal">
+            <div class="section-head row">
+                <div>
+                    <h2 data-i18n="home_shorts_title">Shorts — tricks in a minute</h2>
+                    <p data-i18n="home_shorts_desc">Short, to the point and with a wink.</p>
+                </div>
+                <a href="/en/shorts.html" class="tile-link" data-i18n="home_shorts_link">All Shorts →</a>
+            </div>
+            <!-- home:shorts -->
+            <div class="shorts-strip">
+                <a class="short-thumb" href="/en/shorts.html"><img src="https://i.ytimg.com/vi/AflTuIRWrcY/hqdefault.jpg" alt="Każdy pirat ma swoje hobby... 🏴‍☠️🧶" loading="lazy" decoding="async"><span>Każdy pirat ma swoje hobby... 🏴‍☠️🧶</span></a>
+                <a class="short-thumb" href="/en/shorts.html"><img src="https://i.ytimg.com/vi/1MMGhLGaPF4/hqdefault.jpg" alt="Geralt po godzinach... ⚔️🧶 Co on dzierga?!" loading="lazy" decoding="async"><span>Geralt po godzinach... ⚔️🧶 Co on dzierga?!</span></a>
+                <a class="short-thumb" href="/en/shorts.html"><img src="https://i.ytimg.com/vi/QYClf-dWmZI/hqdefault.jpg" alt="Nawet robot dzierga. A Ty jeszcze nie?" loading="lazy" decoding="async"><span>Nawet robot dzierga. A Ty jeszcze nie?</span></a>
+                <a class="short-thumb" href="/en/shorts.html"><img src="https://i.ytimg.com/vi/4yxu-1U8Pp8/hqdefault.jpg" alt="Wciągająca historia... swetra?! 🤔 Zobacz tę nowość! #paradrutow" loading="lazy" decoding="async"><span>Wciągająca historia... swetra?! 🤔 Zobacz tę nowość! #paradrutow</span></a>
+                <a class="short-thumb" href="/en/shorts.html"><img src="https://i.ytimg.com/vi/Y7_vCL81g1Q/hqdefault.jpg" alt="CO BĘDZIE Z TEGO? 🤔🧶 Tego jeszcze nie zgadniecie!" loading="lazy" decoding="async"><span>CO BĘDZIE Z TEGO? 🤔🧶 Tego jeszcze nie zgadniecie!</span></a>
+                <a class="short-thumb" href="/en/shorts.html"><img src="https://i.ytimg.com/vi/Vjfe6O1PsGc/hqdefault.jpg" alt="Secret agent 🕵️‍♂️                               też robi na drutach! 😂🧶" loading="lazy" decoding="async"><span>Secret agent 🕵️‍♂️                               też robi na drutach! 😂🧶</span></a>
+            </div>
+            <!-- /home:shorts -->
+        </section>
+
+        <!-- Почему Para Drutów -->
+        <div class="why-card card">
+            <h2 class="head-with-icon"><span class="head-icon head-icon--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></span><span data-i18n="home_why_title">Why Para Drutów?</span></h2>
+            <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Because we believe knitting is more than a hobby. It's a skill you can develop consciously, calmly and with satisfaction.</p>
+            <div class="why-list">
+                <div class="why-item" data-i18n="home_why_li1">education without pressure</div>
+                <div class="why-item" data-i18n="home_why_li2">knowledge based on experience</div>
+                <div class="why-item" data-i18n="home_why_li3">modern tools supporting traditional craft</div>
+                <div class="why-item" data-i18n="home_why_li4">a site in six languages and more and more videos dubbed into other languages</div>
+                <div class="why-item" data-i18n="home_why_li5">patterns and publications created from scratch</div>
+            </div>
+            <p class="why-outro" data-i18n="home_why_outro">Welcome to a world where patterns stop being a mystery,
+and knitting becomes a true pleasure.</p>
+        </div>
+
+        <!-- Стихотворение: на каждом языке своя версия -->
+        <section class="poem-card reveal">
+            <p class="poem-eyebrow" data-i18n="home_poem_eyebrow">A poem about knitting</p>
+            <h2 class="poem-title" data-i18n="home_poem_title">Stitch by Stitch</h2>
+            <div class="poem-body">
+                <p data-i18n="home_poem_1">A cosy chair, a steaming mug,<br>the world outside slows down its pace;<br>Daisy sleeps, a yarn-ball, snug,<br>and my first stitch slips into place.</p>
+                <p data-i18n="home_poem_2">Knit and purl, like give and take,<br>row by row the hours flow;<br>the needles hum, and in their wake<br>my scattered thoughts begin to slow.</p>
+                <p data-i18n="home_poem_3">If one small stitch should slip and run,<br>I’ll rip it back and start anew —<br>no tragedy, no damage done:<br>the wool forgives, and so can you.</p>
+                <p data-i18n="home_poem_4">A pair of needles, wool to spare,<br>the patience of my own two hands —<br>that’s how a day grows full, and there,<br>around me, a warm circle stands.</p>
+            </div>
+            <p class="poem-sign">✦ ✦ ✦</p>
+        </section>
+
+        <!-- Подписка на рассылку -->
+        <div class="news-card">
+            <h2 class="news-head" data-i18n="news_title">Stay in the loop</h2>
+            <p class="news-desc" data-i18n="news_desc">Sign up and we will write when new patterns, books, videos or app updates appear. A few messages a month — no spam.</p>
+
+            <form class="news-form" action="https://app.kit.com/forms/9752061/subscriptions" method="post" novalidate>
+                <input type="text" class="news-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <div class="news-row">
+                    <input type="email" class="news-input" name="email_address" required
+                           data-i18n-placeholder="news_placeholder" placeholder="Your email address" aria-label="E-mail">
+                    <button type="submit" class="news-btn" data-i18n="news_button">Subscribe</button>
+                </div>
+                <label class="news-consent">
+                    <input type="checkbox" required>
+                    <span data-i18n="news_consent">I agree to receive news from Para Drutów at this email address. I can withdraw my consent at any time — see the <a href="/en/privacy.html">privacy policy</a>.</span>
+                </label>
+            </form>
+
+            <p class="news-msg news-msg--ok" data-i18n="news_success" hidden>Almost there! Check your inbox — we have sent a link to confirm your subscription.</p>
+            <p class="news-msg news-msg--err" data-i18n="news_error" hidden>Something went wrong. Please try again in a moment.</p>
+        </div>
+
+    </div>
+</main>
+<script type="application/json" id="home-video-data">{"V9vH-AbZAt4":{"title":"Magiczny sposób nabierania oczek | Elastyczny brzeg | Knitting cast on","titles":{"pl":"Magiczny sposób nabierania oczek | Elastyczny brzeg | Knitting cast on","en":"The Magic Way to Cast on | Elastic Edge | Knitting Cast On"}},"0WGzXl8PPN8":{"title":"Jak zamknąć oczka na drutach | Prosty sposób | Knitting bind off","titles":{"pl":"Jak zamknąć oczka na drutach | Prosty sposób | Knitting bind off","en":"How to bind off stitches on knitting needles | Easy way | Knitting bind off"}},"K2QY1Ud24fI":{"title":"Robótka się zawija ?| Jak zrobić równe oczka | Knitting tips","titles":{"pl":"Robótka się zawija ?| Jak zrobić równe oczka | Knitting tips","en":"Is your knitting curling? | How to get even stitches | Knitting tips"}},"nQ6KLA_zTPw":{"title":"Prosta czapka na drutach z Pinteresta 🧶 Krok po kroku dla początkujących! | Hit sezonu","titles":{"pl":"Prosta czapka na drutach z Pinteresta 🧶 Krok po kroku dla początkujących! | Hit sezonu","en":"Simple Pinterest-Inspired Knitted Beanie 🧶 Step-by-Step for Beginners! | Seasonal Hit"}},"g6OTiTDPimU":{"title":"Zrób swoje pierwsze skarpetki BEZ TRUDNEJ PIĘTY! [Krok po Kroku]\"","titles":{"pl":"Zrób swoje pierwsze skarpetki BEZ TRUDNEJ PIĘTY! [Krok po Kroku]\"","en":"Knit your first socks WITHOUT A DIFFICULT HEEL! [Step by Step]"}},"ynPlg_rP_64":{"title":"Proste KAPCIE na drutach w 1 wieczór! 🧦 [Tutorial]","titles":{"pl":"Proste KAPCIE na drutach w 1 wieczór! 🧦 [Tutorial]","en":"Simple Knitted SLIPPERS in 1 Evening! 🧦 [Tutorial]"}},"EEk3HIJJTms":{"title":"PROSTA i uniwersalna kamizelka na drutach [KROK PO KROKU]","titles":{"pl":"PROSTA i uniwersalna kamizelka na drutach [KROK PO KROKU]","en":"SIMPLE and versatile knitted vest [STEP BY STEP]"}},"weFiywLWaYw":{"title":"Niewidoczne ŁĄCZENIE na drutach! 🧶 [Poradnik krok po kroku]","titles":{"pl":"Niewidoczne ŁĄCZENIE na drutach! 🧶 [Poradnik krok po kroku]","en":"Invisible JOIN in knitting! 🧶 [Step-by-step guide]"}},"zVLrfxyxxtA":{"title":"Ten Luksusowy Szalik Żakardowy Odmieni Twoją Zimę! ❄️ Krok po Kroku (Double Knitting)","titles":{"pl":"Ten Luksusowy Szalik Żakardowy Odmieni Twoją Zimę! ❄️ Krok po Kroku (Double Knitting)","en":"This Luxurious Colorwork Scarf Will Transform Your Winter! ❄️ Step by Step (Double Knitting)","de":"Dieser luxuriöse Jacquard-Schal verändert deinen Winter! ❄️ Schritt für Schritt (Double Knitting)","fr":"Cette écharpe jacquard de luxe va transformer ton hiver ! ❄️ Pas à pas (Double Knitting)","es":"¡Esta bufanda de jacquard de lujo cambiará tu invierno! ❄️ Paso a paso (Double Knitting)","pt":"Este Cachecol Jacquard de Luxo Vai Transformar o Seu Inverno! ❄️ Passo a Passo (Double Knitting)"}},"lC2wKNy9VPU":{"title":"Sweter bez szwu na drutach krok po kroku | Część 1 | Piękny projekt | Knitting sweater","titles":{"pl":"Sweter bez szwu na drutach krok po kroku | Część 1 | Piękny projekt | Knitting sweater","en":"Knit a seamless sweater step by step | Part 1 | Beautiful project | Knitting sweater"}},"DKW-9wvGg50":{"title":"Idealny kardigan na drutach! Wygląda jak z butiku [TUTORIAL]","titles":{"pl":"Idealny kardigan na drutach! Wygląda jak z butiku [TUTORIAL]","en":"The Perfect Knitted Cardigan! Looks Boutique-Quality [TUTORIAL]"}},"AR2qmviQVPw":{"title":"Zjawiskowy AŻUR na lato na drutach! ☀️ [Tutorial krok po kroku]","titles":{"pl":"Zjawiskowy AŻUR na lato na drutach! ☀️ [Tutorial krok po kroku]","en":"Stunning knitted LACE for summer! ☀️ [Step-by-step tutorial]"}},"cYFOuFsmadI":{"title":"⏱️ Najszybsze Mitenki na Drutach –Zrobisz Je Nawet Dzisiaj! ⏱️","titles":{"pl":"⏱️ Najszybsze Mitenki na Drutach –Zrobisz Je Nawet Dzisiaj! ⏱️ ","en":"⏱️ The Fastest Fingerless Gloves to Knit – Make Them Today! ⏱️","de":"⏱️ Schnellste Pulswärmer stricken – Heute noch fertig! ⏱️","fr":"⏱️ Les mitaines au tricot les plus rapides – Faites-les dès aujourd'hui ! ⏱️","es":"⏱️ Los Mitones a Dos Agujas Más Rápidos – ¡Hazlos Hoy Mismo! ⏱️","pt":"⏱️ Luvas sem Dedos de Tricô Super Rápidas – Faça Ainda Hoje! ⏱️"}},"9R-JwvPYXoU":{"title":"MĘSKA CZAPKA DLA OPORNYCH – TUTORIAL","titles":{"pl":"MĘSKA CZAPKA DLA OPORNYCH – TUTORIAL","en":"Men's Hat for the Reluctant – Tutorial","de":"Männermütze für die, die keine tragen – Tutorial"}},"5orKTpFwJLE":{"title":"Miękki, puszysty szalik na drutach","titles":{"pl":"Miękki, puszysty szalik na drutach","en":"Soft, fluffy knitted scarf"}}}</script>
+
+<footer>
+    <p>&copy; 2026 ParaDrutow | <a href="/en/privacy.html" data-i18n="footer_privacy">Privacy Policy</a></p>
+</footer>
+<button id="back-to-top" aria-label="Back to top">&#8679;</button>
+</body>
+</html>
