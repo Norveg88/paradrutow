@@ -59,11 +59,11 @@
             "name": "ShiftLens",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Android 8.0+",
-            "description": "Une application qui transforme la photo de votre planning en réveils : elle reconnaît les horaires et les codes de poste, puis règle un réveil pour chaque poste. Sans compte, sans publicité.",
+            "description": "Une application qui transforme la photo de votre planning en réveils : elle trouve votre ligne, reconnaît les horaires et les codes de poste et règle un réveil pour chaque poste du mois. Hors ligne, achat unique, sans publicité.",
             "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
             "url": "https://paradrutow.com/fr/apps.html",
             "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
-            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "inLanguage": ["pl","en","uk","ru","de","fr","es","pt"],
             "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
           }
         }
@@ -71,7 +71,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=20"></script>
+    <script defer src="/assets/js/lang.js?v=21"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -279,6 +279,10 @@
             gap: 1.2rem;
             margin-bottom: 1rem;
         }
+        /* 4 шага (ShiftLens): 4 в ряд на широком экране, 2×2 на среднем, столбик на телефоне */
+        .steps-grid.steps-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .steps-grid.steps-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .steps-grid.steps-4 { grid-template-columns: 1fr; } }
         .step-item {
             background: rgba(40,40,40,0.4);
             border: 1px solid var(--glass-border);
@@ -432,44 +436,36 @@
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h2>ShiftLens</h2>
-                <p data-i18n="shift_tagline">Une photo du planning devient des réveils</p>
+                <p data-i18n="shift_tagline">Votre poste, toujours dans le cadre</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
         </div>
 
-        <p class="app-claim" data-i18n="shift_hero_sub">Photographiez le planning — les réveils se règlent tout seuls</p>
+        <p class="app-claim" data-i18n="shift_hero_sub">4 h 10 du matin. Le réveil sonne — et c’est le bon.</p>
 
         <div class="feature-image-wrapper">
             <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
         </div>
 
-        <p class="app-lead" data-i18n="shift_intro">Le planning est en général affiché au mur du vestiaire ou arrive en photo par messagerie. Commence alors le travail à la main : trouver sa ligne, déchiffrer l'écriture d'un autre, calculer l'heure du lever et régler les réveils un mois à l'avance. Une case oubliée, et le poste est manqué.</p>
+        <p class="app-lead" data-i18n="shift_intro">Votre planning est affiché au mur au travail ou arrive en photo floue sur la messagerie. Chaque mois, c’est pareil : le recopier dans le téléphone, régler les réveils un par un, tout revérifier… et il suffit d’une erreur pour manquer le poste du matin ou venir travailler un jour de repos. ShiftLens s’en charge : photographiez le planning, et une minute plus tard chaque poste du mois a son réveil.</p>
 
         <h2 class="app-section-title" data-i18n="shift_how_title">Comment ça marche</h2>
-        <div class="steps-grid">
+        <div class="steps-grid steps-4">
             <div class="step-item card">
-                <h3 data-i18n="shift_how1_t">1. Prenez la photo</h3>
-                <p data-i18n="shift_how1_d">La feuille entière, avec les dates de l'en-tête. Un fichier Excel ou PDF convient aussi.</p>
+                <h3 data-i18n="shift_how1_t">1. Photographiez le planning</h3>
+                <p data-i18n="shift_how1_d">La feuille entière — un cadre à l’écran aide à la faire tenir, et vous recadrez les coins ensuite. Les fichiers Excel et PDF fonctionnent aussi.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how2_t">2. Saisissez votre nom</h3>
-                <p data-i18n="shift_how2_d">Tel qu'il est imprimé sur le planning. Si vous êtes seul sur la feuille, laissez le champ vide.</p>
+                <p data-i18n="shift_how2_d">Tel qu’il est imprimé. ShiftLens trouve votre ligne même dans le planning de toute l’équipe.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how3_t">3. Vérifiez les jours signalés</h3>
-                <p data-i18n="shift_how3_d">L'application montre où elle doute. Corriger un jour ne demande qu'une touche.</p>
+                <p data-i18n="shift_how3_d">Les jours dont l’application n’était pas sûre sont clairement marqués. Une touche suffit pour les corriger.</p>
             </div>
             <div class="step-item card">
-                <h3 data-i18n="shift_how4_t">4. Réglez les réveils</h3>
-                <p data-i18n="shift_how4_d">Un par poste, à l'heure que vous choisissez avant le début.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how5_t">5. Testez la sonnerie</h3>
-                <p data-i18n="shift_how5_d">L'écran « Fiabilité » montre ce qui pourrait gêner le réveil et permet un essai.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how6_t">6. Ajoutez le widget</h3>
-                <p data-i18n="shift_how6_d">Le prochain poste toujours sous les yeux, sur l'écran d'accueil.</p>
+                <h3 data-i18n="shift_how4_t">4. C’est prêt</h3>
+                <p data-i18n="shift_how4_d">Les réveils sont réglés pour tout le mois — et l’application lit elle-même le mois sur la feuille.</p>
             </div>
         </div>
 
@@ -477,63 +473,63 @@
         <div class="features-grid">
             <div class="feature-item card">
                 <span class="feature-item-icon">◷</span>
-                <h3 data-i18n="shift_f1_t">Différentes écritures d'horaires</h3>
-                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 et les postes de nuit passant minuit.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">≡</span>
-                <h3 data-i18n="shift_f2_t">Codes en lettres</h3>
-                <p data-i18n="shift_f2_d">Repos, arrêt maladie, congé, poste de nuit.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">✓</span>
-                <h3 data-i18n="shift_f3_t">Ne devine pas</h3>
-                <p data-i18n="shift_f3_d">Les jours incertains sont marqués « à vérifier » plutôt que devinés.</p>
+                <h3 data-i18n="shift_f1_t">Un réveil adapté au poste</h3>
+                <p data-i18n="shift_f1_d">Pour un poste à 6 h, il vous réveille plus tôt ; pour un poste à 14 h, plus tard. Le temps de préparation et de trajet se règle séparément pour les postes du matin, de l’après-midi et de nuit.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✦</span>
-                <h3 data-i18n="shift_f4_t">Un vrai réveil</h3>
-                <p data-i18n="shift_f4_d">Alarmes exactes d'Android — le mode sommeil ne les fait pas taire.</p>
+                <h3 data-i18n="shift_f2_t">Des réveils fiables</h3>
+                <p data-i18n="shift_f2_d">Ils reviennent après un redémarrage du téléphone. Si le téléphone les désactive, l’application vous prévient et montre précisément quoi changer. La sonnerie se teste d’une touche.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">❐</span>
-                <h3 data-i18n="shift_f5_t">Écran par-dessus le verrouillage</h3>
-                <p data-i18n="shift_f5_d">Volume croissant, report de cinq minutes, sonnerie personnelle.</p>
+                <span class="feature-item-icon">↻</span>
+                <h3 data-i18n="shift_f3_t">Rappel avant la fin du planning</h3>
+                <p data-i18n="shift_f3_d">Trois jours avant votre dernier poste, l’application rappelle que le planning se termine. Sonnerie personnelle et réveils supplémentaires quand vous en avez besoin.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">▦</span>
-                <h3 data-i18n="shift_f6_t">Widget sur l'écran d'accueil</h3>
-                <p data-i18n="shift_f6_d">Prochain poste, compte à rebours, trois tailles, thème clair et sombre.</p>
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f4_t">Lit les vrais plannings</h3>
+                <p data-i18n="shift_f4_d">Le tableau de toute l’équipe, une liste « date – poste », plusieurs pages à la fois, ainsi que les fichiers Excel et PDF. Chaque jour se corrige à la main, et un jour manquant s’ajoute simplement.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f5_t">Codes en huit langues</h3>
+                <p data-i18n="shift_f5_d">Repos, congés et arrêts maladie — en mots ou en lettres : « Wolne », « Urlop », « Urlaub », « Folga » ou simplement « U » dans la case.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">⇄</span>
+                <h3 data-i18n="shift_f6_t">Deux emplois ? Aucun problème</h3>
+                <p data-i18n="shift_f6_d">Deux plannings côte à côte, chacun avec le nom de l’entreprise et sa couleur. Le réveil avant le second poste ne sonne jamais avant la fin du premier. Vous changez d’emploi ? Le nouveau reprend le planning à partir de la date choisie.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✻</span>
-                <h3 data-i18n="shift_f7_t">Compteur d'heures</h3>
-                <p data-i18n="shift_f7_d">Total du mois, pause non payée déduite, estimation du salaire.</p>
+                <h3 data-i18n="shift_f7_t">Heures comptées</h3>
+                <p data-i18n="shift_f7_d">Total du mois, pause non payée déduite, séparément pour chaque emploi. Les heures supplémentaires à côté des heures du planning, et l’historique des mois précédents.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">↗</span>
-                <h3 data-i18n="shift_f8_t">Rappel avant la fin du planning</h3>
-                <p data-i18n="shift_f8_d">Quelques jours avant — de quoi photographier le nouveau à temps.</p>
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f8_t">Widget et partage</h3>
+                <p data-i18n="shift_f8_d">Un widget en trois tailles affiche le compte à rebours jusqu’au prochain poste — et, pendant le poste, jusqu’à sa fin. Envoyez le planning à votre famille sous forme d’image lisible.</p>
             </div>
         </div>
 
         <h2 class="app-section-title" data-i18n="shift_who_title">Pour qui</h2>
-        <p class="app-lead" data-i18n="shift_who_d">Pour tous ceux dont le planning arrive sur une feuille et non dans un agenda : vendeurs et caissiers, personnel d'entrepôt et de production, infirmiers et aides-soignants, agents de sécurité, serveurs et barmans, chauffeurs.</p>
+        <p class="app-lead" data-i18n="shift_who_d">Commerces, entrepôts, usines, restaurants, hôpitaux, sécurité, logistique — pour tous ceux qui reçoivent leur planning sur papier et commencent chaque jour à une heure différente.</p>
 
         <h2 class="app-section-title" data-i18n="shift_det_title">Détails</h2>
         <div class="app-description card" style="margin-bottom:2rem;">
             <ul class="app-details-list">
                 <li data-i18n="shift_det_plat"><strong>Plateforme :</strong> Android 8.0 et plus récent.</li>
-                <li data-i18n="shift_det_lang"><strong>Langues :</strong> polonais, ukrainien, anglais, russe, allemand, français, espagnol.</li>
-                <li data-i18n="shift_det_net"><strong>Internet :</strong> nécessaire une seule fois, à l'installation.</li>
+                <li data-i18n="shift_det_lang"><strong>Langues :</strong> polonais, anglais, ukrainien, russe, allemand, français, espagnol, portugais.</li>
+                <li data-i18n="shift_det_net"><strong>Internet :</strong> inutile — l’application fonctionne hors ligne.</li>
                 <li data-i18n="shift_det_acc"><strong>Compte :</strong> non requis.</li>
-                <li data-i18n="shift_det_ads"><strong>Publicité :</strong> aucune.</li>
+                <li data-i18n="shift_det_ads"><strong>Paiement :</strong> achat unique, sans abonnement ni publicité.</li>
             </ul>
         </div>
 
         <div class="app-note">
             <h3 data-i18n="shift_priv_title">Votre planning reste sur votre téléphone</h3>
-            <p data-i18n="shift_priv_d">Un planning est un document qui porte les noms de vos collègues et votre emploi du temps pour un mois. Cela n'a pas à partir sur le serveur d'un tiers. ShiftLens reconnaît le texte directement sur le téléphone : aucune photo n'est envoyée, aucun compte n'est nécessaire, et l'application fonctionne sans connexion. La seule exception, c'est vous qui la décidez : si un planning est mal reconnu, vous pouvez envoyer un rapport au développeur par e-mail.</p>
+            <p data-i18n="shift_priv_d">La reconnaissance du texte se fait sur l’appareil. Les photos et les plannings ne sont envoyés nulle part, aucun compte n’est nécessaire, et l’application fonctionne hors ligne. Les noms des collègues sont effacés juste après la lecture — seuls vos propres postes sont enregistrés.</p>
         </div>
 
         <p class="store-row">

@@ -59,11 +59,11 @@
             "name": "ShiftLens",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Android 8.0+",
-            "description": "Aplikacja, która zamienia zdjęcie grafiku zmian w budziki: rozpoznaje godziny i kody zmian, a potem ustawia osobny budzik na każdą zmianę. Bez konta i bez reklam.",
+            "description": "Aplikacja, która zamienia zdjęcie grafiku zmian w budziki: znajduje Twój wiersz, rozpoznaje godziny i kody zmian i ustawia budzik na każdą zmianę w miesiącu. Działa offline, jednorazowy zakup, bez reklam.",
             "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
             "url": "https://paradrutow.com/apps.html",
             "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
-            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "inLanguage": ["pl","en","uk","ru","de","fr","es","pt"],
             "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
           }
         }
@@ -71,7 +71,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=20"></script>
+    <script defer src="/assets/js/lang.js?v=21"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -279,6 +279,10 @@
             gap: 1.2rem;
             margin-bottom: 1rem;
         }
+        /* 4 шага (ShiftLens): 4 в ряд на широком экране, 2×2 на среднем, столбик на телефоне */
+        .steps-grid.steps-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .steps-grid.steps-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .steps-grid.steps-4 { grid-template-columns: 1fr; } }
         .step-item {
             background: rgba(40,40,40,0.4);
             border: 1px solid var(--glass-border);
@@ -432,44 +436,36 @@
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h2>ShiftLens</h2>
-                <p data-i18n="shift_tagline">Zdjęcie grafiku zmian zamienia się w budziki</p>
+                <p data-i18n="shift_tagline">Twoja zmiana zawsze w kadrze</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">✉ Newsletter</a>
         </div>
 
-        <p class="app-claim" data-i18n="shift_hero_sub">Sfotografuj grafik — budziki ustawią się same</p>
+        <p class="app-claim" data-i18n="shift_hero_sub">4:10 rano. Dzwoni budzik — i to ten właściwy.</p>
 
         <div class="feature-image-wrapper">
             <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
         </div>
 
-        <p class="app-lead" data-i18n="shift_intro">Grafik zmian zwykle wisi na ścianie w szatni albo przychodzi zdjęciem na komunikatorze. Potem zaczyna się ręczna robota: znaleźć swój wiersz, rozczytać cudze pismo, policzyć, o której wstać, i ustawić budziki na miesiąc do przodu. Jedna pominięta kratka — i zmiana przespana.</p>
+        <p class="app-lead" data-i18n="shift_intro">Grafik wisi na ścianie w pracy albo przychodzi jako niewyraźne zdjęcie na czacie. Co miesiąc to samo: przepisać go do telefonu, ustawić budziki jeden po drugim, sprawdzić jeszcze raz… A wystarczy jedna pomyłka, żeby zaspać na poranną zmianę albo przyjść do pracy w dzień wolny. ShiftLens zrobi to za Ciebie: zrób zdjęcie grafiku, a minutę później każda zmiana w miesiącu ma swój budzik.</p>
 
         <h2 class="app-section-title" data-i18n="shift_how_title">Jak to działa</h2>
-        <div class="steps-grid">
+        <div class="steps-grid steps-4">
             <div class="step-item card">
-                <h3 data-i18n="shift_how1_t">1. Zrób zdjęcie</h3>
-                <p data-i18n="shift_how1_d">Cała kartka razem z datami w nagłówku. Możesz też wgrać plik Excel albo PDF.</p>
+                <h3 data-i18n="shift_how1_t">1. Sfotografuj grafik</h3>
+                <p data-i18n="shift_how1_d">Cały arkusz — ramka na ekranie pomaga go zmieścić, a rogi przytniesz potem. Możesz też wgrać plik Excel albo PDF.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how2_t">2. Wpisz nazwisko</h3>
-                <p data-i18n="shift_how2_d">Dokładnie tak, jak widnieje w grafiku. Jeśli jesteś na kartce sam — zostaw puste.</p>
+                <p data-i18n="shift_how2_d">Tak, jak jest wydrukowane. ShiftLens znajdzie Twój wiersz nawet w grafiku całego zespołu.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how3_t">3. Sprawdź oznaczone dni</h3>
-                <p data-i18n="shift_how3_d">Aplikacja pokazuje, gdzie nie jest pewna. Poprawka to jedno dotknięcie.</p>
+                <p data-i18n="shift_how3_d">Dni, których aplikacja nie była pewna, są wyraźnie oznaczone. Poprawiasz je jednym dotknięciem.</p>
             </div>
             <div class="step-item card">
-                <h3 data-i18n="shift_how4_t">4. Ustaw budziki</h3>
-                <p data-i18n="shift_how4_d">Na każdą zmianę osobny, o wybranej porze przed jej początkiem.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how5_t">5. Sprawdź dzwonek</h3>
-                <p data-i18n="shift_how5_d">Ekran „Niezawodność” pokazuje, co może przeszkodzić budzikowi, i pozwala zadzwonić próbnie.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how6_t">6. Dodaj widżet</h3>
-                <p data-i18n="shift_how6_d">Najbliższa zmiana zawsze przed oczami na ekranie głównym.</p>
+                <h3 data-i18n="shift_how4_t">4. Gotowe</h3>
+                <p data-i18n="shift_how4_d">Budziki ustawione na cały miesiąc — a sam miesiąc aplikacja odczyta z arkusza.</p>
             </div>
         </div>
 
@@ -477,63 +473,63 @@
         <div class="features-grid">
             <div class="feature-item card">
                 <span class="feature-item-icon">◷</span>
-                <h3 data-i18n="shift_f1_t">Różne zapisy godzin</h3>
-                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 oraz zmiany nocne przez północ.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">≡</span>
-                <h3 data-i18n="shift_f2_t">Kody literowe</h3>
-                <p data-i18n="shift_f2_d">Wolne, chorobowe, urlop, zmiana nocna.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">✓</span>
-                <h3 data-i18n="shift_f3_t">Nie zgaduje</h3>
-                <p data-i18n="shift_f3_d">Niepewne dni oznacza „do sprawdzenia” zamiast strzelać na oślep.</p>
+                <h3 data-i18n="shift_f1_t">Budzik dopasowany do zmiany</h3>
+                <p data-i18n="shift_f1_d">Na zmianę od 6:00 obudzi Cię wcześniej, na zmianę od 14:00 — później. Czas na przygotowanie i dojazd ustawiasz osobno dla zmian rannych, popołudniowych i nocnych.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✦</span>
-                <h3 data-i18n="shift_f4_t">Prawdziwy budzik</h3>
-                <p data-i18n="shift_f4_d">Dokładne budziki Androida — nie wycisza ich tryb snu.</p>
+                <h3 data-i18n="shift_f2_t">Budziki, na których można polegać</h3>
+                <p data-i18n="shift_f2_d">Wracają po restarcie telefonu. Gdy telefon je wyłączy, aplikacja ostrzeże i pokaże, co dokładnie zmienić. Dzwonek sprawdzisz jednym dotknięciem.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">❐</span>
-                <h3 data-i18n="shift_f5_t">Ekran ponad blokadą</h3>
-                <p data-i18n="shift_f5_d">Narastająca głośność, drzemka pięć minut, własna melodia.</p>
+                <span class="feature-item-icon">↻</span>
+                <h3 data-i18n="shift_f3_t">Przypomni o nowym grafiku</h3>
+                <p data-i18n="shift_f3_d">Trzy dni przed ostatnią zmianą dowiesz się, że grafik się kończy. Własny dźwięk budzika i dodatkowe budziki — kiedy tylko potrzebujesz.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">▦</span>
-                <h3 data-i18n="shift_f6_t">Widżet na ekranie głównym</h3>
-                <p data-i18n="shift_f6_d">Najbliższa zmiana, odliczanie, trzy rozmiary, motyw jasny i ciemny.</p>
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f4_t">Czyta prawdziwe grafiki</h3>
+                <p data-i18n="shift_f4_d">Tabelę całego zespołu, listę „data – zmiana”, kilka stron naraz, a także pliki Excel i PDF. Każdy dzień poprawisz ręcznie, a brakujący po prostu dodasz.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f5_t">Kody w ośmiu językach</h3>
+                <p data-i18n="shift_f5_d">Dni wolne, urlopy i zwolnienia lekarskie — słowami lub literami: „Wolne”, „Urlop”, „Urlaub”, „Folga” albo samo „U” w komórce.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">⇄</span>
+                <h3 data-i18n="shift_f6_t">Dwie prace? Żaden problem</h3>
+                <p data-i18n="shift_f6_d">Dwa grafiki obok siebie, każdy z nazwą firmy i własnym kolorem. Budzik przed drugą zmianą nigdy nie zadzwoni przed końcem pierwszej. Zmieniasz pracę? Nowa przejmuje grafik od wybranej daty.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✻</span>
-                <h3 data-i18n="shift_f7_t">Licznik godzin</h3>
-                <p data-i18n="shift_f7_d">Suma za miesiąc, odliczenie przerwy, szacunek zarobku.</p>
+                <h3 data-i18n="shift_f7_t">Godziny policzone</h3>
+                <p data-i18n="shift_f7_d">Suma za miesiąc z odliczoną niepłatną przerwą, osobno dla każdej pracy. Nadgodziny widać obok godzin z grafiku, jest też historia poprzednich miesięcy.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">↗</span>
-                <h3 data-i18n="shift_f8_t">Przypomnienie o końcu grafiku</h3>
-                <p data-i18n="shift_f8_d">Kilka dni wcześniej — zdążysz sfotografować nowy.</p>
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f8_t">Widżet i udostępnianie</h3>
+                <p data-i18n="shift_f8_d">Widżet w trzech rozmiarach odlicza czas do najbliższej zmiany, a w jej trakcie — do końca. Grafik wyślesz rodzinie jako czytelny obrazek.</p>
             </div>
         </div>
 
         <h2 class="app-section-title" data-i18n="shift_who_title">Dla kogo</h2>
-        <p class="app-lead" data-i18n="shift_who_d">Dla wszystkich, do których grafik przychodzi kartką, a nie kalendarzem: sprzedawców i kasjerów, pracowników magazynu i produkcji, pielęgniarek i sanitariuszy, ochrony, kelnerów i barmanów, kierowców.</p>
+        <p class="app-lead" data-i18n="shift_who_d">Sklepy, magazyny, fabryki, restauracje, szpitale, ochrona, logistyka — dla każdego, kto dostaje grafik na papierze, a zmiany zaczyna codziennie o innej porze.</p>
 
         <h2 class="app-section-title" data-i18n="shift_det_title">Szczegóły</h2>
         <div class="app-description card" style="margin-bottom:2rem;">
             <ul class="app-details-list">
                 <li data-i18n="shift_det_plat"><strong>Platforma:</strong> Android 8.0 i nowszy.</li>
-                <li data-i18n="shift_det_lang"><strong>Języki:</strong> polski, ukraiński, angielski, rosyjski, niemiecki, francuski, hiszpański.</li>
-                <li data-i18n="shift_det_net"><strong>Internet:</strong> potrzebny raz, przy instalacji.</li>
+                <li data-i18n="shift_det_lang"><strong>Języki:</strong> polski, angielski, ukraiński, rosyjski, niemiecki, francuski, hiszpański, portugalski.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> niepotrzebny — aplikacja działa offline.</li>
                 <li data-i18n="shift_det_acc"><strong>Konto:</strong> niepotrzebne.</li>
-                <li data-i18n="shift_det_ads"><strong>Reklamy:</strong> brak.</li>
+                <li data-i18n="shift_det_ads"><strong>Płatność:</strong> jednorazowy zakup, bez subskrypcji i bez reklam.</li>
             </ul>
         </div>
 
         <div class="app-note">
-            <h3 data-i18n="shift_priv_title">Twój grafik zostaje w telefonie</h3>
-            <p data-i18n="shift_priv_d">Grafik to dokument z nazwiskami współpracowników i Twoim rozkładem na miesiąc do przodu. Takie rzeczy nie powinny trafiać na cudzy serwer. ShiftLens rozpoznaje tekst bezpośrednio w telefonie: zdjęcia nigdzie nie są wysyłane, konta nie trzeba zakładać, a aplikacja działa bez internetu.</p>
+            <h3 data-i18n="shift_priv_title">Grafik zostaje w Twoim telefonie</h3>
+            <p data-i18n="shift_priv_d">Rozpoznawanie tekstu działa na urządzeniu. Zdjęcia i grafiki nigdzie nie są wysyłane, nie trzeba zakładać konta, a aplikacja działa offline. Nazwiska współpracowników są usuwane zaraz po odczytaniu — zapisywane są tylko Twoje zmiany.</p>
         </div>
 
         <p class="store-row">

@@ -59,11 +59,11 @@
             "name": "ShiftLens",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Android 8.0+",
-            "description": "Um aplicativo que transforma a foto da sua escala de turnos em alarmes: reconhece horários e códigos de turno e define um alarme para cada turno. Sem conta e sem anúncios.",
+            "description": "Um aplicativo que transforma a foto da sua escala de turnos em alarmes: encontra a sua linha, reconhece horários e códigos de turno e define um alarme para cada turno do mês. Funciona offline, compra única, sem anúncios.",
             "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
             "url": "https://paradrutow.com/pt/apps.html",
             "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
-            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "inLanguage": ["pl","en","uk","ru","de","fr","es","pt"],
             "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
           }
         }
@@ -71,7 +71,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=20"></script>
+    <script defer src="/assets/js/lang.js?v=21"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -279,6 +279,10 @@
             gap: 1.2rem;
             margin-bottom: 1rem;
         }
+        /* 4 шага (ShiftLens): 4 в ряд на широком экране, 2×2 на среднем, столбик на телефоне */
+        .steps-grid.steps-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .steps-grid.steps-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .steps-grid.steps-4 { grid-template-columns: 1fr; } }
         .step-item {
             background: rgba(40,40,40,0.4);
             border: 1px solid var(--glass-border);
@@ -432,44 +436,36 @@
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h2>ShiftLens</h2>
-                <p data-i18n="shift_tagline">A foto da escala de turnos vira alarmes</p>
+                <p data-i18n="shift_tagline">Seu turno sempre em foco</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
         </div>
 
-        <p class="app-claim" data-i18n="shift_hero_sub">Fotografe a escala e os alarmes se configuram sozinhos</p>
+        <p class="app-claim" data-i18n="shift_hero_sub">4h10 da manhã. O alarme toca — e é o certo.</p>
 
         <div class="feature-image-wrapper">
             <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
         </div>
 
-        <p class="app-lead" data-i18n="shift_intro">A escala de turnos costuma ficar pendurada na parede do vestiário ou chega como foto no aplicativo de mensagens. Aí começa o trabalho manual: achar a sua linha, decifrar a letra de outra pessoa, calcular a que horas acordar e configurar alarmes para o mês inteiro. Um quadradinho esquecido — e você perde o turno dormindo.</p>
+        <p class="app-lead" data-i18n="shift_intro">Sua escala fica pendurada na parede do trabalho ou chega como uma foto borrada no grupo. Todo mês é a mesma coisa: passar para o celular, configurar os alarmes um por um, conferir tudo de novo… e basta um erro para perder a hora no turno da manhã ou aparecer no trabalho na folga. O ShiftLens faz isso por você: tire uma foto da escala e, um minuto depois, cada turno do mês tem o seu alarme.</p>
 
         <h2 class="app-section-title" data-i18n="shift_how_title">Como funciona</h2>
-        <div class="steps-grid">
+        <div class="steps-grid steps-4">
             <div class="step-item card">
-                <h3 data-i18n="shift_how1_t">1. Tire uma foto</h3>
-                <p data-i18n="shift_how1_d">A folha inteira, com as datas do cabeçalho. Também dá para enviar um arquivo Excel ou PDF.</p>
+                <h3 data-i18n="shift_how1_t">1. Fotografe a escala</h3>
+                <p data-i18n="shift_how1_d">A folha inteira — uma moldura na tela ajuda a enquadrar, e depois você corta os cantos. Arquivos Excel e PDF também funcionam.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how2_t">2. Digite seu sobrenome</h3>
-                <p data-i18n="shift_how2_d">Exatamente como aparece na escala. Se você for a única pessoa na folha, deixe em branco.</p>
+                <p data-i18n="shift_how2_d">Exatamente como está impresso. O ShiftLens encontra a sua linha até na escala da equipe inteira.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how3_t">3. Confira os dias marcados</h3>
-                <p data-i18n="shift_how3_d">O aplicativo mostra onde não tem certeza. Corrigir um dia leva um toque.</p>
+                <p data-i18n="shift_how3_d">Os dias em que o aplicativo ficou em dúvida aparecem bem marcados. Você corrige com um toque.</p>
             </div>
             <div class="step-item card">
-                <h3 data-i18n="shift_how4_t">4. Configure os alarmes</h3>
-                <p data-i18n="shift_how4_d">Um para cada turno, no horário que você escolher antes do início.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how5_t">5. Teste o toque</h3>
-                <p data-i18n="shift_how5_d">A tela “Confiabilidade” mostra o que pode impedir o alarme de tocar e permite fazer um teste.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how6_t">6. Adicione o widget</h3>
-                <p data-i18n="shift_how6_d">Seu próximo turno sempre à vista na tela inicial.</p>
+                <h3 data-i18n="shift_how4_t">4. Pronto</h3>
+                <p data-i18n="shift_how4_d">Alarmes configurados para o mês inteiro — e o próprio aplicativo lê o mês na folha.</p>
             </div>
         </div>
 
@@ -477,63 +473,63 @@
         <div class="features-grid">
             <div class="feature-item card">
                 <span class="feature-item-icon">◷</span>
-                <h3 data-i18n="shift_f1_t">Vários formatos de horário</h3>
-                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 e turnos noturnos que passam da meia-noite.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">≡</span>
-                <h3 data-i18n="shift_f2_t">Códigos com letras</h3>
-                <p data-i18n="shift_f2_d">Folga, atestado médico, férias, turno da noite.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">✓</span>
-                <h3 data-i18n="shift_f3_t">Não chuta</h3>
-                <p data-i18n="shift_f3_d">Dias duvidosos ficam marcados “para conferir” em vez de serem adivinhados.</p>
+                <h3 data-i18n="shift_f1_t">Alarme sob medida para o turno</h3>
+                <p data-i18n="shift_f1_d">Para um turno às 6:00, ele acorda você mais cedo; para um às 14:00, mais tarde. O tempo para se arrumar e se deslocar é definido separadamente para turnos da manhã, da tarde e da noite.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✦</span>
-                <h3 data-i18n="shift_f4_t">Um alarme de verdade</h3>
-                <p data-i18n="shift_f4_d">Alarmes exatos do Android — o modo dormir não os silencia.</p>
+                <h3 data-i18n="shift_f2_t">Alarmes confiáveis</h3>
+                <p data-i18n="shift_f2_d">Voltam depois de reiniciar o celular. Se o celular os desativar, o aplicativo avisa e mostra exatamente o que mudar. Dá para testar o som com um toque.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">❐</span>
-                <h3 data-i18n="shift_f5_t">Toca por cima da tela de bloqueio</h3>
-                <p data-i18n="shift_f5_d">Volume crescente, soneca de cinco minutos, toque personalizado.</p>
+                <span class="feature-item-icon">↻</span>
+                <h3 data-i18n="shift_f3_t">Aviso antes do fim da escala</h3>
+                <p data-i18n="shift_f3_d">Três dias antes do seu último turno, ele lembra que a escala está acabando. Som de alarme próprio e alarmes extras sempre que precisar.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">▦</span>
-                <h3 data-i18n="shift_f6_t">Widget na tela inicial</h3>
-                <p data-i18n="shift_f6_d">Próximo turno, contagem regressiva, três tamanhos, tema claro e escuro.</p>
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f4_t">Lê escalas de verdade</h3>
+                <p data-i18n="shift_f4_d">A tabela da equipe inteira, uma lista “data – turno”, várias páginas de uma vez e também arquivos Excel e PDF. Qualquer dia pode ser corrigido à mão, e um que falte é só adicionar.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f5_t">Códigos em oito idiomas</h3>
+                <p data-i18n="shift_f5_d">Folgas, férias e atestados — em palavras ou letras: “Wolne”, “Urlop”, “Urlaub”, “Folga” ou só um “U” na célula.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">⇄</span>
+                <h3 data-i18n="shift_f6_t">Dois empregos? Sem problema</h3>
+                <p data-i18n="shift_f6_d">Duas escalas lado a lado, cada uma com o nome da empresa e sua cor. O alarme antes do segundo turno nunca toca antes do fim do primeiro. Mudou de emprego? O novo assume a escala a partir da data que você escolher.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✻</span>
-                <h3 data-i18n="shift_f7_t">Contador de horas</h3>
-                <p data-i18n="shift_f7_d">Total do mês, desconto do intervalo não remunerado, estimativa de ganhos.</p>
+                <h3 data-i18n="shift_f7_t">Horas contadas</h3>
+                <p data-i18n="shift_f7_d">Total do mês com o intervalo não remunerado descontado, separado por emprego. Horas extras ao lado das horas da escala e histórico dos meses anteriores.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">↗</span>
-                <h3 data-i18n="shift_f8_t">Aviso antes do fim da escala</h3>
-                <p data-i18n="shift_f8_d">Alguns dias antes — dá tempo de fotografar a nova.</p>
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f8_t">Widget e compartilhamento</h3>
+                <p data-i18n="shift_f8_d">Um widget em três tamanhos faz a contagem regressiva até o próximo turno — e, durante o turno, até o fim. Mande a escala para a família como uma imagem fácil de ler.</p>
             </div>
         </div>
 
         <h2 class="app-section-title" data-i18n="shift_who_title">Para quem</h2>
-        <p class="app-lead" data-i18n="shift_who_d">Para todo mundo que recebe a escala no papel, e não num calendário: vendedores e operadores de caixa, funcionários de depósito e de produção, enfermeiros e técnicos de enfermagem, seguranças, garçons e bartenders, motoristas.</p>
+        <p class="app-lead" data-i18n="shift_who_d">Lojas, depósitos, fábricas, restaurantes, hospitais, segurança, logística — para quem recebe a escala no papel e começa a trabalhar a cada dia num horário diferente.</p>
 
         <h2 class="app-section-title" data-i18n="shift_det_title">Detalhes</h2>
         <div class="app-description card" style="margin-bottom:2rem;">
             <ul class="app-details-list">
                 <li data-i18n="shift_det_plat"><strong>Plataforma:</strong> Android 8.0 ou mais recente.</li>
-                <li data-i18n="shift_det_lang"><strong>Idiomas:</strong> polonês, ucraniano, inglês, russo, alemão, francês, espanhol.</li>
-                <li data-i18n="shift_det_net"><strong>Internet:</strong> necessária só uma vez, na instalação.</li>
+                <li data-i18n="shift_det_lang"><strong>Idiomas:</strong> polonês, inglês, ucraniano, russo, alemão, francês, espanhol e português.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> não é necessária — o aplicativo funciona offline.</li>
                 <li data-i18n="shift_det_acc"><strong>Conta:</strong> não é necessária.</li>
-                <li data-i18n="shift_det_ads"><strong>Anúncios:</strong> nenhum.</li>
+                <li data-i18n="shift_det_ads"><strong>Pagamento:</strong> compra única, sem assinatura e sem anúncios.</li>
             </ul>
         </div>
 
         <div class="app-note">
             <h3 data-i18n="shift_priv_title">Sua escala fica no seu celular</h3>
-            <p data-i18n="shift_priv_d">A escala é um documento com os sobrenomes dos seus colegas e a sua programação para o mês. Isso não deveria ir parar no servidor de outra pessoa. O ShiftLens reconhece o texto direto no celular: as fotos não são enviadas para lugar nenhum, não é preciso criar conta e o aplicativo funciona sem internet. A única exceção é escolha sua: se uma escala for reconhecida errado, você pode enviar um relatório ao desenvolvedor por e-mail.</p>
+            <p data-i18n="shift_priv_d">O reconhecimento de texto acontece no aparelho. Fotos e escalas não são enviadas para lugar nenhum, não é preciso criar conta e o aplicativo funciona offline. Os nomes dos colegas são apagados logo depois da leitura — só os seus turnos ficam salvos.</p>
         </div>
 
         <p class="store-row">

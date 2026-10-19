@@ -59,11 +59,11 @@
             "name": "ShiftLens",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Android 8.0+",
-            "description": "An app that turns a photo of your shift rota into alarms: it recognises times and shift codes, then sets a separate alarm for every shift. No account, no ads.",
+            "description": "An app that turns a photo of your shift rota into alarms: it finds your row, recognises times and shift codes, and sets an alarm for every shift of the month. Works offline, one-time purchase, no ads.",
             "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
             "url": "https://paradrutow.com/en/apps.html",
             "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
-            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "inLanguage": ["pl","en","uk","ru","de","fr","es","pt"],
             "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
           }
         }
@@ -71,7 +71,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=20"></script>
+    <script defer src="/assets/js/lang.js?v=21"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -279,6 +279,10 @@
             gap: 1.2rem;
             margin-bottom: 1rem;
         }
+        /* 4 шага (ShiftLens): 4 в ряд на широком экране, 2×2 на среднем, столбик на телефоне */
+        .steps-grid.steps-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .steps-grid.steps-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .steps-grid.steps-4 { grid-template-columns: 1fr; } }
         .step-item {
             background: rgba(40,40,40,0.4);
             border: 1px solid var(--glass-border);
@@ -432,44 +436,36 @@
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h2>ShiftLens</h2>
-                <p data-i18n="shift_tagline">A photo of the shift rota turns into alarms</p>
+                <p data-i18n="shift_tagline">Your shift, always in frame</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
         </div>
 
-        <p class="app-claim" data-i18n="shift_hero_sub">Photograph the rota — the alarms set themselves</p>
+        <p class="app-claim" data-i18n="shift_hero_sub">4:10 a.m. The alarm rings — and it’s the right one.</p>
 
         <div class="feature-image-wrapper">
             <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
         </div>
 
-        <p class="app-lead" data-i18n="shift_intro">The shift rota usually hangs on a wall in the changing room or arrives as a photo in a messenger. Then the manual work begins: find your row, decipher someone else's handwriting, work out when to get up, and set alarms a month ahead. One missed cell and you sleep through a shift.</p>
+        <p class="app-lead" data-i18n="shift_intro">Your rota hangs on the wall at work or arrives as a blurry photo in a group chat. Every month it’s the same: copy it into your phone, set the alarms one by one, check it all again… and one mistake is enough to oversleep an early shift or turn up on your day off. ShiftLens does it for you: take a photo of the rota, and a minute later every shift of the month has its own alarm.</p>
 
         <h2 class="app-section-title" data-i18n="shift_how_title">How it works</h2>
-        <div class="steps-grid">
+        <div class="steps-grid steps-4">
             <div class="step-item card">
-                <h3 data-i18n="shift_how1_t">1. Take a photo</h3>
-                <p data-i18n="shift_how1_d">The whole sheet, including the dates in the header. You can also upload an Excel or PDF file.</p>
+                <h3 data-i18n="shift_how1_t">1. Photograph the rota</h3>
+                <p data-i18n="shift_how1_d">The whole sheet — an on-screen frame helps you fit it in, and you can crop the corners afterwards. Excel and PDF files work too.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how2_t">2. Type your surname</h3>
-                <p data-i18n="shift_how2_d">Exactly as it is printed on the rota. If you are the only person on the sheet, leave it empty.</p>
+                <p data-i18n="shift_how2_d">Exactly as it is printed. ShiftLens finds your row even in a rota for the whole team.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how3_t">3. Check the flagged days</h3>
-                <p data-i18n="shift_how3_d">The app shows where it is unsure. Correcting a day takes one tap.</p>
+                <p data-i18n="shift_how3_d">Days the app was not sure about are clearly marked. You fix them with a single tap.</p>
             </div>
             <div class="step-item card">
-                <h3 data-i18n="shift_how4_t">4. Set the alarms</h3>
-                <p data-i18n="shift_how4_d">One for every shift, at the time you choose before it starts.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how5_t">5. Test the ring</h3>
-                <p data-i18n="shift_how5_d">The Reliability screen shows what could silence the alarm and lets you ring a test.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how6_t">6. Add the widget</h3>
-                <p data-i18n="shift_how6_d">Your next shift always in sight on the home screen.</p>
+                <h3 data-i18n="shift_how4_t">4. Done</h3>
+                <p data-i18n="shift_how4_d">Alarms set for the whole month — and the app reads the month itself from the sheet.</p>
             </div>
         </div>
 
@@ -477,63 +473,63 @@
         <div class="features-grid">
             <div class="feature-item card">
                 <span class="feature-item-icon">◷</span>
-                <h3 data-i18n="shift_f1_t">Reads different time formats</h3>
-                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 and night shifts running past midnight.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">≡</span>
-                <h3 data-i18n="shift_f2_t">Understands letter codes</h3>
-                <p data-i18n="shift_f2_d">Day off, sick leave, holiday, night shift.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">✓</span>
-                <h3 data-i18n="shift_f3_t">Never guesses</h3>
-                <p data-i18n="shift_f3_d">Uncertain days are marked for review instead of being guessed.</p>
+                <h3 data-i18n="shift_f1_t">An alarm that fits the shift</h3>
+                <p data-i18n="shift_f1_d">For a 6:00 shift it wakes you earlier, for a 14:00 shift later. Getting-ready and travel time are set separately for morning, afternoon and night shifts.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✦</span>
-                <h3 data-i18n="shift_f4_t">A real alarm</h3>
-                <p data-i18n="shift_f4_d">Android exact alarms — sleep mode does not silence them.</p>
+                <h3 data-i18n="shift_f2_t">Alarms you can rely on</h3>
+                <p data-i18n="shift_f2_d">They come back after a phone restart. If the phone switches them off, the app warns you and shows exactly what to change. Test the ring with one tap.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">❐</span>
-                <h3 data-i18n="shift_f5_t">Rings over the lock screen</h3>
-                <p data-i18n="shift_f5_d">Rising volume, five-minute snooze, your own ringtone.</p>
+                <span class="feature-item-icon">↻</span>
+                <h3 data-i18n="shift_f3_t">A nudge before the rota ends</h3>
+                <p data-i18n="shift_f3_d">Three days before your last shift you are reminded that the rota is running out. Your own alarm sound and extra alarms whenever you need them.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">▦</span>
-                <h3 data-i18n="shift_f6_t">Home screen widget</h3>
-                <p data-i18n="shift_f6_d">Next shift, countdown, three sizes, light and dark theme.</p>
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f4_t">Reads real rotas</h3>
+                <p data-i18n="shift_f4_d">A whole-team table, a “date – shift” list, several pages at once, plus Excel and PDF files. Any day can be fixed by hand, and a missing one simply added.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f5_t">Codes in eight languages</h3>
+                <p data-i18n="shift_f5_d">Days off, holidays and sick leave — in words or letters: “Wolne”, “Urlop”, “Urlaub”, “Folga” or just “U” in a cell.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">⇄</span>
+                <h3 data-i18n="shift_f6_t">Two jobs? No problem</h3>
+                <p data-i18n="shift_f6_d">Two rotas side by side, each with its company name and colour. The alarm before your second shift never rings before the first one ends. Changing jobs? The new one takes over the rota from a date you choose.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✻</span>
-                <h3 data-i18n="shift_f7_t">Hours tracker</h3>
-                <p data-i18n="shift_f7_d">Monthly total, unpaid break deducted, earnings estimate.</p>
+                <h3 data-i18n="shift_f7_t">Hours counted</h3>
+                <p data-i18n="shift_f7_d">Monthly total with the unpaid break deducted, separately for each job. Overtime shown next to rota hours, plus a history of past months.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">↗</span>
-                <h3 data-i18n="shift_f8_t">Reminder before the rota ends</h3>
-                <p data-i18n="shift_f8_d">A few days ahead — time enough to photograph the new one.</p>
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f8_t">Widget and sharing</h3>
+                <p data-i18n="shift_f8_d">A home-screen widget in three sizes counts down to your next shift — and, during it, to the end. Send the rota to your family as a clear image.</p>
             </div>
         </div>
 
         <h2 class="app-section-title" data-i18n="shift_who_title">Who it is for</h2>
-        <p class="app-lead" data-i18n="shift_who_d">Anyone whose rota arrives on paper rather than in a calendar: shop and checkout staff, warehouse and production workers, nurses and care assistants, security, waiters and bartenders, drivers.</p>
+        <p class="app-lead" data-i18n="shift_who_d">Shops, warehouses, factories, restaurants, hospitals, security, logistics — for anyone who gets their rota on paper and starts work at a different time every day.</p>
 
         <h2 class="app-section-title" data-i18n="shift_det_title">Details</h2>
         <div class="app-description card" style="margin-bottom:2rem;">
             <ul class="app-details-list">
                 <li data-i18n="shift_det_plat"><strong>Platform:</strong> Android 8.0 and newer.</li>
-                <li data-i18n="shift_det_lang"><strong>Languages:</strong> Polish, Ukrainian, English, Russian, German, French, Spanish.</li>
-                <li data-i18n="shift_det_net"><strong>Internet:</strong> needed once, at installation.</li>
+                <li data-i18n="shift_det_lang"><strong>Languages:</strong> Polish, English, Ukrainian, Russian, German, French, Spanish, Portuguese.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> not needed — the app works offline.</li>
                 <li data-i18n="shift_det_acc"><strong>Account:</strong> not required.</li>
-                <li data-i18n="shift_det_ads"><strong>Ads:</strong> none.</li>
+                <li data-i18n="shift_det_ads"><strong>Payment:</strong> one-time purchase, no subscription and no ads.</li>
             </ul>
         </div>
 
         <div class="app-note">
             <h3 data-i18n="shift_priv_title">Your rota stays on your phone</h3>
-            <p data-i18n="shift_priv_d">A rota is a document carrying your colleagues' surnames and your own schedule for a month ahead. That should not travel to someone else's server. ShiftLens recognises the text directly on the phone: photos are never uploaded, no account is needed, and the app works without an internet connection. The only exception is your choice: if a rota is recognised wrongly, you can email a report to the developer.</p>
+            <p data-i18n="shift_priv_d">Text recognition runs on the device. Photos and rotas are never sent anywhere, no account is needed, and the app works offline. Colleagues’ names are deleted right after reading — only your own shifts are saved.</p>
         </div>
 
         <p class="store-row">

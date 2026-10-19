@@ -59,11 +59,11 @@
             "name": "ShiftLens",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Android 8.0+",
-            "description": "Eine App, die aus dem Foto des Schichtplans Wecker macht: Sie erkennt Uhrzeiten und Schichtcodes und stellt für jede Schicht einen eigenen Wecker. Ohne Konto, ohne Werbung.",
+            "description": "Eine App, die aus dem Foto des Schichtplans Wecker macht: Sie findet Ihre Zeile, erkennt Uhrzeiten und Schichtcodes und stellt für jede Schicht des Monats einen Wecker. Offline, einmaliger Kauf, ohne Werbung.",
             "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
             "url": "https://paradrutow.com/de/apps.html",
             "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
-            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "inLanguage": ["pl","en","uk","ru","de","fr","es","pt"],
             "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
           }
         }
@@ -71,7 +71,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=20"></script>
+    <script defer src="/assets/js/lang.js?v=21"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -279,6 +279,10 @@
             gap: 1.2rem;
             margin-bottom: 1rem;
         }
+        /* 4 шага (ShiftLens): 4 в ряд на широком экране, 2×2 на среднем, столбик на телефоне */
+        .steps-grid.steps-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .steps-grid.steps-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .steps-grid.steps-4 { grid-template-columns: 1fr; } }
         .step-item {
             background: rgba(40,40,40,0.4);
             border: 1px solid var(--glass-border);
@@ -432,44 +436,36 @@
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h2>ShiftLens</h2>
-                <p data-i18n="shift_tagline">Ein Foto des Schichtplans wird zu Weckern</p>
+                <p data-i18n="shift_tagline">Ihre Schicht immer im Bild</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
         </div>
 
-        <p class="app-claim" data-i18n="shift_hero_sub">Schichtplan fotografieren — die Wecker stellen sich selbst</p>
+        <p class="app-claim" data-i18n="shift_hero_sub">4:10 Uhr morgens. Der Wecker klingelt — und zwar der richtige.</p>
 
         <div class="feature-image-wrapper">
             <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
         </div>
 
-        <p class="app-lead" data-i18n="shift_intro">Der Schichtplan hängt meist an der Wand im Umkleideraum oder kommt als Foto im Messenger. Danach beginnt die Handarbeit: die eigene Zeile finden, fremde Handschrift entziffern, ausrechnen, wann man aufstehen muss, und Wecker für einen Monat im Voraus stellen. Ein übersehenes Kästchen — und die Schicht ist verschlafen.</p>
+        <p class="app-lead" data-i18n="shift_intro">Ihr Schichtplan hängt an der Wand im Betrieb oder kommt als unscharfes Foto im Chat. Jeden Monat dasselbe: ins Handy übertragen, Wecker einzeln stellen, alles noch einmal prüfen … und ein einziger Fehler reicht, um die Frühschicht zu verschlafen oder am freien Tag zur Arbeit zu kommen. ShiftLens erledigt das für Sie: Fotografieren Sie den Plan, und eine Minute später hat jede Schicht des Monats ihren eigenen Wecker.</p>
 
         <h2 class="app-section-title" data-i18n="shift_how_title">So funktioniert es</h2>
-        <div class="steps-grid">
+        <div class="steps-grid steps-4">
             <div class="step-item card">
-                <h3 data-i18n="shift_how1_t">1. Foto machen</h3>
-                <p data-i18n="shift_how1_d">Das ganze Blatt samt der Daten in der Kopfzeile. Excel- oder PDF-Datei geht auch.</p>
+                <h3 data-i18n="shift_how1_t">1. Plan fotografieren</h3>
+                <p data-i18n="shift_how1_d">Das ganze Blatt — ein Rahmen auf dem Bildschirm hilft beim Einpassen, die Ecken schneiden Sie danach zu. Excel- und PDF-Dateien gehen auch.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how2_t">2. Nachnamen eintragen</h3>
-                <p data-i18n="shift_how2_d">Genau so, wie er im Plan gedruckt steht. Stehen Sie allein auf dem Blatt, lassen Sie das Feld leer.</p>
+                <p data-i18n="shift_how2_d">Genau so, wie er gedruckt ist. ShiftLens findet Ihre Zeile auch im Plan des ganzen Teams.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how3_t">3. Markierte Tage prüfen</h3>
-                <p data-i18n="shift_how3_d">Die App zeigt, wo sie unsicher ist. Ein Tag ist mit einer Berührung korrigiert.</p>
+                <p data-i18n="shift_how3_d">Tage, bei denen die App unsicher war, sind deutlich markiert. Korrigiert wird mit einer Berührung.</p>
             </div>
             <div class="step-item card">
-                <h3 data-i18n="shift_how4_t">4. Wecker stellen</h3>
-                <p data-i18n="shift_how4_d">Für jede Schicht ein eigener, zur gewählten Zeit vor Schichtbeginn.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how5_t">5. Klingeln testen</h3>
-                <p data-i18n="shift_how5_d">Der Bildschirm „Zuverlässigkeit“ zeigt, was den Wecker stören könnte, und lässt ihn probeweise klingeln.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how6_t">6. Widget hinzufügen</h3>
-                <p data-i18n="shift_how6_d">Die nächste Schicht immer im Blick auf dem Startbildschirm.</p>
+                <h3 data-i18n="shift_how4_t">4. Fertig</h3>
+                <p data-i18n="shift_how4_d">Wecker für den ganzen Monat gestellt — den Monat liest die App selbst aus dem Blatt.</p>
             </div>
         </div>
 
@@ -477,63 +473,63 @@
         <div class="features-grid">
             <div class="feature-item card">
                 <span class="feature-item-icon">◷</span>
-                <h3 data-i18n="shift_f1_t">Verschiedene Zeitschreibweisen</h3>
-                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 sowie Nachtschichten über Mitternacht.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">≡</span>
-                <h3 data-i18n="shift_f2_t">Buchstabencodes</h3>
-                <p data-i18n="shift_f2_d">Frei, krank, Urlaub, Nachtschicht.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">✓</span>
-                <h3 data-i18n="shift_f3_t">Rät nicht</h3>
-                <p data-i18n="shift_f3_d">Unsichere Tage werden zur Prüfung markiert statt geraten.</p>
+                <h3 data-i18n="shift_f1_t">Wecker passend zur Schicht</h3>
+                <p data-i18n="shift_f1_d">Bei einer Schicht ab 6:00 weckt er Sie früher, bei einer ab 14:00 später. Zeit zum Fertigmachen und für den Weg stellen Sie getrennt für Früh-, Spät- und Nachtschichten ein.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✦</span>
-                <h3 data-i18n="shift_f4_t">Ein echter Wecker</h3>
-                <p data-i18n="shift_f4_d">Exakte Android-Wecker — der Schlafmodus bringt sie nicht zum Schweigen.</p>
+                <h3 data-i18n="shift_f2_t">Wecker, auf die Verlass ist</h3>
+                <p data-i18n="shift_f2_d">Sie kehren nach einem Neustart zurück. Schaltet das Telefon sie ab, warnt die App und zeigt genau, was zu ändern ist. Das Klingeln testen Sie mit einer Berührung.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">❐</span>
-                <h3 data-i18n="shift_f5_t">Bildschirm über der Sperre</h3>
-                <p data-i18n="shift_f5_d">Ansteigende Lautstärke, fünf Minuten Schlummern, eigene Melodie.</p>
+                <span class="feature-item-icon">↻</span>
+                <h3 data-i18n="shift_f3_t">Erinnerung vor Planende</h3>
+                <p data-i18n="shift_f3_d">Drei Tage vor der letzten Schicht erfahren Sie, dass der Plan ausläuft. Eigener Weckton und zusätzliche Wecker, wann immer Sie sie brauchen.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">▦</span>
-                <h3 data-i18n="shift_f6_t">Widget auf dem Startbildschirm</h3>
-                <p data-i18n="shift_f6_d">Nächste Schicht, Countdown, drei Größen, helles und dunkles Design.</p>
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f4_t">Liest echte Schichtpläne</h3>
+                <p data-i18n="shift_f4_d">Die Tabelle des ganzen Teams, eine Liste „Datum – Schicht“, mehrere Seiten auf einmal sowie Excel- und PDF-Dateien. Jeder Tag lässt sich von Hand korrigieren, ein fehlender einfach ergänzen.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f5_t">Codes in acht Sprachen</h3>
+                <p data-i18n="shift_f5_d">Freie Tage, Urlaub und Krankmeldungen — als Wort oder Buchstabe: „Wolne“, „Urlop“, „Urlaub“, „Folga“ oder nur „U“ in der Zelle.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">⇄</span>
+                <h3 data-i18n="shift_f6_t">Zwei Jobs? Kein Problem</h3>
+                <p data-i18n="shift_f6_d">Zwei Pläne nebeneinander, jeder mit Firmennamen und eigener Farbe. Der Wecker vor der zweiten Schicht klingelt nie vor dem Ende der ersten. Jobwechsel? Der neue übernimmt den Plan ab einem gewählten Datum.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✻</span>
-                <h3 data-i18n="shift_f7_t">Stundenzähler</h3>
-                <p data-i18n="shift_f7_d">Monatssumme, unbezahlte Pause abgezogen, Verdienstschätzung.</p>
+                <h3 data-i18n="shift_f7_t">Stunden gezählt</h3>
+                <p data-i18n="shift_f7_d">Monatssumme mit abgezogener unbezahlter Pause, getrennt für jeden Job. Überstunden neben den Planstunden und ein Verlauf der Vormonate.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">↗</span>
-                <h3 data-i18n="shift_f8_t">Erinnerung vor Planende</h3>
-                <p data-i18n="shift_f8_d">Ein paar Tage vorher — Zeit genug, den neuen zu fotografieren.</p>
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f8_t">Widget und Teilen</h3>
+                <p data-i18n="shift_f8_d">Ein Widget in drei Größen zählt bis zur nächsten Schicht herunter — und während der Schicht bis zu ihrem Ende. Den Plan schicken Sie der Familie als gut lesbares Bild.</p>
             </div>
         </div>
 
         <h2 class="app-section-title" data-i18n="shift_who_title">Für wen</h2>
-        <p class="app-lead" data-i18n="shift_who_d">Für alle, deren Plan als Blatt kommt und nicht als Kalender: Verkäufer und Kassierer, Lager- und Produktionsmitarbeiter, Pflegekräfte, Sicherheitsdienst, Kellner und Barkeeper, Fahrer.</p>
+        <p class="app-lead" data-i18n="shift_who_d">Handel, Lager, Fabriken, Restaurants, Krankenhäuser, Sicherheitsdienst, Logistik — für alle, die ihren Schichtplan auf Papier bekommen und jeden Tag zu einer anderen Zeit anfangen.</p>
 
         <h2 class="app-section-title" data-i18n="shift_det_title">Details</h2>
         <div class="app-description card" style="margin-bottom:2rem;">
             <ul class="app-details-list">
                 <li data-i18n="shift_det_plat"><strong>Plattform:</strong> Android 8.0 und neuer.</li>
-                <li data-i18n="shift_det_lang"><strong>Sprachen:</strong> Polnisch, Ukrainisch, Englisch, Russisch, Deutsch, Französisch, Spanisch.</li>
-                <li data-i18n="shift_det_net"><strong>Internet:</strong> einmalig nötig, bei der Installation.</li>
+                <li data-i18n="shift_det_lang"><strong>Sprachen:</strong> Polnisch, Englisch, Ukrainisch, Russisch, Deutsch, Französisch, Spanisch, Portugiesisch.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> nicht nötig — die App funktioniert offline.</li>
                 <li data-i18n="shift_det_acc"><strong>Konto:</strong> nicht erforderlich.</li>
-                <li data-i18n="shift_det_ads"><strong>Werbung:</strong> keine.</li>
+                <li data-i18n="shift_det_ads"><strong>Bezahlung:</strong> einmaliger Kauf, ohne Abo und ohne Werbung.</li>
             </ul>
         </div>
 
         <div class="app-note">
             <h3 data-i18n="shift_priv_title">Ihr Schichtplan bleibt auf dem Telefon</h3>
-            <p data-i18n="shift_priv_d">Ein Schichtplan ist ein Dokument mit den Nachnamen Ihrer Kollegen und Ihrem eigenen Monatsplan. So etwas gehört nicht auf einen fremden Server. ShiftLens erkennt den Text direkt auf dem Telefon: Fotos werden nirgendwohin gesendet, ein Konto ist nicht nötig, und die App läuft auch ganz ohne Internet. Die einzige Ausnahme entscheiden Sie selbst: Wird ein Plan falsch erkannt, können Sie dem Entwickler einen Bericht per E-Mail schicken.</p>
+            <p data-i18n="shift_priv_d">Die Texterkennung läuft auf dem Gerät. Fotos und Pläne werden nirgendwohin gesendet, ein Konto ist nicht nötig, und die App funktioniert offline. Die Namen der Kollegen werden direkt nach dem Auslesen gelöscht — gespeichert werden nur Ihre eigenen Schichten.</p>
         </div>
 
         <p class="store-row">

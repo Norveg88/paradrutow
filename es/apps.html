@@ -59,11 +59,11 @@
             "name": "ShiftLens",
             "applicationCategory": "UtilitiesApplication",
             "operatingSystem": "Android 8.0+",
-            "description": "Una aplicación que convierte la foto de tu horario de turnos en alarmas: reconoce horarios y códigos de turno y programa una alarma para cada turno. Sin cuenta y sin anuncios.",
+            "description": "Una aplicación que convierte la foto de tu horario de turnos en alarmas: encuentra tu fila, reconoce horarios y códigos de turno y programa una alarma para cada turno del mes. Sin conexión, compra única, sin anuncios.",
             "image": "https://paradrutow.com/assets/img/ShiftLens.jpg",
             "url": "https://paradrutow.com/es/apps.html",
             "downloadUrl": "https://play.google.com/store/apps/details?id=pl.paradrutow.shiftlens",
-            "inLanguage": ["pl","uk","en","ru","de","fr","es"],
+            "inLanguage": ["pl","en","uk","ru","de","fr","es","pt"],
             "author": {"@type": "Organization", "name": "Para Drutów", "url": "https://paradrutow.com"}
           }
         }
@@ -71,7 +71,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=20"></script>
+    <script defer src="/assets/js/lang.js?v=21"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -279,6 +279,10 @@
             gap: 1.2rem;
             margin-bottom: 1rem;
         }
+        /* 4 шага (ShiftLens): 4 в ряд на широком экране, 2×2 на среднем, столбик на телефоне */
+        .steps-grid.steps-4 { grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 900px) { .steps-grid.steps-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 520px) { .steps-grid.steps-4 { grid-template-columns: 1fr; } }
         .step-item {
             background: rgba(40,40,40,0.4);
             border: 1px solid var(--glass-border);
@@ -432,44 +436,36 @@
             <img src="/assets/img/iconShiftLens.png" alt="ShiftLens Logo" class="app-hero-icon">
             <div class="app-hero-text">
                 <h2>ShiftLens</h2>
-                <p data-i18n="shift_tagline">Una foto del horario de turnos se convierte en alarmas</p>
+                <p data-i18n="shift_tagline">Tu turno, siempre en el encuadre</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
         </div>
 
-        <p class="app-claim" data-i18n="shift_hero_sub">Fotografía el horario y las alarmas se programan solas</p>
+        <p class="app-claim" data-i18n="shift_hero_sub">4:10 de la mañana. Suena la alarma, y es la correcta.</p>
 
         <div class="feature-image-wrapper">
             <img src="/assets/img/ShiftLens.jpg" alt="ShiftLens" width="1792" height="1008">
         </div>
 
-        <p class="app-lead" data-i18n="shift_intro">El horario de turnos suele estar colgado en la pared del vestuario o llega como foto por mensajería. Luego empieza el trabajo manual: encontrar tu fila, descifrar la letra de otra persona, calcular a qué hora levantarte y programar alarmas para todo el mes. Una casilla pasada por alto, y el turno se te pasa durmiendo.</p>
+        <p class="app-lead" data-i18n="shift_intro">Tu horario cuelga de la pared del trabajo o llega como una foto borrosa al chat. Cada mes, lo mismo: pasarlo al móvil, programar las alarmas una a una, volver a comprobarlo todo… y basta un error para dormirte en el turno de mañana o presentarte a trabajar en tu día libre. ShiftLens lo hace por ti: haz una foto del horario y, un minuto después, cada turno del mes tiene su alarma.</p>
 
         <h2 class="app-section-title" data-i18n="shift_how_title">Cómo funciona</h2>
-        <div class="steps-grid">
+        <div class="steps-grid steps-4">
             <div class="step-item card">
-                <h3 data-i18n="shift_how1_t">1. Haz una foto</h3>
-                <p data-i18n="shift_how1_d">La hoja entera, con las fechas del encabezado. También puedes subir un archivo Excel o PDF.</p>
+                <h3 data-i18n="shift_how1_t">1. Fotografía el horario</h3>
+                <p data-i18n="shift_how1_d">La hoja entera: un marco en la pantalla te ayuda a encajarla y luego recortas las esquinas. También sirven archivos Excel y PDF.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how2_t">2. Escribe tu apellido</h3>
-                <p data-i18n="shift_how2_d">Exactamente como aparece en el horario. Si eres la única persona en la hoja, déjalo vacío.</p>
+                <p data-i18n="shift_how2_d">Tal como aparece impreso. ShiftLens encuentra tu fila incluso en el horario de todo el equipo.</p>
             </div>
             <div class="step-item card">
                 <h3 data-i18n="shift_how3_t">3. Revisa los días marcados</h3>
-                <p data-i18n="shift_how3_d">La aplicación indica dónde no está segura. Corregir un día es un solo toque.</p>
+                <p data-i18n="shift_how3_d">Los días de los que la aplicación no estaba segura aparecen bien marcados. Los corriges con un solo toque.</p>
             </div>
             <div class="step-item card">
-                <h3 data-i18n="shift_how4_t">4. Programa las alarmas</h3>
-                <p data-i18n="shift_how4_d">Una para cada turno, a la hora que elijas antes de que empiece.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how5_t">5. Prueba el sonido</h3>
-                <p data-i18n="shift_how5_d">La pantalla «Fiabilidad» muestra qué podría impedir que suene la alarma y permite hacer una prueba.</p>
-            </div>
-            <div class="step-item card">
-                <h3 data-i18n="shift_how6_t">6. Añade el widget</h3>
-                <p data-i18n="shift_how6_d">Tu próximo turno siempre a la vista en la pantalla de inicio.</p>
+                <h3 data-i18n="shift_how4_t">4. Listo</h3>
+                <p data-i18n="shift_how4_d">Alarmas programadas para todo el mes, y el mes lo lee la propia aplicación en la hoja.</p>
             </div>
         </div>
 
@@ -477,63 +473,63 @@
         <div class="features-grid">
             <div class="feature-item card">
                 <span class="feature-item-icon">◷</span>
-                <h3 data-i18n="shift_f1_t">Distintos formatos de hora</h3>
-                <p data-i18n="shift_f1_d">6-14, 12:00-20:00, 0600-1400 y turnos de noche que pasan de medianoche.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">≡</span>
-                <h3 data-i18n="shift_f2_t">Códigos de letras</h3>
-                <p data-i18n="shift_f2_d">Libre, baja por enfermedad, vacaciones, turno de noche.</p>
-            </div>
-            <div class="feature-item card">
-                <span class="feature-item-icon">✓</span>
-                <h3 data-i18n="shift_f3_t">No adivina</h3>
-                <p data-i18n="shift_f3_d">Los días dudosos se marcan «para revisar» en lugar de adivinarlos.</p>
+                <h3 data-i18n="shift_f1_t">Una alarma a la medida del turno</h3>
+                <p data-i18n="shift_f1_d">Para un turno de las 6:00 te despierta antes; para uno de las 14:00, más tarde. El tiempo para prepararte y desplazarte se ajusta por separado para turnos de mañana, tarde y noche.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✦</span>
-                <h3 data-i18n="shift_f4_t">Una alarma de verdad</h3>
-                <p data-i18n="shift_f4_d">Alarmas exactas de Android: el modo descanso no las silencia.</p>
+                <h3 data-i18n="shift_f2_t">Alarmas en las que confiar</h3>
+                <p data-i18n="shift_f2_d">Vuelven tras reiniciar el teléfono. Si el teléfono las desactiva, la aplicación te avisa y te muestra exactamente qué cambiar. El sonido se prueba con un toque.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">❐</span>
-                <h3 data-i18n="shift_f5_t">Suena sobre la pantalla de bloqueo</h3>
-                <p data-i18n="shift_f5_d">Volumen creciente, posponer cinco minutos, tono propio.</p>
+                <span class="feature-item-icon">↻</span>
+                <h3 data-i18n="shift_f3_t">Aviso antes de que acabe el horario</h3>
+                <p data-i18n="shift_f3_d">Tres días antes de tu último turno te recuerda que el horario se termina. Sonido propio y alarmas extra siempre que las necesites.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">▦</span>
-                <h3 data-i18n="shift_f6_t">Widget en la pantalla de inicio</h3>
-                <p data-i18n="shift_f6_d">Próximo turno, cuenta atrás, tres tamaños, tema claro y oscuro.</p>
+                <span class="feature-item-icon">≡</span>
+                <h3 data-i18n="shift_f4_t">Lee horarios reales</h3>
+                <p data-i18n="shift_f4_d">La tabla de todo el equipo, una lista «fecha – turno», varias páginas a la vez y también archivos Excel y PDF. Cualquier día se corrige a mano, y uno que falte simplemente se añade.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">✓</span>
+                <h3 data-i18n="shift_f5_t">Códigos en ocho idiomas</h3>
+                <p data-i18n="shift_f5_d">Días libres, vacaciones y bajas médicas, en palabras o letras: «Wolne», «Urlop», «Urlaub», «Folga» o solo una «U» en la celda.</p>
+            </div>
+            <div class="feature-item card">
+                <span class="feature-item-icon">⇄</span>
+                <h3 data-i18n="shift_f6_t">¿Dos trabajos? Sin problema</h3>
+                <p data-i18n="shift_f6_d">Dos horarios uno al lado del otro, cada uno con el nombre de la empresa y su color. La alarma antes del segundo turno nunca suena antes de que termine el primero. ¿Cambias de trabajo? El nuevo toma el horario desde la fecha que elijas.</p>
             </div>
             <div class="feature-item card">
                 <span class="feature-item-icon">✻</span>
-                <h3 data-i18n="shift_f7_t">Contador de horas</h3>
-                <p data-i18n="shift_f7_d">Total del mes, descuento de la pausa no pagada, estimación de lo que vas a cobrar.</p>
+                <h3 data-i18n="shift_f7_t">Horas contadas</h3>
+                <p data-i18n="shift_f7_d">Total del mes con la pausa no pagada descontada, por separado para cada trabajo. Horas extra junto a las horas del horario e historial de meses anteriores.</p>
             </div>
             <div class="feature-item card">
-                <span class="feature-item-icon">↗</span>
-                <h3 data-i18n="shift_f8_t">Aviso antes de que acabe el horario</h3>
-                <p data-i18n="shift_f8_d">Unos días antes, para que te dé tiempo a fotografiar el nuevo.</p>
+                <span class="feature-item-icon">▦</span>
+                <h3 data-i18n="shift_f8_t">Widget y compartir</h3>
+                <p data-i18n="shift_f8_d">Un widget en tres tamaños cuenta el tiempo hasta tu próximo turno y, durante el turno, hasta el final. Envía el horario a tu familia como una imagen clara.</p>
             </div>
         </div>
 
         <h2 class="app-section-title" data-i18n="shift_who_title">Para quién</h2>
-        <p class="app-lead" data-i18n="shift_who_d">Para todas las personas que reciben el horario en papel y no en un calendario: dependientes y cajeros, personal de almacén y de producción, enfermeras y auxiliares, vigilantes de seguridad, camareros y bármanes, conductores.</p>
+        <p class="app-lead" data-i18n="shift_who_d">Tiendas, almacenes, fábricas, restaurantes, hospitales, seguridad, logística: para cualquiera que recibe el horario en papel y empieza a trabajar cada día a una hora distinta.</p>
 
         <h2 class="app-section-title" data-i18n="shift_det_title">Detalles</h2>
         <div class="app-description card" style="margin-bottom:2rem;">
             <ul class="app-details-list">
                 <li data-i18n="shift_det_plat"><strong>Plataforma:</strong> Android 8.0 o superior.</li>
-                <li data-i18n="shift_det_lang"><strong>Idiomas:</strong> polaco, ucraniano, inglés, ruso, alemán, francés, español.</li>
-                <li data-i18n="shift_det_net"><strong>Internet:</strong> necesario una sola vez, al instalarla.</li>
+                <li data-i18n="shift_det_lang"><strong>Idiomas:</strong> polaco, inglés, ucraniano, ruso, alemán, francés, español y portugués.</li>
+                <li data-i18n="shift_det_net"><strong>Internet:</strong> no hace falta; la aplicación funciona sin conexión.</li>
                 <li data-i18n="shift_det_acc"><strong>Cuenta:</strong> no hace falta.</li>
-                <li data-i18n="shift_det_ads"><strong>Anuncios:</strong> ninguno.</li>
+                <li data-i18n="shift_det_ads"><strong>Pago:</strong> compra única, sin suscripción y sin anuncios.</li>
             </ul>
         </div>
 
         <div class="app-note">
-            <h3 data-i18n="shift_priv_title">Tu horario se queda en el teléfono</h3>
-            <p data-i18n="shift_priv_d">El horario es un documento con los apellidos de tus compañeros y tu planificación de un mes. Eso no debería acabar en el servidor de otra persona. ShiftLens reconoce el texto directamente en el teléfono: las fotos no se envían a ningún sitio, no hace falta crear una cuenta y la aplicación funciona sin internet. La única excepción la eliges tú: si un horario se reconoce mal, puedes enviar un informe al desarrollador por correo electrónico.</p>
+            <h3 data-i18n="shift_priv_title">Tu horario se queda en tu teléfono</h3>
+            <p data-i18n="shift_priv_d">El reconocimiento de texto funciona en el dispositivo. Las fotos y los horarios no se envían a ningún sitio, no hace falta crear una cuenta y la aplicación funciona sin conexión. Los nombres de los compañeros se borran nada más leerlos: solo se guardan tus propios turnos.</p>
         </div>
 
         <p class="store-row">
