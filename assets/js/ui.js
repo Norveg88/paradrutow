@@ -81,9 +81,12 @@ function initContactForm() {
             const data = new FormData(form);
             const name = (data.get("name") || "").toString().trim().slice(0, 60);
             const email = (data.get("email") || "").toString().trim().slice(0, 80);
+            const topic = (data.get("topic") || "").toString();
+            const pageLang = (document.documentElement.lang || "pl").toUpperCase();
+            const tag = (topic ? ` [${topic}]` : "") + (pageLang !== "PL" ? ` [${pageLang}]` : "");
             if (name || email) {
                 const who = name && email ? `${name} (${email})` : (name || email);
-                data.set("_subject", `Wiadomość od ${who} — paradrutow.com`);
+                data.set("_subject", `Wiadomość od ${who} — paradrutow.com${tag}`);
             }
 
             const response = await fetch(form.action, {
@@ -107,6 +110,23 @@ function initContactForm() {
     });
 }
 
+// Karty tematów nad formularzem: wybierają temat i przenoszą do pola wiadomości
+function initTopicCards() {
+    const select = document.getElementById("contact-topic");
+    const cards = [...document.querySelectorAll(".topic-card[data-topic]")];
+    if (!select || !cards.length) return;
+    const mark = () => cards.forEach(c => c.classList.toggle("is-active", c.dataset.topic === select.value));
+    cards.forEach(card => card.addEventListener("click", () => {
+        select.value = card.dataset.topic;
+        mark();
+        const form = document.getElementById("contact-form");
+        form.scrollIntoView({ behavior: "smooth", block: "center" });
+        const ta = form.querySelector("textarea");
+        if (ta) setTimeout(() => ta.focus({ preventScroll: true }), 450);
+    }));
+    select.addEventListener("change", mark);
+}
+
 function showFormMessage(form, type) {
     // Удаляем старое сообщение если есть
     const old = form.querySelector(".form-message");
@@ -115,23 +135,23 @@ function showFormMessage(form, type) {
     const msg = document.createElement("p");
     msg.className = `form-message form-message--${type}`;
 
-    const lang = localStorage.getItem("lang") || "pl";
+    const lang = window.PD_LANG || document.documentElement.lang || "pl";
     const messages = {
         success: {
             pl: "✓ Wiadomość wysłana! Odpowiemy wkrótce.",
             en: "✓ Message sent! We'll reply soon.",
-            ru: "✓ Сообщение отправлено! Ответим вскоре.",
-            ua: "✓ Повідомлення надіслано! Відповімо незабаром.",
             de: "✓ Nachricht gesendet! Wir antworten bald.",
-            fr: "✓ Message envoyé ! Nous répondrons bientôt."
+            fr: "✓ Message envoyé ! Nous répondrons bientôt.",
+            es: "✓ ¡Mensaje enviado! Te responderemos pronto.",
+            pt: "✓ Mensagem enviada! Responderemos em breve."
         },
         error: {
             pl: "✗ Błąd wysyłania. Spróbuj ponownie.",
             en: "✗ Send error. Please try again.",
-            ru: "✗ Ошибка отправки. Попробуйте снова.",
-            ua: "✗ Помилка відправки. Спробуйте ще раз.",
             de: "✗ Sendefehler. Bitte erneut versuchen.",
-            fr: "✗ Erreur d'envoi. Veuillez réessayer."
+            fr: "✗ Erreur d'envoi. Veuillez réessayer.",
+            es: "✗ Error al enviar. Inténtalo de nuevo.",
+            pt: "✗ Erro no envio. Tente novamente."
         }
     };
 
@@ -150,4 +170,5 @@ document.addEventListener("DOMContentLoaded", () => {
     window.uiReady = true; // страховочный таймер в <head> видит, что анимация запущена
     initBackToTop();
     initContactForm();
+    initTopicCards();
 });

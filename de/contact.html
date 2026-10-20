@@ -31,11 +31,11 @@
     <meta name="twitter:title" content="Kontakt — Para Drutów: Muster, Bücher, Zusammenarbeit">
     <meta name="twitter:description" content="Kontakt zu Para Drutów — Fragen zu Mustern, Büchern, Werbung oder den Apps WzorAI und ShiftLens. Schreiben Sie über das Formular oder per E-Mail.">
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=31"></script>
+    <script defer src="/assets/js/lang.js?v=32"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
-    <script defer src="/assets/js/ui.js?v=7"></script>
+    <script defer src="/assets/js/ui.js?v=8"></script>
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
@@ -126,6 +126,52 @@
             font-size: 1.1rem;
             margin: 0 0 1.5rem;
         }
+
+        .sec-h { font-family: var(--font-header); font-weight: 600; color: var(--accent-gold); font-size: clamp(1.5rem, 3vw, 1.9rem); margin: 0 0 1rem; border: none; }
+        .topics { margin-bottom: 2.2rem; }
+        .topic-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        .topic-card {
+            display: flex; flex-direction: column; align-items: flex-start; gap: 0.35rem; text-align: left;
+            background: rgba(40,40,40,0.45); border: 1px solid var(--glass-border); border-radius: 14px;
+            padding: 1.1rem 1.2rem; color: #ccc; font: inherit; cursor: pointer; transition: border-color 0.25s, transform 0.25s, background 0.25s;
+        }
+        .topic-card:hover, .topic-card:focus-visible { border-color: var(--accent-gold); transform: translateY(-3px); }
+        .topic-card.is-active { background: rgba(197,160,89,0.13); border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold) inset; }
+        .tc-icon { font-size: 1.5rem; line-height: 1; margin-bottom: 0.2rem; }
+        .topic-card strong { font-family: var(--font-header); font-weight: 700; font-size: 1.2rem; color: var(--accent-gold); line-height: 1.25; }
+        .tc-desc { font-size: 0.92rem; line-height: 1.5; color: #aaa; }
+        @media (max-width: 900px) { .topic-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) {
+            .topic-grid { grid-template-columns: 1fr; gap: 0.6rem; }
+            .topic-card { display: grid; grid-template-columns: auto 1fr; column-gap: 0.85rem; row-gap: 0.15rem; padding: 0.8rem 1rem; }
+            .tc-icon { grid-row: span 2; align-self: center; margin: 0; }
+        }
+
+        #contact-topic {
+            width: 100%; background: rgba(0,0,0,0.3); border: 1px solid var(--accent-copper); color: var(--text-color);
+            padding: 10px; border-radius: 6px; margin-bottom: 15px; font-family: var(--font-body); font-size: 1rem;
+        }
+        #contact-topic option { background: #1b1916; color: #ddd; }
+
+        .faq { margin: 2.6rem 0 2.4rem; max-width: 860px; }
+        .faq-intro { color: #aaa; margin: -0.4rem 0 1.2rem; }
+        .faq-item { border: 1px solid var(--glass-border); border-radius: 12px; background: rgba(40,40,40,0.35); margin-bottom: 0.7rem; overflow: hidden; }
+        .faq-item[open] { border-color: rgba(197,160,89,0.55); }
+        .faq-item summary {
+            cursor: pointer; list-style: none; padding: 1rem 3rem 1rem 1.2rem; position: relative;
+            font-family: var(--font-header); font-weight: 600; font-size: 1.15rem; color: #e8e2d6; line-height: 1.35;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+'; position: absolute; right: 1.1rem; top: 50%; transform: translateY(-50%);
+            color: var(--accent-gold); font-size: 1.5rem; font-family: var(--font-body); transition: transform 0.25s;
+        }
+        .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+        .faq-item summary:hover { color: var(--accent-gold); }
+        .faq-a { padding: 0 1.2rem 1.1rem; color: #bbb; line-height: 1.65; }
+        .faq-a p { margin: 0; }
+        .faq-link { display: inline-block; margin-top: 0.6rem; color: var(--accent-copper); text-decoration: none; font-family: var(--font-header); font-weight: 600; }
+        .faq-link:hover { color: var(--accent-gold); }
     </style>
     <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
     <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
@@ -171,6 +217,17 @@
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
         </div>
 
+        <!-- Tematy: klik wybiera temat w formularzu (ui.js) -->
+        <section class="topics" aria-labelledby="topics-h">
+            <h2 id="topics-h" class="sec-h" data-i18n="contact_help_title">Wie können wir helfen?</h2>
+            <div class="topic-grid">
+                <button type="button" class="topic-card" data-topic="Wzory i filmy"><span class="tc-icon" aria-hidden="true">🧶</span><strong data-i18n="contact_t1">Muster & Videos</strong><span class="tc-desc" data-i18n="contact_t1d">Eine Frage zu einem Video oder ein Muster, das einfach nicht klappt</span></button>
+                <button type="button" class="topic-card" data-topic="Zakupy i pliki PDF"><span class="tc-icon" aria-hidden="true">📄</span><strong data-i18n="contact_t2">Käufe & PDF-Dateien</strong><span class="tc-desc" data-i18n="contact_t2d">Datei herunterladen und Bestellungen</span></button>
+                <button type="button" class="topic-card" data-topic="Współpraca"><span class="tc-icon" aria-hidden="true">🤝</span><strong data-i18n="contact_t3">Zusammenarbeit</strong><span class="tc-desc" data-i18n="contact_t3d">Marken, Garngeschäfte, Verlage und Medien</span></button>
+                <button type="button" class="topic-card" data-topic="Aplikacje"><span class="tc-icon" aria-hidden="true">📱</span><strong data-i18n="contact_t4">Apps</strong><span class="tc-desc" data-i18n="contact_t4d">WzorAI und ShiftLens: Fragen und Fehlermeldungen</span></button>
+            </div>
+        </section>
+
         <div class="contact-layout">
 
             <!-- Контактная инфо -->
@@ -188,6 +245,20 @@
                     <div>
                         <div class="cli-label" data-i18n="contact_email">E-Mail</div>
                         <div class="cli-value">kontakt@paradrutow.com</div>
+                    </div>
+                </a>
+                <a href="/de/patterns.html" class="contact-link-item">
+                    <div class="cli-icon">📄</div>
+                    <div>
+                        <div class="cli-label" data-i18n="menu_patterns">Muster</div>
+                        <div class="cli-value" data-i18n="contact_pat_val">Strickschriften zum Herunterladen</div>
+                    </div>
+                </a>
+                <a href="/de/books.html" class="contact-link-item">
+                    <div class="cli-icon">📚</div>
+                    <div>
+                        <div class="cli-label" data-i18n="menu_books">Bücher</div>
+                        <div class="cli-value" data-i18n="contact_books_val">Amazon und Bookshop.org</div>
                     </div>
                 </a>
                 <div class="contact-link-item">
@@ -213,6 +284,17 @@
                         <input type="email" name="email" required autocomplete="email">
                     </label>
                     <label>
+                        <span data-i18n="contact_topic_label">Thema</span>
+                        <select name="topic" id="contact-topic">
+                            <option value="" data-i18n="contact_topic_choose">Thema wählen</option>
+                            <option value="Wzory i filmy" data-i18n="contact_t1">Muster & Videos</option>
+                            <option value="Zakupy i pliki PDF" data-i18n="contact_t2">Käufe & PDF-Dateien</option>
+                            <option value="Współpraca" data-i18n="contact_t3">Zusammenarbeit</option>
+                            <option value="Aplikacje" data-i18n="contact_t4">Apps</option>
+                            <option value="Inne" data-i18n="contact_topic_other">Sonstiges</option>
+                        </select>
+                    </label>
+                    <label>
                         <span data-i18n="contact_message">Nachricht</span>
                         <textarea name="message" rows="5" required></textarea>
                     </label>
@@ -221,6 +303,36 @@
             </div>
 
         </div>
+        <!-- Częste pytania -->
+        <section class="faq" aria-labelledby="faq-h">
+            <h2 id="faq-h" class="sec-h" data-i18n="contact_faq_title">Bevor Sie schreiben</h2>
+            <p class="faq-intro" data-i18n="contact_faq_intro">Antworten auf die häufigsten Fragen – vielleicht ist Ihre dabei.</p>
+            <details class="faq-item">
+                <summary data-i18n="contact_q1">Ich habe ein PDF-Muster gekauft – wo ist die Datei?</summary>
+                <div class="faq-a"><p data-i18n="contact_a1">Der Download-Link erscheint direkt nach dem Kauf und wird auch an die E-Mail-Adresse geschickt, mit der Sie bezahlt haben. Sie finden ihn nicht? Schauen Sie im Spam-Ordner nach oder schreiben Sie uns mit dieser E-Mail-Adresse.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary data-i18n="contact_q2">In welcher Sprache sind die Muster und Bücher?</summary>
+                <div class="faq-a"><p data-i18n="contact_a2">Die PDF-Muster sind auf Polnisch, bei Strickschriften gibt es eine Symbollegende auf Polnisch und Englisch. Jedes Buch ist mit seiner Sprache gekennzeichnet.</p><a class="faq-link" href="/de/patterns.html" data-i18n="contact_pat_link">Zu den Mustern →</a></div>
+            </details>
+            <details class="faq-item">
+                <summary data-i18n="contact_q3">Wo kann ich die Bücher kaufen?</summary>
+                <div class="faq-a"><p data-i18n="contact_a3">Bei Amazon und Bookshop.org – den Link zum Shop finden Sie bei jedem Buch.</p><a class="faq-link" href="/de/books.html" data-i18n="contact_books_link">Zu den Büchern →</a></div>
+            </details>
+            <details class="faq-item">
+                <summary data-i18n="contact_q4">Bei einem Muster oder Video klappt etwas nicht.</summary>
+                <div class="faq-a"><p data-i18n="contact_a4">Schreiben Sie uns, um welches Video oder Muster es geht (am besten mit der Minute im Video), welches Garn und welche Nadeln Sie verwenden und an welcher Stelle das Problem auftritt. Je mehr Details, desto leichter können wir helfen.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary data-i18n="contact_q5">Kann ich ein Thema für ein Video vorschlagen?</summary>
+                <div class="faq-a"><p data-i18n="contact_a5">Natürlich! Schreiben Sie, was Sie stricken möchten – wir lesen Vorschläge gern und berücksichtigen sie bei der Planung neuer Videos.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary data-i18n="contact_q6">Darf ich das Muster verkaufen oder die PDF-Datei weitergeben?</summary>
+                <div class="faq-a"><p data-i18n="contact_a6">Nein – die Muster sind nur für den persönlichen Gebrauch bestimmt und dürfen weder kopiert noch weiterverkauft werden.</p></div>
+            </details>
+        </section>
+
         <!-- Подписка на рассылку -->
         <div class="news-card">
             <h2 class="news-head" data-i18n="news_title">Bleib auf dem Laufenden</h2>
