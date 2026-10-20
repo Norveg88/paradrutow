@@ -113,3 +113,8 @@ Thumbs.db
 /scripts/home-lastmod.js
 /scripts/books-keys.js
 /scripts/sitemap-date-all.js
+/scripts/cleanup-2026-10.js
+/scripts/cleanup-2026-10b.js
+/scripts/dict-unused.js
+/_old_local/
+/scripts/move-old-local.js
