@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title_video">Tutoriels de tricot pas à pas — Para Drutów</title>
-    <meta name="description" content="Vidéos de tricot sur YouTube par Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.">
+    <meta name="description" content="Vidéos de tricot de Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.">
     <meta name="keywords" content="filmy dziewiarskie, youtube dziewiarstwo, nauka robótek wideo, wzory na drutach film, knitting videos, вязание видео, в'язання відео">
     <meta name="author" content="Para Drutów">
     <meta name="robots" content="index, follow">
@@ -24,16 +24,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://paradrutow.com/fr/video.html">
     <meta property="og:title" content="Tutoriels de tricot pas à pas — Para Drutów">
-    <meta property="og:description" content="Vidéos de tricot sur YouTube par Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.">
+    <meta property="og:description" content="Vidéos de tricot de Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.">
     <meta property="og:image" content="https://paradrutow.com/assets/img/og-home-fr.jpg">
     <meta property="og:site_name" content="Para Drutów">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tutoriels de tricot pas à pas — Para Drutów">
-    <meta name="twitter:description" content="Vidéos de tricot sur YouTube par Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.">
+    <meta name="twitter:description" content="Vidéos de tricot de Para Drutów — techniques, grilles et modèles expliqués pas à pas. Regardez, apprenez et tricotez avec nous, à votre rythme.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-fr.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"Para Drutów — Filmy o dziewiarstwie","description":"Filmy YouTube o technikach dziewiarskich, wzorach i schematach","thumbnailUrl":"https://paradrutow.com/assets/img/og-home-fr.jpg","uploadDate":"2026-01-01","author":{"@type":"Organization","name":"Para Drutów","url":"https://paradrutow.com"}}</script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=28"></script>
+    <script defer src="/assets/js/lang.js?v=30"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -41,8 +41,9 @@
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <script defer src="/assets/js/video-langs.js?v=1"></script>
     <script defer src="/assets/js/videos.js?v=6"></script>
+    <script defer src="/assets/js/video-search.js?v=1"></script>
     <script defer src="/assets/js/channel.js?v=5"></script>
-    <link rel="stylesheet" href="/assets/css/videos-shorts.css?v=2">
+    <link rel="stylesheet" href="/assets/css/videos-shorts.css?v=3">
     <link rel="stylesheet" href="/assets/css/channel.css?v=4">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
@@ -92,6 +93,28 @@
                 <p class="subtitle" data-i18n="video_desc">Ici vous pouvez regarder des vidéos YouTube.</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
+        </div>
+
+        <!-- Поиск по роликам (assets/js/video-search.js) -->
+        <div class="vsearch" role="search" data-target="videos-container" data-src="/assets/data/videos.json">
+            <div class="vsearch-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+                <input type="search" class="vsearch-input" data-i18n-placeholder="search_placeholder" placeholder="Rechercher : bonnet, chaussettes, dentelle…" aria-label="Szukaj" autocomplete="off" enterkeyhint="search">
+                <button type="button" class="vsearch-clear" aria-label="×" hidden>×</button>
+            </div>
+            <div class="vsearch-tags">
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="czapk|hat|beanie|mütze|muetze|bonnet|gorro|touca" data-i18n="search_tag_hat">Bonnets</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="skarpet|sock|socken|chaussette|calcet|meia" data-i18n="search_tag_socks">Chaussettes</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="swet|sweater|pullover|jersey|jersei|sueter|cardigan|kardigan|cardiga" data-i18n="search_tag_sweater">Pulls</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="szal|chust|komin|scarf|shawl|cowl|schal|tuch|echarpe|chales|bufanda|cachecol|xale" data-i18n="search_tag_scarf">Écharpes et châles</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="azur|lace|lochmuster|ajour|dentelle|calado|rendad" data-i18n="search_tag_lace">Dentelle</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="kamizel|vest|weste|gilet|chaleco|colete" data-i18n="search_tag_vest">Gilets</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="nabiera|cast on|cast-on|anschlag|monter les mailles|montar puntos|montar pontos" data-i18n="search_tag_caston">Monter les mailles</button>
+                <button type="button" class="vsearch-tag" aria-pressed="false" data-q="pies|piesk|for dog|dog sweater|dog vest|pet sweater|hund|chien|perro|cachorro" data-i18n="search_tag_dog">Pour chiens</button>
+            </div>
+            <p class="vsearch-status" aria-live="polite"></p>
+            <span class="vsearch-t-found" data-i18n="search_found" hidden>Résultats : {n}</span>
+            <span class="vsearch-t-none" data-i18n="search_none" hidden>Aucun résultat. Essayez un autre mot ou choisissez un thème.</span>
         </div>
 
         <!-- Баннер канала — данные из assets/data/channel.json (их пишет scripts/fetch-videos.js) -->

@@ -33,7 +33,7 @@ for (const f of html) {
   const d = (s.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '';
   if (f !== '404.html') {
     if (!t) add(f, 'no title'); if (t.length > 70) add(f, `title ${t.length} chars`);
-    if (!d) add(f, 'no description'); if (d.length > 170) add(f, `description ${d.length} chars`);
+    if (!d) add(f, 'no description'); if (d.replace(/&amp;/g, '&').length > 160) add(f, `description ${d.length} chars (Google показывает ~155)`);
     if (!/<link rel="canonical"/.test(s)) add(f, 'no canonical');
     if (!/hreflang="x-default"/.test(s)) add(f, 'no hreflang');
     const h1 = (s.match(/<h1\b/g) || []).length; if (h1 !== 1) add(f, `${h1} h1`);

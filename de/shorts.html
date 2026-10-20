@@ -32,7 +32,7 @@
     <meta name="twitter:description" content="Kurze Strickvideos von Para Drutów — schnelle Tricks, Tipps und Stricktechniken in einer Minute. YouTube Shorts für Anfänger und Fortgeschrittene.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-de.jpg">
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=28"></script>
+    <script defer src="/assets/js/lang.js?v=30"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -40,7 +40,8 @@
     <script defer src="/assets/js/newsletter.js?v=2"></script>
     <script defer src="/assets/js/video-langs.js?v=1"></script>
     <script defer src="/assets/js/shorts.js?v=6"></script>
-    <link rel="stylesheet" href="/assets/css/videos-shorts.css?v=2">
+    <script defer src="/assets/js/video-search.js?v=1"></script>
+    <link rel="stylesheet" href="/assets/css/videos-shorts.css?v=3">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Cloudflare Web Analytics: статистика без cookies, согласие посетителя не требуется -->
     <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "30a74961d05a4cc08f8af955cc01c3b3"}'></script>
@@ -89,6 +90,18 @@
                 <p class="subtitle" data-i18n="shorts_desc">Schnelle Tipps und praktische Tricks in kurzen Videos.</p>
             </div>
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">Newsletter</a>
+        </div>
+
+        <!-- Поиск по роликам (assets/js/video-search.js) -->
+        <div class="vsearch" role="search" data-target="shorts-container" data-src="/assets/data/shorts.json">
+            <div class="vsearch-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+                <input type="search" class="vsearch-input" data-i18n-placeholder="search_placeholder_shorts" placeholder="In Shorts suchen…" aria-label="Szukaj" autocomplete="off" enterkeyhint="search">
+                <button type="button" class="vsearch-clear" aria-label="×" hidden>×</button>
+            </div>
+            <p class="vsearch-status" aria-live="polite"></p>
+            <span class="vsearch-t-found" data-i18n="search_found" hidden>Ergebnisse: {n}</span>
+            <span class="vsearch-t-none" data-i18n="search_none" hidden>Nichts gefunden. Versuchen Sie ein anderes Wort oder wählen Sie ein Thema.</span>
         </div>
 
         <div id="shorts-loader" class="videos-loader" style="display:none">

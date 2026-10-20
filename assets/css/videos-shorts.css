@@ -209,3 +209,39 @@
     font-size:.62rem; text-transform:uppercase; letter-spacing:.03em;
     color:var(--accent-copper); opacity:.9;
 }
+
+/* ПОИСК ПО РОЛИКАМ */
+.vsearch { margin: 0 0 2rem; }
+.vsearch-box {
+    position: relative; display: flex; align-items: center;
+    background: rgba(40,40,40,0.55); border: 1px solid var(--glass-border); border-radius: 999px;
+    padding: 0 0.6rem 0 1.1rem; transition: border-color 0.25s, box-shadow 0.25s;
+}
+.vsearch-box:focus-within { border-color: var(--accent-gold); box-shadow: 0 0 0 3px rgba(197,160,89,0.15); }
+.vsearch-box svg { width: 20px; height: 20px; color: var(--accent-copper); flex-shrink: 0; }
+.vsearch-input {
+    flex: 1; min-width: 0; background: transparent; border: 0; outline: 0; color: #eee;
+    font: inherit; font-size: 1.05rem; padding: 0.85rem 0.7rem;
+}
+.vsearch-input::placeholder { color: #8a8478; }
+.vsearch-input::-webkit-search-cancel-button { display: none; }
+.vsearch-clear {
+    width: 34px; height: 34px; border-radius: 50%; border: 0; cursor: pointer; flex-shrink: 0;
+    background: rgba(197,160,89,0.12); color: var(--accent-gold); font-size: 1.3rem; line-height: 1;
+}
+.vsearch-clear:hover { background: rgba(197,160,89,0.25); }
+.vsearch-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.9rem; }
+.vsearch-tag {
+    font-family: var(--font-header); font-weight: 600; font-size: 0.98rem; letter-spacing: 0.3px; cursor: pointer;
+    color: var(--accent-copper); background: transparent; border: 1px solid rgba(184,115,51,0.55);
+    border-radius: 999px; padding: 0.3rem 0.95rem; transition: all 0.2s;
+}
+.vsearch-tag:hover { color: var(--accent-gold); border-color: var(--accent-gold); }
+.vsearch-tag[aria-pressed="true"] { color: #1a1408; background: var(--accent-gold); border-color: var(--accent-gold); }
+.vsearch-status { margin: 0.8rem 0 0; color: #b5b0a6; font-size: 0.95rem; min-height: 1.4em; }
+.vsearch-status.is-empty { color: var(--accent-copper); }
+#videos-container > [hidden], #shorts-container > [hidden] { display: none !important; }
+@media (max-width: 640px) {
+    .vsearch-tags { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.3rem; scrollbar-width: none; }
+    .vsearch-tag { white-space: nowrap; }
+}
