@@ -140,7 +140,7 @@ window.PD_LANG = defaultLang;
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
-const I18N_VERSION = 34;
+const I18N_VERSION = 35;
 
 async function loadLang(lang) {
     try {
