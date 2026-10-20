@@ -95,10 +95,13 @@ function renderCards(items, kind, lang) {
 }
 
 // ---------- переключатель языков: ссылки на существующие версии, кнопки для остальных ----------
+// Flagi w przełączniku: pliki assets/img/flags/<lang>.svg, nazwa języka w title/aria-label
+const LANG_NAMES = { pl: 'Polski', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español', pt: 'Português' };
+const flagImg = l => `<img src="/assets/img/flags/${l}.svg" alt="" width="27" height="18">`;
 function renderSwitcher(file, langs) {
   const items = ALL_LANGS.map(l => langs.includes(l)
-    ? `                <a data-lang="${l}" href="${pageUrl(file, l)}" hreflang="${l}">${l.toUpperCase()}</a>`
-    : `                <button data-lang="${l}">${l.toUpperCase()}</button>`);
+    ? `                <a data-lang="${l}" href="${pageUrl(file, l)}" hreflang="${l}" title="${LANG_NAMES[l]}" aria-label="${LANG_NAMES[l]}">${flagImg(l)}</a>`
+    : `                <button data-lang="${l}" title="${LANG_NAMES[l]}" aria-label="${LANG_NAMES[l]}">${flagImg(l)}</button>`);
   return `<div class="lang-switcher">\n${items.join('\n')}\n            </div>`;
 }
 

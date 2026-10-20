@@ -363,5 +363,8 @@
   "contact_q5": "¿Puedo proponer un tema para un vídeo?",
   "contact_a5": "¡Claro! Cuéntanos qué te gustaría tejer: leemos las propuestas con gusto y las tenemos en cuenta al planificar nuevos vídeos.",
   "contact_q6": "¿Puedo vender el patrón o compartir el archivo PDF?",
-  "contact_a6": "No: los patrones son solo para uso personal y no se pueden copiar ni revender."
+  "contact_a6": "No: los patrones son solo para uso personal y no se pueden copiar ni revender.",
+  "contact_reply_label": "Tiempo de respuesta",
+  "contact_reply_val": "normalmente 1–2 días",
+  "contact_reply_note": "Solemos responder en 1–2 días."
 }

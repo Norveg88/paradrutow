@@ -367,5 +367,8 @@
   "contact_q5": "Can I suggest a video topic?",
   "contact_a5": "Of course! Tell us what you’d like to knit — we’re happy to read suggestions and take them into account when planning new videos.",
   "contact_q6": "Can I sell the pattern or share the PDF file?",
-  "contact_a6": "No — the patterns are for personal use only and may not be copied or resold."
+  "contact_a6": "No — the patterns are for personal use only and may not be copied or resold.",
+  "contact_reply_label": "Response time",
+  "contact_reply_val": "usually 1–2 days",
+  "contact_reply_note": "We usually reply within 1–2 days."
 }

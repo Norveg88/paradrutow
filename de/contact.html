@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Kontakt — Para Drutów: Muster, Bücher, Zusammenarbeit">
     <meta name="twitter:description" content="Kontakt zu Para Drutów — Fragen zu Mustern, Büchern, Werbung oder den Apps WzorAI und ShiftLens. Schreiben Sie über das Formular oder per E-Mail.">
-    <link rel="stylesheet" href="/assets/css/style.css?v=10">
+    <link rel="stylesheet" href="/assets/css/style.css?v=11">
     <script defer src="/assets/js/lang.js?v=32"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
@@ -137,7 +137,14 @@
         }
         .topic-card:hover, .topic-card:focus-visible { border-color: var(--accent-gold); transform: translateY(-3px); }
         .topic-card.is-active { background: rgba(197,160,89,0.13); border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold) inset; }
-        .tc-icon { font-size: 1.5rem; line-height: 1; margin-bottom: 0.2rem; }
+        .tc-icon {
+            width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            border-radius: 10px; background: rgba(197,160,89,0.1); border: 1px solid rgba(197,160,89,0.25);
+            color: var(--accent-gold); margin-bottom: 0.45rem;
+        }
+        .tc-icon svg, .cli-icon svg { width: 23px; height: 23px; display: block; filter: drop-shadow(0 0 6px rgba(197,160,89,0.25)); }
+        .cli-icon { color: var(--accent-gold); }
+        .form-note { color: #9a958b; font-size: 0.92rem; margin: -1rem 0 1.3rem; }
         .topic-card strong { font-family: var(--font-header); font-weight: 700; font-size: 1.2rem; color: var(--accent-gold); line-height: 1.25; }
         .tc-desc { font-size: 0.92rem; line-height: 1.5; color: #aaa; }
         @media (max-width: 900px) { .topic-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -196,12 +203,12 @@
         </div>
         <div class="nav-controls">
             <div class="lang-switcher">
-                <a data-lang="pl" href="/contact.html" hreflang="pl">PL</a>
-                <a data-lang="en" href="/en/contact.html" hreflang="en">EN</a>
-                <a data-lang="de" href="/de/contact.html" hreflang="de">DE</a>
-                <a data-lang="fr" href="/fr/contact.html" hreflang="fr">FR</a>
-                <a data-lang="es" href="/es/contact.html" hreflang="es">ES</a>
-                <a data-lang="pt" href="/pt/contact.html" hreflang="pt">PT</a>
+                <a data-lang="pl" href="/contact.html" hreflang="pl" title="Polski" aria-label="Polski"><img src="/assets/img/flags/pl.svg" alt="" width="27" height="18"></a>
+                <a data-lang="en" href="/en/contact.html" hreflang="en" title="English" aria-label="English"><img src="/assets/img/flags/en.svg" alt="" width="27" height="18"></a>
+                <a data-lang="de" href="/de/contact.html" hreflang="de" title="Deutsch" aria-label="Deutsch"><img src="/assets/img/flags/de.svg" alt="" width="27" height="18"></a>
+                <a data-lang="fr" href="/fr/contact.html" hreflang="fr" title="Français" aria-label="Français"><img src="/assets/img/flags/fr.svg" alt="" width="27" height="18"></a>
+                <a data-lang="es" href="/es/contact.html" hreflang="es" title="Español" aria-label="Español"><img src="/assets/img/flags/es.svg" alt="" width="27" height="18"></a>
+                <a data-lang="pt" href="/pt/contact.html" hreflang="pt" title="Português" aria-label="Português"><img src="/assets/img/flags/pt.svg" alt="" width="27" height="18"></a>
             </div>
         </div>
     </nav>
@@ -221,10 +228,10 @@
         <section class="topics" aria-labelledby="topics-h">
             <h2 id="topics-h" class="sec-h" data-i18n="contact_help_title">Wie können wir helfen?</h2>
             <div class="topic-grid">
-                <button type="button" class="topic-card" data-topic="Wzory i filmy"><span class="tc-icon" aria-hidden="true">🧶</span><strong data-i18n="contact_t1">Muster & Videos</strong><span class="tc-desc" data-i18n="contact_t1d">Eine Frage zu einem Video oder ein Muster, das einfach nicht klappt</span></button>
-                <button type="button" class="topic-card" data-topic="Zakupy i pliki PDF"><span class="tc-icon" aria-hidden="true">📄</span><strong data-i18n="contact_t2">Käufe & PDF-Dateien</strong><span class="tc-desc" data-i18n="contact_t2d">Datei herunterladen und Bestellungen</span></button>
-                <button type="button" class="topic-card" data-topic="Współpraca"><span class="tc-icon" aria-hidden="true">🤝</span><strong data-i18n="contact_t3">Zusammenarbeit</strong><span class="tc-desc" data-i18n="contact_t3d">Marken, Garngeschäfte, Verlage und Medien</span></button>
-                <button type="button" class="topic-card" data-topic="Aplikacje"><span class="tc-icon" aria-hidden="true">📱</span><strong data-i18n="contact_t4">Apps</strong><span class="tc-desc" data-i18n="contact_t4d">WzorAI und ShiftLens: Fragen und Fehlermeldungen</span></button>
+                <button type="button" class="topic-card" data-topic="Wzory i filmy"><span class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></span><strong data-i18n="contact_t1">Muster & Videos</strong><span class="tc-desc" data-i18n="contact_t1d">Eine Frage zu einem Video oder ein Muster, das einfach nicht klappt</span></button>
+                <button type="button" class="topic-card" data-topic="Zakupy i pliki PDF"><span class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 11v6"/><path d="M9.5 14.5 12 17l2.5-2.5"/></svg></span><strong data-i18n="contact_t2">Käufe & PDF-Dateien</strong><span class="tc-desc" data-i18n="contact_t2d">Datei herunterladen und Bestellungen</span></button>
+                <button type="button" class="topic-card" data-topic="Współpraca"><span class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19.5c.6-3.4 2.8-5.3 5.5-5.3s4.9 1.9 5.5 5.3"/><circle cx="16.6" cy="9" r="2.6"/><path d="M15.3 14.4c2.6-.3 4.6 1.4 5.3 4.6"/></svg></span><strong data-i18n="contact_t3">Zusammenarbeit</strong><span class="tc-desc" data-i18n="contact_t3d">Marken, Garngeschäfte, Verlage und Medien</span></button>
+                <button type="button" class="topic-card" data-topic="Aplikacje"><span class="tc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.8" width="11" height="18.4" rx="2.4"/><path d="M10.5 5.6h3"/><path d="M9.5 9.5h2v2h-2zM12.5 9.5h2v2h-2zM9.5 12.5h2v2h-2zM12.5 12.5h2v2h-2z"/><path d="M11.3 18h1.4"/></svg></span><strong data-i18n="contact_t4">Apps</strong><span class="tc-desc" data-i18n="contact_t4d">WzorAI und ShiftLens: Fragen und Fehlermeldungen</span></button>
             </div>
         </section>
 
@@ -234,35 +241,42 @@
             <div class="contact-info card">
                 <h2 data-i18n="contact_find">✦ So finden Sie uns</h2>
                 <a href="https://www.youtube.com/@ParaDrutow" target="_blank" rel="noopener" class="contact-link-item">
-                    <div class="cli-icon">▶</div>
+                    <div class="cli-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="5.5" width="18.4" height="13" rx="3.6"/><path d="M10.2 9.2v5.6l4.8-2.8z"/></svg></div>
                     <div>
                         <div class="cli-label">YouTube</div>
                         <div class="cli-value">@ParaDrutow</div>
                     </div>
                 </a>
                 <a href="mailto:kontakt@paradrutow.com" class="contact-link-item">
-                    <div class="cli-icon">✉</div>
+                    <div class="cli-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 6.5 8.4 6.4 8.4-6.4"/></svg></div>
                     <div>
                         <div class="cli-label" data-i18n="contact_email">E-Mail</div>
                         <div class="cli-value">kontakt@paradrutow.com</div>
                     </div>
                 </a>
+                <div class="contact-link-item">
+                    <div class="cli-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M12 7.5V12l3 2"/></svg></div>
+                    <div>
+                        <div class="cli-label" data-i18n="contact_reply_label">Antwortzeit</div>
+                        <div class="cli-value" data-i18n="contact_reply_val">meist 1–2 Tage</div>
+                    </div>
+                </div>
                 <a href="/de/patterns.html" class="contact-link-item">
-                    <div class="cli-icon">📄</div>
+                    <div class="cli-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16"/><path d="m10.7 10.7 2.6 2.6m0-2.6-2.6 2.6"/></svg></div>
                     <div>
                         <div class="cli-label" data-i18n="menu_patterns">Muster</div>
                         <div class="cli-value" data-i18n="contact_pat_val">Strickschriften zum Herunterladen</div>
                     </div>
                 </a>
                 <a href="/de/books.html" class="contact-link-item">
-                    <div class="cli-icon">📚</div>
+                    <div class="cli-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5c-1.8-1.3-4.3-1.9-8-1.9v13c3.7 0 6.2.6 8 1.9 1.8-1.3 4.3-1.9 8-1.9v-13c-3.7 0-6.2.6-8 1.9z"/><path d="M12 6.5v13"/></svg></div>
                     <div>
                         <div class="cli-label" data-i18n="menu_books">Bücher</div>
                         <div class="cli-value" data-i18n="contact_books_val">Amazon und Bookshop.org</div>
                     </div>
                 </a>
                 <div class="contact-link-item">
-                    <div class="cli-icon">🧶</div>
+                    <div class="cli-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></div>
                     <div>
                         <div class="cli-label">Para Drutów</div>
                         <div class="cli-value" data-i18n="contact_tagline">Stricken und Wissen</div>
@@ -273,6 +287,7 @@
             <!-- Форма -->
             <div class="contact-form-wrap card">
                 <h2 data-i18n="contact_form_title">Schreiben Sie uns</h2>
+                <p class="form-note" data-i18n="contact_reply_note">Wir antworten in der Regel innerhalb von 1–2 Tagen.</p>
                 <form id="contact-form" action="https://formspree.io/f/myekgodg" method="POST">
                     <input type="hidden" name="_subject" value="Wiadomość z paradrutow.com [DE]">
                     <label>

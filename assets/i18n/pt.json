@@ -363,5 +363,8 @@
   "contact_q5": "Posso sugerir um tema de vídeo?",
   "contact_a5": "Claro! Conte o que você gostaria de tricotar — lemos as sugestões com carinho e as levamos em conta ao planejar novos vídeos.",
   "contact_q6": "Posso vender a receita ou compartilhar o arquivo PDF?",
-  "contact_a6": "Não — as receitas são apenas para uso pessoal e não podem ser copiadas nem revendidas."
+  "contact_a6": "Não — as receitas são apenas para uso pessoal e não podem ser copiadas nem revendidas.",
+  "contact_reply_label": "Tempo de resposta",
+  "contact_reply_val": "normalmente 1–2 dias",
+  "contact_reply_note": "Costumamos responder em 1–2 dias."
 }

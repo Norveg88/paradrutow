@@ -367,5 +367,8 @@
   "contact_q5": "Kann ich ein Thema für ein Video vorschlagen?",
   "contact_a5": "Natürlich! Schreiben Sie, was Sie stricken möchten – wir lesen Vorschläge gern und berücksichtigen sie bei der Planung neuer Videos.",
   "contact_q6": "Darf ich das Muster verkaufen oder die PDF-Datei weitergeben?",
-  "contact_a6": "Nein – die Muster sind nur für den persönlichen Gebrauch bestimmt und dürfen weder kopiert noch weiterverkauft werden."
+  "contact_a6": "Nein – die Muster sind nur für den persönlichen Gebrauch bestimmt und dürfen weder kopiert noch weiterverkauft werden.",
+  "contact_reply_label": "Antwortzeit",
+  "contact_reply_val": "meist 1–2 Tage",
+  "contact_reply_note": "Wir antworten in der Regel innerhalb von 1–2 Tagen."
 }

@@ -371,5 +371,8 @@
   "contact_q5": "Czy mogę zaproponować temat filmu?",
   "contact_a5": "Oczywiście! Napisz, co chcesz zrobić na drutach — chętnie czytamy propozycje i bierzemy je pod uwagę, planując nowe filmy.",
   "contact_q6": "Czy mogę sprzedawać wzór albo udostępniać plik PDF?",
-  "contact_a6": "Nie — wzory są wyłącznie do użytku osobistego i nie wolno ich kopiować ani odsprzedawać."
+  "contact_a6": "Nie — wzory są wyłącznie do użytku osobistego i nie wolno ich kopiować ani odsprzedawać.",
+  "contact_reply_label": "Czas odpowiedzi",
+  "contact_reply_val": "zwykle 1–2 dni",
+  "contact_reply_note": "Odpowiadamy zwykle w ciągu 1–2 dni."
 }

@@ -367,5 +367,8 @@
   "contact_q5": "Puis-je proposer un sujet de vidéo ?",
   "contact_a5": "Bien sûr ! Dites-nous ce que vous aimeriez tricoter — nous lisons volontiers les propositions et en tenons compte pour les prochaines vidéos.",
   "contact_q6": "Puis-je vendre le modèle ou partager le fichier PDF ?",
-  "contact_a6": "Non — les modèles sont réservés à un usage personnel et ne peuvent être ni copiés ni revendus."
+  "contact_a6": "Non — les modèles sont réservés à un usage personnel et ne peuvent être ni copiés ni revendus.",
+  "contact_reply_label": "Délai de réponse",
+  "contact_reply_val": "généralement 1 à 2 jours",
+  "contact_reply_note": "Nous répondons généralement sous 1 à 2 jours."
 }
