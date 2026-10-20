@@ -34,6 +34,9 @@ const PAGES = {
   // content — длинный текст не в словарях, а в scripts/i18n-content/privacy.<lang>.html
   // (польский тоже: правим файл .pl.html, сборка вставляет его в privacy.html)
   'privacy.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_privacy', titleKey: 'title_privacy', content: 'privacy' },
+  // Книги: описания на языке страницы — в scripts/i18n-content/books.<lang>.html; названия книг не переводятся,
+  // у каждой книги метка языка издания. На не-польских страницах первыми идут английские издания.
+  'books.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_books', titleKey: 'title_books', content: 'books' },
   // home — главная: адреса / и /en/; последние ролики, «С чего начать», полка книг и цифры канала
   // вставляются при сборке (renderHome), поэтому главная обновляется вместе с загрузкой видео
   'index.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_home', titleKey: 'title_home', home: true,
