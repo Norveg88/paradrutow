@@ -863,3 +863,15 @@ html.no-fx .song-card {
 .lang-suggest button {
     background: none; border: 0; color: #aaa; font-size: 1.2rem; line-height: 1; cursor: pointer; padding: 0 .25rem;
 }
+
+/* Ikony liniowe w tekście (zamiast emoji) */
+.ico {
+    width: 1.15em; height: 1.15em; display: inline-block; vertical-align: -0.22em; margin-right: 0.35em;
+    color: #e8c88a; filter: drop-shadow(0 0 2px rgba(232,200,138,0.55)) drop-shadow(0 0 6px rgba(197,160,89,0.35));
+}
+.pattern-notice .ico:not(:first-child) { margin-left: 0.5em; }
+.dot {
+    display: inline-block; width: 6px; height: 6px; margin: 0 0.6rem 0.15em 0.1rem; vertical-align: middle;
+    background: linear-gradient(135deg, #e8c88a, var(--accent-copper)); transform: rotate(45deg);
+    box-shadow: 0 0 6px rgba(197,160,89,0.55);
+}

@@ -100,8 +100,8 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="/assets/css/style.css?v=11">
-    <script defer src="/assets/js/lang.js?v=34"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=13">
+    <script defer src="/assets/js/lang.js?v=36"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -169,11 +169,15 @@
             letter-spacing: 0.3px;
         }
         .preview-tile .pt-icon {
-            font-size: 1.8rem;
             display: block;
-            margin-bottom: 0.5rem;
-            opacity: 0.4;
+            margin-bottom: 0.6rem;
+            color: #e8c88a;
+            opacity: 0.75;
         }
+        .pt-svg { width: 34px; height: 34px; display: block; margin: 0 auto; stroke-width: 1.5;
+            filter: drop-shadow(0 0 3px rgba(232,200,138,0.55)) drop-shadow(0 0 9px rgba(197,160,89,0.35)); }
+        .cs-svg { width: 64px; height: 64px; display: block; margin: 0 auto; color: #e8c88a; stroke-width: 1.3;
+            filter: drop-shadow(0 0 4px rgba(232,200,138,0.6)) drop-shadow(0 0 14px rgba(197,160,89,0.45)); }
 
         /* Карточка узора — стиль как у книг */
         .pattern-card {
@@ -242,8 +246,10 @@
             font-size: 0.96rem;
         }
         .pattern-details span::before {
-            content: '◽ ';
-            color: var(--accent-copper);
+            /* złoty romb zamiast emoji ◽ */
+            content: ''; display: inline-block; width: 6px; height: 6px; margin: 0 0.6rem 0.15em 0.15rem;
+            background: linear-gradient(135deg, #e8c88a, var(--accent-copper)); transform: rotate(45deg);
+            box-shadow: 0 0 6px rgba(197,160,89,0.55); vertical-align: middle;
         }
         .pattern-checklist {
             list-style: none;
@@ -356,7 +362,7 @@
             <img src="/assets/img/pattern/cover-5.webp" alt="Zaczarowany Las — Para Drutów" class="pattern-cover" fetchpriority="high">
             <div class="pattern-body">
                 <h2 data-i18n="pat5_title">Zaczarowany Las (Floresta encantada) — Para Drutów | Simples • Marcante • Atemporal</h2>
-                <p data-i18n="pat5_desc">🌿 Um delicado padrão rendado, com um ritmo bonito e efeito 3D. Forma motivos sutis e ondulados que caem lindamente em qualquer projeto. É um padrão muito versátil — serve não só para xales e cachecóis, mas também para roupas e têxteis para a casa. Um motivo, dezenas de possibilidades!</p>
+                <p data-i18n="pat5_desc">Um delicado padrão rendado, com um ritmo bonito e efeito 3D. Forma motivos sutis e ondulados que caem lindamente em qualquer projeto. É um padrão muito versátil — serve não só para xales e cachecóis, mas também para roupas e têxteis para a casa. Um motivo, dezenas de possibilidades!</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat5_level">Dificuldade: fácil / intermediária</strong><br><span style="color:#bbb;font-size:0.88rem;" data-i18n="pat5_level_sub">Um padrão para todos, seja qual for a sua experiência</span></p>
@@ -383,7 +389,7 @@
                 </div>
 
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_materials">Materiais:</strong></p>
-                <p style="color:#bbb;font-size:0.88rem;" data-i18n="pat5_mat">◽ Qualquer fio — lã, algodão, bambu, linho, mesclas (escolha a espessura conforme o projeto)<br>◽ Agulhas adequadas ao fio (circulares ou retas)<br>◽ Tesoura, agulha de tapeçaria, fita métrica<br>◽ Alfinetes / hastes para blocagem (opcional)</p>
+                <p style="color:#bbb;font-size:0.88rem;" data-i18n="pat5_mat"><span class='dot' aria-hidden='true'></span>Qualquer fio — lã, algodão, bambu, linho, mesclas (escolha a espessura conforme o projeto)<br><span class='dot' aria-hidden='true'></span>Agulhas adequadas ao fio (circulares ou retas)<br><span class='dot' aria-hidden='true'></span>Tesoura, agulha de tapeçaria, fita métrica<br><span class='dot' aria-hidden='true'></span>Alfinetes / hastes para blocagem (opcional)</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat5_use_title">Usos — o mesmo padrão, infinitas possibilidades:</strong></p>
@@ -391,16 +397,16 @@
 
                 <div class="pattern-meta">
                     <span class="pattern-tag" data-i18n="lang_pl">🇵🇱 Em polonês</span>
-                    <span class="pattern-tag" data-i18n="tag_pdf7">📄 PDF · 7 páginas</span>
+                    <span class="pattern-tag" data-i18n="tag_pdf7"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF · 7 páginas</span>
                     <span class="pattern-tag" data-i18n="tag_lace3d">Rendado 3D</span>
                     <span class="pattern-tag" data-i18n="tag_easy_med">Fácil / Intermediário</span>
                     <span class="pattern-tag" data-i18n="tag_universal">Versátil</span>
                     <span class="pattern-tag" data-i18n="tag_instant">Download imediato</span>
                 </div>
-                <p class="pattern-lang-note" data-i18n="pat_note_pl">📄 Idioma do PDF: polonês.</p>
+                <p class="pattern-lang-note" data-i18n="pat_note_pl"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>Idioma do PDF: polonês.</p>
                 <a href="https://payhip.com/b/OZhDG" target="_blank" class="btn-youtube" data-i18n="pat_buy">Comprar o padrão em PDF →</a>
 
-                <p class="pattern-notice" data-i18n="pat_notice">⚠️ Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;📩 O arquivo fica disponível para download logo após a compra. &nbsp;🚫 Somente para uso pessoal. É proibido copiar e revender.</p>
+                <p class="pattern-notice" data-i18n="pat_notice"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 3.5 2.8 19.5h18.4z'/><path d='M12 9.5v4.5'/><path d='M12 16.9v.2'/></svg>Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 4v10'/><path d='m7.5 9.8 4.5 4.5 4.5-4.5'/><path d='M4.5 15.5v2.7A1.8 1.8 0 0 0 6.3 20h11.4a1.8 1.8 0 0 0 1.8-1.8v-2.7'/></svg>O arquivo fica disponível para download logo após a compra. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='12' cy='12' r='8.6'/><path d='m5.9 5.9 12.2 12.2'/></svg>Somente para uso pessoal. É proibido copiar e revender.</p>
             </div>
         </div>
 
@@ -409,7 +415,7 @@
             <img src="/assets/img/pattern/cover-4.webp" alt="Ażurowy Liść — Para Drutów" class="pattern-cover" loading="lazy" decoding="async">
             <div class="pattern-body">
                 <h2 data-i18n="pat4_title">Ażurowy Liść (Folha rendada) — Para Drutów | Beleza em cada ponto</h2>
-                <p data-i18n="pat4_desc">🌿 Um delicado rendado em forma de folhas que dá leveza e elegância a qualquer projeto. Este padrão da coleção premium combina transparências sutis e linhas suaves, para que o tecido caia lindamente no corpo.</p>
+                <p data-i18n="pat4_desc">Um delicado rendado em forma de folhas que dá leveza e elegância a qualquer projeto. Este padrão da coleção premium combina transparências sutis e linhas suaves, para que o tecido caia lindamente no corpo.</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat4_level">Dificuldade: ★★★☆☆</strong><br><span style="color:#bbb;font-size:0.88rem;" data-i18n="pat4_level_sub">Para tricoteiras de nível intermediário e avançado</span></p>
@@ -437,7 +443,7 @@
                 </div>
 
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_materials">Materiais:</strong></p>
-                <p style="color:#bbb;font-size:0.88rem;" data-i18n="pat4_mat">◽ Fio de algodão ou mescla de algodão com viscose, 220–250 m / 50 g (ex.: Drops Muskat, YarnArt Lily, Alize Bella)<br>◽ Agulhas retas ou circulares, 3,0–3,5 mm<br>◽ Marcadores, agulha de tapeçaria, tesoura, fita métrica</p>
+                <p style="color:#bbb;font-size:0.88rem;" data-i18n="pat4_mat"><span class='dot' aria-hidden='true'></span>Fio de algodão ou mescla de algodão com viscose, 220–250 m / 50 g (ex.: Drops Muskat, YarnArt Lily, Alize Bella)<br><span class='dot' aria-hidden='true'></span>Agulhas retas ou circulares, 3,0–3,5 mm<br><span class='dot' aria-hidden='true'></span>Marcadores, agulha de tapeçaria, tesoura, fita métrica</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_use">Usos:</strong></p>
@@ -445,16 +451,16 @@
 
                 <div class="pattern-meta">
                     <span class="pattern-tag" data-i18n="lang_pl">🇵🇱 Em polonês</span>
-                    <span class="pattern-tag" data-i18n="tag_pdf7">📄 PDF · 7 páginas</span>
+                    <span class="pattern-tag" data-i18n="tag_pdf7"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF · 7 páginas</span>
                     <span class="pattern-tag" data-i18n="tag_lace">Rendado</span>
                     <span class="pattern-tag" data-i18n="tag_int_adv">Intermediário / Avançado</span>
                     <span class="pattern-tag">Premium</span>
                     <span class="pattern-tag" data-i18n="tag_instant">Download imediato</span>
                 </div>
-                <p class="pattern-lang-note" data-i18n="pat_note_pl">📄 Idioma do PDF: polonês.</p>
+                <p class="pattern-lang-note" data-i18n="pat_note_pl"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>Idioma do PDF: polonês.</p>
                 <a href="https://payhip.com/b/07Hn3" target="_blank" class="btn-youtube" data-i18n="pat_buy">Comprar o padrão em PDF →</a>
 
-                <p class="pattern-notice" data-i18n="pat_notice">⚠️ Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;📩 O arquivo fica disponível para download logo após a compra. &nbsp;🚫 Somente para uso pessoal. É proibido copiar e revender.</p>
+                <p class="pattern-notice" data-i18n="pat_notice"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 3.5 2.8 19.5h18.4z'/><path d='M12 9.5v4.5'/><path d='M12 16.9v.2'/></svg>Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 4v10'/><path d='m7.5 9.8 4.5 4.5 4.5-4.5'/><path d='M4.5 15.5v2.7A1.8 1.8 0 0 0 6.3 20h11.4a1.8 1.8 0 0 0 1.8-1.8v-2.7'/></svg>O arquivo fica disponível para download logo após a compra. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='12' cy='12' r='8.6'/><path d='m5.9 5.9 12.2 12.2'/></svg>Somente para uso pessoal. É proibido copiar e revender.</p>
             </div>
         </div>
 
@@ -463,7 +469,7 @@
             <img src="/assets/img/pattern/cover-3.webp" alt="Letni Ażurowy Wzór na drutach" class="pattern-cover" loading="lazy" decoding="async">
             <div class="pattern-body">
                 <h2 data-i18n="pat3_title">Letni Ażurowy (Rendado de verão) — Um motivo elegante | Padrão rendado em PDF</h2>
-                <p data-i18n="pat3_desc">🌿 Um delicado padrão rendado, perfeito para projetos leves de primavera e verão. Bonito, leve e marcante — um motivo elegante para coletes, blusas e boleros. Fica lindo em fios finos de algodão, linho, bambu ou com seda.</p>
+                <p data-i18n="pat3_desc">Um delicado padrão rendado, perfeito para projetos leves de primavera e verão. Bonito, leve e marcante — um motivo elegante para coletes, blusas e boleros. Fica lindo em fios finos de algodão, linho, bambu ou com seda.</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_contains">O que o PDF inclui:</strong></p>
@@ -494,16 +500,16 @@
 
                 <div class="pattern-meta">
                     <span class="pattern-tag" data-i18n="lang_chart">Legenda PL + EN</span>
-                    <span class="pattern-tag" data-i18n="tag_pdf13">📄 PDF · 13 páginas</span>
+                    <span class="pattern-tag" data-i18n="tag_pdf13"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF · 13 páginas</span>
                     <span class="pattern-tag" data-i18n="tag_lace">Rendado</span>
                     <span class="pattern-tag" data-i18n="tag_intermediate">Intermediário</span>
                     <span class="pattern-tag" data-i18n="tag_spring">Primavera / Verão</span>
                     <span class="pattern-tag" data-i18n="tag_instant">Download imediato</span>
                 </div>
-                <p class="pattern-lang-note" data-i18n="pat_note_chart">📄 Idioma do PDF: polonês, com a legenda dos símbolos em polonês e inglês.</p>
+                <p class="pattern-lang-note" data-i18n="pat_note_chart"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>Idioma do PDF: polonês, com a legenda dos símbolos em polonês e inglês.</p>
                 <a href="https://payhip.com/b/tUIgd" target="_blank" class="btn-youtube" data-i18n="pat_buy">Comprar o padrão em PDF →</a>
 
-                <p class="pattern-notice" data-i18n="pat_notice">⚠️ Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;📩 O arquivo fica disponível para download logo após a compra. &nbsp;🚫 Somente para uso pessoal. É proibido copiar e revender.</p>
+                <p class="pattern-notice" data-i18n="pat_notice"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 3.5 2.8 19.5h18.4z'/><path d='M12 9.5v4.5'/><path d='M12 16.9v.2'/></svg>Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 4v10'/><path d='m7.5 9.8 4.5 4.5 4.5-4.5'/><path d='M4.5 15.5v2.7A1.8 1.8 0 0 0 6.3 20h11.4a1.8 1.8 0 0 0 1.8-1.8v-2.7'/></svg>O arquivo fica disponível para download logo após a compra. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='12' cy='12' r='8.6'/><path d='m5.9 5.9 12.2 12.2'/></svg>Somente para uso pessoal. É proibido copiar e revender.</p>
             </div>
         </div>
 
@@ -512,7 +518,7 @@
             <img src="/assets/img/pattern/cover-2.webp" alt="Powder Leaf Lace Pattern" class="pattern-cover" loading="lazy" decoding="async">
             <div class="pattern-body">
                 <h2 data-i18n="pat2_title">Powder Leaf Lace Pattern — Pudrowe liście (Folhas empoadas) | Padrão rendado em PDF</h2>
-                <p data-i18n="pat2_desc">🌸 Um padrão rendado inspirado em folhas delicadas. Elegante, leve e romântico — ideal para golas, faixas de cabelo, mangas e como detalhe decorativo em roupas.</p>
+                <p data-i18n="pat2_desc">Um padrão rendado inspirado em folhas delicadas. Elegante, leve e romântico — ideal para golas, faixas de cabelo, mangas e como detalhe decorativo em roupas.</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_contains">O que o PDF inclui:</strong></p>
@@ -545,15 +551,15 @@
 
                 <div class="pattern-meta">
                     <span class="pattern-tag" data-i18n="lang_chart">Legenda PL + EN</span>
-                    <span class="pattern-tag" data-i18n="tag_pdf3">📄 PDF · 3 páginas</span>
+                    <span class="pattern-tag" data-i18n="tag_pdf3"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF · 3 páginas</span>
                     <span class="pattern-tag" data-i18n="tag_lace">Rendado</span>
                     <span class="pattern-tag" data-i18n="tag_intermediate">Intermediário</span>
                     <span class="pattern-tag" data-i18n="tag_instant">Download imediato</span>
                 </div>
-                <p class="pattern-lang-note" data-i18n="pat_note_chart">📄 Idioma do PDF: polonês, com a legenda dos símbolos em polonês e inglês.</p>
+                <p class="pattern-lang-note" data-i18n="pat_note_chart"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>Idioma do PDF: polonês, com a legenda dos símbolos em polonês e inglês.</p>
                 <a href="https://payhip.com/b/I72WP" target="_blank" class="btn-youtube" data-i18n="pat_buy">Comprar o padrão em PDF →</a>
 
-                <p class="pattern-notice" data-i18n="pat_notice">⚠️ Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;📩 O arquivo fica disponível para download logo após a compra. &nbsp;🚫 Somente para uso pessoal. É proibido copiar e revender.</p>
+                <p class="pattern-notice" data-i18n="pat_notice"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 3.5 2.8 19.5h18.4z'/><path d='M12 9.5v4.5'/><path d='M12 16.9v.2'/></svg>Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 4v10'/><path d='m7.5 9.8 4.5 4.5 4.5-4.5'/><path d='M4.5 15.5v2.7A1.8 1.8 0 0 0 6.3 20h11.4a1.8 1.8 0 0 0 1.8-1.8v-2.7'/></svg>O arquivo fica disponível para download logo após a compra. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='12' cy='12' r='8.6'/><path d='m5.9 5.9 12.2 12.2'/></svg>Somente para uso pessoal. É proibido copiar e revender.</p>
             </div>
         </div>
 
@@ -562,7 +568,7 @@
             <img src="/assets/img/pattern/cover-1.webp" alt="Lace Leaf Stitch Pattern" class="pattern-cover" loading="lazy" decoding="async">
             <div class="pattern-body">
                 <h2 data-i18n="pat1_title">Lace Leaf Stitch Pattern — Delikatne liście (Folhas delicadas) | Padrão rendado em PDF</h2>
-                <p data-i18n="pat1_desc">🌿 Um padrão rendado inspirado em folhas delicadas. Elegante, leve e versátil — ideal para suéteres, gorros, xales e onde mais você quiser um toque de delicadeza rendada.</p>
+                <p data-i18n="pat1_desc">Um padrão rendado inspirado em folhas delicadas. Elegante, leve e versátil — ideal para suéteres, gorros, xales e onde mais você quiser um toque de delicadeza rendada.</p>
 
                 <p class="pattern-divider">✧ ─────────────── ✧</p>
                 <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_contains">O que o PDF inclui:</strong></p>
@@ -591,20 +597,20 @@
 
                 <div class="pattern-meta">
                     <span class="pattern-tag" data-i18n="lang_chart">Legenda PL + EN</span>
-                    <span class="pattern-tag" data-i18n="tag_pdf3">📄 PDF · 3 páginas</span>
+                    <span class="pattern-tag" data-i18n="tag_pdf3"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF · 3 páginas</span>
                     <span class="pattern-tag" data-i18n="tag_lace">Rendado</span>
                     <span class="pattern-tag" data-i18n="tag_intermediate">Intermediário</span>
                     <span class="pattern-tag" data-i18n="tag_instant">Download imediato</span>
                 </div>
-                <p class="pattern-lang-note" data-i18n="pat_note_chart">📄 Idioma do PDF: polonês, com a legenda dos símbolos em polonês e inglês.</p>
+                <p class="pattern-lang-note" data-i18n="pat_note_chart"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>Idioma do PDF: polonês, com a legenda dos símbolos em polonês e inglês.</p>
                 <a href="https://payhip.com/b/BrVF1" target="_blank" class="btn-youtube" data-i18n="pat_buy">Comprar o padrão em PDF →</a>
 
-                <p class="pattern-notice" data-i18n="pat_notice">⚠️ Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;📩 O arquivo fica disponível para download logo após a compra. &nbsp;🚫 Somente para uso pessoal. É proibido copiar e revender.</p>
+                <p class="pattern-notice" data-i18n="pat_notice"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 3.5 2.8 19.5h18.4z'/><path d='M12 9.5v4.5'/><path d='M12 16.9v.2'/></svg>Este é um padrão de tricô em PDF — não um produto pronto. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 4v10'/><path d='m7.5 9.8 4.5 4.5 4.5-4.5'/><path d='M4.5 15.5v2.7A1.8 1.8 0 0 0 6.3 20h11.4a1.8 1.8 0 0 0 1.8-1.8v-2.7'/></svg>O arquivo fica disponível para download logo após a compra. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='12' cy='12' r='8.6'/><path d='m5.9 5.9 12.2 12.2'/></svg>Somente para uso pessoal. É proibido copiar e revender.</p>
             </div>
         </div>
 
         <div class="coming-soon-wrap card">
-            <span class="cs-icon">🌀</span>
+            <span class="cs-icon"><svg class='cs-svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 2.8c.6 4.4 2.6 6.6 7 7.2-4.4.6-6.4 2.8-7 7.2-.6-4.4-2.6-6.6-7-7.2 4.4-.6 6.4-2.8 7-7.2z'/><path d='M19 16.5c.3 1.7 1 2.4 2.5 2.6-1.5.3-2.2 1-2.5 2.6-.3-1.6-1-2.3-2.5-2.6 1.5-.2 2.2-.9 2.5-2.6z'/></svg></span>
             <h2 class="cs-title" data-i18n="cs_title">Em breve</h2>
             <p class="cs-text" data-i18n="cs_text">Estamos preparando uma coleção de padrões e gráficos para baixar. Aqui teremos coletâneas de pontos, gráficos e projetos completos.</p>
         </div>
@@ -667,10 +673,10 @@
         </div>
 
         <div class="preview-grid">
-            <div class="preview-tile card"><span class="pt-icon">🧶</span><span data-i18n="tile_stitches">Pontos de tricô</span></div>
-            <div class="preview-tile card"><span class="pt-icon">📐</span><span data-i18n="tile_charts">Gráficos</span></div>
-            <div class="preview-tile card"><span class="pt-icon">🧤</span><span data-i18n="tile_projects">Projetos</span></div>
-            <div class="preview-tile card"><span class="pt-icon">📄</span><span data-i18n="tile_pdf">PDFs para baixar</span></div>
+            <div class="preview-tile card"><span class="pt-icon"><svg class='pt-svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='10.5' cy='13.5' r='7.6'/><path d='M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9'/><path d='M7.7 5.4c3 2 6.4 5.4 8.4 8.4'/><path d='M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4'/><path d='M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6'/><path d='M16.6 20.4l4.4-4.4'/><path d='M19.4 14.6l2.2 2.2'/></svg></span><span data-i18n="tile_stitches">Pontos de tricô</span></div>
+            <div class="preview-tile card"><span class="pt-icon"><svg class='pt-svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><rect x='4' y='4' width='16' height='16' rx='1.5'/><path d='M4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16'/><path d='m10.7 10.7 2.6 2.6m0-2.6-2.6 2.6'/></svg></span><span data-i18n="tile_charts">Gráficos</span></div>
+            <div class="preview-tile card"><span class="pt-icon"><svg class='pt-svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M8 21v-3.2C5.6 15.9 4.6 13 5.3 10.4l1.3-4.6A3.6 3.6 0 0 1 13.5 7l.6 2.3 1.6-1.4a2.1 2.1 0 0 1 3 2.9l-3.4 4.4c-.6.8-.9 1.5-.9 2.5V21z'/><path d='M8 18h6.4'/></svg></span><span data-i18n="tile_projects">Projetos</span></div>
+            <div class="preview-tile card"><span class="pt-icon"><svg class='pt-svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg></span><span data-i18n="tile_pdf">PDFs para baixar</span></div>
         </div>
 
     </div>
