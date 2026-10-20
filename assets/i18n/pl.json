@@ -146,7 +146,7 @@
   "apps_h1": "Aplikacje Para Drutów",
   "e404_title": "Nie ma takiej strony",
   "e404_sub": "Ta strona się spruła — ale reszta robótki jest cała.",
-  "e404_text": "Adres mógł się zmienić albo w linku jest literówka. Zacznij od jednej z tych stron:",
+  "e404_text": "Adres mógł się zmienić albo w linku jest literówka. Poszukaj filmu albo wybierz, od czego zacząć:",
   "title_404": "Nie ma takiej strony — Para Drutów",
   "meta_desc_video": "Filmy o robieniu na drutach od Para Drutów — techniki, schematy i wzory krok po kroku. Oglądaj, ucz się i dziergaj z nami we własnym tempie.",
   "meta_desc_shorts": "Krótkie filmy dziewiarskie Para Drutów — szybkie triki, porady i techniki robótek na drutach w minutę. YouTube Shorts dla początkujących i zaawansowanych.",
@@ -374,5 +374,14 @@
   "contact_a6": "Nie — wzory są wyłącznie do użytku osobistego i nie wolno ich kopiować ani odsprzedawać.",
   "contact_reply_label": "Czas odpowiedzi",
   "contact_reply_val": "zwykle 1–2 dni",
-  "contact_reply_note": "Odpowiadamy zwykle w ciągu 1–2 dni."
+  "contact_reply_note": "Odpowiadamy zwykle w ciągu 1–2 dni.",
+  "e404_eyebrow": "Oczko poleciało",
+  "e404_search_ph": "Czego szukasz? np. skarpetki, czapka…",
+  "e404_search_btn": "Szukaj",
+  "e404_back": "← Wróć",
+  "e404_more": "A może tutaj?",
+  "e404_c_video": "Bezpłatne lekcje krok po kroku",
+  "e404_c_patterns": "Schematy PDF do pobrania",
+  "e404_c_books": "Autorskie książki Para Drutów",
+  "e404_c_apps": "WzorAI i ShiftLens"
 }

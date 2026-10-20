@@ -146,7 +146,7 @@
   "apps_h1": "Para Drutów apps",
   "e404_title": "Page not found",
   "e404_sub": "This page has come unravelled — but the rest of the knitting is intact.",
-  "e404_text": "The address may have changed, or there is a typo in the link. Start from one of these pages:",
+  "e404_text": "The address may have changed, or there’s a typo in the link. Search for a video or choose where to start:",
   "title_404": "Page not found — Para Drutów",
   "meta_desc_video": "Knitting videos on YouTube from Para Drutów — techniques, charts and patterns shown step by step. Watch, learn and knit along with us at your own pace.",
   "meta_desc_shorts": "Short knitting videos from Para Drutów — quick tricks, tips and knitting techniques in a minute. YouTube Shorts for beginners and advanced knitters.",
@@ -370,5 +370,14 @@
   "contact_a6": "No — the patterns are for personal use only and may not be copied or resold.",
   "contact_reply_label": "Response time",
   "contact_reply_val": "usually 1–2 days",
-  "contact_reply_note": "We usually reply within 1–2 days."
+  "contact_reply_note": "We usually reply within 1–2 days.",
+  "e404_eyebrow": "A dropped stitch",
+  "e404_search_ph": "What are you looking for? e.g. socks, hat…",
+  "e404_search_btn": "Search",
+  "e404_back": "← Go back",
+  "e404_more": "Maybe here?",
+  "e404_c_video": "Free step-by-step lessons",
+  "e404_c_patterns": "PDF charts to download",
+  "e404_c_books": "Original Para Drutów books",
+  "e404_c_apps": "WzorAI and ShiftLens"
 }

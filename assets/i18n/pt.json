@@ -366,5 +366,18 @@
   "contact_a6": "Não — as receitas são apenas para uso pessoal e não podem ser copiadas nem revendidas.",
   "contact_reply_label": "Tempo de resposta",
   "contact_reply_val": "normalmente 1–2 dias",
-  "contact_reply_note": "Costumamos responder em 1–2 dias."
+  "contact_reply_note": "Costumamos responder em 1–2 dias.",
+  "title_404": "Página não encontrada — Para Drutów",
+  "e404_eyebrow": "Um ponto escapou",
+  "e404_title": "Página não encontrada",
+  "e404_sub": "Esta página desmanchou — mas o resto do tricô está inteiro.",
+  "e404_text": "O endereço pode ter mudado ou há um erro de digitação no link. Procure um vídeo ou escolha por onde começar:",
+  "e404_search_ph": "O que você procura? ex. meias, gorro…",
+  "e404_search_btn": "Buscar",
+  "e404_back": "← Voltar",
+  "e404_more": "Talvez aqui?",
+  "e404_c_video": "Aulas gratuitas passo a passo",
+  "e404_c_patterns": "Receitas em PDF para baixar",
+  "e404_c_books": "Livros autorais da Para Drutów",
+  "e404_c_apps": "WzorAI e ShiftLens"
 }

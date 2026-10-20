@@ -145,8 +145,8 @@
   "ch_contact": "Strickmuster und Werbekooperationen: <a href=\"mailto:kontakt@paradrutow.com\">kontakt@paradrutow.com</a>",
   "apps_h1": "Apps von Para Drutów",
   "e404_title": "Seite nicht gefunden",
-  "e404_sub": "Diese Seite hat sich aufgeribbelt — der Rest des Strickstücks ist heil.",
-  "e404_text": "Die Adresse hat sich vielleicht geändert, oder der Link enthält einen Tippfehler. Starte auf einer dieser Seiten:",
+  "e404_sub": "Diese Seite hat sich aufgeribbelt – der Rest des Strickstücks ist heil.",
+  "e404_text": "Die Adresse hat sich vielleicht geändert, oder der Link enthält einen Tippfehler. Suchen Sie ein Video oder wählen Sie, wo Sie beginnen möchten:",
   "title_404": "Seite nicht gefunden — Para Drutów",
   "video_loading": "Videos werden geladen...",
   "video_error": "⚠️ Die Videos konnten nicht geladen werden. Bitte laden Sie die Seite neu.",
@@ -370,5 +370,14 @@
   "contact_a6": "Nein – die Muster sind nur für den persönlichen Gebrauch bestimmt und dürfen weder kopiert noch weiterverkauft werden.",
   "contact_reply_label": "Antwortzeit",
   "contact_reply_val": "meist 1–2 Tage",
-  "contact_reply_note": "Wir antworten in der Regel innerhalb von 1–2 Tagen."
+  "contact_reply_note": "Wir antworten in der Regel innerhalb von 1–2 Tagen.",
+  "e404_eyebrow": "Eine Masche ist gefallen",
+  "e404_search_ph": "Was suchen Sie? z. B. Socken, Mütze…",
+  "e404_search_btn": "Suchen",
+  "e404_back": "← Zurück",
+  "e404_more": "Vielleicht hier?",
+  "e404_c_video": "Kostenlose Lektionen Schritt für Schritt",
+  "e404_c_patterns": "PDF-Strickschriften zum Herunterladen",
+  "e404_c_books": "Eigene Bücher von Para Drutów",
+  "e404_c_apps": "WzorAI und ShiftLens"
 }

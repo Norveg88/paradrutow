@@ -94,6 +94,9 @@ function detectLang() {
 
     // ---------- Обычные страницы: язык переключает скрипт ----------
     if (explicit) return explicit;
+    // Страница 404 одна на весь сайт: битый адрес /de/… — значит, посетитель читал немецкую версию
+    const pathLang = (location.pathname.match(/^\/([a-z]{2})\//) || [])[1];
+    if (pathLang && SUPPORTED_LANGS.includes(pathLang) && !isCrawler()) return pathLang;
     if (isCrawler()) return "pl";   // роботам — польский, как в HTML
     return browserLang();
 }
@@ -137,7 +140,7 @@ window.PD_LANG = defaultLang;
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
-const I18N_VERSION = 33;
+const I18N_VERSION = 34;
 
 async function loadLang(lang) {
     try {

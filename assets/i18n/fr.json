@@ -145,8 +145,8 @@
   "ch_contact": "Modèles et partenariats publicitaires : <a href=\"mailto:kontakt@paradrutow.com\">kontakt@paradrutow.com</a>",
   "apps_h1": "Applications Para Drutów",
   "e404_title": "Page introuvable",
-  "e404_sub": "Cette page s'est détricotée — mais le reste du tricot est intact.",
-  "e404_text": "L'adresse a peut-être changé, ou le lien contient une faute de frappe. Commencez par l'une de ces pages :",
+  "e404_sub": "Cette page s’est détricotée — mais le reste du tricot est intact.",
+  "e404_text": "L’adresse a peut-être changé, ou le lien contient une faute de frappe. Cherchez une vidéo ou choisissez par où commencer :",
   "title_404": "Page introuvable — Para Drutów",
   "video_loading": "Chargement des vidéos...",
   "video_error": "⚠️ Impossible de charger les vidéos. Veuillez actualiser la page.",
@@ -370,5 +370,14 @@
   "contact_a6": "Non — les modèles sont réservés à un usage personnel et ne peuvent être ni copiés ni revendus.",
   "contact_reply_label": "Délai de réponse",
   "contact_reply_val": "généralement 1 à 2 jours",
-  "contact_reply_note": "Nous répondons généralement sous 1 à 2 jours."
+  "contact_reply_note": "Nous répondons généralement sous 1 à 2 jours.",
+  "e404_eyebrow": "Une maille a filé",
+  "e404_search_ph": "Que cherchez-vous ? ex. chaussettes, bonnet…",
+  "e404_search_btn": "Rechercher",
+  "e404_back": "← Retour",
+  "e404_more": "Et peut-être ici ?",
+  "e404_c_video": "Leçons gratuites pas à pas",
+  "e404_c_patterns": "Grilles PDF à télécharger",
+  "e404_c_books": "Les livres de Para Drutów",
+  "e404_c_apps": "WzorAI et ShiftLens"
 }
