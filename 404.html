@@ -28,15 +28,21 @@
             content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
             background: linear-gradient(to right, transparent, var(--accent-gold), var(--accent-copper), transparent);
         }
-        .e404-art { display: block; width: min(560px, 100%); height: auto; margin: 0 auto 0.6rem; overflow: visible; }
-        .e404-art .digit { font-family: var(--font-header); font-weight: 600; font-size: 228px; }
-        .e404-ball { transform-box: fill-box; transform-origin: center; animation: e404-bob 5s ease-in-out infinite; }
-        .e404-thread { stroke-dasharray: 420; stroke-dashoffset: 420; animation: e404-draw 2.4s 0.3s ease-out forwards; }
-        @keyframes e404-bob { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-6px) rotate(-4deg); } }
+        .e404-art { display: block; width: min(580px, 100%); height: auto; margin: 0 auto 0.6rem; overflow: visible; }
+        .e404-art .digit { font-family: var(--font-header); font-weight: 700; font-size: 250px; }
+        .e404-ball .so { stroke: #3f290b; stroke-width: 6; }
+        .e404-ball .sc { stroke: #d6ad63; stroke-width: 3.9; }
+        .e404-ball .sh { stroke: #fff2cc; stroke-width: 1; opacity: 0.55; transform: translate(-0.8px, -0.8px); }
+        .e404-ball { transform-box: fill-box; transform-origin: 50% 55%; animation: e404-bob 5s ease-in-out infinite; }
+        .e404-thread { stroke-dasharray: 440; stroke-dashoffset: 440; animation: e404-draw 2.4s 0.3s ease-out forwards; }
+        .e404-ply { opacity: 0; animation: e404-fade 0.8s 2.4s ease-out forwards; }
+        @keyframes e404-bob { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-6px) rotate(-3deg); } }
         @keyframes e404-draw { to { stroke-dashoffset: 0; } }
+        @keyframes e404-fade { to { opacity: 0.75; } }
         @media (prefers-reduced-motion: reduce) {
             .e404-ball { animation: none; }
             .e404-thread { animation: none; stroke-dashoffset: 0; }
+            .e404-ply { animation: none; opacity: 0.75; }
         }
 
         .e404-eyebrow {
@@ -159,31 +165,83 @@
 
         <section class="e404">
             <!-- 4 · клубок · 4: нитка разматывается из клубка -->
-            <svg class="e404-art" viewBox="0 0 600 270" role="img" aria-label="404">
+            <svg class="e404-art" viewBox="0 0 600 280" role="img" aria-label="404">
                 <defs>
                     <linearGradient id="e404g" x1="0" y1="0" x2="1" y2="1">
                         <stop offset="0.1" stop-color="#e8c88a"/><stop offset="0.45" stop-color="#fff5d6"/>
                         <stop offset="0.7" stop-color="#c5a059"/><stop offset="1" stop-color="#b87333"/>
                     </linearGradient>
-                    <clipPath id="e404c"><circle cx="300" cy="130" r="71"/></clipPath>
+                    <!-- splot dżersejowy: kolumny oczek "V" -->
+                    <pattern id="e404knit" width="12" height="13" patternUnits="userSpaceOnUse">
+                        <rect width="12" height="13" fill="#7d5a24"/>
+                        <path d="M1.2 0.5C2.6 5 4.4 9.5 6 12.6M10.8 0.5C9.4 5 7.6 9.5 6 12.6" fill="none" stroke="#4a3210" stroke-width="3.8" stroke-linecap="round"/>
+                        <path d="M1.2 0.5C2.6 5 4.4 9.5 6 12.6M10.8 0.5C9.4 5 7.6 9.5 6 12.6" fill="none" stroke="#e9c886" stroke-width="2.3" stroke-linecap="round"/>
+                        <path d="M2 1.6C3 4.6 4 7.4 5 9.6" fill="none" stroke="#fff3d2" stroke-width="0.8" stroke-linecap="round" opacity="0.8"/>
+                    </pattern>
+                    <linearGradient id="e404sheen" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#fff6dc" stop-opacity="0.55"/><stop offset="0.45" stop-color="#fff6dc" stop-opacity="0"/>
+                        <stop offset="1" stop-color="#1a0f00" stop-opacity="0.45"/>
+                    </linearGradient>
+                    <radialGradient id="e404ball" cx="0.38" cy="0.34" r="0.78">
+                        <stop offset="0" stop-color="#f6dca2"/><stop offset="0.55" stop-color="#c79a4f"/><stop offset="1" stop-color="#5b3c14"/>
+                    </radialGradient>
+                    <radialGradient id="e404shade" cx="0.36" cy="0.3" r="0.8">
+                        <stop offset="0" stop-color="#fffbe8" stop-opacity="0.45"/><stop offset="0.35" stop-color="#fffbe8" stop-opacity="0"/>
+                        <stop offset="0.72" stop-color="#140a00" stop-opacity="0.15"/><stop offset="1" stop-color="#140a00" stop-opacity="0.75"/>
+                    </radialGradient>
+                    <linearGradient id="e404needle" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#fff7e0"/><stop offset="0.45" stop-color="#d8b26c"/><stop offset="1" stop-color="#6e4f1e"/>
+                    </linearGradient>
+                    <radialGradient id="e404bead" cx="0.35" cy="0.3" r="0.75">
+                        <stop offset="0" stop-color="#fff7de"/><stop offset="0.5" stop-color="#c99a4c"/><stop offset="1" stop-color="#5e3d12"/>
+                    </radialGradient>
+                    <clipPath id="e404c"><circle cx="300" cy="128" r="76"/></clipPath>
+                    <filter id="e404glow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="b"/>
+                        <feFlood flood-color="#c5a059" flood-opacity="0.45"/><feComposite in2="b" operator="in" result="g"/>
+                        <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
                 </defs>
-                <text class="digit" x="112" y="210" text-anchor="middle" fill="url(#e404g)">4</text>
-                <text class="digit" x="488" y="210" text-anchor="middle" fill="url(#e404g)">4</text>
-                <path class="e404-thread" d="M318 199 C 338 238, 380 214, 404 236 S 470 262, 520 244 S 572 226, 594 248"
-                      fill="none" stroke="url(#e404g)" stroke-width="4" stroke-linecap="round"/>
-                <g class="e404-ball" fill="none" stroke="url(#e404g)" stroke-linecap="round">
-                    <circle cx="300" cy="130" r="73" stroke-width="4"/>
-                    <g clip-path="url(#e404c)" stroke-width="2.6">
-                        <path d="M236 92 C 278 102, 330 150, 346 206"/>
-                        <path d="M256 66 C 302 84, 352 134, 372 176"/>
-                        <path d="M292 54 C 330 70, 362 102, 378 136"/>
-                        <path d="M226 126 C 250 138, 276 164, 292 206"/>
-                        <path d="M232 168 C 266 148, 326 100, 362 76"/>
+
+                <!-- cyfry: cień, dzianina, połysk, złoty kontur -->
+                <g class="e404-digits" filter="url(#e404glow)">
+                    <text class="digit" x="112" y="216" text-anchor="middle" fill="#000" opacity="0.55" transform="translate(4 6)">4</text>
+                    <text class="digit" x="488" y="216" text-anchor="middle" fill="#000" opacity="0.55" transform="translate(4 6)">4</text>
+                    <text class="digit" x="112" y="216" text-anchor="middle" fill="url(#e404knit)">4</text>
+                    <text class="digit" x="488" y="216" text-anchor="middle" fill="url(#e404knit)">4</text>
+                    <text class="digit" x="112" y="216" text-anchor="middle" fill="url(#e404sheen)" stroke="url(#e404g)" stroke-width="2.6">4</text>
+                    <text class="digit" x="488" y="216" text-anchor="middle" fill="url(#e404sheen)" stroke="url(#e404g)" stroke-width="2.6">4</text>
+                </g>
+
+                <!-- nitka z klubka -->
+                <path class="e404-thread" d="M322 200 C 342 240, 382 216, 406 238 S 472 266, 522 248 S 574 230, 596 252"
+                      fill="none" stroke="#5a3c12" stroke-width="6.5" stroke-linecap="round"/>
+                <path class="e404-thread" d="M322 200 C 342 240, 382 216, 406 238 S 472 266, 522 248 S 574 230, 596 252"
+                      fill="none" stroke="url(#e404g)" stroke-width="4.4" stroke-linecap="round"/>
+                <path class="e404-ply" d="M322 200 C 342 240, 382 216, 406 238 S 472 266, 522 248 S 574 230, 596 252"
+                      fill="none" stroke="#fff3d2" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="5 6" opacity="0.75"/>
+
+                <!-- klubek -->
+                <g class="e404-ball">
+                    <ellipse cx="306" cy="214" rx="58" ry="9" fill="#000" opacity="0.45" class="e404-shadow"/>
+                    <circle cx="300" cy="128" r="76" fill="url(#e404ball)"/>
+                    <g clip-path="url(#e404c)" fill="none" stroke-linecap="round">
+                        <g transform="rotate(18 300 128)"><path class="so" d="M300 52A3 76 0 0 0 300 204M300 52A3 76 0 0 1 300 204M300 52A9.2 76 0 0 0 300 204M300 52A9.2 76 0 0 1 300 204M300 52A15.4 76 0 0 0 300 204M300 52A15.4 76 0 0 1 300 204M300 52A21.6 76 0 0 0 300 204M300 52A21.6 76 0 0 1 300 204M300 52A27.8 76 0 0 0 300 204M300 52A27.8 76 0 0 1 300 204M300 52A34 76 0 0 0 300 204M300 52A34 76 0 0 1 300 204M300 52A40.2 76 0 0 0 300 204M300 52A40.2 76 0 0 1 300 204M300 52A46.4 76 0 0 0 300 204M300 52A46.4 76 0 0 1 300 204M300 52A52.6 76 0 0 0 300 204M300 52A52.6 76 0 0 1 300 204M300 52A58.8 76 0 0 0 300 204M300 52A58.8 76 0 0 1 300 204M300 52A65 76 0 0 0 300 204M300 52A65 76 0 0 1 300 204M300 52A71.2 76 0 0 0 300 204M300 52A71.2 76 0 0 1 300 204"/><path class="sc" d="M300 52A3 76 0 0 0 300 204M300 52A3 76 0 0 1 300 204M300 52A9.2 76 0 0 0 300 204M300 52A9.2 76 0 0 1 300 204M300 52A15.4 76 0 0 0 300 204M300 52A15.4 76 0 0 1 300 204M300 52A21.6 76 0 0 0 300 204M300 52A21.6 76 0 0 1 300 204M300 52A27.8 76 0 0 0 300 204M300 52A27.8 76 0 0 1 300 204M300 52A34 76 0 0 0 300 204M300 52A34 76 0 0 1 300 204M300 52A40.2 76 0 0 0 300 204M300 52A40.2 76 0 0 1 300 204M300 52A46.4 76 0 0 0 300 204M300 52A46.4 76 0 0 1 300 204M300 52A52.6 76 0 0 0 300 204M300 52A52.6 76 0 0 1 300 204M300 52A58.8 76 0 0 0 300 204M300 52A58.8 76 0 0 1 300 204M300 52A65 76 0 0 0 300 204M300 52A65 76 0 0 1 300 204M300 52A71.2 76 0 0 0 300 204M300 52A71.2 76 0 0 1 300 204"/><path class="sh" d="M300 52A3 76 0 0 0 300 204M300 52A3 76 0 0 1 300 204M300 52A9.2 76 0 0 0 300 204M300 52A9.2 76 0 0 1 300 204M300 52A15.4 76 0 0 0 300 204M300 52A15.4 76 0 0 1 300 204M300 52A21.6 76 0 0 0 300 204M300 52A21.6 76 0 0 1 300 204M300 52A27.8 76 0 0 0 300 204M300 52A27.8 76 0 0 1 300 204M300 52A34 76 0 0 0 300 204M300 52A34 76 0 0 1 300 204M300 52A40.2 76 0 0 0 300 204M300 52A40.2 76 0 0 1 300 204M300 52A46.4 76 0 0 0 300 204M300 52A46.4 76 0 0 1 300 204M300 52A52.6 76 0 0 0 300 204M300 52A52.6 76 0 0 1 300 204M300 52A58.8 76 0 0 0 300 204M300 52A58.8 76 0 0 1 300 204M300 52A65 76 0 0 0 300 204M300 52A65 76 0 0 1 300 204M300 52A71.2 76 0 0 0 300 204M300 52A71.2 76 0 0 1 300 204"/></g>
+                        <g transform="rotate(-52 300 128)"><path class="so" d="M300 52A3 76 0 0 1 300 204M300 52A9.2 76 0 0 1 300 204M300 52A15.4 76 0 0 1 300 204M300 52A21.6 76 0 0 1 300 204M300 52A27.8 76 0 0 1 300 204M300 52A34 76 0 0 1 300 204M300 52A40.2 76 0 0 1 300 204M300 52A46.4 76 0 0 1 300 204M300 52A52.6 76 0 0 1 300 204M300 52A58.8 76 0 0 1 300 204M300 52A65 76 0 0 1 300 204M300 52A71.2 76 0 0 1 300 204"/><path class="sc" d="M300 52A3 76 0 0 1 300 204M300 52A9.2 76 0 0 1 300 204M300 52A15.4 76 0 0 1 300 204M300 52A21.6 76 0 0 1 300 204M300 52A27.8 76 0 0 1 300 204M300 52A34 76 0 0 1 300 204M300 52A40.2 76 0 0 1 300 204M300 52A46.4 76 0 0 1 300 204M300 52A52.6 76 0 0 1 300 204M300 52A58.8 76 0 0 1 300 204M300 52A65 76 0 0 1 300 204M300 52A71.2 76 0 0 1 300 204"/><path class="sh" d="M300 52A3 76 0 0 1 300 204M300 52A9.2 76 0 0 1 300 204M300 52A15.4 76 0 0 1 300 204M300 52A21.6 76 0 0 1 300 204M300 52A27.8 76 0 0 1 300 204M300 52A34 76 0 0 1 300 204M300 52A40.2 76 0 0 1 300 204M300 52A46.4 76 0 0 1 300 204M300 52A52.6 76 0 0 1 300 204M300 52A58.8 76 0 0 1 300 204M300 52A65 76 0 0 1 300 204M300 52A71.2 76 0 0 1 300 204"/></g>
+                        <g transform="rotate(84 300 128)"><path class="so" d="M300 52A3 76 0 0 0 300 204M300 52A9.2 76 0 0 0 300 204M300 52A15.4 76 0 0 0 300 204M300 52A21.6 76 0 0 0 300 204M300 52A27.8 76 0 0 0 300 204M300 52A34 76 0 0 0 300 204M300 52A40.2 76 0 0 0 300 204"/><path class="sc" d="M300 52A3 76 0 0 0 300 204M300 52A9.2 76 0 0 0 300 204M300 52A15.4 76 0 0 0 300 204M300 52A21.6 76 0 0 0 300 204M300 52A27.8 76 0 0 0 300 204M300 52A34 76 0 0 0 300 204M300 52A40.2 76 0 0 0 300 204"/><path class="sh" d="M300 52A3 76 0 0 0 300 204M300 52A9.2 76 0 0 0 300 204M300 52A15.4 76 0 0 0 300 204M300 52A21.6 76 0 0 0 300 204M300 52A27.8 76 0 0 0 300 204M300 52A34 76 0 0 0 300 204M300 52A40.2 76 0 0 0 300 204"/></g>
+                        <circle cx="300" cy="128" r="76" fill="url(#e404shade)" stroke="none"/>
                     </g>
-                    <path d="M334 70 L 402 12" stroke-width="4"/>
-                    <path d="M352 82 L 426 30" stroke-width="4"/>
-                    <circle cx="406" cy="9" r="5" stroke-width="3"/>
-                    <circle cx="430" cy="27" r="5" stroke-width="3"/>
+                    <circle cx="300" cy="128" r="76" fill="none" stroke="#3e2808" stroke-width="2"/>
+                    <circle cx="300" cy="128" r="77.5" fill="none" stroke="url(#e404g)" stroke-width="1.2" opacity="0.7"/>
+                    <!-- druty -->
+                    <g transform="translate(318 98) rotate(-41)">
+                        <rect x="0" y="-3.2" width="132" height="6.4" rx="3.2" fill="url(#e404needle)" stroke="#4a3210" stroke-width="0.8"/>
+                        <circle cx="136" cy="0" r="8" fill="url(#e404bead)" stroke="#4a3210" stroke-width="0.8"/>
+                    </g>
+                    <g transform="translate(334 114) rotate(-33)">
+                        <rect x="0" y="-3.2" width="128" height="6.4" rx="3.2" fill="url(#e404needle)" stroke="#4a3210" stroke-width="0.8"/>
+                        <circle cx="132" cy="0" r="8" fill="url(#e404bead)" stroke="#4a3210" stroke-width="0.8"/>
+                    </g>
                 </g>
             </svg>
 
