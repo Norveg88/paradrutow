@@ -36,7 +36,7 @@
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-fr.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paradrutow.com/#org","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/logo-512.png","description":"Le tricot pas à pas — vidéos YouTube, modèles PDF, livres et applis WzorAI et ShiftLens.","sameAs":["https://www.youtube.com/@ParaDrutow"]},{"@type":"WebSite","@id":"https://paradrutow.com/#website","url":"https://paradrutow.com","name":"Para Drutów","inLanguage":"fr","publisher":{"@id":"https://paradrutow.com/#org"}}]}</script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=30"></script>
+    <script defer src="/assets/js/lang.js?v=31"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card,.reveal{opacity:1!important;transform:none!important}</style></noscript>
@@ -87,7 +87,8 @@
             -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
             text-shadow: none;
         }
-        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; }
+        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; text-wrap: balance; }
+        .hero-sub .hs { display: block; }
         .hero-proof { margin: 0 auto 1.6rem; }
         .proof-main {
             display: block; font-family: var(--font-header); font-style: italic;
@@ -230,10 +231,13 @@
         .head-icon svg { width: 100%; height: 100%; display: block; }
         .head-icon--gold { color: var(--accent-gold); filter: drop-shadow(0 0 6px rgba(197,160,89,0.25)); }
         .why-card h2 { font-family: var(--font-header); font-weight: 600; color: var(--accent-gold); font-size: 1.75rem; line-height: 1.25; margin: 0 0 1rem; }
-        .why-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 1rem 1.4rem; margin: 1.2rem 0; }
-        .why-item { display: flex; align-items: flex-start; gap: 0.7rem; color: #ccc; font-size: 1.05rem; line-height: 1.55; }
-        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.6rem; margin-top: 5px; flex-shrink: 0; }
-        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin-top: 1.5rem; font-size: 1.15rem; line-height: 1.6; }
+        .why-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem 2.4rem; margin: 1.6rem 0; }
+        .why-item { display: flex; align-items: flex-start; gap: 0.75rem; }
+        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.65rem; margin-top: 0.55rem; flex-shrink: 0; }
+        .why-item strong { display: block; font-family: var(--font-header); font-weight: 700; color: var(--accent-gold); font-size: 1.22rem; line-height: 1.3; margin-bottom: 0.25rem; }
+        .why-item span { display: block; color: #bbb; font-size: 1rem; line-height: 1.6; text-wrap: pretty; }
+        @media (max-width: 760px) { .why-list { grid-template-columns: 1fr; gap: 1.1rem; } }
+        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin: 1.6rem auto 0; max-width: 640px; font-size: 1.15rem; line-height: 1.6; text-wrap: balance; }
 
         /* ---------- Стихотворение ---------- */
         .poem-card {
@@ -321,7 +325,7 @@
             <div class="hero-content">
                 <p class="hero-eyebrow" data-i18n="home_eyebrow">Artisanat · Savoir · Passion</p>
                 <h1 data-i18n="home_title">Para Drutów</h1>
-                <p class="hero-sub" data-i18n="home_subtitle">Le tricot qui inspire. Le savoir qui guide pas à pas.</p>
+                <p class="hero-sub" data-i18n="home_subtitle"><span class="hs">Le tricot qui inspire.</span> <span class="hs">Le savoir qui guide pas à pas.</span></p>
                 <!-- home:proof (scripts/build-pages.js — liczby z assets/data/channel.json) -->
                 <p class="hero-proof"><span class="proof-main">17 millions de fois, quelqu’un s’est installé avec nous pour tricoter.</span><span class="proof-meta">252 vidéos · 28 500 personnes sur la chaîne · site en 6 langues</span></p>
                 <!-- /home:proof -->
@@ -473,14 +477,16 @@
             <h2 class="head-with-icon"><span class="head-icon head-icon--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></span><span data-i18n="home_why_title">Pourquoi Para Drutów ?</span></h2>
             <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Parce que nous croyons que le tricot est plus qu'un passe-temps. C'est une compétence qu'on peut développer consciemment, calmement et avec satisfaction.</p>
             <div class="why-list">
-                <div class="why-item" data-i18n="home_why_li1">apprendre sans pression</div>
-                <div class="why-item" data-i18n="home_why_li2">savoir fondé sur l'expérience</div>
-                <div class="why-item" data-i18n="home_why_li3">outils modernes au service de l'artisanat traditionnel</div>
-                <div class="why-item" data-i18n="home_why_li4">un site en six langues et de plus en plus de vidéos doublées dans d’autres langues</div>
-                <div class="why-item" data-i18n="home_why_li5">motifs et livres créés de A à Z</div>
+                <div class="why-item"><div><strong data-i18n="home_why_h1">Apprendre sans pression</strong><span data-i18n="home_why_d1">Un rythme calme et des gros plans sur les aiguilles : même un point difficile devient une suite de gestes simples.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h2">Un savoir né de l’expérience</strong><span data-i18n="home_why_d2">Derrière chaque vidéo, des années de tricot, pas de la théorie de manuel.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h3">De la première maille à votre propre projet</strong><span data-i18n="home_why_d3">Un parcours clair pour débutants, intermédiaires et avancés.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h4">Gratuit et sans inscription</strong><span data-i18n="home_why_d4">Toutes les vidéos sont gratuites : il suffit d’appuyer sur lecture et de tricoter.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h5">Modèles et livres originaux</strong><span data-i18n="home_why_d5">Conçus de A à Z, décrits en détail et publiés en plusieurs langues.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h6">Tradition et modernité</strong><span data-i18n="home_why_d6">Des techniques classiques soutenues par de nouveaux outils, comme l’application WzorAI.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h7">Tricoter en plusieurs langues</strong><span data-i18n="home_why_d7">Un site en six langues et de plus en plus de vidéos doublées.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h8">Tout au même endroit</strong><span data-i18n="home_why_d8">Vidéos, Shorts, modèles, livres et applications, sans chercher partout sur Internet.</span></div></div>
             </div>
-            <p class="why-outro" data-i18n="home_why_outro">Bienvenue dans un monde où les schémas cessent d'être une énigme,
-et le tricot devient un vrai plaisir.</p>
+            <p class="why-outro" data-i18n="home_why_outro">Bienvenue dans un monde où les modèles cessent d’être une énigme et où le tricot devient un vrai plaisir.</p>
         </div>
 
         <!-- Стихотворение: на каждом языке своя версия -->

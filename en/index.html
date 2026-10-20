@@ -36,7 +36,7 @@
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-en.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paradrutow.com/#org","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/logo-512.png","description":"Knitting step by step — YouTube videos, PDF patterns, books and the WzorAI and ShiftLens apps.","sameAs":["https://www.youtube.com/@ParaDrutow"]},{"@type":"WebSite","@id":"https://paradrutow.com/#website","url":"https://paradrutow.com","name":"Para Drutów","inLanguage":"en","publisher":{"@id":"https://paradrutow.com/#org"}}]}</script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=30"></script>
+    <script defer src="/assets/js/lang.js?v=31"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card,.reveal{opacity:1!important;transform:none!important}</style></noscript>
@@ -87,7 +87,8 @@
             -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
             text-shadow: none;
         }
-        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; }
+        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; text-wrap: balance; }
+        .hero-sub .hs { display: block; }
         .hero-proof { margin: 0 auto 1.6rem; }
         .proof-main {
             display: block; font-family: var(--font-header); font-style: italic;
@@ -230,10 +231,13 @@
         .head-icon svg { width: 100%; height: 100%; display: block; }
         .head-icon--gold { color: var(--accent-gold); filter: drop-shadow(0 0 6px rgba(197,160,89,0.25)); }
         .why-card h2 { font-family: var(--font-header); font-weight: 600; color: var(--accent-gold); font-size: 1.75rem; line-height: 1.25; margin: 0 0 1rem; }
-        .why-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 1rem 1.4rem; margin: 1.2rem 0; }
-        .why-item { display: flex; align-items: flex-start; gap: 0.7rem; color: #ccc; font-size: 1.05rem; line-height: 1.55; }
-        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.6rem; margin-top: 5px; flex-shrink: 0; }
-        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin-top: 1.5rem; font-size: 1.15rem; line-height: 1.6; }
+        .why-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem 2.4rem; margin: 1.6rem 0; }
+        .why-item { display: flex; align-items: flex-start; gap: 0.75rem; }
+        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.65rem; margin-top: 0.55rem; flex-shrink: 0; }
+        .why-item strong { display: block; font-family: var(--font-header); font-weight: 700; color: var(--accent-gold); font-size: 1.22rem; line-height: 1.3; margin-bottom: 0.25rem; }
+        .why-item span { display: block; color: #bbb; font-size: 1rem; line-height: 1.6; text-wrap: pretty; }
+        @media (max-width: 760px) { .why-list { grid-template-columns: 1fr; gap: 1.1rem; } }
+        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin: 1.6rem auto 0; max-width: 640px; font-size: 1.15rem; line-height: 1.6; text-wrap: balance; }
 
         /* ---------- Стихотворение ---------- */
         .poem-card {
@@ -321,7 +325,7 @@
             <div class="hero-content">
                 <p class="hero-eyebrow" data-i18n="home_eyebrow">Craft · Knowledge · Passion</p>
                 <h1 data-i18n="home_title">Para Drutów</h1>
-                <p class="hero-sub" data-i18n="home_subtitle">Knitting that inspires. Knowledge that guides step by step.</p>
+                <p class="hero-sub" data-i18n="home_subtitle"><span class="hs">Knitting that inspires.</span> <span class="hs">Knowledge that guides you step by step.</span></p>
                 <!-- home:proof (scripts/build-pages.js — liczby z assets/data/channel.json) -->
                 <p class="hero-proof"><span class="proof-main">17 million times someone has sat down to knit with us.</span><span class="proof-meta">252 videos · 28,500 people on the channel · site in 6 languages</span></p>
                 <!-- /home:proof -->
@@ -473,14 +477,16 @@
             <h2 class="head-with-icon"><span class="head-icon head-icon--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></span><span data-i18n="home_why_title">Why Para Drutów?</span></h2>
             <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Because we believe knitting is more than a hobby. It's a skill you can develop consciously, calmly and with satisfaction.</p>
             <div class="why-list">
-                <div class="why-item" data-i18n="home_why_li1">education without pressure</div>
-                <div class="why-item" data-i18n="home_why_li2">knowledge based on experience</div>
-                <div class="why-item" data-i18n="home_why_li3">modern tools supporting traditional craft</div>
-                <div class="why-item" data-i18n="home_why_li4">a site in six languages and more and more videos dubbed into other languages</div>
-                <div class="why-item" data-i18n="home_why_li5">patterns and publications created from scratch</div>
+                <div class="why-item"><div><strong data-i18n="home_why_h1">Learning without pressure</strong><span data-i18n="home_why_d1">A calm pace and close-ups of the needles — even a tricky stitch broken down into simple moves.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h2">Knowledge from experience</strong><span data-i18n="home_why_d2">Behind every video are years of knitting, not textbook theory.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h3">From your first stitch to your own design</strong><span data-i18n="home_why_d3">A clear path for beginners, intermediate and advanced knitters.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h4">Free, no sign-up</strong><span data-i18n="home_why_d4">All videos are free to watch — just press play and knit.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h5">Original patterns and books</strong><span data-i18n="home_why_d5">Designed from scratch, described in detail and published in several languages.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h6">Tradition meets modern tools</strong><span data-i18n="home_why_d6">Classic techniques supported by new tools such as the WzorAI app.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h7">Knitting in many languages</strong><span data-i18n="home_why_d7">A site in six languages and more and more dubbed videos.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h8">Everything in one place</strong><span data-i18n="home_why_d8">Videos, Shorts, patterns, books and apps — no searching all over the internet.</span></div></div>
             </div>
-            <p class="why-outro" data-i18n="home_why_outro">Welcome to a world where patterns stop being a mystery,
-and knitting becomes a true pleasure.</p>
+            <p class="why-outro" data-i18n="home_why_outro">Welcome to a world where patterns stop being a mystery and knitting becomes a true pleasure.</p>
         </div>
 
         <!-- Стихотворение: на каждом языке своя версия -->

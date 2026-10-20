@@ -36,7 +36,7 @@
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-pl.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paradrutow.com/#org","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/logo-512.png","description":"Dziewiarstwo krok po kroku — filmy YouTube, wzory PDF, książki oraz aplikacje WzorAI i ShiftLens.","sameAs":["https://www.youtube.com/@ParaDrutow"]},{"@type":"WebSite","@id":"https://paradrutow.com/#website","url":"https://paradrutow.com","name":"Para Drutów","inLanguage":"pl","publisher":{"@id":"https://paradrutow.com/#org"}}]}</script>
     <link rel="stylesheet" href="/assets/css/style.css?v=10">
-    <script defer src="/assets/js/lang.js?v=30"></script>
+    <script defer src="/assets/js/lang.js?v=31"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card,.reveal{opacity:1!important;transform:none!important}</style></noscript>
@@ -87,7 +87,8 @@
             -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
             text-shadow: none;
         }
-        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; }
+        .hero-sub { font-size: clamp(1.05rem, 2vw, 1.25rem); color: #e8e2d6; margin: 0 auto 1.2rem; line-height: 1.55; max-width: 600px; text-wrap: balance; }
+        .hero-sub .hs { display: block; }
         .hero-proof { margin: 0 auto 1.6rem; }
         .proof-main {
             display: block; font-family: var(--font-header); font-style: italic;
@@ -230,10 +231,13 @@
         .head-icon svg { width: 100%; height: 100%; display: block; }
         .head-icon--gold { color: var(--accent-gold); filter: drop-shadow(0 0 6px rgba(197,160,89,0.25)); }
         .why-card h2 { font-family: var(--font-header); font-weight: 600; color: var(--accent-gold); font-size: 1.75rem; line-height: 1.25; margin: 0 0 1rem; }
-        .why-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); gap: 1rem 1.4rem; margin: 1.2rem 0; }
-        .why-item { display: flex; align-items: flex-start; gap: 0.7rem; color: #ccc; font-size: 1.05rem; line-height: 1.55; }
-        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.6rem; margin-top: 5px; flex-shrink: 0; }
-        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin-top: 1.5rem; font-size: 1.15rem; line-height: 1.6; }
+        .why-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem 2.4rem; margin: 1.6rem 0; }
+        .why-item { display: flex; align-items: flex-start; gap: 0.75rem; }
+        .why-item::before { content: '◆'; color: var(--accent-copper); font-size: 0.65rem; margin-top: 0.55rem; flex-shrink: 0; }
+        .why-item strong { display: block; font-family: var(--font-header); font-weight: 700; color: var(--accent-gold); font-size: 1.22rem; line-height: 1.3; margin-bottom: 0.25rem; }
+        .why-item span { display: block; color: #bbb; font-size: 1rem; line-height: 1.6; text-wrap: pretty; }
+        @media (max-width: 760px) { .why-list { grid-template-columns: 1fr; gap: 1.1rem; } }
+        .why-outro { text-align: center; font-style: italic; color: var(--accent-gold); margin: 1.6rem auto 0; max-width: 640px; font-size: 1.15rem; line-height: 1.6; text-wrap: balance; }
 
         /* ---------- Стихотворение ---------- */
         .poem-card {
@@ -321,7 +325,7 @@
             <div class="hero-content">
                 <p class="hero-eyebrow" data-i18n="home_eyebrow">Rękodzieło · Wiedza · Pasja</p>
                 <h1 data-i18n="home_title">Para Drutów</h1>
-                <p class="hero-sub" data-i18n="home_subtitle">Dziewiarstwo, które inspiruje. Wiedza, która prowadzi krok po kroku.</p>
+                <p class="hero-sub" data-i18n="home_subtitle"><span class="hs">Dziewiarstwo, które inspiruje.</span> <span class="hs">Wiedza, która prowadzi krok po kroku.</span></p>
                 <!-- home:proof (scripts/build-pages.js — liczby z assets/data/channel.json) -->
                 <p class="hero-proof"><span class="proof-main">17 mln razy ktoś już usiadł z nami do drutów.</span><span class="proof-meta">252 filmy · 28 500 osób na kanale · strona w 6 językach</span></p>
                 <!-- /home:proof -->
@@ -476,13 +480,16 @@
             <h2 class="head-with-icon"><span class="head-icon head-icon--gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="13.5" r="7.6"/><path d="M5.3 8.2c2.7 1.2 5.6 4.1 6.9 6.9"/><path d="M7.7 5.4c3 2 6.4 5.4 8.4 8.4"/><path d="M14.2 6.2c1.8 1.4 3.3 3.3 4.2 5.4"/><path d="M3.3 11.6c1.3 1 2.6 2.3 3.6 3.6"/><path d="M16.6 20.4l4.4-4.4"/><path d="M19.4 14.6l2.2 2.2"/></svg></span><span data-i18n="home_why_title">Dlaczego Para drutów?</span></h2>
             <p style="color:#bbb;margin:0 0 1rem;line-height:1.7" data-i18n="home_why_intro">Bo wierzymy, że dziewiarstwo to coś więcej niż hobby. To umiejętność, którą można rozwijać świadomie, spokojnie i z satysfakcją.</p>
             <div class="why-list">
-                <div class="why-item" data-i18n="home_why_li1">edukacja bez presji</div>
-                <div class="why-item" data-i18n="home_why_li2">wiedza oparta na doświadczeniu</div>
-                <div class="why-item" data-i18n="home_why_li3">nowoczesne narzędzia wspierające tradycyjne rzemiosło</div>
-                <div class="why-item" data-i18n="home_why_li4">strona w sześciu językach i coraz więcej filmów z lektorem w innych językach</div>
-                <div class="why-item" data-i18n="home_why_li5">wzory i publikacje tworzone od podstaw</div>
+                <div class="why-item"><div><strong data-i18n="home_why_h1">Nauka bez presji</strong><span data-i18n="home_why_d1">Spokojne tempo i zbliżenia na druty — nawet trudny ścieg rozkładamy na proste ruchy.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h2">Wiedza z doświadczenia</strong><span data-i18n="home_why_d2">Za każdym filmem stoją lata pracy na drutach, a nie teoria z podręcznika.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h3">Od pierwszego oczka do własnego projektu</strong><span data-i18n="home_why_d3">Jasna ścieżka dla początkujących, średnio zaawansowanych i zaawansowanych.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h4">Bezpłatnie i bez rejestracji</strong><span data-i18n="home_why_d4">Wszystkie filmy są dostępne za darmo — wystarczy włączyć i dziergać.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h5">Autorskie wzory i książki</strong><span data-i18n="home_why_d5">Projektowane od podstaw, dokładnie opisane i wydane w kilku językach.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h6">Tradycja i nowoczesność</strong><span data-i18n="home_why_d6">Klasyczne techniki wspierane nowymi narzędziami, takimi jak aplikacja WzorAI.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h7">Dziergamy w wielu językach</strong><span data-i18n="home_why_d7">Strona w sześciu językach i coraz więcej filmów z lektorem.</span></div></div>
+                <div class="why-item"><div><strong data-i18n="home_why_h8">Wszystko w jednym miejscu</strong><span data-i18n="home_why_d8">Filmy, Shorts, wzory, książki i aplikacje — bez szukania po całym internecie.</span></div></div>
             </div>
-            <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką,<br>a dziewiarstwo staje się prawdziwą przyjemnością.</p>
+            <p class="why-outro" data-i18n="home_why_outro">Zapraszamy do świata, w którym wzory przestają być zagadką, a dziewiarstwo staje się prawdziwą przyjemnością.</p>
         </div>
 
         <!-- Стихотворение: на каждом языке своя версия -->
