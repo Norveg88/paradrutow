@@ -97,11 +97,11 @@ function renderCards(items, kind, lang) {
 // ---------- переключатель языков: ссылки на существующие версии, кнопки для остальных ----------
 // Flagi w przełączniku: pliki assets/img/flags/<lang>.svg, nazwa języka w title/aria-label
 const LANG_NAMES = { pl: 'Polski', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español', pt: 'Português' };
-const flagImg = l => `<img src="/assets/img/flags/${l}.svg" alt="" width="27" height="18">`;
+const flagImg = l => `<img src="/assets/img/flags/${l}.svg" alt="${LANG_NAMES[l]}" width="27" height="18">`;
 function renderSwitcher(file, langs) {
   const items = ALL_LANGS.map(l => langs.includes(l)
-    ? `                <a data-lang="${l}" href="${pageUrl(file, l)}" hreflang="${l}" title="${LANG_NAMES[l]}" aria-label="${LANG_NAMES[l]}">${flagImg(l)}</a>`
-    : `                <button data-lang="${l}" title="${LANG_NAMES[l]}" aria-label="${LANG_NAMES[l]}">${flagImg(l)}</button>`);
+    ? `                <a data-lang="${l}" href="${pageUrl(file, l)}" hreflang="${l}" title="${LANG_NAMES[l]}">${flagImg(l)}</a>`
+    : `                <button data-lang="${l}" title="${LANG_NAMES[l]}">${flagImg(l)}</button>`);
   return `<div class="lang-switcher">\n${items.join('\n')}\n            </div>`;
 }
 
@@ -225,6 +225,12 @@ function translate(html, file, cfg, lang) {
   html = html.replace(/(<[^>]*\sdata-i18n-placeholder="([^"]+)"[^>]*>)/g, (m, tagStr, key) => {
     const v = val(key);
     return v === undefined ? m : tagStr.replace(/(\s)placeholder="[^"]*"/, `$1placeholder="${esc(v)}"`);
+  });
+
+  // opis obrazka: <img alt="…" data-i18n-alt="klucz">
+  html = html.replace(/<img\b[^>]*\sdata-i18n-alt="([^"]+)"[^>]*>/g, (tagStr, key) => {
+    const v = val(key);
+    return v === undefined ? tagStr : tagStr.replace(/(\s)alt="[^"]*"/, `$1alt="${esc(v)}"`);
   });
 
   // картинки по языку: data-i18n-img="/assets/img/WzorAI{lang}.png"; если файла на этом языке нет — английский

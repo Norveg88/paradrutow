@@ -48,6 +48,7 @@ for (const f of html) {
   const dup = ids.filter((x, i) => ids.indexOf(x) !== i); if (dup.length) add(f, 'duplicate id: ' + [...new Set(dup)].join(','));
   for (const m of s.matchAll(/href="#([^"]+)"/g)) if (m[1] && !ids.includes(m[1])) add(f, 'anchor without target #' + m[1]);
   for (const m of s.matchAll(/<img\b(?![^>]*\balt=)[^>]*>/g)) add(f, 'img without alt ' + m[0].slice(0, 60));
+    for (const m of s.matchAll(/<img\b[^>]*\balt=""[^>]*>/g)) add(f, 'img with empty alt ' + m[0].slice(0, 60));
 }
 // css/js тоже ссылаются на файлы
 for (const f of files.filter(f => /\.(css|js)$/.test(f) && f.startsWith('assets/'))) {

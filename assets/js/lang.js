@@ -140,7 +140,7 @@ window.PD_LANG = defaultLang;
 
 // Версия словарей. Поднимать при добавлении/изменении ключей в assets/i18n/*.json,
 // иначе у вернувшихся посетителей браузер отдаст закэшированный старый файл.
-const I18N_VERSION = 37;
+const I18N_VERSION = 38;
 
 async function loadLang(lang) {
     try {
@@ -159,6 +159,11 @@ async function loadLang(lang) {
         document.querySelectorAll("[data-i18n-img]").forEach(el => {
             const tpl = el.getAttribute("data-i18n-img");
             if (tpl) el.setAttribute("src", tpl.replace("{lang}", dict));
+        });
+        // Opisy obrazków
+        document.querySelectorAll("[data-i18n-alt]").forEach(el => {
+            const key = el.getAttribute("data-i18n-alt");
+            if (data[key]) el.setAttribute("alt", data[key]);
         });
         // Подсказки в полях ввода
         document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
