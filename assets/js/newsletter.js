@@ -111,7 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const fd = new FormData();
             fd.append("email_address", input.value.trim());
-            fd.append("fields[language]", localStorage.getItem("lang") || "pl");
+            // język strony, na której ktoś się zapisał (/de/ → de), a nie tylko zapamiętany wybór
+            fd.append("fields[language]", window.PD_LANG || document.documentElement.lang || "pl");
 
             const fail = () => {
                 errMsg.hidden = false;
