@@ -403,7 +403,9 @@
   "pat6_c5": "4 ideias de projetos com cálculos prontos: estola, cachecol, gorro, almofada",
   "pat6_c6": "Tabela de medidas para 5 espessuras de fio e cálculo do consumo",
   "pat6_c7": "Guia de blocagem e respostas às dúvidas mais comuns",
-  "gift_bar_text": "Assine a newsletter — <strong>ganhe uma receita nova em PDF de presente</strong>",
+  "gift_bar_text": "Assine a newsletter — <strong>ganhe a receita “Raio” de presente</strong>",
   "gift_bar_btn": "Quero o presente",
-  "gift_modal": "Seu presente: uma receita grátis em PDF. Enviamos para o seu e-mail assim que você confirmar a inscrição."
+  "gift_modal": "Seu presente: a receita “Raio” — um raio rendado, PDF de 63 páginas em 6 idiomas. Enviamos para o seu e-mail assim que você confirmar a inscrição.",
+  "pat6_free": "Ou receba <strong>de graça</strong> — de presente ao assinar a newsletter.",
+  "pat6_free_btn": "Assinar e receber →"
 }

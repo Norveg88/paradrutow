@@ -407,7 +407,9 @@
   "pat6_c5": "4 pomysły na projekty z gotowymi obliczeniami: szal, szalik, czapka, poduszka",
   "pat6_c6": "Tabelę rozmiarów dla 5 grubości przędzy i kalkulator zużycia",
   "pat6_c7": "Instrukcję blokowania i odpowiedzi na częste pytania",
-  "gift_bar_text": "Zapisz się do newslettera — <strong>nowy wzór PDF w prezencie</strong>",
+  "gift_bar_text": "Zapisz się do newslettera — <strong>wzór „Błyskawica” w prezencie</strong>",
   "gift_bar_btn": "Odbierz prezent",
-  "gift_modal": "W prezencie: darmowy wzór PDF. Wyślemy go na Twój e-mail zaraz po potwierdzeniu zapisu."
+  "gift_modal": "W prezencie: wzór „Błyskawica” — ażurowa błyskawica, 63 strony PDF w 6 językach. Wyślemy go na Twój e-mail zaraz po potwierdzeniu zapisu.",
+  "pat6_free": "Albo odbierz go <strong>za darmo</strong> — w prezencie za zapis do newslettera.",
+  "pat6_free_btn": "Zapisz się i odbierz →"
 }

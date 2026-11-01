@@ -403,7 +403,9 @@
   "pat6_c5": "4 project ideas with ready-made calculations: stole, scarf, hat, cushion",
   "pat6_c6": "Size table for 5 yarn weights and a yardage calculator",
   "pat6_c7": "Blocking guide and answers to common questions",
-  "gift_bar_text": "Join the newsletter — <strong>get a new PDF pattern as a gift</strong>",
+  "gift_bar_text": "Join the newsletter — <strong>get the “Lightning” pattern as a gift</strong>",
   "gift_bar_btn": "Get the gift",
-  "gift_modal": "Your gift: a free PDF pattern. We’ll email it to you right after you confirm your subscription."
+  "gift_modal": "Your gift: the “Lightning” pattern — a lace lightning bolt, 63-page PDF in 6 languages. We’ll email it to you right after you confirm your subscription.",
+  "pat6_free": "Or get it <strong>free</strong> — as a gift for joining the newsletter.",
+  "pat6_free_btn": "Subscribe and get it →"
 }
