@@ -245,3 +245,10 @@
     .vsearch-tags { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.3rem; scrollbar-width: none; }
     .vsearch-tag { white-space: nowrap; }
 }
+
+/* język bez flagi: kod (IT, NL…) w złotej ramce */
+.vl-code {
+    display: inline-flex; align-items: center; justify-content: center; height: 14px; min-width: 20px; padding: 0 3px;
+    border: 1px solid rgba(197,160,89,0.6); border-radius: 3px; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.3px;
+    color: #e8c88a; line-height: 1; box-sizing: border-box;
+}

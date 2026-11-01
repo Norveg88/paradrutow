@@ -50,8 +50,9 @@ function parseDuration(iso) {
 }
 
 // ─────────────────────────────────────────────────────
-// Языки сайта, для которых сохраняем названия роликов.
+// Названия роликов на ВСЕХ языках, на которые они переведены на YouTube.
 // YouTube отдаёт коды вида en-US, de-DE, pt-BR — приводим к базовому коду.
+// Порядок: сначала языки сайта, потом остальные по алфавиту (it, nl, …).
 // ─────────────────────────────────────────────────────
 const TITLE_LANGS = ['pl', 'en', 'de', 'fr', 'es', 'pt'];
 
@@ -59,15 +60,16 @@ function collectTitles(item) {
   const titles = {};
   const add = (code, title) => {
     const base = String(code || '').toLowerCase().split('-')[0];
-    if (TITLE_LANGS.includes(base) && title && !titles[base]) titles[base] = title;
+    if (/^[a-z]{2,3}$/.test(base) && title && !titles[base]) titles[base] = title;
   };
   // Основное название — на языке ролика (у канала это польский)
   add(item.snippet?.defaultLanguage || 'pl', item.snippet?.title);
   for (const [code, loc] of Object.entries(item.localizations || {})) add(code, loc?.title);
   // Польское название есть всегда: если ролик помечен другим языком, берём основное
   if (!titles.pl && item.snippet?.title) titles.pl = item.snippet.title;
-  // Порядок ключей как в TITLE_LANGS — так JSON стабилен между запусками
-  return Object.fromEntries(TITLE_LANGS.filter(l => titles[l]).map(l => [l, titles[l]]));
+  // Стабильный порядок ключей: языки сайта, затем остальные по алфавиту
+  const order = [...TITLE_LANGS.filter(l => titles[l]), ...Object.keys(titles).filter(l => !TITLE_LANGS.includes(l)).sort()];
+  return Object.fromEntries(order.map(l => [l, titles[l]]));
 }
 
 // ─────────────────────────────────────────────────────

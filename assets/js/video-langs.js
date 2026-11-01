@@ -1,5 +1,6 @@
 /* video-langs.js — названия роликов на языке страницы + строка с флагами языков.
-   Подключается перед videos.js / shorts.js. Данные: item.titles = { pl, en, de, fr, es, pt } */
+   Подключается перед videos.js / shorts.js. Данные: item.titles = { pl, en, …, it, … } — любые языки.
+   Флаг берётся из /assets/img/flags/<код>.svg; если файла нет — вместо флага короткий код языка. */
 (function () {
     const ORDER = ['pl', 'en', 'de', 'fr', 'es', 'pt'];
     const NATIVE = { pl: 'Polski', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español', pt: 'Português' };
@@ -21,8 +22,18 @@
 
     function langsOf(item) {
         const t = item.titles || {};
-        const list = ORDER.filter(l => t[l]);
+        const list = [...ORDER.filter(l => t[l]), ...Object.keys(t).filter(l => !ORDER.includes(l) && t[l])];
         return list.length ? list : ['pl'];
+    }
+
+    // Nazwa języka w nim samym: it → Italiano, nl → Nederlands (przeglądarka zna wszystkie)
+    function nativeName(l) {
+        if (NATIVE[l]) return NATIVE[l];
+        try {
+            const n = new Intl.DisplayNames([l], { type: 'language' }).of(l);
+            if (n && n.toLowerCase() !== l) return n.charAt(0).toUpperCase() + n.slice(1);
+        } catch (e) {}
+        return l.toUpperCase();
     }
 
     function titleFor(item, lang) {
@@ -51,9 +62,16 @@
             f.dataset.l = l;
             const img = document.createElement('img');
             img.src = `/assets/img/flags/${l}.svg`;
-            img.alt = NATIVE[l];
+            img.alt = nativeName(l);
             img.width = 20; img.height = 14;
             img.loading = 'lazy';
+            // brak flagi dla tego języka — pokaż kod (IT, NL…)
+            img.onerror = () => {
+                const code = document.createElement('span');
+                code.className = 'vl-code';
+                code.textContent = l.toUpperCase();
+                img.replaceWith(code);
+            };
             f.appendChild(img);
             if (l === 'en' && auto) {
                 const a = document.createElement('span');
@@ -78,7 +96,7 @@
         entry.row.querySelectorAll('.vl-flag').forEach(f => {
             const l = f.dataset.l;
             f.classList.toggle('is-current', l === lang);
-            f.title = f.classList.contains('is-auto') ? `${NATIVE[l]} — ${L.auto}` : NATIVE[l];
+            f.title = f.classList.contains('is-auto') ? `${nativeName(l)} — ${L.auto}` : nativeName(l);
         });
     }
 
