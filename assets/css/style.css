@@ -914,3 +914,22 @@ html.no-fx .song-card {
 .news-gift-ico svg { width: 100%; height: 100%; display: block; }
 
 .news-card[hidden] { display: none !important; }
+
+/* Złota ikona przy tytule strony */
+.page-head-text:has(.page-icon) { display: grid; grid-template-columns: auto 1fr; column-gap: 1.1rem; align-items: center; }
+.page-head-text:has(.page-icon) h1 { justify-self: start; margin-top: 0; }
+.page-head-text:has(.page-icon) > :not(.page-icon):not(h1) { grid-column: 1 / -1; }
+.page-icon {
+    width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    color: #e8c88a; border: 1px solid rgba(197,160,89,0.6);
+    background: radial-gradient(circle at 50% 38%, rgba(197,160,89,0.26), rgba(197,160,89,0.05) 72%);
+    box-shadow: 0 0 22px rgba(197,160,89,0.25), inset 0 0 14px rgba(197,160,89,0.15);
+    align-self: center; margin-bottom: 0.5rem;
+}
+.page-icon svg { width: 34px; height: 34px; display: block;
+    filter: drop-shadow(0 0 3px rgba(232,200,138,0.65)) drop-shadow(0 0 10px rgba(197,160,89,0.45)); }
+@media (max-width: 640px) {
+    .page-head-text:has(.page-icon) { column-gap: 0.8rem; }
+    .page-icon { width: 50px; height: 50px; }
+    .page-icon svg { width: 27px; height: 27px; }
+}
