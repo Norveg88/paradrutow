@@ -101,7 +101,7 @@
     }
     </script>
     <link rel="stylesheet" href="/assets/css/style.css?v=13">
-    <script defer src="/assets/js/lang.js?v=37"></script>
+    <script defer src="/assets/js/lang.js?v=38"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card{opacity:1!important;transform:none!important}</style></noscript>
@@ -213,6 +213,17 @@
             object-fit: cover;
             aspect-ratio: 1/1;
         }
+        /* karta z poziomą okładką (nowość) */
+        .pattern-card--wide { grid-template-columns: 1fr; gap: 1.6rem; border-color: rgba(197,160,89,0.55);
+            box-shadow: 0 0 0 1px rgba(197,160,89,0.15), 0 14px 40px rgba(0,0,0,0.45); }
+        .pattern-card--wide .pattern-cover { aspect-ratio: 16 / 9; height: auto; max-width: 860px; margin: 0 auto; display: block; }
+        .pattern-new {
+            position: absolute; top: 1.1rem; left: 1.1rem; z-index: 2;
+            font-family: var(--font-header); font-weight: 700; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase;
+            color: #1a1408; background: linear-gradient(135deg, #e8c88a, var(--accent-gold) 55%, var(--accent-copper));
+            border-radius: 999px; padding: 0.25rem 0.85rem; box-shadow: 0 4px 16px rgba(197,160,89,0.45);
+        }
+        .pattern-license { color: #9a958b !important; font-size: 0.88rem !important; font-style: italic; margin-top: 0.4rem !important; }
         .pattern-body h2 {
             font-family: var(--font-header);
             font-weight: 600;
@@ -357,9 +368,59 @@
             <a href="#" class="btn-subscribe js-news-open" data-i18n="nav_newsletter">✉ Newsletter</a>
         </div>
 
+        <!-- Wzór 6 — Błyskawica (nowość, okładka pozioma) -->
+        <div class="pattern-card pattern-card--wide card" id="wzor-blyskawica">
+            <span class="pattern-new" data-i18n="tag_new">Nowość</span>
+            <img src="/assets/img/pattern/cover-6.webp" alt="Błyskawica — ażurowy motyw na drutach, Para Drutów" class="pattern-cover" width="1200" height="675" fetchpriority="high">
+            <div class="pattern-body">
+                <h2 data-i18n="pat6_title">Błyskawica — ażurowy motyw na drutach</h2>
+                <p data-i18n="pat6_desc">Rozgałęziona błyskawica wydziergana z narzutów: pień z dużych dziurek z podwójnych narzutów, gałęzie i drobne odnogi z pojedynczych. Na ciemnej przędzy wzór dosłownie świeci. To samodzielny motyw, który wkomponujesz w chustę, szal, sweter, czapkę albo poduszkę.</p>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat6_level">Poziom trudności: średnio zaawansowany</strong><br><span style="color:#bbb;font-size:0.88rem;" data-i18n="pat6_level_sub">Ażur tylko w rzędach prawych — praca spokojna i przewidywalna</span></p>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_contains">Co zawiera PDF:</strong></p>
+                <ul class="pattern-checklist">
+                    <li data-i18n="pat6_c1">Schemat A — pełna błyskawica, 61 oczek × 94 rzędy</li>
+                    <li data-i18n="pat6_c2">Schemat B — bordiura, raport 21 oczek × 32 rzędy, do powtarzania bez końca</li>
+                    <li data-i18n="pat6_c3">Zapis rząd po rzędzie dla obu schematów</li>
+                    <li data-i18n="pat6_c4">Przewodnik po technikach z opisem krok po kroku</li>
+                    <li data-i18n="pat6_c5">4 pomysły na projekty z gotowymi obliczeniami: szal, szalik, czapka, poduszka</li>
+                    <li data-i18n="pat6_c6">Tabelę rozmiarów dla 5 grubości przędzy i kalkulator zużycia</li>
+                    <li data-i18n="pat6_c7">Instrukcję blokowania i odpowiedzi na częste pytania</li>
+                </ul>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat_details">Szczegóły wzoru:</strong></p>
+                <div class="pattern-details">
+                    <span data-i18n="pat6_d1">Techniki: narzuty, podwójne narzuty, 2 oczka razem na prawo, ssk</span>
+                    <span data-i18n="pat6_d2">Przędza: dowolna grubość, od lace do aran</span>
+                    <span data-i18n="pat6_d3">Format: PDF A4, 63 strony</span>
+                </div>
+
+                <p class="pattern-divider">✧ ─────────────── ✧</p>
+                <p><strong style="color:var(--accent-gold);font-family:var(--font-header);font-size:0.9rem;" data-i18n="pat6_use_title">Zastosowanie — 4 projekty z gotowymi obliczeniami:</strong></p>
+                <p style="color:#bbb;font-size:0.88rem;" data-i18n="pat6_use">→ Szal 42 × 180 cm<br>→ Szalik z bordiurą<br>→ Czapka na okrągło<br>→ Poduszka 40 × 40 cm<br>→ A także: chusta, sweter, plecy kardiganu</p>
+
+                <div class="pattern-meta">
+                    <span class="pattern-tag" data-i18n="tag_6langs">6 języków</span>
+                    <span class="pattern-tag" data-i18n="tag_pdf63"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF · 63 strony</span>
+                    <span class="pattern-tag" data-i18n="tag_lace">Ażurowy</span>
+                    <span class="pattern-tag" data-i18n="tag_intermediate">Średnio zaawansowany</span>
+                    <span class="pattern-tag" data-i18n="tag_instant">Pobierz od razu</span>
+                </div>
+                <p class="pattern-lang-note" data-i18n="pat_note_6"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z'/><path d='M14 3v5h5'/><path d='M9 13h6M9 16.5h4'/></svg>PDF w 6 językach: polski, angielski, francuski, niemiecki, hiszpański i portugalski (Brazylia).</p>
+                <a href="#" target="_blank" rel="noopener" class="btn-youtube" data-i18n="pat_buy">Kup wzór PDF →</a>
+
+                <p class="pattern-notice" data-i18n="pat_notice"><svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 3.5 2.8 19.5h18.4z'/><path d='M12 9.5v4.5'/><path d='M12 16.9v.2'/></svg>To jest wzór dziewiarski w formacie PDF — nie gotowy produkt. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 4v10'/><path d='m7.5 9.8 4.5 4.5 4.5-4.5'/><path d='M4.5 15.5v2.7A1.8 1.8 0 0 0 6.3 20h11.4a1.8 1.8 0 0 0 1.8-1.8v-2.7'/></svg>Plik do pobrania natychmiast po zakupie. &nbsp;<svg class='ico' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><circle cx='12' cy='12' r='8.6'/><path d='m5.9 5.9 12.2 12.2'/></svg>Wyłącznie do użytku osobistego. Zabrania się kopiowania i odsprzedaży.</p>
+                <p class="pattern-license" data-i18n="pat6_license">Rzeczy wydziergane samodzielnie według tego wzoru możesz sprzedawać, podając autorkę wzoru.</p>
+            </div>
+        </div>
+
         <!-- Wzór 5 — Zaczarowany Las -->
         <div class="pattern-card card">
-            <img src="/assets/img/pattern/cover-5.webp" alt="Zaczarowany Las — Para Drutów" class="pattern-cover" fetchpriority="high">
+            <img src="/assets/img/pattern/cover-5.webp" alt="Zaczarowany Las — Para Drutów" class="pattern-cover" loading="lazy" decoding="async">
             <div class="pattern-body">
                 <h2 data-i18n="pat5_title">Zaczarowany Las — Para Drutów | Prosty • Efektowny • Ponadczasowy</h2>
                 <p data-i18n="pat5_desc">Delikatny, ażurowy wzór o pięknym rytmie i efekcie 3D. Tworzy subtelne, falujące motywy, które pięknie układają się w każdym projekcie. Ten wzór jest wyjątkowo uniwersalny — sprawdzi się nie tylko w chustach i szalach, ale również w odzieży i tekstyliach domowych. Jeden motyw, dziesiątki możliwości!</p>
