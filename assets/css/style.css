@@ -912,3 +912,5 @@ html.no-fx .song-card {
     border: 1px solid rgba(197,160,89,0.45); border-radius: 10px; background: rgba(197,160,89,0.08); color: #e8dcc0; font-size: 0.95rem; line-height: 1.5; text-align: left; }
 .news-gift-ico { width: 26px; height: 26px; flex-shrink: 0; color: #e8c88a; filter: drop-shadow(0 0 4px rgba(232,200,138,0.5)); }
 .news-gift-ico svg { width: 100%; height: 100%; display: block; }
+
+.news-card[hidden] { display: none !important; }

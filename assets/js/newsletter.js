@@ -58,6 +58,8 @@ const KIT_FORM = "https://app.kit.com/forms/9752061/subscriptions";
 })();
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Kto już się zapisał (w tej przeglądarce), nie widzi bloków zapisu na dole stron
+    try { if (localStorage.getItem("pd-subscribed") ) document.querySelectorAll(".news-card:not(.news-modal-box)").forEach(c => { c.hidden = true; }); } catch (e) {}
     const modal = document.getElementById("news-modal");
     let lastFocused = null;
 
