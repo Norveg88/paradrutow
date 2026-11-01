@@ -30,7 +30,7 @@ const PAGES = {
   'contact.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_contact', titleKey: 'title_contact', tagSubject: true },
   // Описания узоров переведены, сами PDF — на польском: это сказано на каждой карточке (pat_note_*)
   'patterns.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_patterns', titleKey: 'title_patterns',
-                     ldKeys: ['ld_pat_list', 'ld_pat5', 'ld_pat4', 'ld_pat3', 'ld_pat2', 'ld_pat1'] },
+                     ldKeys: ['ld_pat_list', 'ld_pat6', 'ld_pat5', 'ld_pat4', 'ld_pat3', 'ld_pat2', 'ld_pat1'] },
   // content — длинный текст не в словарях, а в scripts/i18n-content/privacy.<lang>.html
   // (польский тоже: правим файл .pl.html, сборка вставляет его в privacy.html)
   'privacy.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_privacy', titleKey: 'title_privacy', content: 'privacy' },
