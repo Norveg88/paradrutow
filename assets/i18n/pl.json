@@ -88,7 +88,7 @@
   "news_placeholder": "Twój adres e-mail",
   "news_button": "Zapisz się",
   "news_consent": "Chcę otrzymywać informacje o nowościach Para Drutów na podany adres e-mail. Zgodę mogę wycofać w każdej chwili — szczegóły w <a href=\"/privacy.html\">polityce prywatności</a>.",
-  "news_success": "Prawie gotowe! Sprawdź skrzynkę — wysłaliśmy link, który potwierdza zapis.",
+  "news_success": "Prawie gotowe! Sprawdź skrzynkę i kliknij link potwierdzający — zaraz potem wyślemy Ci wzór w prezencie.",
   "news_error": "Coś poszło nie tak. Spróbuj jeszcze raz za chwilę.",
   "news_patterns_title": "Nie przegap nowych wzorów",
   "news_patterns_desc": "Zostaw adres e-mail, a napiszemy, gdy tylko pojawi się nowy wzór — a przy okazji o nowych książkach, filmach i aktualizacjach aplikacji. Kilka wiadomości w miesiącu, bez spamu.",
@@ -406,5 +406,8 @@
   "pat6_c4": "Przewodnik po technikach z opisem krok po kroku",
   "pat6_c5": "4 pomysły na projekty z gotowymi obliczeniami: szal, szalik, czapka, poduszka",
   "pat6_c6": "Tabelę rozmiarów dla 5 grubości przędzy i kalkulator zużycia",
-  "pat6_c7": "Instrukcję blokowania i odpowiedzi na częste pytania"
+  "pat6_c7": "Instrukcję blokowania i odpowiedzi na częste pytania",
+  "gift_bar_text": "Zapisz się do newslettera — <strong>nowy wzór PDF w prezencie</strong>",
+  "gift_bar_btn": "Odbierz prezent",
+  "gift_modal": "W prezencie: darmowy wzór PDF. Wyślemy go na Twój e-mail zaraz po potwierdzeniu zapisu."
 }

@@ -88,7 +88,7 @@
   "news_placeholder": "Your email address",
   "news_button": "Subscribe",
   "news_consent": "I agree to receive news from Para Drutów at this email address. I can withdraw my consent at any time — see the <a href=\"/privacy.html\">privacy policy</a>.",
-  "news_success": "Almost there! Check your inbox — we have sent a link to confirm your subscription.",
+  "news_success": "Almost done! Check your inbox and click the confirmation link — your gift pattern will follow right after.",
   "news_error": "Something went wrong. Please try again in a moment.",
   "news_patterns_title": "Never miss a new pattern",
   "news_patterns_desc": "Leave your email and we will write as soon as a new pattern is ready — along with news about books, videos and app updates. A few messages a month, no spam.",
@@ -402,5 +402,8 @@
   "pat6_c4": "Step-by-step guide to every technique used",
   "pat6_c5": "4 project ideas with ready-made calculations: stole, scarf, hat, cushion",
   "pat6_c6": "Size table for 5 yarn weights and a yardage calculator",
-  "pat6_c7": "Blocking guide and answers to common questions"
+  "pat6_c7": "Blocking guide and answers to common questions",
+  "gift_bar_text": "Join the newsletter — <strong>get a new PDF pattern as a gift</strong>",
+  "gift_bar_btn": "Get the gift",
+  "gift_modal": "Your gift: a free PDF pattern. We’ll email it to you right after you confirm your subscription."
 }

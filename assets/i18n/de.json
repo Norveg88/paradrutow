@@ -88,7 +88,7 @@
   "news_placeholder": "Deine E-Mail-Adresse",
   "news_button": "Anmelden",
   "news_consent": "Ich möchte Neuigkeiten von Para Drutów an diese E-Mail-Adresse erhalten. Ich kann die Einwilligung jederzeit widerrufen — Details in der <a href=\"/privacy.html\">Datenschutzerklärung</a>.",
-  "news_success": "Fast geschafft! Sieh in dein Postfach — wir haben dir einen Bestätigungslink geschickt.",
+  "news_success": "Fast geschafft! Prüfen Sie Ihr Postfach und klicken Sie auf den Bestätigungslink – das Geschenkmuster folgt direkt danach.",
   "news_error": "Etwas ist schiefgelaufen. Bitte versuche es gleich noch einmal.",
   "news_patterns_title": "Verpasse kein neues Muster",
   "news_patterns_desc": "Hinterlasse deine E-Mail, und wir schreiben, sobald ein neues Muster fertig ist — und dazu über neue Bücher, Videos und App-Updates. Ein paar Nachrichten im Monat, kein Spam.",
@@ -402,5 +402,8 @@
   "pat6_c4": "Schritt-für-Schritt-Erklärung aller verwendeten Techniken",
   "pat6_c5": "4 Projektideen mit fertigen Berechnungen: Stola, Schal, Mütze, Kissen",
   "pat6_c6": "Größentabelle für 5 Garnstärken und Garnverbrauchsrechner",
-  "pat6_c7": "Anleitung zum Spannen und Antworten auf häufige Fragen"
+  "pat6_c7": "Anleitung zum Spannen und Antworten auf häufige Fragen",
+  "gift_bar_text": "Abonnieren Sie den Newsletter — <strong>ein neues PDF-Muster als Geschenk</strong>",
+  "gift_bar_btn": "Geschenk sichern",
+  "gift_modal": "Ihr Geschenk: ein kostenloses PDF-Muster. Wir senden es Ihnen direkt nach der Bestätigung Ihrer Anmeldung per E-Mail."
 }
