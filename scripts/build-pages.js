@@ -81,6 +81,28 @@ function fmtDuration(secs) {
   return secs < 60 ? `0:${String(secs).padStart(2, '0')}` : `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`;
 }
 
+// ---------- JSON-LD для страниц видео: список настоящих роликов с embedUrl и полной датой ----------
+function isoDuration(secs) {
+  if (!secs) return undefined;
+  const h = Math.floor(secs / 3600), m = Math.floor((secs % 3600) / 60), s = secs % 60;
+  return 'PT' + (h ? h + 'H' : '') + (m ? m + 'M' : '') + (s || (!h && !m) ? s + 'S' : '');
+}
+function videoListLd(items, kind, lang) {
+  const list = [...items].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)).slice(0, 12);
+  return {
+    '@context': 'https://schema.org', '@type': 'ItemList',
+    itemListElement: list.map((v, i) => {
+      const name = titleOf(v, lang);
+      const desc = String(v.description || '').replace(/\s+/g, ' ').trim().slice(0, 300) || name;
+      const o = { '@type': 'VideoObject', name, description: desc,
+        thumbnailUrl: [v.thumbnail], uploadDate: v.publishedAt,
+        embedUrl: `https://www.youtube.com/embed/${v.id}`, url: v.url || `https://www.youtube.com/watch?v=${v.id}` };
+      const d = isoDuration(v.duration); if (d) o.duration = d;
+      return { '@type': 'ListItem', position: i + 1, item: o };
+    }),
+  };
+}
+
 // ---------- карточки (та же разметка, что создают videos.js / shorts.js) ----------
 function renderCards(items, kind, lang) {
   const p = kind === 'video' ? 'vc' : 'sc';
@@ -120,6 +142,10 @@ function applyCommon(html, file, cfg, lang, items) {
     html = html.replace(container, () => `<div id="${id}-container" data-pre="1">\n${renderCards(items, cfg.kind, lang)}\n</div><!-- /${id}-container -->`);
     // лоадер не нужен — карточки уже в HTML
     html = html.replace(new RegExp(`<div id="${id}-loader" class="videos-loader"[^>]*>`), `<div id="${id}-loader" class="videos-loader" style="display:none">`);
+    // JSON-LD: настоящие ролики (12 последних) вместо одного общего VideoObject без видео
+    const ld = `<script type="application/ld+json" data-pd="videos">${JSON.stringify(videoListLd(items, cfg.kind, lang))}</script>`;
+    const ldRe = /<script type="application\/ld\+json"( data-pd="videos")?>\{"@context":"https:\/\/schema\.org","@type":"(?:VideoObject|ItemList)"[\s\S]*?<\/script>/;
+    html = ldRe.test(html) ? html.replace(ldRe, () => ld) : html.replace('</head>', () => `    ${ld}\n</head>`);
   }
 
   if (cfg.home) html = renderHome(html, lang);
