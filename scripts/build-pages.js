@@ -88,7 +88,7 @@ function isoDuration(secs) {
   return 'PT' + (h ? h + 'H' : '') + (m ? m + 'M' : '') + (s || (!h && !m) ? s + 'S' : '');
 }
 function videoListLd(items, kind, lang) {
-  const list = [...items].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)).slice(0, 12);
+  const list = [...items].sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)).slice(0, 24);
   return {
     '@context': 'https://schema.org', '@type': 'ItemList',
     itemListElement: list.map((v, i) => {
@@ -142,7 +142,7 @@ function applyCommon(html, file, cfg, lang, items) {
     html = html.replace(container, () => `<div id="${id}-container" data-pre="1">\n${renderCards(items, cfg.kind, lang)}\n</div><!-- /${id}-container -->`);
     // лоадер не нужен — карточки уже в HTML
     html = html.replace(new RegExp(`<div id="${id}-loader" class="videos-loader"[^>]*>`), `<div id="${id}-loader" class="videos-loader" style="display:none">`);
-    // JSON-LD: настоящие ролики (12 последних) вместо одного общего VideoObject без видео
+    // JSON-LD: настоящие ролики (24 последних) вместо одного общего VideoObject без видео
     const ld = `<script type="application/ld+json" data-pd="videos">${JSON.stringify(videoListLd(items, cfg.kind, lang))}</script>`;
     const ldRe = /<script type="application\/ld\+json"( data-pd="videos")?>\{"@context":"https:\/\/schema\.org","@type":"(?:VideoObject|ItemList)"[\s\S]*?<\/script>/;
     html = ldRe.test(html) ? html.replace(ldRe, () => ld) : html.replace('</head>', () => `    ${ld}\n</head>`);
