@@ -421,5 +421,10 @@
   "yarn_until": "valid until {d}",
   "yarn_aff": "Affiliate link",
   "yarn_empty": "Yarn shops and discount codes are coming soon. Join the newsletter and we’ll let you know.",
-  "yarn_disclosure": "Some links on this page are affiliate links: if you buy something, Para Drutów may earn a small commission at no extra cost to you. It helps us keep making free videos."
+  "yarn_disclosure": "Some links on this page are affiliate links: if you buy something, Para Drutów may earn a small commission at no extra cost to you. It helps us keep making free videos.",
+  "home_yarn_eye": "Yarn",
+  "home_yarn_title": "Every project begins with a skein",
+  "home_yarn_text": "Merino as soft as a cloud, alpaca that warms without weight, cotton for summer. We’ve gathered shops worth browsing for yarn — with discount codes just for our viewers.",
+  "home_yarn_badge": "Discount codes up to",
+  "home_yarn_btn": "Choose your yarn →"
 }

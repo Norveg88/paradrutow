@@ -421,5 +421,10 @@
   "yarn_until": "válido até {d}",
   "yarn_aff": "Link de afiliado",
   "yarn_empty": "Em breve, lojas de lã e cupons de desconto aqui. Assine a newsletter e avisaremos você.",
-  "yarn_disclosure": "Alguns links desta página são de afiliado: se você comprar algo, a Para Drutów pode receber uma pequena comissão, sem custo extra para você. Isso nos ajuda a continuar fazendo vídeos gratuitos."
+  "yarn_disclosure": "Alguns links desta página são de afiliado: se você comprar algo, a Para Drutów pode receber uma pequena comissão, sem custo extra para você. Isso nos ajuda a continuar fazendo vídeos gratuitos.",
+  "home_yarn_eye": "Lã",
+  "home_yarn_title": "Todo projeto começa com uma meada",
+  "home_yarn_text": "Merino macio como uma nuvem, alpaca que aquece sem pesar, algodão para o verão. Reunimos lojas onde vale a pena procurar fios — com cupons de desconto só para quem nos acompanha.",
+  "home_yarn_badge": "Cupons de até",
+  "home_yarn_btn": "Escolha seu fio →"
 }

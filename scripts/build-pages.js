@@ -182,6 +182,15 @@ function applyCommon(html, file, cfg, lang, items) {
   }
 
   if (cfg.home) html = renderHome(html, lang);
+  if (cfg.home) {
+    // odznaka "Kody rabatowe do −X%" na głównej: najwyższy aktualny rabat z yarn-shops.json
+    const today = new Date().toISOString().slice(0, 10);
+    const pcts = readJson(path.join(ROOT, 'assets/data/yarn-shops.json'))
+      .filter(s => !s.hidden && s.discount && s.discount.percent && (!s.discount.until || s.discount.until >= today)).map(s => +s.discount.percent);
+    html = pcts.length
+      ? html.replace(/<p class="yarn-badge"( hidden)?>/, '<p class="yarn-badge">').replace(/<strong class="yarn-pct">[^<]*<\/strong>/, `<strong class="yarn-pct">−${Math.max(...pcts)}%</strong>`)
+      : html.replace(/<p class="yarn-badge">/, '<p class="yarn-badge" hidden>');
+  }
   if (cfg.shops) html = html.replace(/<!-- yarn:shops[^>]*-->[\s\S]*?<!-- \/yarn:shops -->/, () => renderShops(lang));
 
   const sw = /<div class="lang-switcher">[\s\S]*?<\/div>/;

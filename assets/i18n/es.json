@@ -421,5 +421,10 @@
   "yarn_until": "válido hasta el {d}",
   "yarn_aff": "Enlace de afiliado",
   "yarn_empty": "Muy pronto encontrarás aquí tiendas de lana y códigos de descuento. Suscríbete al boletín y te avisaremos.",
-  "yarn_disclosure": "Algunos enlaces de esta página son de afiliado: si compras algo, Para Drutów puede recibir una pequeña comisión sin coste adicional para ti. Así podemos seguir haciendo vídeos gratuitos."
+  "yarn_disclosure": "Algunos enlaces de esta página son de afiliado: si compras algo, Para Drutów puede recibir una pequeña comisión sin coste adicional para ti. Así podemos seguir haciendo vídeos gratuitos.",
+  "home_yarn_eye": "Lana",
+  "home_yarn_title": "Todo proyecto empieza con una madeja",
+  "home_yarn_text": "Merino suave como una nube, alpaca que abriga sin pesar, algodón para el verano. Hemos reunido tiendas donde vale la pena buscar lana, con códigos de descuento solo para quienes nos siguen.",
+  "home_yarn_badge": "Códigos de descuento de hasta",
+  "home_yarn_btn": "Elige tu lana →"
 }

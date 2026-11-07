@@ -35,8 +35,8 @@
     <meta name="twitter:description" content="Para Drutów — knitting step by step. Over 250 videos, PDF patterns, books and the WzorAI and ShiftLens apps. From your first stitch to double knitting.">
     <meta name="twitter:image" content="https://paradrutow.com/assets/img/og-home-en.jpg">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://paradrutow.com/#org","name":"Para Drutów","url":"https://paradrutow.com","logo":"https://paradrutow.com/assets/img/logo-512.png","description":"Knitting step by step — YouTube videos, PDF patterns, books and the WzorAI and ShiftLens apps.","sameAs":["https://www.youtube.com/@ParaDrutow"]},{"@type":"WebSite","@id":"https://paradrutow.com/#website","url":"https://paradrutow.com","name":"Para Drutów","inLanguage":"en","publisher":{"@id":"https://paradrutow.com/#org"}}]}</script>
-    <link rel="stylesheet" href="/assets/css/style.css?v=17">
-    <script defer src="/assets/js/lang.js?v=42"></script>
+    <link rel="stylesheet" href="/assets/css/style.css?v=18">
+    <script defer src="/assets/js/lang.js?v=43"></script>
     <!-- Страховка: если ui.js не запустит появление карточек за 2,5 с, показать их сразу -->
     <script>setTimeout(function(){if(!window.uiReady)document.documentElement.classList.add('no-fx');},2500);</script>
     <noscript><style>.card.glass-card,.app-hero,.feature-image-wrapper,.yt-card,.section-tile,.why-card,.song-card,.reveal{opacity:1!important;transform:none!important}</style></noscript>
@@ -218,6 +218,44 @@
         .app-row span { display: block; color: #bbb; font-size: 0.95rem; line-height: 1.45; }
         @media (max-width: 900px) { .shop-grid { grid-template-columns: 1fr; } }
         @media (max-width: 520px) { .shop-pattern { grid-template-columns: 1fr; } .shop-pattern img { max-width: 260px; margin: 0 auto; } }
+
+
+        /* ---------- Włóczka ---------- */
+        .yarn-promo {
+            position: relative; display: grid; grid-template-columns: minmax(220px, 0.9fr) 1.1fr; gap: 2rem; align-items: center;
+            text-decoration: none; color: inherit; overflow: hidden; border-radius: 18px; padding: 2.2rem 2.4rem;
+            border: 1px solid rgba(197,160,89,0.5);
+            background:
+                radial-gradient(ellipse 55% 75% at 22% 50%, rgba(197,160,89,0.16), transparent 70%),
+                linear-gradient(135deg, rgba(36,31,24,0.92), rgba(14,12,10,0.95));
+            box-shadow: 0 15px 40px rgba(0,0,0,0.5); transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+        }
+        .yarn-promo::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(to right, transparent, var(--accent-gold), var(--accent-copper), transparent); }
+        .yarn-promo:hover { transform: translateY(-4px); border-color: var(--accent-gold); box-shadow: 0 20px 50px rgba(197,160,89,0.18); }
+        .yarn-art-wrap { display: flex; justify-content: center; }
+        .yarn-art { width: 100%; max-width: 340px; height: auto; overflow: visible;
+            filter: drop-shadow(0 0 4px rgba(232,200,138,0.45)) drop-shadow(0 0 16px rgba(197,160,89,0.3)); }
+        .yarn-art > g { transform-box: fill-box; transform-origin: center; transition: transform 0.6s ease; }
+        .yarn-promo:hover .yarn-art > g { transform: rotate(-3deg) scale(1.03); }
+        .yarn-thread { stroke-dasharray: 6 7; animation: yarn-flow 6s linear infinite; }
+        @keyframes yarn-flow { to { stroke-dashoffset: -130; } }
+        @media (prefers-reduced-motion: reduce) { .yarn-thread { animation: none; } .yarn-promo:hover .yarn-art > g { transform: none; } }
+        .yarn-eye { font-family: var(--font-header); font-weight: 600; font-size: 1rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-copper); margin: 0 0 0.3rem; }
+        .yarn-copy h2 { font-family: var(--font-header); font-weight: 600; font-size: clamp(1.8rem, 3.6vw, 2.5rem); line-height: 1.15; margin: 0 0 0.8rem; border: none;
+            background: linear-gradient(135deg, #e8c88a 10%, #fff5d6 45%, #c5a059 70%, var(--accent-copper));
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-shadow: none; }
+        .yarn-text { color: #c9c2b5; line-height: 1.7; margin: 0 0 1rem; font-size: 1.05rem; }
+        .yarn-badge { display: inline-flex; align-items: baseline; gap: 0.45rem; margin: 0 0 1.3rem; padding: 0.35rem 0.95rem;
+            border: 1px dashed rgba(197,160,89,0.7); border-radius: 999px; background: rgba(197,160,89,0.08); color: #ddd5c4; font-size: 0.95rem; }
+        .yarn-pct { font-family: var(--font-header); font-size: 1.3rem; color: #e8c88a; text-shadow: 0 0 10px rgba(197,160,89,0.5); }
+        .yarn-badge[hidden] { display: none; }
+        .yarn-copy .btn-gold { display: inline-block; }
+        @media (max-width: 760px) {
+            .yarn-promo { grid-template-columns: 1fr; gap: 1rem; padding: 1.6rem 1.3rem; text-align: center; }
+            .yarn-art { max-width: 240px; }
+            .yarn-badge { justify-content: center; }
+        }
 
         /* ---------- Почему ---------- */
         .why-card {
@@ -450,6 +488,41 @@
                     </article>
                 </div>
             </div>
+        </section>
+
+        <!-- Włóczka: przejście do sklepów z rabatami (kod rabatowy — z assets/data/yarn-shops.json) -->
+        <section class="home-section reveal">
+            <a class="yarn-promo" href="/en/yarn.html">
+                <div class="yarn-art-wrap">
+    <svg class="yarn-art" viewBox="0 0 340 250" aria-hidden="true">
+        <defs>
+            <linearGradient id="hyGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3dca6"/><stop offset="0.5" stop-color="#c5a059"/><stop offset="1" stop-color="#b87333"/></linearGradient>
+            <radialGradient id="hyFill" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#c5a059" stop-opacity="0.28"/><stop offset="1" stop-color="#140f08" stop-opacity="0.15"/></radialGradient>
+        </defs>
+        <g fill="none" stroke-linecap="round">
+        <path class="yarn-thread" d="M262 206 C 292 222, 318 196, 300 172 S 250 150, 268 120 S 318 96, 330 70" stroke="url(#hyGold)" stroke-width="2"/>
+        <clipPath id="hyA"><circle cx="150" cy="128" r="71"/></clipPath>
+        <circle cx="150" cy="128" r="72" fill="url(#hyFill)" stroke="url(#hyGold)" stroke-width="2.4"/>
+        <g clip-path="url(#hyA)" stroke="url(#hyGold)" stroke-width="1.5" opacity="0.9"><path transform="rotate(25 150 128)" d="M150 56A18 72 0 0 1 150 200"/><path transform="rotate(25 150 128)" d="M150 56A36 72 0 0 1 150 200"/><path transform="rotate(25 150 128)" d="M150 56A54 72 0 0 1 150 200"/><path transform="rotate(25 150 128)" d="M150 56A68.4 72 0 0 1 150 200"/><path transform="rotate(-45 150 128)" d="M150 56A21.6 72 0 0 0 150 200"/><path transform="rotate(-45 150 128)" d="M150 56A43.2 72 0 0 0 150 200"/><path transform="rotate(-45 150 128)" d="M150 56A63.4 72 0 0 0 150 200"/><path transform="rotate(80 150 128)" d="M150 56A25.2 72 0 0 1 150 200"/><path transform="rotate(80 150 128)" d="M150 56A50.4 72 0 0 1 150 200"/></g>
+        <clipPath id="hyB"><circle cx="252" cy="186" r="39"/></clipPath>
+        <circle cx="252" cy="186" r="40" fill="url(#hyFill)" stroke="url(#hyGold)" stroke-width="2.4"/>
+        <g clip-path="url(#hyB)" stroke="url(#hyGold)" stroke-width="1.5" opacity="0.9"><path transform="rotate(-20 252 186)" d="M252 146A10 40 0 0 1 252 226"/><path transform="rotate(-20 252 186)" d="M252 146A20 40 0 0 1 252 226"/><path transform="rotate(-20 252 186)" d="M252 146A30 40 0 0 1 252 226"/><path transform="rotate(-20 252 186)" d="M252 146A38 40 0 0 1 252 226"/><path transform="rotate(-90 252 186)" d="M252 146A12 40 0 0 0 252 226"/><path transform="rotate(-90 252 186)" d="M252 146A24 40 0 0 0 252 226"/><path transform="rotate(-90 252 186)" d="M252 146A35.2 40 0 0 0 252 226"/><path transform="rotate(35 252 186)" d="M252 146A14 40 0 0 1 252 226"/><path transform="rotate(35 252 186)" d="M252 146A28 40 0 0 1 252 226"/></g>
+        <clipPath id="hyC"><circle cx="58" cy="196" r="29"/></clipPath>
+        <circle cx="58" cy="196" r="30" fill="url(#hyFill)" stroke="url(#hyGold)" stroke-width="2.4"/>
+        <g clip-path="url(#hyC)" stroke="url(#hyGold)" stroke-width="1.5" opacity="0.9"><path transform="rotate(60 58 196)" d="M58 166A7.5 30 0 0 1 58 226"/><path transform="rotate(60 58 196)" d="M58 166A15 30 0 0 1 58 226"/><path transform="rotate(60 58 196)" d="M58 166A22.5 30 0 0 1 58 226"/><path transform="rotate(60 58 196)" d="M58 166A28.5 30 0 0 1 58 226"/><path transform="rotate(-10 58 196)" d="M58 166A9 30 0 0 0 58 226"/><path transform="rotate(-10 58 196)" d="M58 166A18 30 0 0 0 58 226"/><path transform="rotate(-10 58 196)" d="M58 166A26.4 30 0 0 0 58 226"/><path transform="rotate(115 58 196)" d="M58 166A10.5 30 0 0 1 58 226"/><path transform="rotate(115 58 196)" d="M58 166A21 30 0 0 1 58 226"/></g>
+        <path d="M185 70 L 262 8" stroke="url(#hyGold)" stroke-width="3.2"/><circle cx="266" cy="5" r="4.5" fill="#c5a059"/>
+        <path d="M200 84 L 286 24" stroke="url(#hyGold)" stroke-width="3.2"/><circle cx="290" cy="21" r="4.5" fill="#c5a059"/>
+        </g>
+    </svg>
+                </div>
+                <div class="yarn-copy">
+                    <p class="yarn-eye" data-i18n="home_yarn_eye">Yarn</p>
+                    <h2 data-i18n="home_yarn_title">Every project begins with a skein</h2>
+                    <p class="yarn-text" data-i18n="home_yarn_text">Merino as soft as a cloud, alpaca that warms without weight, cotton for summer. We’ve gathered shops worth browsing for yarn — with discount codes just for our viewers.</p>
+                    <p class="yarn-badge"><span data-i18n="home_yarn_badge">Discount codes up to</span> <strong class="yarn-pct">−5%</strong></p>
+                    <span class="btn-gold" data-i18n="home_yarn_btn">Choose your yarn →</span>
+                </div>
+            </a>
         </section>
 
         <!-- Shorts: 6 последних -->

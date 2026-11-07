@@ -421,5 +421,10 @@
   "yarn_until": "valable jusqu’au {d}",
   "yarn_aff": "Lien affilié",
   "yarn_empty": "Les boutiques de laine et les codes promo arrivent bientôt. Abonnez-vous à la newsletter, nous vous préviendrons.",
-  "yarn_disclosure": "Certains liens de cette page sont affiliés : si vous achetez quelque chose, Para Drutów peut toucher une petite commission, sans frais supplémentaires pour vous. Cela nous aide à continuer à créer des vidéos gratuites."
+  "yarn_disclosure": "Certains liens de cette page sont affiliés : si vous achetez quelque chose, Para Drutów peut toucher une petite commission, sans frais supplémentaires pour vous. Cela nous aide à continuer à créer des vidéos gratuites.",
+  "home_yarn_eye": "Laine",
+  "home_yarn_title": "Chaque projet commence par un écheveau",
+  "home_yarn_text": "Un mérinos doux comme un nuage, une alpaga qui réchauffe sans peser, du coton pour l’été. Nous avons réuni des boutiques où chercher sa laine — avec des codes promo réservés à nos spectateurs.",
+  "home_yarn_badge": "Codes promo jusqu’à",
+  "home_yarn_btn": "Choisir sa laine →"
 }

@@ -933,3 +933,21 @@ html.no-fx .song-card {
     .page-icon { width: 50px; height: 50px; }
     .page-icon svg { width: 27px; height: 27px; }
 }
+
+/* Menu: jedna linia (8 pozycji + flagi) — na średnich ekranach ciaśniej */
+@media (min-width: 769px) {
+    .nav-links { display: flex; flex-wrap: nowrap; white-space: nowrap; min-width: 0; }
+    .nav-controls { flex-shrink: 0; }
+    .lang-switcher { flex-wrap: nowrap; }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+    .nav.glass-panel { padding: 0.9rem 1.2rem; }
+    .nav a { margin-right: 13px; font-size: 0.98rem; letter-spacing: 0.2px; }
+    .lang-switcher { gap: 2px; }
+    .lang-switcher img { width: 24px; height: 16px; }
+}
+@media (min-width: 769px) and (max-width: 960px) {
+    .nav a { margin-right: 9px; font-size: 0.9rem; }
+    .lang-switcher img { width: 20px; height: 14px; }
+    .lang-switcher a, .lang-switcher button { padding: 2px; }
+}
