@@ -210,16 +210,21 @@ async function fetchChannelVideos() {
 
 // ─────────────────────────────────────────────────────
 // Merge: объединяет новые данные с существующими по id
+// Usuwa „połówki” emoji (niesparowane surogaty UTF-16): YouTube API czasem obcina opis w środku emoji,
+// a Google zgłasza wtedy „Niepełny znak Unicode” w danych strukturalnych i sitemapie
+const cleanText = s => String(s ?? '').replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]|\uFFFD/g, '');
+
 // ─────────────────────────────────────────────────────
 // Генерация sitemap-video.xml
 function generateVideoSitemap(videos, shorts, sitemapPath) {
   function esc(s) {
     if (!s) return '';
-    return String(s)
+    return Array.from(cleanText(s)).join('')
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;').replace(/'/g, '&apos;')
       .replace(/[\r\n]+/g, ' ')
-      .slice(0, 2048);
+      .slice(0, 2048)
+      .replace(/[\uD800-\uDBFF]$/, '');
   }
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
@@ -352,7 +357,7 @@ async function fetchPlaylistVideos(playlistId, pageToken = null, all = [], max =
   all.push(...data.items.map(item => ({
     id:          item.contentDetails.videoId,
     title:       item.snippet.title,
-    description: item.snippet.description,
+    description: cleanText(item.snippet.description),
     thumbnail:   item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url,
     publishedAt: item.snippet.publishedAt,
     url:         `https://www.youtube.com/watch?v=${item.contentDetails.videoId}`

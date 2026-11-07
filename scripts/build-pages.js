@@ -74,9 +74,13 @@ const dictFile = lang => readJson(path.join(ROOT, 'assets/i18n', `${lang}.json`)
 // Чего нет в словаре языка — берём из английского (как lang.js для ES/PT), но не из польского
 const dict = lang => lang === 'en' ? dictFile('en') : { ...dictFile('en'), ...dictFile(lang) };
 
+// Usuwa „połówki” emoji (niesparowane surogaty UTF-16): YouTube API czasem obcina opis w środku emoji,
+// a Google zgłasza wtedy „Niepełny znak Unicode” w danych strukturalnych i sitemapie
+const cleanText = s => String(s ?? '').replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?<![\uD800-\uDBFF])[\uDC00-\uDFFF]|\uFFFD/g, '');
+
 function titleOf(item, lang) {
   const t = item.titles || {};
-  return t[lang] || t.pl || item.title;
+  return cleanText(t[lang] || t.pl || item.title);
 }
 
 function fmtDuration(secs) {
@@ -95,7 +99,9 @@ function videoListLd(items, kind, lang) {
     '@context': 'https://schema.org', '@type': 'ItemList',
     itemListElement: list.map((v, i) => {
       const name = titleOf(v, lang);
-      const desc = String(v.description || '').replace(/\s+/g, ' ').trim().slice(0, 300) || name;
+      // obcinamy po znakach (code points), nie po jednostkach UTF-16 — inaczej emoji 🧶 zostaje przecięte na pół
+      // i Google zgłasza „Niepełny znak Unicode”
+      const desc = Array.from(cleanText(v.description).replace(/\s+/g, ' ').trim()).slice(0, 300).join('') || name;
       const o = { '@type': 'VideoObject', name, description: desc,
         thumbnailUrl: [v.thumbnail], uploadDate: v.publishedAt,
         embedUrl: `https://www.youtube.com/embed/${v.id}`, url: v.url || `https://www.youtube.com/watch?v=${v.id}` };
