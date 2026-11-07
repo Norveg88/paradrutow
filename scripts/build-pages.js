@@ -117,15 +117,17 @@ function renderShops(lang) {
   const cards = list.map(s => {
     const deal = s.discount && (!s.discount.until || s.discount.until >= today) ? s.discount : null;
     const rel = s.affiliate ? 'sponsored noopener' : 'noopener';
-    return `            <article class="shop-card" id="sklep-${esc(s.id)}">
-                <div class="shop-head">${s.logo ? `<img src="${esc(s.logo)}" alt="${esc(s.name)}" class="shop-logo" width="64" height="64" loading="lazy">` : ''}
+    return `            <article class="shop-card" id="sklep-${esc(s.id)}">${s.logo && s.logoWide ? `
+                <img src="${esc(s.logo)}" alt="${esc(s.name)}" class="shop-wordmark" loading="lazy">` : ''}
+                <div class="shop-head">${s.logo && !s.logoWide ? `<img src="${esc(s.logo)}" alt="${esc(s.name)}" class="shop-logo" width="64" height="64" loading="lazy">` : ''}
                     <div><h2>${esc(s.name)}</h2>${s.affiliate ? `<span class="shop-aff">${d.yarn_aff}</span>` : ''}</div>
                 </div>
                 <p class="shop-desc">${pick(s.desc)}</p>${deal ? `
                 <div class="shop-deal"${deal.until ? ` data-until="${esc(deal.until)}"` : ''}>
                     ${deal.percent ? `<span class="shop-pct">−${esc(deal.percent)}%</span>` : ''}
-                    <div class="shop-code-wrap">${deal.code ? `<span class="shop-code-label">${d.yarn_code}</span><span class="shop-code">${esc(deal.code)}</span>` : ''}${pick(deal.note) ? `<span class="shop-until">${pick(deal.note)}</span>` : ''}${deal.until ? `<span class="shop-until">${d.yarn_until.replace('{d}', fmtDate(deal.until))}</span>` : ''}</div>
-                    ${deal.code ? `<button type="button" class="shop-copy" data-code="${esc(deal.code)}" data-done="${esc(d.yarn_copied)}">${d.yarn_copy}</button>` : ''}
+                    <div class="shop-code-wrap">${deal.code ? `<span class="shop-code-label">${d.yarn_code}</span><span class="shop-code">${esc(deal.code)}</span>` : ''}</div>
+                    ${deal.code ? `<button type="button" class="shop-copy" data-code="${esc(deal.code)}" data-done="${esc(d.yarn_copied)}">${d.yarn_copy}</button>` : ''}${pick(deal.note) || deal.until ? `
+                    <div class="shop-terms">${pick(deal.note)}${pick(deal.note) && deal.until ? ' ' : ''}${deal.until ? `<span class="shop-until">${d.yarn_until.replace('{d}', fmtDate(deal.until))}</span>` : ''}</div>` : ''}
                 </div>` : ''}
                 <a href="${esc(s.url)}" class="shop-go" target="_blank" rel="${rel}">${d.yarn_go}</a>
             </article>`;

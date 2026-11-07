@@ -50,6 +50,8 @@
         .shop-head { display: flex; align-items: center; gap: 1rem; }
         .shop-logo { width: 64px; height: 64px; border-radius: 12px; object-fit: contain; background: #fff; padding: 6px; flex-shrink: 0;
             border: 1px solid rgba(197,160,89,0.4); }
+        .shop-wordmark { align-self: flex-start; height: 44px; width: auto; max-width: 220px; box-sizing: border-box;
+            background: #fff; padding: 9px 14px; border-radius: 10px; border: 1px solid rgba(197,160,89,0.4); }
         .shop-card h2 { font-family: var(--font-header); font-weight: 700; color: var(--accent-gold); font-size: 1.55rem; line-height: 1.2; margin: 0; }
         .shop-aff { display: inline-block; margin-top: 0.25rem; font-size: 0.75rem; letter-spacing: 0.5px; text-transform: uppercase; color: #9a958b; }
         .shop-desc { color: #bbb; line-height: 1.65; margin: 0; flex: 1; }
@@ -60,8 +62,10 @@
             text-shadow: 0 0 12px rgba(197,160,89,0.45); }
         .shop-code-wrap { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; flex: 1; }
         .shop-code-label { font-size: 0.75rem; letter-spacing: 0.5px; text-transform: uppercase; color: #9a958b; }
-        .shop-code { font-family: 'Courier New', monospace; font-weight: 700; font-size: 1.15rem; color: #fff5d6; letter-spacing: 1px; word-break: break-all; }
-        .shop-until { font-size: 0.8rem; color: #9a958b; }
+        .shop-code { font-family: 'Courier New', monospace; font-weight: 700; font-size: 1.15rem; color: #fff5d6; letter-spacing: 1px; white-space: nowrap; }
+        .shop-terms { flex-basis: 100%; font-size: 0.82rem; line-height: 1.5; color: #9a958b; border-top: 1px solid rgba(197,160,89,0.2); padding-top: 0.55rem; }
+        .shop-until { color: #c9b48a; white-space: nowrap; }
+        .shop-until::before { content: '· '; }
         .shop-copy { font: inherit; font-family: var(--font-header); font-weight: 700; font-size: 0.95rem; cursor: pointer;
             color: var(--accent-gold); background: rgba(0,0,0,0.35); border: 1px solid var(--accent-gold); border-radius: 999px; padding: 0.35rem 0.95rem; }
         .shop-copy:hover, .shop-copy.is-done { background: rgba(197,160,89,0.18); }
@@ -119,7 +123,23 @@
         </div>
 
         <!-- yarn:shops (scripts/build-pages.js — z assets/data/yarn-shops.json) -->
-        <p class="shop-empty">Garnshops und Rabattcodes folgen in Kürze. Abonnieren Sie den Newsletter, dann sagen wir Ihnen Bescheid.</p>
+        <div class="shop-list">
+            <article class="shop-card" id="sklep-kokonki">
+                <img src="/assets/img/yarn/kokonki.svg" alt="Kokonki" class="shop-wordmark" loading="lazy">
+                <div class="shop-head">
+                    <div><h2>Kokonki</h2><span class="shop-aff">Partnerlink</span></div>
+                </div>
+                <p class="shop-desc">Ein polnischer Shop mit riesiger Garnauswahl – von Drops, Scheepjes und Rowan bis Malabrigo, Noro und Sandnes Garn – sowie eigenen Ombré-Bobbeln von KOKONKI. Sie können nach Hersteller und Material suchen: Wolle, Alpaka, Baumwolle und Mischungen. Kostenloser Versand innerhalb Polens ab 189 PLN.</p>
+                <div class="shop-deal" data-until="2027-12-31">
+                    <span class="shop-pct">−5%</span>
+                    <div class="shop-code-wrap"><span class="shop-code-label">Rabattcode</span><span class="shop-code">paradrutow5</span></div>
+                    <button type="button" class="shop-copy" data-code="paradrutow5" data-done="Kopiert!">Kopieren</button>
+                    <div class="shop-terms">Auf das gesamte Sortiment, ausgenommen reduzierte Artikel. Rabatte sind nicht kombinierbar. <span class="shop-until">gültig bis 31. Dezember 2027</span></div>
+                </div>
+                <a href="https://webep1.com/c/12926/68344ee35836f7d8db9e48bf?r=aHR0cHM6Ly9rb2tvbmtpLnBsLw" class="shop-go" target="_blank" rel="sponsored noopener">Zum Shop →</a>
+            </article>
+        </div>
+        <p class="shop-disclosure">Einige Links auf dieser Seite sind Partnerlinks: Wenn Sie etwas kaufen, erhält Para Drutów eventuell eine kleine Provision – für Sie entstehen keine Mehrkosten. So können wir weiterhin kostenlose Videos machen.</p>
         <!-- /yarn:shops -->
 
         <!-- Подписка на рассылку -->

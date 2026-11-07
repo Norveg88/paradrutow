@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "id": "kokonki",
+    "name": "Kokonki",
+    "url": "https://webep1.com/c/12926/68344ee35836f7d8db9e48bf?r=aHR0cHM6Ly9rb2tvbmtpLnBsLw",
+    "affiliate": true,
+    "logo": "/assets/img/yarn/kokonki.svg",
+    "logoWide": true,
+    "desc": {
+      "pl": "Polski sklep z ogromnym wyborem włóczek — od Drops, Scheepjes i Rowan po Malabrigo, Noro i Sandnes Garn — oraz z własnymi motkami ombre KOKONKI. Łatwo znajdziesz tu włóczkę według producenta i składu: wełnę, alpakę, bawełnę i mieszanki. Darmowa dostawa w Polsce od 189 zł.",
+      "en": "A Polish shop with a huge choice of yarns — from Drops, Scheepjes and Rowan to Malabrigo, Noro and Sandnes Garn — plus its own KOKONKI ombre yarn cakes. You can browse by brand and by fibre: wool, alpaca, cotton and blends. Free delivery within Poland on orders from 189 PLN.",
+      "de": "Ein polnischer Shop mit riesiger Garnauswahl – von Drops, Scheepjes und Rowan bis Malabrigo, Noro und Sandnes Garn – sowie eigenen Ombré-Bobbeln von KOKONKI. Sie können nach Hersteller und Material suchen: Wolle, Alpaka, Baumwolle und Mischungen. Kostenloser Versand innerhalb Polens ab 189 PLN.",
+      "fr": "Une boutique polonaise au très large choix de fils — de Drops, Scheepjes et Rowan à Malabrigo, Noro et Sandnes Garn — avec ses propres pelotes ombré KOKONKI. On y cherche facilement par marque et par composition : laine, alpaga, coton et mélanges. Livraison gratuite en Pologne dès 189 PLN.",
+      "es": "Una tienda polaca con una enorme selección de lanas —de Drops, Scheepjes y Rowan a Malabrigo, Noro y Sandnes Garn— y sus propios ovillos ombré KOKONKI. Puedes buscar por marca y por composición: lana, alpaca, algodón y mezclas. Envío gratuito en Polonia a partir de 189 PLN.",
+      "pt": "Uma loja polonesa com enorme variedade de fios — de Drops, Scheepjes e Rowan a Malabrigo, Noro e Sandnes Garn — e seus próprios novelos ombré KOKONKI. Dá para buscar por marca e por composição: lã, alpaca, algodão e misturas. Frete grátis na Polônia a partir de 189 PLN."
+    },
+    "discount": {
+      "percent": 5,
+      "code": "paradrutow5",
+      "until": "2027-12-31",
+      "note": {
+        "pl": "Na cały asortyment, z wyjątkiem produktów przecenionych. Rabaty nie sumują się.",
+        "en": "On the whole range, except discounted products. Discounts cannot be combined.",
+        "de": "Auf das gesamte Sortiment, ausgenommen reduzierte Artikel. Rabatte sind nicht kombinierbar.",
+        "fr": "Sur tout l’assortiment, hors produits en promotion. Remises non cumulables.",
+        "es": "En todo el catálogo, salvo productos rebajados. Los descuentos no son acumulables.",
+        "pt": "Em todo o catálogo, exceto produtos em promoção. Descontos não cumulativos."
+      }
+    }
+  }
+]
