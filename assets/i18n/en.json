@@ -408,5 +408,18 @@
   "gift_modal": "Your gift: the “Lightning” pattern — a lace lightning bolt, 63-page PDF in 6 languages. We’ll email it to you right after you confirm your subscription.",
   "pat6_free": "Or get it <strong>free</strong> — as a gift for joining the newsletter.",
   "pat6_free_btn": "Subscribe and get it →",
-  "apps_desc": "Apps we create — for knitting and for everyday work."
+  "apps_desc": "Apps we create — for knitting and for everyday work.",
+  "menu_yarn": "Yarn",
+  "title_yarn": "Yarn — shops and discount codes | Para Drutów",
+  "meta_desc_yarn": "Yarn shops recommended by Para Drutów — with discount codes for our viewers. Wool, cotton, merino and more.",
+  "yarn_title": "Yarn",
+  "yarn_desc": "Trusted yarn shops and discounts for our viewers.",
+  "yarn_code": "Discount code",
+  "yarn_copy": "Copy",
+  "yarn_copied": "Copied!",
+  "yarn_go": "Visit the shop →",
+  "yarn_until": "valid until {d}",
+  "yarn_aff": "Affiliate link",
+  "yarn_empty": "Yarn shops and discount codes are coming soon. Join the newsletter and we’ll let you know.",
+  "yarn_disclosure": "Some links on this page are affiliate links: if you buy something, Para Drutów may earn a small commission at no extra cost to you. It helps us keep making free videos."
 }

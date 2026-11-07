@@ -412,5 +412,18 @@
   "gift_modal": "W prezencie: wzór „Błyskawica” — ażurowa błyskawica, 63 strony PDF w 6 językach. Wyślemy go na Twój e-mail zaraz po potwierdzeniu zapisu.",
   "pat6_free": "Albo odbierz go <strong>za darmo</strong> — w prezencie za zapis do newslettera.",
   "pat6_free_btn": "Zapisz się i odbierz →",
-  "apps_desc": "Aplikacje, które tworzymy — do dziergania i do codziennej pracy."
+  "apps_desc": "Aplikacje, które tworzymy — do dziergania i do codziennej pracy.",
+  "menu_yarn": "Włóczka",
+  "title_yarn": "Włóczka — sklepy i kody rabatowe | Para Drutów",
+  "meta_desc_yarn": "Sprawdzone sklepy z włóczką polecane przez Para Drutów — z kodami rabatowymi dla naszych widzów. Wełna, bawełna, merino i więcej.",
+  "yarn_title": "Włóczka",
+  "yarn_desc": "Sprawdzone sklepy z włóczką i rabaty dla naszych widzów.",
+  "yarn_code": "Kod rabatowy",
+  "yarn_copy": "Kopiuj",
+  "yarn_copied": "Skopiowano!",
+  "yarn_go": "Przejdź do sklepu →",
+  "yarn_until": "ważny do {d}",
+  "yarn_aff": "Link partnerski",
+  "yarn_empty": "Wkrótce pojawią się tu sklepy z włóczką i kody rabatowe. Zapisz się do newslettera, a damy znać.",
+  "yarn_disclosure": "Niektóre linki na tej stronie są partnerskie: jeśli coś kupisz, Para Drutów może otrzymać niewielką prowizję — Ty nie płacisz więcej. Dzięki temu możemy tworzyć kolejne darmowe filmy."
 }

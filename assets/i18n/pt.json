@@ -408,5 +408,18 @@
   "gift_modal": "Seu presente: a receita “Raio” — um raio rendado, PDF de 63 páginas em 6 idiomas. Enviamos para o seu e-mail assim que você confirmar a inscrição.",
   "pat6_free": "Ou receba <strong>de graça</strong> — de presente ao assinar a newsletter.",
   "pat6_free_btn": "Assinar e receber →",
-  "apps_desc": "Os aplicativos que criamos — para o tricô e para o trabalho do dia a dia."
+  "apps_desc": "Os aplicativos que criamos — para o tricô e para o trabalho do dia a dia.",
+  "menu_yarn": "Lã",
+  "title_yarn": "Lã — lojas e cupons de desconto | Para Drutów",
+  "meta_desc_yarn": "Lojas de lã recomendadas pela Para Drutów — com cupons de desconto para quem nos acompanha. Lã, algodão, merino e mais.",
+  "yarn_title": "Lã",
+  "yarn_desc": "Lojas de lã de confiança e descontos para quem nos acompanha.",
+  "yarn_code": "Cupom",
+  "yarn_copy": "Copiar",
+  "yarn_copied": "Copiado!",
+  "yarn_go": "Ir para a loja →",
+  "yarn_until": "válido até {d}",
+  "yarn_aff": "Link de afiliado",
+  "yarn_empty": "Em breve, lojas de lã e cupons de desconto aqui. Assine a newsletter e avisaremos você.",
+  "yarn_disclosure": "Alguns links desta página são de afiliado: se você comprar algo, a Para Drutów pode receber uma pequena comissão, sem custo extra para você. Isso nos ajuda a continuar fazendo vídeos gratuitos."
 }

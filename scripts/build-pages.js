@@ -23,6 +23,8 @@ const DEFAULT_LANG = 'pl';                                // корень сай
 const PAGES = {
   'video.html':  { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], data: 'videos.json', kind: 'video', metaKey: 'meta_desc_video', titleKey: 'title_video' },
   'shorts.html': { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], data: 'shorts.json', kind: 'short', metaKey: 'meta_desc_shorts', titleKey: 'title_shorts' },
+  // Włóczka: sklepy i rabaty z assets/data/yarn-shops.json (opisy per język, brak → en → pl)
+  'yarn.html':   { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_yarn', titleKey: 'title_yarn', shops: true },
   // ldKeys — строки JSON-LD, которые переводятся: в польском исходнике стоит значение из pl.json
   'apps.html':   { langs: ['pl', 'en', 'de', 'fr', 'es', 'pt'], metaKey: 'meta_desc_apps', titleKey: 'title_apps',
                    ldKeys: ['ld_apps_name', 'ld_wzorai_desc', 'ld_wzorai_offer', 'ld_shift_desc'] },
@@ -103,6 +105,35 @@ function videoListLd(items, kind, lang) {
   };
 }
 
+// ---------- Włóczka: karty sklepów ----------
+function renderShops(lang) {
+  const d = dict(lang), shops = readJson(path.join(ROOT, 'assets/data/yarn-shops.json'));
+  const pick = o => (o && (o[lang] || o.en || o.pl)) || '';
+  const today = new Date().toISOString().slice(0, 10);
+  const fmtDate = s => new Date(s + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : lang, { day: 'numeric', month: 'long', year: 'numeric' });
+  const open = '<!-- yarn:shops (scripts/build-pages.js — z assets/data/yarn-shops.json) -->', close = '<!-- /yarn:shops -->';
+  const list = shops.filter(s => !s.hidden);
+  if (!list.length) return `${open}\n        <p class="shop-empty">${d.yarn_empty}</p>\n        ${close}`;
+  const cards = list.map(s => {
+    const deal = s.discount && (!s.discount.until || s.discount.until >= today) ? s.discount : null;
+    const rel = s.affiliate ? 'sponsored noopener' : 'noopener';
+    return `            <article class="shop-card" id="sklep-${esc(s.id)}">
+                <div class="shop-head">${s.logo ? `<img src="${esc(s.logo)}" alt="${esc(s.name)}" class="shop-logo" width="64" height="64" loading="lazy">` : ''}
+                    <div><h2>${esc(s.name)}</h2>${s.affiliate ? `<span class="shop-aff">${d.yarn_aff}</span>` : ''}</div>
+                </div>
+                <p class="shop-desc">${pick(s.desc)}</p>${deal ? `
+                <div class="shop-deal"${deal.until ? ` data-until="${esc(deal.until)}"` : ''}>
+                    ${deal.percent ? `<span class="shop-pct">−${esc(deal.percent)}%</span>` : ''}
+                    <div class="shop-code-wrap">${deal.code ? `<span class="shop-code-label">${d.yarn_code}</span><span class="shop-code">${esc(deal.code)}</span>` : ''}${pick(deal.note) ? `<span class="shop-until">${pick(deal.note)}</span>` : ''}${deal.until ? `<span class="shop-until">${d.yarn_until.replace('{d}', fmtDate(deal.until))}</span>` : ''}</div>
+                    ${deal.code ? `<button type="button" class="shop-copy" data-code="${esc(deal.code)}" data-done="${esc(d.yarn_copied)}">${d.yarn_copy}</button>` : ''}
+                </div>` : ''}
+                <a href="${esc(s.url)}" class="shop-go" target="_blank" rel="${rel}">${d.yarn_go}</a>
+            </article>`;
+  }).join('\n');
+  const disc = list.some(s => s.affiliate) ? `\n        <p class="shop-disclosure">${d.yarn_disclosure}</p>` : '';
+  return `${open}\n        <div class="shop-list">\n${cards}\n        </div>${disc}\n        ${close}`;
+}
+
 // ---------- карточки (та же разметка, что создают videos.js / shorts.js) ----------
 function renderCards(items, kind, lang) {
   const p = kind === 'video' ? 'vc' : 'sc';
@@ -149,6 +180,7 @@ function applyCommon(html, file, cfg, lang, items) {
   }
 
   if (cfg.home) html = renderHome(html, lang);
+  if (cfg.shops) html = html.replace(/<!-- yarn:shops[^>]*-->[\s\S]*?<!-- \/yarn:shops -->/, () => renderShops(lang));
 
   const sw = /<div class="lang-switcher">[\s\S]*?<\/div>/;
   if (!sw.test(html)) throw new Error(`${file}: lang-switcher not found`);

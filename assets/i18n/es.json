@@ -408,5 +408,18 @@
   "gift_modal": "Tu regalo: el patrón «Rayo» — un rayo calado, PDF de 63 páginas en 6 idiomas. Te lo enviaremos por correo en cuanto confirmes la suscripción.",
   "pat6_free": "O consíguelo <strong>gratis</strong>: de regalo al suscribirte al boletín.",
   "pat6_free_btn": "Suscribirme y recibirlo →",
-  "apps_desc": "Las aplicaciones que creamos: para tejer y para el trabajo diario."
+  "apps_desc": "Las aplicaciones que creamos: para tejer y para el trabajo diario.",
+  "menu_yarn": "Lana",
+  "title_yarn": "Lana — tiendas y códigos de descuento | Para Drutów",
+  "meta_desc_yarn": "Tiendas de lana recomendadas por Para Drutów, con códigos de descuento para nuestros espectadores. Lana, algodón, merino y más.",
+  "yarn_title": "Lana",
+  "yarn_desc": "Tiendas de lana de confianza y descuentos para nuestros espectadores.",
+  "yarn_code": "Código de descuento",
+  "yarn_copy": "Copiar",
+  "yarn_copied": "¡Copiado!",
+  "yarn_go": "Ir a la tienda →",
+  "yarn_until": "válido hasta el {d}",
+  "yarn_aff": "Enlace de afiliado",
+  "yarn_empty": "Muy pronto encontrarás aquí tiendas de lana y códigos de descuento. Suscríbete al boletín y te avisaremos.",
+  "yarn_disclosure": "Algunos enlaces de esta página son de afiliado: si compras algo, Para Drutów puede recibir una pequeña comisión sin coste adicional para ti. Así podemos seguir haciendo vídeos gratuitos."
 }

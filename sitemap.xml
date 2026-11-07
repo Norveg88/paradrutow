@@ -625,4 +625,82 @@
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
+  <url>
+    <loc>https://paradrutow.com/yarn.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/yarn.html"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/en/yarn.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/yarn.html"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/de/yarn.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/yarn.html"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/fr/yarn.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/yarn.html"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/es/yarn.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/yarn.html"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paradrutow.com/pt/yarn.html</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://paradrutow.com/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paradrutow.com/en/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://paradrutow.com/de/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paradrutow.com/fr/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://paradrutow.com/es/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://paradrutow.com/pt/yarn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paradrutow.com/yarn.html"/>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

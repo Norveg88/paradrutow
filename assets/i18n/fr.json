@@ -408,5 +408,18 @@
   "gift_modal": "Votre cadeau : le modèle « Éclair » — un éclair ajouré, PDF de 63 pages en 6 langues. Nous vous l’envoyons par e-mail dès la confirmation de votre inscription.",
   "pat6_free": "Ou recevez-le <strong>gratuitement</strong> — en cadeau pour votre inscription à la newsletter.",
   "pat6_free_btn": "S’abonner et le recevoir →",
-  "apps_desc": "Les applications que nous créons — pour le tricot et pour le travail au quotidien."
+  "apps_desc": "Les applications que nous créons — pour le tricot et pour le travail au quotidien.",
+  "menu_yarn": "Laine",
+  "title_yarn": "Laine — boutiques et codes promo | Para Drutów",
+  "meta_desc_yarn": "Boutiques de laine recommandées par Para Drutów — avec des codes promo pour nos spectateurs. Laine, coton, mérinos et plus.",
+  "yarn_title": "Laine",
+  "yarn_desc": "Des boutiques de laine de confiance et des réductions pour nos spectateurs.",
+  "yarn_code": "Code promo",
+  "yarn_copy": "Copier",
+  "yarn_copied": "Copié !",
+  "yarn_go": "Voir la boutique →",
+  "yarn_until": "valable jusqu’au {d}",
+  "yarn_aff": "Lien affilié",
+  "yarn_empty": "Les boutiques de laine et les codes promo arrivent bientôt. Abonnez-vous à la newsletter, nous vous préviendrons.",
+  "yarn_disclosure": "Certains liens de cette page sont affiliés : si vous achetez quelque chose, Para Drutów peut toucher une petite commission, sans frais supplémentaires pour vous. Cela nous aide à continuer à créer des vidéos gratuites."
 }
