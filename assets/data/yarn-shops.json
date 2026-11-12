@@ -27,5 +27,33 @@
         "pt": "Em todo o catálogo, exceto produtos em promoção. Descontos não cumulativos."
       }
     }
+  },
+  {
+    "id": "biferno",
+    "name": "Biferno",
+    "url": "https://biferno.pl/pl/searchquery/h.couture/1/phot/5?url=h.couture",
+    "affiliate": false,
+    "logo": "/assets/img/yarn/biferno.jpg",
+    "logoWide": true,
+    "desc": {
+      "pl": "Rodzinny sklep dziewiarski działający od 2010 roku, prowadzony przez zespół kobiet zakręconych na punkcie naturalnych włóczek. Motki sprowadzają bezpośrednio od producentów z Włoch, Niemiec, Francji, Portugalii, Indii i Urugwaju: wełnę, merino, alpakę, kaszmir, jedwab, bawełnę i len, a do tego japońskie druty SeeKnit. Wysyłka w 24 h, darmowa dostawa w Polsce od 300 zł. Wysyłka także za granicę.",
+      "en": "A family-run knitting shop since 2010, run by a team of women who are crazy about natural yarns. They import directly from makers in Italy, Germany, France, Portugal, India and Uruguay: wool, merino, alpaca, cashmere, silk, cotton and linen, plus Japanese SeeKnit needles. Orders ship within 24 h, free delivery in Poland from 300 PLN. They also ship abroad.",
+      "de": "Ein familiengeführter Strickladen seit 2010, betrieben von einem Team von Frauen, die Naturgarne lieben. Die Garne kommen direkt von Herstellern aus Italien, Deutschland, Frankreich, Portugal, Indien und Uruguay: Wolle, Merino, Alpaka, Kaschmir, Seide, Baumwolle und Leinen, dazu japanische SeeKnit-Nadeln. Versand innerhalb von 24 Std., kostenlose Lieferung in Polen ab 300 PLN. Versand auch ins Ausland.",
+      "fr": "Une boutique de tricot familiale depuis 2010, tenue par une équipe de passionnées de fils naturels. Les pelotes viennent directement de fabricants d’Italie, d’Allemagne, de France, du Portugal, d’Inde et d’Uruguay : laine, mérinos, alpaga, cachemire, soie, coton et lin, ainsi que les aiguilles japonaises SeeKnit. Expédition sous 24 h, livraison gratuite en Pologne dès 300 PLN. Livraison également à l’étranger.",
+      "es": "Una tienda de tejido familiar desde 2010, llevada por un equipo de mujeres apasionadas por las fibras naturales. Importan directamente de fabricantes de Italia, Alemania, Francia, Portugal, India y Uruguay: lana, merino, alpaca, cachemira, seda, algodón y lino, además de agujas japonesas SeeKnit. Envío en 24 h, entrega gratuita en Polonia a partir de 300 PLN. También envían al extranjero.",
+      "pt": "Uma loja de tricô familiar desde 2010, tocada por uma equipe de mulheres apaixonadas por fios naturais. Os novelos vêm direto de fabricantes da Itália, Alemanha, França, Portugal, Índia e Uruguai: lã, merino, alpaca, cashmere, seda, algodão e linho, além das agulhas japonesas SeeKnit. Envio em 24 h, frete grátis na Polônia a partir de 300 PLN. Também enviam para o exterior."
+    },
+    "discount": {
+      "percent": 10,
+      "code": "paradrutow10",
+      "note": {
+        "pl": "Na włóczkę Texture Wool (100% merino, 100 g/120 m) we wszystkich kolorach. Kod bezterminowy.",
+        "en": "On Texture Wool yarn (100% merino, 100 g/120 m) in all colours. The code does not expire.",
+        "de": "Auf das Garn Texture Wool (100 % Merino, 100 g/120 m) in allen Farben. Der Code ist unbefristet.",
+        "fr": "Sur le fil Texture Wool (100 % mérinos, 100 g/120 m) dans tous les coloris. Code sans date d’expiration.",
+        "es": "En la lana Texture Wool (100 % merino, 100 g/120 m) en todos los colores. El código no caduca.",
+        "pt": "No fio Texture Wool (100% merino, 100 g/120 m) em todas as cores. O código não expira."
+      }
+    }
   }
 ]
