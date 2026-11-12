@@ -47,10 +47,13 @@
         .shop-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
             background: linear-gradient(to right, var(--accent-gold), var(--accent-copper)); }
         .shop-card:hover { transform: translateY(-4px); border-color: rgba(197,160,89,0.6); box-shadow: 0 16px 40px rgba(197,160,89,0.12); }
-        .shop-head { display: flex; align-items: center; gap: 1rem; }
+        .shop-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+        .shop-title { min-width: 0; }
+        .shop-head .shop-title h2 { line-height: 44px; }
+        .shop-head:has(.shop-logo) .shop-title h2 { line-height: 64px; }
         .shop-logo { width: 64px; height: 64px; border-radius: 12px; object-fit: contain; background: #fff; padding: 6px; flex-shrink: 0;
             border: 1px solid rgba(197,160,89,0.4); }
-        .shop-wordmark { align-self: flex-start; height: 44px; width: auto; max-width: 220px; box-sizing: border-box;
+        .shop-wordmark { flex-shrink: 1; min-width: 0; height: 44px; width: auto; max-width: min(220px, 55%); object-fit: contain; box-sizing: border-box;
             background: #fff; padding: 9px 14px; border-radius: 10px; border: 1px solid rgba(197,160,89,0.4); }
         .shop-card h2 { font-family: var(--font-header); font-weight: 700; color: var(--accent-gold); font-size: 1.55rem; line-height: 1.2; margin: 0; }
         .shop-aff { display: inline-block; margin-top: 0.25rem; font-size: 0.75rem; letter-spacing: 0.5px; text-transform: uppercase; color: #9a958b; }
@@ -125,9 +128,9 @@
         <!-- yarn:shops (scripts/build-pages.js — z assets/data/yarn-shops.json) -->
         <div class="shop-list">
             <article class="shop-card" id="sklep-kokonki">
-                <img src="/assets/img/yarn/kokonki.svg" alt="Kokonki" class="shop-wordmark" loading="lazy">
                 <div class="shop-head">
-                    <div><h2>Kokonki</h2><span class="shop-aff">Enlace de afiliado</span></div>
+                    <div class="shop-title"><h2>Kokonki</h2><span class="shop-aff">Enlace de afiliado</span></div>
+                    <img src="/assets/img/yarn/kokonki.svg" alt="Kokonki" class="shop-wordmark" loading="lazy">
                 </div>
                 <p class="shop-desc">Una tienda polaca con una enorme selección de lanas —de Drops, Scheepjes y Rowan a Malabrigo, Noro y Sandnes Garn— y sus propios ovillos ombré KOKONKI. Puedes buscar por marca y por composición: lana, alpaca, algodón y mezclas. Envío gratuito en Polonia a partir de 189 PLN. También envían a los países de la Unión Europea.</p>
                 <div class="shop-deal" data-until="2027-12-31">
@@ -139,9 +142,9 @@
                 <a href="https://webep1.com/c/12926/68344ee35836f7d8db9e48bf?r=aHR0cHM6Ly9rb2tvbmtpLnBsLw" class="shop-go" target="_blank" rel="sponsored noopener">Ir a la tienda →</a>
             </article>
             <article class="shop-card" id="sklep-biferno">
-                <img src="/assets/img/yarn/biferno.jpg" alt="Biferno" class="shop-wordmark" loading="lazy">
                 <div class="shop-head">
-                    <div><h2>Biferno</h2></div>
+                    <div class="shop-title"><h2>Biferno</h2></div>
+                    <img src="/assets/img/yarn/biferno.jpg" alt="Biferno" class="shop-wordmark" loading="lazy">
                 </div>
                 <p class="shop-desc">Una tienda de tejido familiar desde 2010, llevada por un equipo de mujeres apasionadas por las fibras naturales. Importan directamente de fabricantes de Italia, Alemania, Francia, Portugal, India y Uruguay: lana, merino, alpaca, cachemira, seda, algodón y lino, además de agujas japonesas SeeKnit. Envío en 24 h, entrega gratuita en Polonia a partir de 300 PLN. También envían al extranjero.</p>
                 <div class="shop-deal">
