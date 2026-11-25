@@ -310,8 +310,8 @@
             /* на телефоне баннер целиком полосой сверху, текст под ним */
             .hero { display: block; min-height: 0; aspect-ratio: auto; border-radius: 14px; background: #0b0a09; }
             .hero-bg { position: relative; z-index: 0; display: block; height: auto; aspect-ratio: 16 / 9; }
-            .hero::after { background: linear-gradient(to bottom, transparent 18%, #0b0a09 34%); }
-            .hero-content { position: relative; z-index: 1; margin-top: -1.6rem; padding: 0 1.1rem 1.8rem; }
+            .hero::after { display: none; }
+            .hero-content { position: relative; z-index: 1; margin-top: 0; padding: 1.2rem 1.1rem 1.8rem; }
             .hero-eyebrow { font-size: 0.78rem; letter-spacing: 1.2px; }
             .home-section { margin-bottom: 2.4rem; }
             .why-card { padding: 1.5rem; }
