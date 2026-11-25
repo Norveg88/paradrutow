@@ -58,8 +58,8 @@ const HOME = {
   // Полка книг: на польской главной — польские издания, на остальных — английские
   books: {
     pl:    [['book14', 'Dziewiarskie „dlaczego”'], ['book13', 'Sekretne życie włóczki'], ['book11', 'Dom na drutach'], ['book8', 'Sweter z historią'],
-            ['book7', 'Para Drutów. Miejsce, w którym ludzie zostają'], ['book5', '16 Pięt do Skarpetek']],
-    other: [['book15', 'The Knitter’s Whys'], ['book12', 'The Secret Life of Yarn'], ['book10', 'The Knitted Home']],
+            ['book7', 'Para Drutów. Miejsce, w którym ludzie zostają'], ['book5', '16 Pięt do Skarpetek'], ['book6', 'Planner Dziewiarski']],
+    other: [['book15', 'The Knitter’s Whys'], ['book12', 'The Secret Life of Yarn'], ['book10', 'The Knitted Home'], ['book9', 'Your Knitting Journey']],
   },
 };
 const OG_LOCALE = { pl: 'pl_PL', en: 'en_US', de: 'de_DE', fr: 'fr_FR', es: 'es_ES', pt: 'pt_BR' };
